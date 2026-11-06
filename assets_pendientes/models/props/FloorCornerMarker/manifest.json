@@ -1,0 +1,91 @@
+{
+  "name": "FloorCornerMarker",
+  "atlas": 256,
+  "texel_density": 33.333290725946426,
+  "triangles": 192,
+  "budget": 300,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 96,
+      "vertices": 192,
+      "center": [
+        0.0,
+        0.03,
+        0.0
+      ],
+      "size": [
+        12.0,
+        0.06,
+        9.9
+      ],
+      "fallback": [
+        69,
+        74,
+        82
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        202,
+        140,
+        57
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 96,
+      "vertices": 192,
+      "center": [
+        0.0,
+        0.045,
+        0.0
+      ],
+      "size": [
+        11.92,
+        0.09,
+        9.82
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "FloorCornerMarker_color.png",
+    "normal": "FloorCornerMarker_normal.png",
+    "roughness": "FloorCornerMarker_roughness.png",
+    "metalness": "FloorCornerMarker_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/StationExpansion_20261006",
+        "Decor/DesignExpansion_20261006"
+      ],
+      "name": [
+        "DailyPad_Markers",
+        "RebirthAltar_Markers",
+        "QuestBoard_EdgeAccents",
+        "ToolRack_EdgeAccents",
+        "UpgradeStation_EdgeAccents",
+        "ChaosShopTerminal_EdgeAccents"
+      ],
+      "fit": "box",
+      "keep": [],
+      "colliders": [],
+      "tint": {
+        "Glow": "CornerLong"
+      }
+    }
+  }
+}

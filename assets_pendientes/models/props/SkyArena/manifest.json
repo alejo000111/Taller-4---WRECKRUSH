@@ -1,0 +1,85 @@
+{
+  "name": "SkyArena",
+  "atlas": 512,
+  "texel_density": 4.999999761581421,
+  "triangles": 1340,
+  "budget": 1400,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1052,
+      "vertices": 1312,
+      "center": [
+        0.0,
+        0.025,
+        0.0
+      ],
+      "size": [
+        160.7,
+        0.05,
+        160.7
+      ],
+      "fallback": [
+        107,
+        102,
+        96
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        173,
+        161,
+        230
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 288,
+      "vertices": 320,
+      "center": [
+        0.0,
+        0.035,
+        0.0
+      ],
+      "size": [
+        162.2,
+        0.07,
+        162.2
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "SkyArena_color.png",
+    "normal": "SkyArena_normal.png",
+    "roughness": "SkyArena_roughness.png",
+    "metalness": "SkyArena_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "Arena"
+      ],
+      "remove": [],
+      "lift": 0.4,
+      "uniform": false,
+      "keep_height": true,
+      "functional": false,
+      "overlay": true
+    }
+  }
+}

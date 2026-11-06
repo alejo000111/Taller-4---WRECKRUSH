@@ -1,0 +1,152 @@
+{
+  "name": "Forklift",
+  "atlas": 1024,
+  "texel_density": 37.98791578412056,
+  "triangles": 2794,
+  "budget": 3000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2728,
+      "vertices": 3356,
+      "center": [
+        0.0,
+        3.81,
+        0.09899999999999975
+      ],
+      "size": [
+        5.960000000000001,
+        7.62,
+        10.161999999999999
+      ],
+      "fallback": [
+        106,
+        85,
+        73
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        170,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 66,
+      "vertices": 77,
+      "center": [
+        0.0,
+        6.6825,
+        0.8303503690480396
+      ],
+      "size": [
+        4.31,
+        2.495000000000001,
+        6.4607007380960795
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "Forklift_color.png",
+    "normal": "Forklift_normal.png",
+    "roughness": "Forklift_roughness.png",
+    "metalness": "Forklift_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "ScrapYard",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            5.2,
+            3.8,
+            6.85
+          ],
+          "center": [
+            0.0,
+            1.9,
+            1.575
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Mast",
+          "shape": "Block",
+          "size": [
+            3.9,
+            7.4,
+            1.0
+          ],
+          "center": [
+            0.0,
+            3.85,
+            -2.3
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Guard",
+          "shape": "Block",
+          "size": [
+            4.6,
+            0.3,
+            5.1
+          ],
+          "center": [
+            0.0,
+            7.27,
+            1.45
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Forks",
+          "shape": "Block",
+          "size": [
+            2.1,
+            0.3,
+            2.1
+          ],
+          "center": [
+            0.0,
+            0.15,
+            -3.95
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

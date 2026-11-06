@@ -1,0 +1,138 @@
+{
+  "name": "ParkingMeter",
+  "atlas": 512,
+  "texel_density": 75.83328819274902,
+  "triangles": 504,
+  "budget": 800,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 482,
+      "vertices": 510,
+      "center": [
+        0.0,
+        3.0300000000000002,
+        -0.015000000000000013
+      ],
+      "size": [
+        1.2,
+        6.0600000000000005,
+        1.03
+      ],
+      "fallback": [
+        134,
+        134,
+        132
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        90,
+        255,
+        190
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        4.699999999999999,
+        -0.436
+      ],
+      "size": [
+        0.62,
+        0.2599999999999998,
+        0.020000000000000018
+      ]
+    },
+    "Flag": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        52,
+        52
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 10,
+      "vertices": 20,
+      "center": [
+        -0.06,
+        5.66,
+        -0.44
+      ],
+      "size": [
+        0.4777910077747328,
+        0.222462517440281,
+        0.05999999999999994
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ParkingMeter_color.png",
+    "normal": "ParkingMeter_normal.png",
+    "roughness": "ParkingMeter_roughness.png",
+    "metalness": "ParkingMeter_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Downtown",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            1.2,
+            1.9,
+            1.0
+          ],
+          "center": [
+            0.0,
+            4.93,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Pole",
+          "shape": "Cylinder",
+          "size": [
+            0.42,
+            4.0,
+            0.42
+          ],
+          "center": [
+            0.0,
+            2.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

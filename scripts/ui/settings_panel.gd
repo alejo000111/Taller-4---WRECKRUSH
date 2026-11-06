@@ -6,7 +6,7 @@ var _boton_reinicio: Button
 
 
 func _init() -> void:
-	super._init("SETTINGS", GameColors.CIAN, 560.0)
+	super._init("SETTINGS", GameColors.CIAN, 560.0, Iconos.AJUSTES)
 
 
 func construir() -> void:
@@ -28,7 +28,11 @@ func construir() -> void:
 	_boton_reinicio = UIKit.boton("RESET PROGRESS", GameColors.ROJO, Vector2(260, 44), 18)
 	_boton_reinicio.pressed.connect(_reiniciar)
 	contenido.add_child(_boton_reinicio)
-	contenido.add_child(UIKit.etiqueta("WRECKRUSH v%s  %s  (Godot port)" % [GameConfig.VERSION, GameConfig.NOMBRE_VERSION], 15, Color("#8A909C")))
+	var logo := UIKit.icono(Iconos.LOGO_JUEGO, 120)
+	logo.custom_minimum_size = Vector2(240, 120)
+	logo.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	contenido.add_child(logo)
+	contenido.add_child(UIKit.etiqueta("WRECKRUSH v%s  %s  (Godot port)" % [GameConfig.VERSION, GameConfig.NOMBRE_VERSION], 15, Color("#8A909C"), HORIZONTAL_ALIGNMENT_CENTER))
 
 
 func refrescar() -> void:

@@ -1,0 +1,138 @@
+{
+  "name": "ArmyJeep",
+  "atlas": 1024,
+  "texel_density": 31.887354761362076,
+  "triangles": 2754,
+  "budget": 3000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2650,
+      "vertices": 2524,
+      "center": [
+        0.0,
+        3.229,
+        0.2523000000000004
+      ],
+      "size": [
+        7.5,
+        6.442,
+        13.654599999999999
+      ],
+      "fallback": [
+        84,
+        84,
+        71
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        90,
+        120,
+        120
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.5,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        4.75,
+        -1.55
+      ],
+      "size": [
+        4.4,
+        1.7371443133265498,
+        0.2732609687423615
+      ]
+    },
+    "Lamp": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        236,
+        190
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 80,
+      "vertices": 106,
+      "center": [
+        0.0,
+        3.15,
+        -6.26
+      ],
+      "size": [
+        4.54,
+        0.6086761704288985,
+        0.1200000000000001
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ArmyJeep_color.png",
+    "normal": "ArmyJeep_normal.png",
+    "roughness": "ArmyJeep_roughness.png",
+    "metalness": "ArmyJeep_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Military",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            7.0,
+            3.0,
+            12.4
+          ],
+          "center": [
+            0.0,
+            2.2,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Upper",
+          "shape": "Block",
+          "size": [
+            4.8,
+            2.6,
+            5.0
+          ],
+          "center": [
+            0.0,
+            5.05,
+            3.4
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

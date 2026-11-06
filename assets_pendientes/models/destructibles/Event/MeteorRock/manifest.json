@@ -1,0 +1,95 @@
+{
+  "name": "MeteorRock",
+  "atlas": 1024,
+  "texel_density": 38.0133002102375,
+  "triangles": 906,
+  "budget": 1500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 618,
+      "vertices": 473,
+      "center": [
+        0.17023727257359456,
+        3.2243734143407896,
+        0.0
+      ],
+      "size": [
+        8.340474545147188,
+        6.448746828681579,
+        8.0
+      ],
+      "fallback": [
+        35,
+        25,
+        21
+      ]
+    },
+    "Lava": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        110,
+        20
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 288,
+      "vertices": 243,
+      "center": [
+        -0.021164191841005486,
+        2.9270610702790347,
+        -0.47440942780831574
+      ],
+      "size": [
+        7.279435715668215,
+        5.75412214055807,
+        7.060084797186525
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "MeteorRock_color.png",
+    "normal": "MeteorRock_normal.png",
+    "roughness": "MeteorRock_roughness.png",
+    "metalness": "MeteorRock_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Ball",
+          "size": [
+            6.0,
+            6.0,
+            6.0
+          ],
+          "center": [
+            0.0,
+            3.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

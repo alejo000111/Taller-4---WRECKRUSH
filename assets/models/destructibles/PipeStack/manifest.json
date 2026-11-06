@@ -1,0 +1,90 @@
+{
+  "name": "PipeStack",
+  "atlas": 1024,
+  "texel_density": 25.45917598903179,
+  "triangles": 1484,
+  "budget": 2000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1484,
+      "vertices": 1432,
+      "center": [
+        0.0,
+        2.6840538055992695,
+        0.0
+      ],
+      "size": [
+        7.692109680398914,
+        5.344676153693463,
+        10.32
+      ],
+      "fallback": [
+        125,
+        108,
+        94
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "PipeStack_color.png",
+    "normal": "PipeStack_normal.png",
+    "roughness": "PipeStack_roughness.png",
+    "metalness": "PipeStack_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Industrial",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            7.0,
+            4.8713,
+            9.6
+          ],
+          "center": [
+            0.0,
+            2.4356,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Skids",
+          "shape": "Block",
+          "size": [
+            7.6,
+            0.5,
+            7.6
+          ],
+          "center": [
+            0.0,
+            0.25,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

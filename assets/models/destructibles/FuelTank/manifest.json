@@ -1,0 +1,114 @@
+{
+  "name": "FuelTank",
+  "atlas": 1024,
+  "texel_density": 28.09567815065384,
+  "triangles": 2374,
+  "budget": 3000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2284,
+      "vertices": 2800,
+      "center": [
+        0.2899999999999996,
+        6.3100000000000005,
+        -0.28992481202465115
+      ],
+      "size": [
+        10.379999999999999,
+        12.620000000000001,
+        10.379849624049303
+      ],
+      "fallback": [
+        132,
+        127,
+        118
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        60,
+        50
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 90,
+      "vertices": 64,
+      "center": [
+        2.0286474508437577,
+        12.25,
+        2.0
+      ],
+      "size": [
+        0.5427050983124841,
+        0.6000000000000014,
+        0.5706339097770918
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "FuelTank_color.png",
+    "normal": "FuelTank_normal.png",
+    "roughness": "FuelTank_roughness.png",
+    "metalness": "FuelTank_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Industrial",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Cylinder",
+          "size": [
+            8.8,
+            11.1,
+            8.8
+          ],
+          "center": [
+            0.0,
+            6.05,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Pad",
+          "shape": "Cylinder",
+          "size": [
+            9.8,
+            0.42,
+            9.8
+          ],
+          "center": [
+            0.0,
+            0.21,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

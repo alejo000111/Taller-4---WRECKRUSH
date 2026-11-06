@@ -1,0 +1,63 @@
+{
+  "name": "VerdantRock",
+  "atlas": 512,
+  "texel_density": 79.41828919947147,
+  "triangles": 126,
+  "budget": 400,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 126,
+      "vertices": 86,
+      "center": [
+        0.6488107221939923,
+        2.678183364464003,
+        -0.13696858899342512
+      ],
+      "size": [
+        10.670215988037345,
+        5.356366728928006,
+        8.298160609597458
+      ],
+      "fallback": [
+        64,
+        72,
+        58
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "VerdantRock_color.png",
+    "normal": "VerdantRock_normal.png",
+    "roughness": "VerdantRock_roughness.png",
+    "metalness": "VerdantRock_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/VerdantFoundry"
+      ],
+      "parts": [
+        "IslandCliff",
+        "Outcrop"
+      ],
+      "remove": [
+        "Moss"
+      ],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false
+    }
+  }
+}

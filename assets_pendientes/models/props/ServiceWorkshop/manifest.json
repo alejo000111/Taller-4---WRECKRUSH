@@ -1,0 +1,129 @@
+{
+  "name": "ServiceWorkshop",
+  "atlas": 1024,
+  "texel_density": 20.763850420713425,
+  "triangles": 590,
+  "budget": 1500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 578,
+      "vertices": 824,
+      "center": [
+        0.0,
+        7.575,
+        2.220446049250313e-16
+      ],
+      "size": [
+        20.0,
+        15.15,
+        6.0
+      ],
+      "fallback": [
+        82,
+        85,
+        90
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        202,
+        140,
+        57
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        14.55,
+        2.95
+      ],
+      "size": [
+        18.0,
+        0.14999999999999858,
+        0.20000000000000018
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ServiceWorkshop_color.png",
+    "normal": "ServiceWorkshop_normal.png",
+    "roughness": "ServiceWorkshop_roughness.png",
+    "metalness": "ServiceWorkshop_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/ImmersionPass_20261005"
+      ],
+      "name": [
+        "ToolsWorkshop",
+        "UpgradeWorkshop",
+        "QuestOffice",
+        "ChaosExchange"
+      ],
+      "fit": "box",
+      "keep": [
+        "SignPanel"
+      ],
+      "colliders": [
+        {
+          "name": "Wall",
+          "shape": "Block",
+          "size": [
+            18.0,
+            14.0,
+            1.5
+          ],
+          "center": [
+            0.0,
+            7.0,
+            -1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Footing",
+          "shape": "Block",
+          "size": [
+            19.0,
+            0.7,
+            4.0
+          ],
+          "center": [
+            0.0,
+            0.35,
+            -1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "tint": {
+        "Glow": "CanopyTrim"
+      }
+    }
+  }
+}

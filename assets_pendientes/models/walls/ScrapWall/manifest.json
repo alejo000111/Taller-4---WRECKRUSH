@@ -1,0 +1,81 @@
+{
+  "name": "ScrapWall",
+  "atlas": 1024,
+  "texel_density": 23.81236134469509,
+  "triangles": 726,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 702,
+      "vertices": 772,
+      "center": [
+        -0.1213719382419498,
+        3.346635756581769,
+        0.0
+      ],
+      "size": [
+        40.2572561235161,
+        6.706621756800553,
+        1.32
+      ],
+      "fallback": [
+        98,
+        88,
+        79
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        1.6,
+        0.0
+      ],
+      "size": [
+        40.0,
+        0.16000000000000014,
+        1.3199999999999998
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ScrapWall_color.png",
+    "normal": "ScrapWall_normal.png",
+    "roughness": "ScrapWall_roughness.png",
+    "metalness": "ScrapWall_metalness.png"
+  },
+  "meta": {
+    "wall": {
+      "segment": 40.0,
+      "height": 6.0,
+      "thickness": 2.0,
+      "glow": "WallGlow",
+      "targets": [
+        "Zones/ScrapYard/Perimeter"
+      ],
+      "part": "Wall"
+    }
+  }
+}

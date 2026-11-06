@@ -1,0 +1,61 @@
+{
+  "name": "CraneMast",
+  "atlas": 512,
+  "texel_density": 3.3332925140857697,
+  "triangles": 1128,
+  "budget": 1200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1128,
+      "vertices": 2256,
+      "center": [
+        0.0,
+        23.077849067715185,
+        0.0
+      ],
+      "size": [
+        6.0,
+        46.15569813543037,
+        6.0
+      ],
+      "fallback": [
+        123,
+        106,
+        93
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "CraneMast_color.png",
+    "normal": "CraneMast_normal.png",
+    "roughness": "CraneMast_roughness.png",
+    "metalness": "CraneMast_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/FrostHarbor"
+      ],
+      "parts": [
+        "CraneTower"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

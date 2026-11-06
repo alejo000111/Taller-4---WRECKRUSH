@@ -1,0 +1,152 @@
+{
+  "name": "RadarDish",
+  "atlas": 1024,
+  "texel_density": 29.902670964598656,
+  "triangles": 1834,
+  "budget": 3000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1732,
+      "vertices": 1790,
+      "center": [
+        0.0,
+        7.446423161237556,
+        0.0
+      ],
+      "size": [
+        10.64,
+        14.84598340746496,
+        10.0
+      ],
+      "fallback": [
+        115,
+        115,
+        112
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 102,
+      "vertices": 88,
+      "center": [
+        1.7852789060061425,
+        7.480859202397866,
+        -0.6510885806682414
+      ],
+      "size": [
+        4.088328688412251,
+        9.981718404795732,
+        6.702302256859674
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "RadarDish_color.png",
+    "normal": "RadarDish_normal.png",
+    "roughness": "RadarDish_roughness.png",
+    "metalness": "RadarDish_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Military",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            10.0,
+            1.0,
+            10.0
+          ],
+          "center": [
+            0.0,
+            0.5,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Mast",
+          "shape": "Cylinder",
+          "size": [
+            2.4,
+            7.0,
+            2.4
+          ],
+          "center": [
+            0.0,
+            4.5,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Dish",
+          "shape": "Block",
+          "size": [
+            10.4,
+            10.4,
+            1.6
+          ],
+          "center": [
+            0.0,
+            10.1,
+            -0.75
+          ],
+          "rotation": [
+            35.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Cabinet",
+          "shape": "Block",
+          "size": [
+            2.4,
+            3.0,
+            1.6
+          ],
+          "center": [
+            3.4,
+            2.5,
+            3.2
+          ],
+          "rotation": [
+            0.0,
+            20.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

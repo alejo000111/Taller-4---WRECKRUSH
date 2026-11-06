@@ -1,0 +1,88 @@
+{
+  "name": "SpawnPedestal",
+  "atlas": 1024,
+  "texel_density": 16.93739226460457,
+  "triangles": 652,
+  "budget": 1200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 268,
+      "vertices": 280,
+      "center": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "size": [
+        19.0,
+        1.0000000000000009,
+        19.0
+      ],
+      "fallback": [
+        139,
+        136,
+        127
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 384,
+      "vertices": 488,
+      "center": [
+        0.0,
+        0.52,
+        0.0
+      ],
+      "size": [
+        17.799999999999997,
+        1.04,
+        17.799999999999997
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "SpawnPedestal_color.png",
+    "normal": "SpawnPedestal_normal.png",
+    "roughness": "SpawnPedestal_roughness.png",
+    "metalness": "SpawnPedestal_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "Plaza"
+      ],
+      "parts": [
+        "SpawnRing"
+      ],
+      "remove": [
+        "SpawnLocation",
+        "SpawnEmblem",
+        "SpawnEmblemCore"
+      ],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": true,
+      "functional": true
+    }
+  }
+}

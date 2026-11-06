@@ -1,0 +1,114 @@
+{
+  "name": "RustyCar",
+  "atlas": 1024,
+  "texel_density": 28.219061106443405,
+  "triangles": 2620,
+  "budget": 3000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2534,
+      "vertices": 2656,
+      "center": [
+        -0.020528270923298786,
+        2.4283103856,
+        0.023685145451999734
+      ],
+      "size": [
+        7.041056541846597,
+        4.8566207712,
+        13.935128918665619
+      ],
+      "fallback": [
+        110,
+        89,
+        80
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        150,
+        185,
+        200
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.45,
+      "triangles": 86,
+      "vertices": 124,
+      "center": [
+        0.0,
+        3.173875040156042,
+        -1.6951446800316385
+      ],
+      "size": [
+        5.433968000000001,
+        2.850400080312084,
+        10.289710639936722
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "RustyCar_color.png",
+    "normal": "RustyCar_normal.png",
+    "roughness": "RustyCar_roughness.png",
+    "metalness": "RustyCar_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "ScrapYard",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            6.8,
+            2.6,
+            13.6
+          ],
+          "center": [
+            0.0,
+            1.6,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Cabin",
+          "shape": "Block",
+          "size": [
+            5.6,
+            1.8,
+            4.4
+          ],
+          "center": [
+            0.0,
+            3.78,
+            0.5
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

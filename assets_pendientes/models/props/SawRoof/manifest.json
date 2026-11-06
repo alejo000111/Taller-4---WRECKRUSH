@@ -1,0 +1,85 @@
+{
+  "name": "SawRoof",
+  "atlas": 512,
+  "texel_density": 4.5417986661195755,
+  "triangles": 96,
+  "budget": 600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 48,
+      "vertices": 72,
+      "center": [
+        0.0,
+        1.5,
+        0.0
+      ],
+      "size": [
+        35.0,
+        3.0,
+        49.0
+      ],
+      "fallback": [
+        103,
+        97,
+        86
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        239,
+        183,
+        95
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 48,
+      "vertices": 96,
+      "center": [
+        0.0,
+        1.7000000000000002,
+        -3.860000000000001
+      ],
+      "size": [
+        34.0,
+        2.2,
+        36.85000000000001
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "SawRoof_color.png",
+    "normal": "SawRoof_normal.png",
+    "roughness": "SawRoof_roughness.png",
+    "metalness": "SawRoof_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/VerdantFoundry"
+      ],
+      "parts": [
+        "SawRoof"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

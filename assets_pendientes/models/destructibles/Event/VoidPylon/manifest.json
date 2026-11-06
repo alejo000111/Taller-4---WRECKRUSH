@@ -1,0 +1,98 @@
+{
+  "name": "VoidPylon",
+  "atlas": 512,
+  "texel_density": 14.575237169861794,
+  "triangles": 436,
+  "budget": 1200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 280,
+      "vertices": 526,
+      "center": [
+        0.0,
+        7.65,
+        0.0
+      ],
+      "size": [
+        7.6,
+        15.3,
+        7.6
+      ],
+      "fallback": [
+        61,
+        56,
+        75
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        190,
+        100,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 156,
+      "vertices": 110,
+      "center": [
+        0.0,
+        10.108253175473056,
+        0.0
+      ],
+      "size": [
+        6.1,
+        5.016506350946111,
+        6.1
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "VoidPylon_color.png",
+    "normal": "VoidPylon_normal.png",
+    "roughness": "VoidPylon_roughness.png",
+    "metalness": "VoidPylon_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            7.0,
+            16.0,
+            7.0
+          ],
+          "center": [
+            0.0,
+            8.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "motion": {
+        "Glow": "Orb"
+      }
+    }
+  }
+}

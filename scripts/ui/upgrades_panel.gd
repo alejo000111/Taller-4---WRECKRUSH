@@ -5,7 +5,7 @@ var _lista: VBoxContainer
 
 
 func _init() -> void:
-	super._init("UPGRADES", GameColors.AMARILLO, 780.0)
+	super._init("UPGRADES", GameColors.AMARILLO, 780.0, Iconos.MEJORAS)
 
 
 func construir() -> void:
@@ -17,7 +17,7 @@ func construir() -> void:
 
 func refrescar() -> void:
 	limpiar(_lista)
-	_lista.add_child(UIKit.etiqueta("SCRAP  %s" % Formulas.abreviar(GameState.scrap), 22, GameColors.AMARILLO))
+	_lista.add_child(UIKit.con_icono(Iconos.SCRAP, UIKit.etiqueta("SCRAP  %s" % Formulas.abreviar(GameState.scrap), 22, GameColors.AMARILLO), 32))
 	for id in GameConfig.ORDEN_MEJORAS:
 		_lista.add_child(_tarjeta(id, GameConfig.MEJORAS[id]))
 	var requisito := "Challenging a colossus needs DAMAGE 40 (level 12)."
@@ -39,8 +39,8 @@ func _tarjeta(id: String, def: Dictionary) -> Control:
 	tarjeta.add_child(fila)
 	var icono := PanelContainer.new()
 	icono.custom_minimum_size = Vector2(64, 64)
-	icono.add_theme_stylebox_override("panel", UIKit.estilo(GameColors.AMARILLO.darkened(0.55), GameColors.AMARILLO, 12, 3))
-	icono.add_child(UIKit.etiqueta(def["icono"], 18, GameColors.AMARILLO, HORIZONTAL_ALIGNMENT_CENTER))
+	icono.add_theme_stylebox_override("panel", UIKit.estilo(GameColors.AMARILLO.darkened(0.55), GameColors.AMARILLO, 12, 3, 4))
+	icono.add_child(UIKit.icono(Iconos.cargar(String(def["icono"])), 56))
 	fila.add_child(icono)
 	var info := VBoxContainer.new()
 	info.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -51,9 +51,11 @@ func _tarjeta(id: String, def: Dictionary) -> Control:
 	var comprar: Button
 	if nivel >= int(def["max"]):
 		comprar = UIKit.boton("MAXED", Color("#5A5F6A"), Vector2(190, 48), 16)
+		UIKit.poner_icono(comprar, Iconos.OK, 26)
 		comprar.disabled = true
 	else:
-		comprar = UIKit.boton("BUY  %s SCRAP" % Formulas.abreviar(GameState.precio_mejora(id)), GameColors.AMARILLO.darkened(0.25), Vector2(190, 48), 16)
+		comprar = UIKit.boton("BUY  %s" % Formulas.abreviar(GameState.precio_mejora(id)), GameColors.AMARILLO.darkened(0.25), Vector2(190, 48), 16)
+		UIKit.poner_icono(comprar, Iconos.SCRAP, 30)
 		comprar.disabled = not estado["ok"]
 		comprar.pressed.connect(func() -> void: _comprar(id))
 	fila.add_child(comprar)

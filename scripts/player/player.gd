@@ -42,7 +42,6 @@ func _ready() -> void:
 	colision.position = Vector3(0, ALTURA_CAPSULA * 0.5, 0)
 	add_child(colision)
 	_construir_modelo()
-	_pintar_martillo()
 
 
 func _construir_modelo() -> void:
@@ -57,14 +56,20 @@ func _construir_modelo() -> void:
 	_pivote_martillo = Node3D.new()
 	_pivote_martillo.position = Vector3(1.3, 2.8, -0.3)
 	_modelo.add_child(_pivote_martillo)
-	Formas.malla(_pivote_martillo, "box", Vector3(0.35, 0.35, 3.4), Vector3(0, 0, -1.7), Formas.material(Color("#6B4A2A")))
-	_cabeza_martillo = Formas.malla(_pivote_martillo, "box", Vector3(1.5, 1.5, 2.4), Vector3(0, 0, -3.6), Formas.material(Color.GRAY, 0.4, 0.8))
+	var martillo := Modelos.instanciar(String(GameConfig.MARTILLO["modelo"]))
+	if martillo != null:
+		var soporte := Node3D.new()
+		soporte.rotation.x = -PI * 0.5
+		_pivote_martillo.add_child(soporte)
+		soporte.add_child(martillo)
+		var l := Modelos.limites(martillo)
+		var escala := 4.9 / l.size.y
+		martillo.scale = Vector3.ONE * escala
+		martillo.position = Vector3(-l.get_center().x * escala, -l.position.y * escala - 0.4, -l.get_center().z * escala)
+	else:
+		Formas.malla(_pivote_martillo, "box", Vector3(0.35, 0.35, 3.4), Vector3(0, 0, -1.7), Formas.material(Color("#6B4A2A")))
+		_cabeza_martillo = Formas.malla(_pivote_martillo, "box", Vector3(1.5, 1.5, 2.4), Vector3(0, 0, -3.6), Formas.material(GameConfig.MARTILLO["color"], 0.4, 0.8))
 	_pivote_martillo.rotation.x = POSE_DESCANSO
-
-
-func _pintar_martillo() -> void:
-	var color: Color = GameConfig.MARTILLO["color"]
-	(_cabeza_martillo.material_override as StandardMaterial3D).albedo_color = color
 
 
 func _physics_process(delta: float) -> void:

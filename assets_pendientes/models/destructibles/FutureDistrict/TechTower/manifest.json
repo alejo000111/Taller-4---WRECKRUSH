@@ -1,0 +1,176 @@
+{
+  "name": "TechTower",
+  "atlas": 1024,
+  "texel_density": 11.359286665916443,
+  "triangles": 1268,
+  "budget": 6000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 750,
+      "vertices": 777,
+      "center": [
+        0.0,
+        22.91464466094067,
+        0.0
+      ],
+      "size": [
+        18.0,
+        45.770710678118654,
+        18.0
+      ],
+      "fallback": [
+        170,
+        172,
+        177
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 392,
+      "vertices": 554,
+      "center": [
+        0.0,
+        23.02467595189621,
+        0.0
+      ],
+      "size": [
+        15.2,
+        41.889351903792424,
+        15.2
+      ]
+    },
+    "Cyan": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 126,
+      "vertices": 136,
+      "center": [
+        0.0,
+        24.2,
+        -2.6972886967409693
+      ],
+      "size": [
+        4.550000000000001,
+        44.199999999999996,
+        6.155422606518062
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "TechTower_color.png",
+    "normal": "TechTower_normal.png",
+    "roughness": "TechTower_roughness.png",
+    "metalness": "TechTower_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "FutureDistrict",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            12.6,
+            36.0,
+            12.6
+          ],
+          "center": [
+            0.0,
+            20.1,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Plinth",
+          "shape": "Block",
+          "size": [
+            18.0,
+            2.1,
+            18.0
+          ],
+          "center": [
+            0.0,
+            1.05,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Crown",
+          "shape": "Block",
+          "size": [
+            13.0,
+            3.0,
+            13.0
+          ],
+          "center": [
+            0.0,
+            39.6,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Spire",
+          "shape": "Cylinder",
+          "size": [
+            2.4,
+            5.0,
+            2.4
+          ],
+          "center": [
+            0.0,
+            43.5,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

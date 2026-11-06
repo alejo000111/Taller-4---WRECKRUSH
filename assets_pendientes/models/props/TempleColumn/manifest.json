@@ -1,0 +1,85 @@
+{
+  "name": "TempleColumn",
+  "atlas": 512,
+  "texel_density": 9.92671413719654,
+  "triangles": 736,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 608,
+      "vertices": 553,
+      "center": [
+        0.0,
+        19.500000000000004,
+        0.0
+      ],
+      "size": [
+        9.0,
+        39.00000000000001,
+        9.0
+      ],
+      "fallback": [
+        138,
+        136,
+        153
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        245,
+        199,
+        116
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 128,
+      "vertices": 136,
+      "center": [
+        0.0,
+        6.25,
+        0.0
+      ],
+      "size": [
+        6.8,
+        0.5,
+        6.8
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "TempleColumn_color.png",
+    "normal": "TempleColumn_normal.png",
+    "roughness": "TempleColumn_roughness.png",
+    "metalness": "TempleColumn_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "TemplePier"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

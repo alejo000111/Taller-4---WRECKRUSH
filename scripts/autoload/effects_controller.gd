@@ -10,13 +10,33 @@ const PERFILES := {
 	"Huge": {"chispas": 50, "pedazos": 18, "velocidad": 48.0, "tamano": 2.8, "sacudida": 1.0},
 }
 
+const TEXTURA_CHISPA := preload("res://assets/vfx/spark.png")
+const TEXTURA_HUMO := preload("res://assets/vfx/smoke.png")
+const TEXTURA_ESQUIRLA := preload("res://assets/vfx/shard.png")
+const TEXTURA_ONDA := preload("res://assets/vfx/ring.png")
+
 var _material_chispa: StandardMaterial3D
+var _material_humo: StandardMaterial3D
+var _material_esquirla: StandardMaterial3D
 
 
 func _ready() -> void:
-	_material_chispa = StandardMaterial3D.new()
-	_material_chispa.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
-	_material_chispa.albedo_color = GameColors.AMARILLO
+	_material_chispa = _material_particula(TEXTURA_CHISPA, BaseMaterial3D.BLEND_MODE_ADD)
+	_material_humo = _material_particula(TEXTURA_HUMO, BaseMaterial3D.BLEND_MODE_MIX)
+	_material_esquirla = _material_particula(TEXTURA_ESQUIRLA, BaseMaterial3D.BLEND_MODE_MIX)
+
+
+func _material_particula(textura: Texture2D, mezcla: BaseMaterial3D.BlendMode) -> StandardMaterial3D:
+	var m := StandardMaterial3D.new()
+	m.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	m.billboard_mode = BaseMaterial3D.BILLBOARD_PARTICLES
+	m.billboard_keep_scale = true
+	m.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	m.blend_mode = mezcla
+	m.vertex_color_use_as_albedo = true
+	m.albedo_texture = textura
+	m.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+	return m
 
 
 func _mundo() -> Node:
@@ -49,6 +69,9 @@ func romper(objeto: Node3D, tipo: String, pago: int = 0) -> void:
 	_chispas(base, int(perfil["chispas"]), GameColors.AMARILLO, float(perfil["velocidad"]), 1.0)
 	_chispas(base, int(perfil["chispas"]) / 2, GameColors.NARANJA, float(perfil["velocidad"]) * 0.7, 1.2)
 	_humo(base, float(perfil["tamano"]), color)
+	_esquirlas(base, int(perfil["pedazos"]) * 2, color, float(perfil["velocidad"]) * 0.6)
+	if float(perfil["tamano"]) >= 2.0:
+		onda(Vector3(base.x, 0.2, base.z), 6.0 * float(perfil["tamano"]), GameColors.NARANJA)
 	for i in int(perfil["pedazos"]):
 		var pieza := DebrisPiece.new()
 		var lado := randf_range(0.5, 1.4) * float(perfil["tamano"])
@@ -83,6 +106,31 @@ func numero_flotante(posicion: Vector3, texto: String, color: Color, escala: flo
 	viaje.chain().tween_callback(etiqueta.queue_free)
 
 
+func onda(posicion: Vector3, radio: float, color: Color, duracion: float = 0.45) -> void:
+	var quad := QuadMesh.new()
+	quad.size = Vector2(2.0, 2.0)
+	quad.orientation = PlaneMesh.FACE_Y
+	var m := StandardMaterial3D.new()
+	m.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	m.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	m.blend_mode = BaseMaterial3D.BLEND_MODE_ADD
+	m.cull_mode = BaseMaterial3D.CULL_DISABLED
+	m.albedo_texture = TEXTURA_ONDA
+	m.albedo_color = color
+	quad.material = m
+	var anillo := MeshInstance3D.new()
+	anillo.mesh = quad
+	anillo.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	_mundo().add_child(anillo)
+	anillo.global_position = posicion
+	anillo.scale = Vector3.ONE * radio * 0.2
+	var t := anillo.create_tween()
+	t.set_parallel(true)
+	t.tween_property(anillo, "scale", Vector3.ONE * radio, duracion).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
+	t.tween_property(m, "albedo_color:a", 0.0, duracion)
+	t.chain().tween_callback(anillo.queue_free)
+
+
 func _chispas(posicion: Vector3, cantidad: int, color: Color, velocidad: float, vida: float) -> void:
 	if cantidad <= 0:
 		return
@@ -96,18 +144,49 @@ func _chispas(posicion: Vector3, cantidad: int, color: Color, velocidad: float, 
 	particulas.initial_velocity_min = velocidad * 0.4
 	particulas.initial_velocity_max = velocidad
 	particulas.gravity = Vector3(0, -70, 0)
-	particulas.scale_amount_min = 0.5
-	particulas.scale_amount_max = 1.2
-	var malla := BoxMesh.new()
-	malla.size = Vector3(0.28, 0.28, 0.28)
-	var material := _material_chispa.duplicate() as StandardMaterial3D
-	material.albedo_color = color
-	malla.material = material
+	particulas.scale_amount_min = 0.6
+	particulas.scale_amount_max = 1.4
+	particulas.angle_min = 0.0
+	particulas.angle_max = 360.0
+	particulas.color = color
+	var malla := QuadMesh.new()
+	malla.size = Vector2(0.9, 0.9)
+	malla.material = _material_chispa
 	particulas.mesh = malla
 	_mundo().add_child(particulas)
 	particulas.global_position = posicion
 	particulas.emitting = true
 	particulas.get_tree().create_timer(vida + 0.5).timeout.connect(particulas.queue_free)
+
+
+func _esquirlas(posicion: Vector3, cantidad: int, color: Color, velocidad: float) -> void:
+	if cantidad <= 0:
+		return
+	var particulas := CPUParticles3D.new()
+	particulas.amount = cantidad
+	particulas.lifetime = 0.9
+	particulas.one_shot = true
+	particulas.explosiveness = 1.0
+	particulas.direction = Vector3.UP
+	particulas.spread = 80.0
+	particulas.initial_velocity_min = velocidad * 0.5
+	particulas.initial_velocity_max = velocidad
+	particulas.gravity = Vector3(0, -80, 0)
+	particulas.angle_min = 0.0
+	particulas.angle_max = 360.0
+	particulas.angular_velocity_min = -540.0
+	particulas.angular_velocity_max = 540.0
+	particulas.scale_amount_min = 0.6
+	particulas.scale_amount_max = 1.3
+	particulas.color = color.lightened(0.15)
+	var malla := QuadMesh.new()
+	malla.size = Vector2(1.1, 1.1)
+	malla.material = _material_esquirla
+	particulas.mesh = malla
+	_mundo().add_child(particulas)
+	particulas.global_position = posicion
+	particulas.emitting = true
+	particulas.get_tree().create_timer(1.5).timeout.connect(particulas.queue_free)
 
 
 func _humo(posicion: Vector3, tamano: float, color: Color) -> void:
@@ -123,23 +202,20 @@ func _humo(posicion: Vector3, tamano: float, color: Color) -> void:
 	particulas.gravity = Vector3(0, 3, 0)
 	particulas.scale_amount_min = 1.2 * tamano
 	particulas.scale_amount_max = 2.6 * tamano
+	particulas.angle_min = 0.0
+	particulas.angle_max = 360.0
 	var curva := Curve.new()
 	curva.add_point(Vector2(0, 0.6))
 	curva.add_point(Vector2(1, 1.6))
 	particulas.scale_amount_curve = curva
+	var tono := color.lerp(Color(0.4, 0.38, 0.36), 0.6)
 	var gradiente := Gradient.new()
-	gradiente.set_color(0, Color(0.35, 0.33, 0.32, 0.7))
-	gradiente.set_color(1, Color(0.2, 0.2, 0.22, 0.0))
+	gradiente.set_color(0, Color(tono, 0.75))
+	gradiente.set_color(1, Color(tono.darkened(0.4), 0.0))
 	particulas.color_ramp = gradiente
-	var malla := SphereMesh.new()
-	malla.radius = 0.5
-	malla.height = 1.0
-	var material := StandardMaterial3D.new()
-	material.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
-	material.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
-	material.vertex_color_use_as_albedo = true
-	material.albedo_color = color.lerp(Color(0.4, 0.38, 0.36), 0.6)
-	malla.material = material
+	var malla := QuadMesh.new()
+	malla.size = Vector2(2.2, 2.2)
+	malla.material = _material_humo
 	particulas.mesh = malla
 	_mundo().add_child(particulas)
 	particulas.global_position = posicion

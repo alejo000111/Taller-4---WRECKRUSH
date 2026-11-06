@@ -1,0 +1,71 @@
+{
+  "name": "WoodenCrate",
+  "atlas": 512,
+  "texel_density": 18.70734578371048,
+  "triangles": 664,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 664,
+      "vertices": 1056,
+      "center": [
+        0.0,
+        2.630500778672844,
+        0.0
+      ],
+      "size": [
+        5.189731079668203,
+        5.261001557345688,
+        5.0
+      ],
+      "fallback": [
+        125,
+        106,
+        86
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "WoodenCrate_color.png",
+    "normal": "WoodenCrate_normal.png",
+    "roughness": "WoodenCrate_roughness.png",
+    "metalness": "WoodenCrate_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "ScrapYard",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            5.0,
+            5.0,
+            5.0
+          ],
+          "center": [
+            0.0,
+            2.5,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

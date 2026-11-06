@@ -1,0 +1,96 @@
+{
+  "name": "GearBot",
+  "atlas": 512,
+  "texel_density": 67.93879269063473,
+  "triangles": 1242,
+  "budget": 2000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1044,
+      "vertices": 1078,
+      "center": [
+        0.0,
+        0.22499999999999998,
+        0.135
+      ],
+      "size": [
+        2.5,
+        3.1500000000000004,
+        2.23
+      ],
+      "fallback": [
+        129,
+        121,
+        88
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 108,
+      "vertices": 96,
+      "center": [
+        0.0,
+        0.25,
+        -0.99
+      ],
+      "size": [
+        1.3,
+        0.41999999999999993,
+        0.06000000000000005
+      ]
+    },
+    "Tip": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        59
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 90,
+      "vertices": 64,
+      "center": [
+        0.01718847050625473,
+        1.85,
+        1.3877787807814457e-17
+      ],
+      "size": [
+        0.32562305898749055,
+        0.3600000000000001,
+        0.3423803458662553
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "GearBot_color.png",
+    "normal": "GearBot_normal.png",
+    "roughness": "GearBot_roughness.png",
+    "metalness": "GearBot_metalness.png"
+  },
+  "meta": {
+    "pet": {}
+  }
+}

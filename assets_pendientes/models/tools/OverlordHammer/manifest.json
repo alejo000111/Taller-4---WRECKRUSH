@@ -1,0 +1,129 @@
+{
+  "name": "OverlordHammer",
+  "atlas": 1024,
+  "texel_density": 107.59817524254322,
+  "triangles": 1432,
+  "budget": 4000,
+  "roles": {
+    "Primary": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        30,
+        24,
+        34
+      ],
+      "skin": "Primary",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 300,
+      "vertices": 216,
+      "center": [
+        0.0,
+        2.6,
+        0.0
+      ],
+      "size": [
+        1.5,
+        1.5,
+        2.6
+      ]
+    },
+    "AccentTrim": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        150,
+        40
+      ],
+      "skin": "Accent",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 344,
+      "vertices": 343,
+      "center": [
+        0.0,
+        0.45500000000000007,
+        0.0
+      ],
+      "size": [
+        1.62,
+        5.91,
+        2.22
+      ]
+    },
+    "AccentGlow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        160
+      ],
+      "skin": "Accent",
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        2.8000000000000003,
+        0.0
+      ],
+      "size": [
+        1.56,
+        0.1200000000000001,
+        2.0
+      ]
+    },
+    "Base": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 776,
+      "vertices": 833,
+      "center": [
+        0.013414427352197833,
+        0.8992346414350787,
+        -0.10000000000000009
+      ],
+      "size": [
+        1.6446258331253722,
+        6.198469282870158,
+        5.2
+      ],
+      "fallback": [
+        101,
+        76,
+        125
+      ]
+    }
+  },
+  "points": {
+    "muzzle": [
+      0.0,
+      2.6,
+      -2.6
+    ],
+    "grip": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  "textures": {
+    "color": "OverlordHammer_color.png",
+    "normal": "OverlordHammer_normal.png",
+    "roughness": "OverlordHammer_roughness.png",
+    "metalness": "OverlordHammer_metalness.png"
+  },
+  "meta": {}
+}

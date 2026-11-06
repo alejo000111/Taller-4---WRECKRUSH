@@ -1,0 +1,54 @@
+{
+  "name": "SkyCrystal",
+  "atlas": 256,
+  "texel_density": 0.0,
+  "triangles": 96,
+  "budget": 300,
+  "roles": {
+    "Crystal": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        173,
+        161,
+        230
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.1,
+      "triangles": 96,
+      "vertices": 288,
+      "center": [
+        -0.04458848729908815,
+        5.699999999999999,
+        -0.4145680322981877
+      ],
+      "size": [
+        4.030619371658561,
+        13.0,
+        5.508902019112338
+      ]
+    }
+  },
+  "points": {},
+  "textures": {},
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "SkyShard"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false,
+      "tint": {
+        "Crystal": true
+      }
+    }
+  }
+}

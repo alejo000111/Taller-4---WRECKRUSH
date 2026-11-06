@@ -1,0 +1,129 @@
+{
+  "name": "ScrapCleaver",
+  "atlas": 1024,
+  "texel_density": 127.50102980434895,
+  "triangles": 1264,
+  "budget": 3000,
+  "roles": {
+    "Primary": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        196,
+        112,
+        60
+      ],
+      "skin": "Primary",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 92,
+      "vertices": 88,
+      "center": [
+        6.938893903907228e-17,
+        1.9798963207050715,
+        -1.2491209083695465
+      ],
+      "size": [
+        0.18000000000000013,
+        2.4306119495430876,
+        2.198241816739093
+      ]
+    },
+    "AccentTrim": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        64,
+        112,
+        118
+      ],
+      "skin": "Accent",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 220,
+      "vertices": 247,
+      "center": [
+        0.0,
+        0.32479890314201243,
+        -0.9168639623481225
+      ],
+      "size": [
+        0.7,
+        5.249597806284024,
+        2.533727924696245
+      ]
+    },
+    "AccentGlow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        150,
+        40
+      ],
+      "skin": "Accent",
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        1.2200000000000002,
+        -1.15
+      ],
+      "size": [
+        0.26,
+        0.08000000000000007,
+        1.7000000000000002
+      ]
+    },
+    "Base": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 940,
+      "vertices": 869,
+      "center": [
+        0.0,
+        0.28500000000000014,
+        -0.08464101615137759
+      ],
+      "size": [
+        0.72,
+        4.57,
+        1.069282032302755
+      ],
+      "fallback": [
+        96,
+        97,
+        102
+      ]
+    }
+  },
+  "points": {
+    "muzzle": [
+      0.0,
+      1.9000000000000001,
+      -2.1
+    ],
+    "grip": [
+      0.0,
+      -0.8,
+      0.0
+    ]
+  },
+  "textures": {
+    "color": "ScrapCleaver_color.png",
+    "normal": "ScrapCleaver_normal.png",
+    "roughness": "ScrapCleaver_roughness.png",
+    "metalness": "ScrapCleaver_metalness.png"
+  },
+  "meta": {}
+}

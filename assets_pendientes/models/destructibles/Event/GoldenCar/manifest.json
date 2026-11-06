@@ -1,0 +1,162 @@
+{
+  "name": "GoldenCar",
+  "atlas": 1024,
+  "texel_density": 28.24285900592804,
+  "triangles": 2762,
+  "budget": 3500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2594,
+      "vertices": 2692,
+      "center": [
+        0.0,
+        2.39,
+        0.021999999999999797
+      ],
+      "size": [
+        7.700000000000001,
+        4.78,
+        15.334
+      ],
+      "fallback": [
+        157,
+        140,
+        86
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        90,
+        60,
+        20
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.3,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        3.701848367667498,
+        0.6100702989649327
+      ],
+      "size": [
+        5.972301280000001,
+        1.6428703363858626,
+        6.369222809930926
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        236,
+        150
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 120,
+      "vertices": 208,
+      "center": [
+        0.0,
+        3.1585651096483485,
+        -0.5720000000000001
+      ],
+      "size": [
+        7.447,
+        2.902869780703304,
+        13.904
+      ]
+    },
+    "Tail": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        48,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        2.06,
+        7.447
+      ],
+      "size": [
+        6.16,
+        0.2999999999999998,
+        0.04399999999999871
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "GoldenCar_color.png",
+    "normal": "GoldenCar_normal.png",
+    "roughness": "GoldenCar_roughness.png",
+    "metalness": "GoldenCar_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            7.5,
+            2.6,
+            15.0
+          ],
+          "center": [
+            0.0,
+            1.6,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Cabin",
+          "shape": "Block",
+          "size": [
+            6.2,
+            1.8,
+            4.8
+          ],
+          "center": [
+            0.0,
+            3.78,
+            0.55
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

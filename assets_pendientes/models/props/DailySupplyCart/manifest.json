@@ -1,0 +1,76 @@
+{
+  "name": "DailySupplyCart",
+  "atlas": 512,
+  "texel_density": 22.388026550412178,
+  "triangles": 1216,
+  "budget": 1600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1216,
+      "vertices": 1578,
+      "center": [
+        -0.2200000000000002,
+        2.09,
+        0.5300000000000002
+      ],
+      "size": [
+        7.144640714081642,
+        4.18,
+        6.392582775569613
+      ],
+      "fallback": [
+        82,
+        86,
+        93
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "DailySupplyCart_color.png",
+    "normal": "DailySupplyCart_normal.png",
+    "roughness": "DailySupplyCart_roughness.png",
+    "metalness": "DailySupplyCart_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/StationExpansion_20261006"
+      ],
+      "name": "DailySupplyCart",
+      "fit": "none",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "Cart",
+          "shape": "Block",
+          "size": [
+            6.4,
+            3.4,
+            6.4
+          ],
+          "center": [
+            -0.22,
+            1.7,
+            0.53
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

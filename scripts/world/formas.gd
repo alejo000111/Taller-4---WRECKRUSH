@@ -3,7 +3,11 @@ class_name Formas
 extends RefCounted
 
 const SHADER_CONTORNO := preload("res://shaders/outline.gdshader")
-const SHADER_SUELO := preload("res://shaders/ground.gdshader")
+const RAIZ_MATERIALES := "res://assets/materials/"
+const TEXTURA_HALO := preload("res://assets/vfx/glow.png")
+const TEXTURA_FRANJAS := preload("res://assets/vfx/hazard_stripe.png")
+
+static var _pbr: Dictionary = {}
 
 
 static func material(color: Color, rugosidad: float = 0.85, metalico: float = 0.0, emision: float = 0.0) -> StandardMaterial3D:
@@ -27,13 +31,86 @@ static func material_contorno(color: Color = GameColors.AMARILLO, grosor: float 
 	return m
 
 
-static func material_suelo(base: Color, baldosa: float = 8.0, intensidad_punto: float = 0.0) -> ShaderMaterial:
-	var m := ShaderMaterial.new()
-	m.shader = SHADER_SUELO
-	m.set_shader_parameter("base", base)
-	m.set_shader_parameter("baldosa", baldosa)
-	m.set_shader_parameter("intensidad_punto", intensidad_punto)
+static func material_pbr(nombre: String, baldosa: float = 16.0, tinte: Color = Color.WHITE, mundo: bool = true) -> StandardMaterial3D:
+	var clave := "%s|%.2f|%s|%s" % [nombre, baldosa, tinte.to_html(), mundo]
+	if _pbr.has(clave):
+		return _pbr[clave]
+	var ruta := RAIZ_MATERIALES + nombre + "/"
+	var m := StandardMaterial3D.new()
+	m.albedo_color = tinte
+	m.albedo_texture = load(ruta + "color.png")
+	m.normal_enabled = true
+	m.normal_texture = load(ruta + "normal.png")
+	m.roughness_texture = load(ruta + "roughness.png")
+	m.roughness = 1.0
+	if ResourceLoader.exists(ruta + "metalness.png"):
+		m.metallic_texture = load(ruta + "metalness.png")
+		m.metallic = 1.0
+	m.uv1_triplanar = true
+	m.uv1_world_triplanar = mundo
+	m.uv1_scale = Vector3.ONE / baldosa
+	m.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC
+	_pbr[clave] = m
 	return m
+
+
+static func material_franjas(color: Color = Color.WHITE, emision: float = 0.0, repeticiones: float = 1.0) -> StandardMaterial3D:
+	var m := StandardMaterial3D.new()
+	m.albedo_texture = TEXTURA_FRANJAS
+	m.albedo_color = color
+	m.uv1_scale = Vector3(3.0 * repeticiones, 2.0, 1.0)
+	m.roughness = 0.6
+	if emision > 0.0:
+		m.emission_enabled = true
+		m.emission_texture = TEXTURA_FRANJAS
+		m.emission = color
+		m.emission_energy_multiplier = emision
+	return m
+
+
+static func material_destello() -> StandardMaterial3D:
+	var m := StandardMaterial3D.new()
+	m.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	m.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	m.albedo_color = Color(1, 1, 1, 0)
+	return m
+
+
+static func halo(padre: Node, posicion: Vector3, tamano: float, color: Color, energia: float = 1.0) -> MeshInstance3D:
+	var quad := QuadMesh.new()
+	quad.size = Vector2(tamano, tamano)
+	var m := StandardMaterial3D.new()
+	m.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	m.billboard_mode = BaseMaterial3D.BILLBOARD_ENABLED
+	m.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	m.blend_mode = BaseMaterial3D.BLEND_MODE_ADD
+	m.albedo_texture = TEXTURA_HALO
+	m.albedo_color = Color(color.r * energia, color.g * energia, color.b * energia, 1.0)
+	m.no_depth_test = false
+	m.depth_draw_mode = BaseMaterial3D.DEPTH_DRAW_DISABLED
+	var instancia := MeshInstance3D.new()
+	instancia.mesh = quad
+	instancia.material_override = m
+	instancia.position = posicion
+	instancia.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	padre.add_child(instancia)
+	return instancia
+
+
+static func icono_3d(padre: Node, textura: Texture2D, posicion: Vector3, ancho: float = 6.0, billboard: bool = true, giro_y: float = 0.0) -> Sprite3D:
+	var s := Sprite3D.new()
+	s.texture = textura
+	s.pixel_size = ancho / float(maxi(textura.get_width(), 1))
+	s.position = posicion
+	s.rotation.y = giro_y
+	s.shaded = false
+	s.double_sided = true
+	s.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+	s.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	if billboard:
+		s.billboard = BaseMaterial3D.BILLBOARD_ENABLED
+	padre.add_child(s)
+	return s
 
 
 static func malla(padre: Node, forma: String, tamano: Vector3, posicion: Vector3, material_aplicado: Material, sombras: bool = true) -> MeshInstance3D:
@@ -78,7 +155,7 @@ static func malla(padre: Node, forma: String, tamano: Vector3, posicion: Vector3
 	return instancia
 
 
-static func caja_solida(padre: Node, tamano: Vector3, posicion: Vector3, color: Color, capa: int = 1, visible_: bool = true) -> StaticBody3D:
+static func caja_solida(padre: Node, tamano: Vector3, posicion: Vector3, color: Color, capa: int = 1, visible_: bool = true, material_aplicado: Material = null) -> StaticBody3D:
 	var cuerpo := StaticBody3D.new()
 	cuerpo.position = posicion
 	cuerpo.collision_layer = capa
@@ -89,7 +166,7 @@ static func caja_solida(padre: Node, tamano: Vector3, posicion: Vector3, color: 
 	colision.shape = forma
 	cuerpo.add_child(colision)
 	if visible_:
-		malla(cuerpo, "box", tamano, Vector3.ZERO, material(color))
+		malla(cuerpo, "box", tamano, Vector3.ZERO, material_aplicado if material_aplicado != null else material(color))
 	padre.add_child(cuerpo)
 	return cuerpo
 

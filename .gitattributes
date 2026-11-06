@@ -1,4 +1,8 @@
 * text=auto eol=lf
 *.png binary
+*.jpg binary
+*.glb binary
+*.zip binary
 *.ogg binary
 *.wav binary
+*.rbxmx binary

@@ -1,0 +1,87 @@
+{
+  "name": "EnergyVein",
+  "atlas": 512,
+  "texel_density": 4.131071329116821,
+  "triangles": 248,
+  "budget": 300,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 124,
+      "vertices": 136,
+      "center": [
+        0.007979841703892349,
+        0.015,
+        -0.0007257644422580256
+      ],
+      "size": [
+        0.7033143885008035,
+        0.030000000000003677,
+        60.01142498088805
+      ],
+      "fallback": [
+        17,
+        14,
+        20
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 124,
+      "vertices": 136,
+      "center": [
+        0.007992915760162742,
+        0.025,
+        -0.0002822417275449851
+      ],
+      "size": [
+        0.4833693537394236,
+        0.05000000000000368,
+        60.004443048123136
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "EnergyVein_color.png",
+    "normal": "EnergyVein_normal.png",
+    "roughness": "EnergyVein_roughness.png",
+    "metalness": "EnergyVein_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "Zones/ChaosCore/GroundDetail"
+      ],
+      "parts": [
+        "EnergyVein"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": true,
+      "functional": false,
+      "tint": {
+        "Glow": true
+      }
+    }
+  }
+}

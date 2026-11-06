@@ -1,0 +1,81 @@
+{
+  "name": "CityWall",
+  "atlas": 1024,
+  "texel_density": 25.134792312979698,
+  "triangles": 900,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 888,
+      "vertices": 816,
+      "center": [
+        -0.5,
+        3.4,
+        0.0
+      ],
+      "size": [
+        41.0,
+        6.8,
+        2.6
+      ],
+      "fallback": [
+        169,
+        165,
+        158
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        5.85,
+        0.0
+      ],
+      "size": [
+        40.0,
+        0.11999999999999922,
+        2.1
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "CityWall_color.png",
+    "normal": "CityWall_normal.png",
+    "roughness": "CityWall_roughness.png",
+    "metalness": "CityWall_metalness.png"
+  },
+  "meta": {
+    "wall": {
+      "segment": 40.0,
+      "height": 6.0,
+      "thickness": 2.0,
+      "glow": "WallGlow",
+      "targets": [
+        "Zones/Downtown/Perimeter"
+      ],
+      "part": "Wall"
+    }
+  }
+}

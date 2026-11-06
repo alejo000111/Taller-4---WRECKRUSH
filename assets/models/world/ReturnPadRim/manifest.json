@@ -1,0 +1,88 @@
+{
+  "name": "ReturnPadRim",
+  "atlas": 512,
+  "texel_density": 19.854526579380035,
+  "triangles": 600,
+  "budget": 700,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 316,
+      "vertices": 328,
+      "center": [
+        0.0,
+        0.22499999999999987,
+        0.0
+      ],
+      "size": [
+        8.0,
+        0.4500000000000003,
+        8.0
+      ],
+      "fallback": [
+        109,
+        109,
+        109
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        178,
+        85,
+        18
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 284,
+      "vertices": 358,
+      "center": [
+        0.0,
+        0.13999999999999993,
+        0.0
+      ],
+      "size": [
+        6.5,
+        0.2800000000000002,
+        6.5
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ReturnPadRim_color.png",
+    "normal": "ReturnPadRim_normal.png",
+    "roughness": "ReturnPadRim_roughness.png",
+    "metalness": "ReturnPadRim_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "Zones",
+        "VIPArea"
+      ],
+      "parts": [
+        "ReturnPad"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": true,
+      "functional": true,
+      "tint": {
+        "Glow": true
+      }
+    }
+  }
+}

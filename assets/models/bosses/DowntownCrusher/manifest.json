@@ -1,0 +1,183 @@
+{
+  "name": "DowntownCrusher",
+  "atlas": 1024,
+  "texel_density": 10.130399748682976,
+  "triangles": 3886,
+  "budget": 7000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2252,
+      "vertices": 2464,
+      "center": [
+        0.0,
+        12.099283875079093,
+        0.0
+      ],
+      "size": [
+        30.240000000000006,
+        24.67143224984181,
+        29.071218423321895
+      ],
+      "fallback": [
+        92,
+        90,
+        88
+      ]
+    },
+    "ArmL": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 424,
+      "vertices": 357,
+      "center": [
+        -11.848247576118997,
+        11.193972000556816,
+        -19.629062695138238
+      ],
+      "size": [
+        8.653690491085172,
+        5.903166260194142,
+        19.278125390276475
+      ],
+      "fallback": [
+        85,
+        77,
+        59
+      ]
+    },
+    "ArmR": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 978,
+      "vertices": 1044,
+      "center": [
+        5.67,
+        24.7725,
+        -9.237540441542714
+      ],
+      "size": [
+        9.18,
+        25.785,
+        30.124919116914572
+      ],
+      "fallback": [
+        102,
+        96,
+        82
+      ]
+    },
+    "Eyes": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        170,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 160,
+      "vertices": 216,
+      "center": [
+        -6.210000000000001,
+        23.355000000000004,
+        -8.64
+      ],
+      "size": [
+        8.91,
+        1.620000000000001,
+        1.7974968157978415
+      ]
+    },
+    "Core": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        110,
+        30
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 144,
+      "center": [
+        0.0,
+        9.45,
+        -11.745
+      ],
+      "size": [
+        15.66,
+        3.24,
+        0.40500000000000114
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "DowntownCrusher_color.png",
+    "normal": "DowntownCrusher_normal.png",
+    "roughness": "DowntownCrusher_roughness.png",
+    "metalness": "DowntownCrusher_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            29.7,
+            24.3,
+            27.0
+          ],
+          "center": [
+            0.0,
+            12.15,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "motion": {
+        "ArmL": "Arm",
+        "ArmR": "Arm",
+        "Core": "Core"
+      },
+      "sockets": []
+    }
+  }
+}

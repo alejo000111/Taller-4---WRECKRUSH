@@ -1,0 +1,81 @@
+{
+  "name": "OuterBarrier",
+  "atlas": 1024,
+  "texel_density": 45.392845779657364,
+  "triangles": 336,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 240,
+      "vertices": 256,
+      "center": [
+        0.0,
+        1.5,
+        0.0
+      ],
+      "size": [
+        39.85,
+        3.0,
+        2.0000000000000004
+      ],
+      "fallback": [
+        156,
+        153,
+        146
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 96,
+      "vertices": 192,
+      "center": [
+        0.0,
+        2.2,
+        0.0
+      ],
+      "size": [
+        30.5,
+        0.25,
+        0.77
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "OuterBarrier_color.png",
+    "normal": "OuterBarrier_normal.png",
+    "roughness": "OuterBarrier_roughness.png",
+    "metalness": "OuterBarrier_metalness.png"
+  },
+  "meta": {
+    "wall": {
+      "segment": 40.0,
+      "height": 3.0,
+      "thickness": 2.0,
+      "glow": "OuterBarrierGlow",
+      "targets": [
+        "Decor/Boundary"
+      ],
+      "part": "OuterBarrier"
+    }
+  }
+}

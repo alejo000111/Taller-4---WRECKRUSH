@@ -10,24 +10,32 @@ var vida_max: float = 100.0
 var vida: float = 100.0
 var caja: Vector3 = Vector3(2, 2, 2)
 var color_principal: Color = Color("#6B7078")
+var modelo: String = ""
+var giro_modelo: float = 0.0
 var vulnerable: bool = false
 var roto: bool = false
 
-var _visual: MeshInstance3D
-var _material: StandardMaterial3D
+var _visual: Node3D
+var _superficies: Array[StandardMaterial3D] = []
+var _brillos: Array[StandardMaterial3D] = []
+var _mallas: Array[MeshInstance3D] = []
+var _destello: StandardMaterial3D
 var _contorno: ShaderMaterial
 var _luz: OmniLight3D
+var _halo: MeshInstance3D
 var _colision: CollisionShape3D
 var _tween: Tween
 
 
-static func crear(tipo_: String, tamano: Vector3, vida_: float, color: Color) -> BossPart:
+static func crear(tipo_: String, tamano: Vector3, vida_: float, color: Color, modelo_: String = "", giro_: float = 0.0) -> BossPart:
 	var p := BossPart.new()
 	p.tipo = tipo_
 	p.caja = tamano
 	p.vida_max = vida_
 	p.vida = vida_
 	p.color_principal = color
+	p.modelo = modelo_
+	p.giro_modelo = giro_
 	return p
 
 
@@ -36,13 +44,34 @@ func _ready() -> void:
 	collision_layer = 8
 	collision_mask = 0
 	_contorno = Formas.material_contorno(GameColors.AMARILLO, 0.35)
-	_material = Formas.material(color_principal, 0.6, 0.5)
-	_material.next_pass = _contorno
-	if tipo == "nucleo":
-		_visual = Formas.malla(self, "sph", caja, Vector3.ZERO, _material)
-		_luz = Formas.luz_puntual(self, Vector3.ZERO, GameColors.AMARILLO, 0.0, 28.0)
+	_destello = Formas.material_destello()
+	_visual = Node3D.new()
+	_visual.rotation.y = giro_modelo
+	add_child(_visual)
+	var instancia := Modelos.instanciar(modelo, true)
+	if instancia != null:
+		_visual.add_child(instancia)
+		var girado := absf(sin(giro_modelo)) > 0.5
+		var caja_local := Vector3(caja.z, caja.y, caja.x) if girado else caja
+		var escala := Modelos.encajar(instancia, caja_local, tipo == "nucleo", true)
+		_contorno.set_shader_parameter("grosor", 0.35 / maxf(minf(escala.x, escala.y), 0.01))
+		for material in Modelos.materiales(instancia):
+			if Modelos.es_superficie(material):
+				material.next_pass = _contorno
+				_superficies.append(material)
+			elif Modelos.es_neon(material):
+				_brillos.append(material)
 	else:
-		_visual = Formas.malla(self, "box", caja, Vector3.ZERO, _material)
+		var material := Formas.material(color_principal, 0.6, 0.5)
+		material.next_pass = _contorno
+		_superficies.append(material)
+		if tipo == "nucleo":
+			_brillos.append(material)
+		Formas.malla(_visual, "sph" if tipo == "nucleo" else "box", caja, Vector3.ZERO, material)
+	_mallas = Modelos.mallas(_visual)
+	if tipo == "nucleo":
+		_luz = Formas.luz_puntual(self, Vector3.ZERO, GameColors.AMARILLO, 0.0, 28.0)
+		_halo = Formas.halo(self, Vector3.ZERO, caja.x * 2.8, GameColors.AMARILLO, 0.9)
 	_colision = CollisionShape3D.new()
 	var forma := BoxShape3D.new()
 	forma.size = caja
@@ -86,7 +115,7 @@ func recibir_golpe(dano: float, critico: bool = false) -> bool:
 		return false
 	var aplicado := dano
 	vida = maxf(vida - aplicado, 0.0)
-	_destello()
+	_parpadear()
 	Fx.golpe(self, aplicado, critico)
 	golpeada.emit(self)
 	if vida <= 0.0:
@@ -101,26 +130,33 @@ func recibir_golpe(dano: float, critico: bool = false) -> bool:
 
 
 func _aplicar_estado() -> void:
-	if _material == null:
+	if _contorno == null:
 		return
 	_contorno.set_shader_parameter("opacidad", 1.0 if puede_ser_golpeado() else 0.0)
+	var color := GameColors.NARANJA
+	var energia := 2.4 if vulnerable else 0.5
 	if tipo == "nucleo":
-		_material.emission_enabled = true
-		_material.emission = GameColors.AMARILLO if vulnerable else GameColors.ROJO
-		_material.emission_energy_multiplier = 3.0 if vulnerable else 0.6
-		_material.albedo_color = GameColors.AMARILLO if vulnerable else Color("#5A1C1C")
+		color = GameColors.AMARILLO if vulnerable else GameColors.ROJO
+		energia = 3.0 if vulnerable else 0.6
 		_luz.light_energy = 3.0 if vulnerable else 0.0
-	else:
-		_material.emission_enabled = false
+		_halo.visible = vulnerable
+	for material in _brillos:
+		material.emission_enabled = true
+		material.albedo_color = color
+		material.emission = color
+		material.emission_energy_multiplier = energia
 
 
-func _destello() -> void:
+func _parpadear() -> void:
 	if _tween != null and _tween.is_valid():
 		_tween.kill()
-	_material.emission_enabled = true
-	_material.emission = Color.WHITE
-	_material.emission_energy_multiplier = 1.5
+	_fijar_destello(true)
+	_destello.albedo_color.a = 0.85
 	_tween = create_tween()
-	_tween.tween_property(_material, "emission_energy_multiplier", 3.0 if tipo == "nucleo" else 0.0, 0.15)
-	if tipo == "nucleo":
-		_tween.tween_callback(_aplicar_estado)
+	_tween.tween_property(_destello, "albedo_color:a", 0.0, 0.15)
+	_tween.tween_callback(_fijar_destello.bind(false))
+
+
+func _fijar_destello(activo: bool) -> void:
+	for malla in _mallas:
+		malla.material_overlay = _destello if activo else null

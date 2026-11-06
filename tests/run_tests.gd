@@ -32,6 +32,7 @@ func _ready() -> void:
 	_test_guardado()
 	_test_seleccion()
 	_test_ambiente()
+	_test_assets()
 	await _test_coloso()
 	print("\n%d pruebas, %d fallos" % [_total, _fallos])
 	get_tree().quit(1 if _fallos > 0 else 0)
@@ -209,6 +210,38 @@ func _test_ambiente() -> void:
 	_verificar(AmbienceController.distrito_en(Vector3(240, 0, -240)) == "downtown", "(240,-240) = isla 2")
 	_verificar(AmbienceController.distrito_en(Vector3(240, 0, 0)) == "industrial", "(240,0) = isla 3")
 	_verificar(Formulas.elevacion_sol(GameConfig.HORA_ARENA) > Formulas.elevacion_sol(GameConfig.HORA_CIUDAD), "sol mas alto en la arena del coloso")
+
+
+func _test_assets() -> void:
+	print("Assets")
+	var faltan: Array = []
+	for zona in GameConfig.OBJETOS:
+		for def in GameConfig.OBJETOS[zona]:
+			if def.has("modelo") and not Modelos.existe(String(def["modelo"])):
+				faltan.append(def["modelo"])
+	for c in GameConfig.COLOSOS:
+		if not Modelos.existe(String(c["modelo"])):
+			faltan.append(c["modelo"])
+	for m in [GameConfig.COLOSO["modelo_placa"], GameConfig.COLOSO["modelo_nucleo"], GameConfig.MARTILLO["modelo"]]:
+		if not Modelos.existe(String(m)):
+			faltan.append(m)
+	_verificar(faltan.is_empty(), "todos los modelos de GameConfig existen %s" % [faltan])
+	var iconos_ok := true
+	for id in GameConfig.ZONAS:
+		iconos_ok = iconos_ok and Iconos.zona(id) != null
+	for id in GameConfig.MEJORAS:
+		iconos_ok = iconos_ok and Iconos.cargar(String(GameConfig.MEJORAS[id]["icono"])) != null
+	_verificar(iconos_ok, "iconos de zonas y mejoras cargan")
+	var barril := Modelos.instanciar("ScrapBarrel", true)
+	var tipos_ok := barril != null and Modelos.es_superficie(Modelos.material_de(barril, "Body")) and Modelos.material_de(barril, "Body").albedo_texture != null
+	_verificar(tipos_ok, "el modelo trae su atlas de color y material de superficie")
+	var caja := Vector3(2.7, 3.5, 2.7)
+	Modelos.encajar(barril, caja)
+	var l := Modelos.limites(barril)
+	var escalado := AABB(l.position * barril.scale + barril.position, l.size * barril.scale)
+	_verificar(escalado.size.x <= caja.x + 0.01 and escalado.size.y <= caja.y + 0.01 and absf(escalado.position.y) < 0.01, "el modelo encaja en su caja con la base en el suelo")
+	barril.free()
+	_verificar(AmbienceController.cubemap_cielo().get_layers() == 6, "el cielo del atardecer arma las 6 caras")
 
 
 func _test_coloso() -> void:

@@ -1,0 +1,246 @@
+{
+  "name": "HallPodium",
+  "atlas": 1024,
+  "texel_density": 12.30345307290554,
+  "triangles": 2268,
+  "budget": 3600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1596,
+      "vertices": 1593,
+      "center": [
+        0.0,
+        15.8,
+        0.5
+      ],
+      "size": [
+        48.6,
+        31.6,
+        17.3
+      ],
+      "fallback": [
+        78,
+        75,
+        74
+      ]
+    },
+    "Gold": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        196,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 164,
+      "vertices": 204,
+      "center": [
+        0.0,
+        4.145,
+        -2.1500000000000004
+      ],
+      "size": [
+        13.0,
+        6.59,
+        13.0
+      ]
+    },
+    "Silver": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        205,
+        212,
+        225
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 164,
+      "vertices": 204,
+      "center": [
+        12.5,
+        3.1449999999999996,
+        -0.15000000000000036
+      ],
+      "size": [
+        12.0,
+        4.59,
+        12.0
+      ]
+    },
+    "Bronze": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        214,
+        128,
+        52
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 164,
+      "vertices": 204,
+      "center": [
+        -12.5,
+        2.395,
+        -0.15000000000000036
+      ],
+      "size": [
+        12.0,
+        3.09,
+        12.0
+      ]
+    },
+    "Accent": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 60,
+      "vertices": 120,
+      "center": [
+        0.0,
+        15.45,
+        -0.15000000000000036
+      ],
+      "size": [
+        46.0,
+        29.4,
+        16.2
+      ]
+    },
+    "Lens": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        246,
+        220
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 120,
+      "vertices": 192,
+      "center": [
+        0.0,
+        28.614755657185153,
+        -3.3860045739954288
+      ],
+      "size": [
+        26.6,
+        0.4904350456465707,
+        1.495721986670251
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "HallPodium_color.png",
+    "normal": "HallPodium_normal.png",
+    "roughness": "HallPodium_roughness.png",
+    "metalness": "HallPodium_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "@Leaderboards/HallOfWreckers"
+      ],
+      "name": "Podium",
+      "fit": "none",
+      "keep": [
+        "Pedestal1",
+        "Pedestal2",
+        "Pedestal3",
+        "LightColumn",
+        "SparkleSource"
+      ],
+      "colliders": [
+        {
+          "name": "Base",
+          "shape": "Block",
+          "size": [
+            38.0,
+            0.6,
+            16.0
+          ],
+          "center": [
+            0.0,
+            0.5,
+            -0.15
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "PostL",
+          "shape": "Block",
+          "size": [
+            1.6,
+            30.0,
+            1.6
+          ],
+          "center": [
+            -23.0,
+            15.0,
+            7.85
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "PostR",
+          "shape": "Block",
+          "size": [
+            1.6,
+            30.0,
+            1.6
+          ],
+          "center": [
+            23.0,
+            15.0,
+            7.85
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "hide": [
+        "Pedestal1",
+        "Pedestal2",
+        "Pedestal3"
+      ],
+      "bounds_all": true
+    }
+  }
+}

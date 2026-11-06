@@ -1,0 +1,138 @@
+{
+  "name": "HoverDrone",
+  "atlas": 512,
+  "texel_density": 40.71015140414238,
+  "triangles": 1422,
+  "budget": 1500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1244,
+      "vertices": 1396,
+      "center": [
+        -4.440892098500626e-16,
+        1.9525215879285118,
+        -4.440892098500626e-16
+      ],
+      "size": [
+        5.829859807740542,
+        3.9177568241429763,
+        5.829859807740542
+      ],
+      "fallback": [
+        110,
+        110,
+        120
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 106,
+      "vertices": 125,
+      "center": [
+        0.0,
+        2.4069,
+        0.0
+      ],
+      "size": [
+        5.877059807740543,
+        1.5457999999999998,
+        5.877059807740543
+      ]
+    },
+    "Eye": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        60,
+        120
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 53,
+      "center": [
+        0.0,
+        2.8729999999999993,
+        -1.4396
+      ],
+      "size": [
+        0.5663999999999999,
+        0.5664000000000002,
+        0.5664
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "HoverDrone_color.png",
+    "normal": "HoverDrone_normal.png",
+    "roughness": "HoverDrone_roughness.png",
+    "metalness": "HoverDrone_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "FutureDistrict",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Ball",
+          "size": [
+            2.8,
+            2.8,
+            2.8
+          ],
+          "center": [
+            0.0,
+            2.814,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Rotors",
+          "shape": "Block",
+          "size": [
+            6.4,
+            0.6,
+            6.4
+          ],
+          "center": [
+            0.0,
+            3.404,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

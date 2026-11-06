@@ -1,0 +1,84 @@
+{
+  "name": "SpawnEmblem",
+  "atlas": 1024,
+  "texel_density": 10.551134407520294,
+  "triangles": 732,
+  "budget": 1200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 380,
+      "vertices": 390,
+      "center": [
+        0.0,
+        0.07999999999999954,
+        0.0
+      ],
+      "size": [
+        30.5,
+        0.16000000000000092,
+        30.5
+      ],
+      "fallback": [
+        65,
+        66,
+        74
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 352,
+      "vertices": 484,
+      "center": [
+        0.0,
+        0.07750000000000003,
+        0.0
+      ],
+      "size": [
+        27.4,
+        0.15500000000000005,
+        27.4
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "SpawnEmblem_color.png",
+    "normal": "SpawnEmblem_normal.png",
+    "roughness": "SpawnEmblem_roughness.png",
+    "metalness": "SpawnEmblem_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "Plaza/Floor"
+      ],
+      "parts": [
+        "SpawnDisc"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": true,
+      "functional": false
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "name": "CityVan",
+  "atlas": 1024,
+  "texel_density": 21.589210391044617,
+  "triangles": 2256,
+  "budget": 3000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2104,
+      "vertices": 2018,
+      "center": [
+        0.0,
+        4.4754,
+        -0.019999999999999574
+      ],
+      "size": [
+        8.4,
+        8.9492,
+        16.34
+      ],
+      "fallback": [
+        121,
+        121,
+        124
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        36,
+        52,
+        70
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.3,
+      "triangles": 20,
+      "vertices": 40,
+      "center": [
+        -2.220446049250313e-16,
+        5.746832815729997,
+        -4.841304951684997
+      ],
+      "size": [
+        7.24,
+        2.608944271909998,
+        3.0826099033699945
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 48,
+      "vertices": 96,
+      "center": [
+        0.0,
+        8.78,
+        -2.2
+      ],
+      "size": [
+        4.4,
+        0.28000000000000114,
+        0.5800000000000001
+      ]
+    },
+    "Lamp": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        248,
+        220
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 60,
+      "vertices": 64,
+      "center": [
+        0.0,
+        3.65,
+        -7.996
+      ],
+      "size": [
+        6.64,
+        0.7988874736879295,
+        0.08400000000000052
+      ]
+    },
+    "Tail": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        48,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        3.25,
+        7.9
+      ],
+      "size": [
+        6.5,
+        1.2999999999999998,
+        0.05000000000000071
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "CityVan_color.png",
+    "normal": "CityVan_normal.png",
+    "roughness": "CityVan_roughness.png",
+    "metalness": "CityVan_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Downtown",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            7.5,
+            8.45,
+            10.65
+          ],
+          "center": [
+            0.0,
+            4.225,
+            2.425
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Cab",
+          "shape": "Block",
+          "size": [
+            7.2,
+            7.25,
+            4.9
+          ],
+          "center": [
+            0.0,
+            3.625,
+            -5.35
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

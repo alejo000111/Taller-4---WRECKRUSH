@@ -4,6 +4,9 @@ extends Node3D
 
 const INTERVALO_DETECCION := 0.25
 const DURACION_TRANSICION := 1.5
+const SHADER_CIELO := preload("res://shaders/sky.gdshader")
+const RUTA_CIELO := "res://assets/sky/WR_DuskSky/"
+const CARAS_CIELO := ["Rt", "Lf", "Up", "Dn", "Bk", "Ft"]
 
 var entorno: Environment
 var sol: DirectionalLight3D
@@ -12,7 +15,7 @@ var distrito_actual: String = ""
 var en_arena: bool = false
 var hora: float = GameConfig.HORA_CIUDAD
 
-var _cielo: ProceduralSkyMaterial
+var _cielo: ShaderMaterial
 var _tinte: Color = Color.WHITE
 var _tween_hora: Tween
 var _tween_tinte: Tween
@@ -30,8 +33,23 @@ static func distrito_en(punto: Vector3) -> String:
 	return "plaza"
 
 
+static func cubemap_cielo() -> Cubemap:
+	var imagenes: Array[Image] = []
+	for cara in CARAS_CIELO:
+		var imagen := (load(RUTA_CIELO + cara + ".png") as Texture2D).get_image()
+		if imagen.is_compressed():
+			imagen.decompress()
+		imagen.convert(Image.FORMAT_RGB8)
+		imagenes.append(imagen)
+	var cubo := Cubemap.new()
+	cubo.create_from_images(imagenes)
+	return cubo
+
+
 func _ready() -> void:
-	_cielo = ProceduralSkyMaterial.new()
+	_cielo = ShaderMaterial.new()
+	_cielo.shader = SHADER_CIELO
+	_cielo.set_shader_parameter("cielo", cubemap_cielo())
 	var cielo := Sky.new()
 	cielo.sky_material = _cielo
 	entorno = Environment.new()
@@ -107,12 +125,8 @@ func _aplicar_hora(valor: float) -> void:
 	sol.rotation_degrees = Vector3(-elevacion, 215.0, 0.0)
 	sol.light_color = Color("#FFB784").lerp(Color("#FFD6B0"), f)
 	sol.light_energy = lerpf(0.75, 0.9, f)
-	_cielo.sky_top_color = Color("#2E2A5E").lerp(Color("#4A5C9A"), f)
-	_cielo.sky_horizon_color = Color("#FF8C4A").lerp(Color("#FFB98A"), f)
-	_cielo.ground_horizon_color = Color("#B5603E").lerp(Color("#C98A6A"), f)
-	_cielo.ground_bottom_color = Color("#3A2A2A")
-	_cielo.sun_angle_max = 28.0
-	_cielo.sky_energy_multiplier = 0.6
+	_cielo.set_shader_parameter("tinte", Color("#FFD2BC").lerp(Color("#FFF2E6"), f))
+	_cielo.set_shader_parameter("energia", lerpf(0.85, 1.0, f))
 	entorno.fog_light_color = Color("#D9A07A").lerp(Color("#F0B890"), f)
 	entorno.ambient_light_energy = lerpf(0.4, 0.55, f)
 	entorno.fog_density = lerpf(0.0006, 0.0004, f)

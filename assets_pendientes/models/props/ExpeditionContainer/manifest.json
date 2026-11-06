@@ -1,0 +1,90 @@
+{
+  "name": "ExpeditionContainer",
+  "atlas": 512,
+  "texel_density": 4.937454000115395,
+  "triangles": 216,
+  "budget": 600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 204,
+      "vertices": 408,
+      "center": [
+        0.0,
+        6.225,
+        8.881784197001252e-16
+      ],
+      "size": [
+        17.099999999999998,
+        12.45,
+        28.1
+      ],
+      "fallback": [
+        78,
+        81,
+        83
+      ]
+    },
+    "Shell": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        66,
+        114,
+        145
+      ],
+      "skin": "Shell",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        6.0,
+        0.0
+      ],
+      "size": [
+        16.4,
+        11.399999999999999,
+        27.4
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ExpeditionContainer_color.png",
+    "normal": "ExpeditionContainer_normal.png",
+    "roughness": "ExpeditionContainer_roughness.png",
+    "metalness": "ExpeditionContainer_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/FrostHarbor"
+      ],
+      "parts": [
+        "FreightContainer"
+      ],
+      "remove": [
+        "ContainerRib"
+      ],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false,
+      "tint": {
+        "Shell": true
+      }
+    }
+  }
+}

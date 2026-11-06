@@ -1,0 +1,81 @@
+{
+  "name": "ChaosWall",
+  "atlas": 1024,
+  "texel_density": 25.274955838918686,
+  "triangles": 446,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 310,
+      "vertices": 924,
+      "center": [
+        0.0,
+        3.6256711703439435,
+        -0.012896278731831745
+      ],
+      "size": [
+        40.0,
+        7.251342340687887,
+        2.3604502894737953
+      ],
+      "fallback": [
+        14,
+        10,
+        22
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 136,
+      "vertices": 384,
+      "center": [
+        0.0,
+        3.0,
+        0.0
+      ],
+      "size": [
+        40.0,
+        4.9,
+        2.2
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ChaosWall_color.png",
+    "normal": "ChaosWall_normal.png",
+    "roughness": "ChaosWall_roughness.png",
+    "metalness": "ChaosWall_metalness.png"
+  },
+  "meta": {
+    "wall": {
+      "segment": 40.0,
+      "height": 6.0,
+      "thickness": 2.0,
+      "glow": "WallGlow",
+      "targets": [
+        "Zones/ChaosCore/Perimeter"
+      ],
+      "part": "Wall"
+    }
+  }
+}

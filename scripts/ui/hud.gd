@@ -28,6 +28,7 @@ var _tutorial_titulo: Label
 var _tutorial_texto: Label
 var _tutorial_paso: Label
 var _victoria: Control
+var _victoria_insignia: TextureRect
 var _victoria_titulo: Label
 var _victoria_texto: Label
 var _fps: Label
@@ -42,6 +43,7 @@ func _ready() -> void:
 	_construir_tutorial()
 	_construir_superposiciones()
 	_construir_paneles()
+	_construir_portada()
 	GameState.scrap_cambio.connect(func(_v: int) -> void: _refrescar_recursos())
 	GameState.mejora_comprada.connect(func(_i: String, _n: int) -> void: _refrescar_recursos())
 	GameState.toast.connect(mostrar_toast)
@@ -77,10 +79,11 @@ func _construir_perfil() -> void:
 	caja.add_theme_stylebox_override("panel", UIKit.estilo(Color(0.17, 0.18, 0.21, 0.88), GameColors.NARANJA, 12, 3, 10))
 	caja.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var col := VBoxContainer.new()
+	col.add_theme_constant_override("separation", 4)
 	_dano = UIKit.etiqueta("", 20, GameColors.AMARILLO)
-	col.add_child(_dano)
+	col.add_child(UIKit.con_icono(Iconos.DANO, _dano, 30))
 	_ritmo = UIKit.etiqueta("", 15, Color("#B8BDC8"))
-	col.add_child(_ritmo)
+	col.add_child(UIKit.con_icono(Iconos.VELOCIDAD, _ritmo, 24, 11))
 	caja.add_child(col)
 	add_child(caja)
 
@@ -90,15 +93,16 @@ func _construir_menu() -> void:
 	col.position = Vector2(16, 98)
 	col.add_theme_constant_override("separation", 8)
 	add_child(col)
-	_boton_mejoras = _boton_menu(col, "UPGRADES [U]", GameColors.AMARILLO.darkened(0.25), "upgrades")
+	_boton_mejoras = _boton_menu(col, "UPGRADES [U]", GameColors.AMARILLO.darkened(0.25), "upgrades", Iconos.MEJORAS)
 	_punto_mejoras = UIKit.punto_rojo()
 	_punto_mejoras.position = Vector2(-6, -6)
 	_boton_mejoras.add_child(_punto_mejoras)
-	_boton_menu(col, "SETTINGS [TAB]", GameColors.CIAN.darkened(0.45), "settings")
+	_boton_menu(col, "SETTINGS [TAB]", GameColors.CIAN.darkened(0.45), "settings", Iconos.AJUSTES)
 
 
-func _boton_menu(padre: Control, texto: String, color: Color, panel: String) -> Button:
-	var b := UIKit.boton(texto, color, Vector2(190, 44), 17)
+func _boton_menu(padre: Control, texto: String, color: Color, panel: String, icono: Texture2D) -> Button:
+	var b := UIKit.boton(texto, color, Vector2(210, 48), 17)
+	UIKit.poner_icono(b, icono, 34)
 	b.pressed.connect(func() -> void: abrir_panel(panel))
 	padre.add_child(b)
 	return b
@@ -119,14 +123,14 @@ func _construir_centro() -> void:
 	recursos.alignment = BoxContainer.ALIGNMENT_CENTER
 	recursos.add_theme_constant_override("separation", 12)
 	recursos.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	_scrap = _pildora(recursos, "SCRAP 0", GameColors.AMARILLO)
+	_scrap = _pildora(recursos, "SCRAP 0", GameColors.AMARILLO, Iconos.SCRAP)
 	raiz.add_child(recursos)
 	var meta := PanelContainer.new()
 	meta.add_theme_stylebox_override("panel", UIKit.estilo(Color(0.17, 0.18, 0.21, 0.85), GameColors.AMARILLO.darkened(0.3), 10, 2, 6))
 	meta.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var metacol := VBoxContainer.new()
 	_meta_texto = UIKit.etiqueta("", 17, GameColors.AMARILLO, HORIZONTAL_ALIGNMENT_CENTER)
-	metacol.add_child(_meta_texto)
+	metacol.add_child(UIKit.con_icono(Iconos.FLECHA, _meta_texto, 20, 6, true))
 	_meta_barra = UIKit.barra(GameColors.AMARILLO, Vector2(0, 10))
 	metacol.add_child(_meta_barra)
 	meta.add_child(metacol)
@@ -137,7 +141,7 @@ func _construir_centro() -> void:
 	_contenedor_jefe.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var jefecol := VBoxContainer.new()
 	_jefe_nombre = UIKit.etiqueta("COLOSSUS", 20, GameColors.ROJO, HORIZONTAL_ALIGNMENT_CENTER)
-	jefecol.add_child(_jefe_nombre)
+	jefecol.add_child(UIKit.con_icono(Iconos.JEFE, _jefe_nombre, 36, 8, true))
 	_jefe_barra = UIKit.barra(GameColors.ROJO, Vector2(0, 18))
 	jefecol.add_child(_jefe_barra)
 	_jefe_objetivo = UIKit.etiqueta("", 16, GameColors.BLANCO, HORIZONTAL_ALIGNMENT_CENTER)
@@ -150,12 +154,12 @@ func _construir_centro() -> void:
 	raiz.add_child(_toasts)
 
 
-func _pildora(padre: Control, texto: String, color: Color) -> Label:
+func _pildora(padre: Control, texto: String, color: Color, icono: Texture2D) -> Label:
 	var caja := PanelContainer.new()
-	caja.add_theme_stylebox_override("panel", UIKit.estilo(Color(0.12, 0.13, 0.16, 0.9), color, 18, 3, 8))
+	caja.add_theme_stylebox_override("panel", UIKit.estilo(Color(0.12, 0.13, 0.16, 0.9), color, 18, 3, 6))
 	caja.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var e := UIKit.etiqueta(texto, 24, color)
-	caja.add_child(e)
+	caja.add_child(UIKit.con_icono(icono, e, 36))
 	padre.add_child(caja)
 	return e
 
@@ -165,14 +169,15 @@ func _construir_inferior() -> void:
 	barra.set_anchors_preset(Control.PRESET_CENTER_BOTTOM)
 	barra.anchor_left = 0.5
 	barra.anchor_right = 0.5
-	barra.offset_left = -80
-	barra.offset_right = 80
+	barra.offset_left = -95
+	barra.offset_right = 95
 	barra.offset_top = -86
 	barra.offset_bottom = -16
 	barra.alignment = BoxContainer.ALIGNMENT_CENTER
 	barra.add_theme_constant_override("separation", 8)
 	add_child(barra)
-	var b := UIKit.boton("", Color("#2B2F36"), Vector2(150, 62), 14)
+	var b := UIKit.boton("", Color("#2B2F36"), Vector2(180, 66), 14)
+	UIKit.poner_icono(b, Iconos.cargar(String(GameConfig.MARTILLO["icono"])), 48)
 	b.disabled = false
 	barra.add_child(b)
 	_casillas.append(b)
@@ -194,7 +199,10 @@ func _construir_inferior() -> void:
 	avisocol.add_child(_aviso_barra)
 	_aviso.add_child(avisocol)
 	add_child(_aviso)
-	var wreck := UIKit.boton("WRECK", GameColors.NARANJA, Vector2(170, 110), 30)
+	var wreck := UIKit.boton("WRECK", GameColors.NARANJA, Vector2(170, 110), 24)
+	UIKit.poner_icono(wreck, Iconos.WRECK, 64)
+	wreck.icon_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	wreck.vertical_icon_alignment = VERTICAL_ALIGNMENT_TOP
 	wreck.set_anchors_preset(Control.PRESET_BOTTOM_RIGHT)
 	wreck.anchor_left = 1.0
 	wreck.anchor_top = 1.0
@@ -242,7 +250,7 @@ func _construir_tutorial() -> void:
 	_tutorial_paso = UIKit.etiqueta("", 14, Color("#8A909C"))
 	col.add_child(_tutorial_paso)
 	_tutorial_titulo = UIKit.etiqueta("", 22, GameColors.AMARILLO)
-	col.add_child(_tutorial_titulo)
+	col.add_child(UIKit.con_icono(Iconos.FLECHA, _tutorial_titulo, 24))
 	_tutorial_texto = UIKit.etiqueta("", 16)
 	_tutorial_texto.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	_tutorial_texto.custom_minimum_size = Vector2(290, 0)
@@ -279,6 +287,9 @@ func _construir_superposiciones() -> void:
 	tarjeta.add_theme_stylebox_override("panel", UIKit.estilo(GameColors.GRIS_OSCURO, GameColors.AMARILLO, 18, 5, 26))
 	var col := VBoxContainer.new()
 	col.add_theme_constant_override("separation", 10)
+	_victoria_insignia = UIKit.icono(Iconos.INSIGNIA_COLOSO, 128)
+	_victoria_insignia.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	col.add_child(_victoria_insignia)
 	_victoria_titulo = UIKit.etiqueta("", 36, GameColors.AMARILLO, HORIZONTAL_ALIGNMENT_CENTER)
 	col.add_child(_victoria_titulo)
 	_victoria_texto = UIKit.etiqueta("", 22, GameColors.BLANCO, HORIZONTAL_ALIGNMENT_CENTER)
@@ -291,6 +302,31 @@ func _construir_superposiciones() -> void:
 	tarjeta.add_child(col)
 	centro.add_child(tarjeta)
 	add_child(_victoria)
+
+
+func _construir_portada() -> void:
+	var portada := Control.new()
+	portada.set_anchors_preset(Control.PRESET_FULL_RECT)
+	portada.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	var fondo := TextureRect.new()
+	fondo.texture = Iconos.FONDO_CARGA
+	fondo.set_anchors_preset(Control.PRESET_FULL_RECT)
+	fondo.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	fondo.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+	fondo.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	portada.add_child(fondo)
+	var centro := CenterContainer.new()
+	centro.set_anchors_preset(Control.PRESET_FULL_RECT)
+	centro.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	portada.add_child(centro)
+	var logo := UIKit.icono(Iconos.LOGO, 0)
+	logo.custom_minimum_size = Vector2(720, 360)
+	centro.add_child(logo)
+	add_child(portada)
+	var t := portada.create_tween()
+	t.tween_interval(1.4)
+	t.tween_property(portada, "modulate:a", 0.0, 0.6)
+	t.tween_callback(portada.queue_free)
 
 
 func _construir_paneles() -> void:
@@ -341,7 +377,13 @@ func mostrar_toast(texto: String, tipo: String = "neutral") -> void:
 	var caja := PanelContainer.new()
 	caja.add_theme_stylebox_override("panel", UIKit.estilo(Color(0.1, 0.11, 0.14, 0.92), borde, 10, 2, 6))
 	caja.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	caja.add_child(UIKit.etiqueta(texto, 20, color, HORIZONTAL_ALIGNMENT_CENTER))
+	var etiqueta := UIKit.etiqueta(texto, 20, color, HORIZONTAL_ALIGNMENT_CENTER)
+	if tipo == "good":
+		caja.add_child(UIKit.con_icono(Iconos.OK, etiqueta, 22, 6, true))
+	elif tipo == "bad":
+		caja.add_child(UIKit.con_icono(Iconos.CERRAR, etiqueta, 18, 6, true))
+	else:
+		caja.add_child(etiqueta)
 	_toasts.add_child(caja)
 	while _toasts.get_child_count() > 4:
 		_toasts.get_child(0).queue_free()
@@ -407,6 +449,7 @@ func ocultar_muerte() -> void:
 
 func _mostrar_coloso_vencido(r: Dictionary) -> void:
 	await get_tree().create_timer(1.2).timeout
+	_victoria_insignia.texture = Iconos.INSIGNIA_COLOSO
 	_victoria_titulo.text = "%s DEFEATED" % r["nombre"]
 	var lineas := "FIGHT TIME %s" % Formulas.formato_tiempo(r["tiempo"])
 	if int(r["scrap"]) > 0:
@@ -417,6 +460,7 @@ func _mostrar_coloso_vencido(r: Dictionary) -> void:
 
 func _mostrar_maestria(r: Dictionary) -> void:
 	await get_tree().create_timer(1.2).timeout
+	_victoria_insignia.texture = Iconos.INSIGNIA_COLOSO
 	_victoria_titulo.text = "MASTERY · %s" % r["nombre"]
 	var lineas := "FIGHT TIME %s\n%s\nSTARS %d / %d" % [Formulas.formato_tiempo(r["tiempo"]), "NO DAMAGE TAKEN" if r["sin_dano"] else "DAMAGE TAKEN", int(r["estrellas"]), int(GameConfig.COLOSO["estrellas_maximas"])]
 	_mostrar_tarjeta(lineas)
@@ -424,6 +468,7 @@ func _mostrar_maestria(r: Dictionary) -> void:
 
 func _mostrar_final(r: Dictionary) -> void:
 	await get_tree().create_timer(2.5).timeout
+	_victoria_insignia.texture = Iconos.INSIGNIA_LEYENDA
 	_victoria_titulo.text = "ALL COLOSSI DEFEATED"
 	_mostrar_tarjeta("TOTAL TIME %s\nOBJECTS WRECKED %d\n\nReturn to any console for MASTERY mode:\nbeat the colossus fast or without damage." % [Formulas.formato_tiempo(r["tiempo_total"]), int(r["objetos_rotos"])])
 

@@ -1,0 +1,62 @@
+{
+  "name": "JerseyBarrier",
+  "atlas": 512,
+  "texel_density": 37.134608536958694,
+  "triangles": 92,
+  "budget": 300,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 92,
+      "vertices": 144,
+      "center": [
+        0.0,
+        1.3,
+        0.0
+      ],
+      "size": [
+        8.02,
+        2.6,
+        1.8000000000000005
+      ],
+      "fallback": [
+        143,
+        142,
+        138
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "JerseyBarrier_color.png",
+    "normal": "JerseyBarrier_normal.png",
+    "roughness": "JerseyBarrier_roughness.png",
+    "metalness": "JerseyBarrier_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "Zones/Military/Landmarks"
+      ],
+      "parts": [
+        "JerseyBarrier"
+      ],
+      "remove": [
+        "BarrierStripe"
+      ],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": true
+    }
+  }
+}

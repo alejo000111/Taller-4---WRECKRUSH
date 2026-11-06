@@ -11,6 +11,8 @@ const TIEMPO_CARTEL_VICTORIA := 6.0
 const PRIMER_ATAQUE := 2.5
 const YAW_REPOSO := -PI * 0.5
 const COLOR_OJO_VERDE := Color("#4CD964")
+const ALTURA_PEDESTAL := 13.0
+const GIRO_BRAZO := 70.0
 
 var numero: int = 1
 var datos: Dictionary = {}
@@ -31,6 +33,8 @@ var _brazos: Array[Node3D] = []
 var _cabeza: Node3D
 var _ojos: Array[MeshInstance3D] = []
 var _material_ojos: StandardMaterial3D
+var _material_pecho: StandardMaterial3D
+var _robot: Node3D
 var _tween_ataque: Tween
 var _emitio_activo: bool = false
 
@@ -49,9 +53,10 @@ func _ready() -> void:
 	consola = Interactable.crear(self, Vector3(0, 0, 44), "Colossus", 10.0, float(GameConfig.COLOSO["mantener_consola"]))
 	consola.texto_dinamico = _texto_consola
 	consola.activado.connect(_intentar_retar)
-	Formas.caja_solida(self, Vector3(3.0, 3.0, 2.0), Vector3(0, 1.5, 44), GameColors.GRIS_OSCURO)
-	Formas.malla(self, "box", Vector3(3.2, 0.5, 2.2), Vector3(0, 3.2, 44), Formas.material(GameColors.ROJO, 0.5, 0.0, 1.2))
+	Formas.caja_solida(self, Vector3(3.0, 3.0, 2.0), Vector3(0, 1.5, 44), GameColors.GRIS_OSCURO, 1, true, Formas.material_pbr("WR_WallPanel", 4.0))
+	Formas.malla(self, "box", Vector3(3.2, 0.5, 2.2), Vector3(0, 3.2, 44), Formas.material_franjas(GameColors.ROJO, 1.2))
 	Formas.etiqueta(self, datos["nombre"], Vector3(0, 6.5, 44), 0.03, GameColors.ROJO, 0.0, true)
+	Formas.icono_3d(self, Iconos.JEFE, Vector3(0, 9.0, 44), 2.4)
 	if Engine.is_editor_hint():
 		return
 	GameState.objeto_roto.connect(func(_d: Dictionary, _z: String) -> void: refrescar_aspecto())
@@ -65,52 +70,97 @@ func punto_reaparicion() -> Vector3:
 
 
 func _construir() -> void:
-	var metal := Formas.material(Color("#5B6068"), 0.55, 0.6)
-	var cuerpo := Formas.material(datos["color"], 0.8, 0.3)
-	Formas.caja_solida(self, Vector3(19, 2, 19), Vector3(0, 1, 0), Color("#3A3D44"), 8)
+	var cubierta := Formas.material_pbr("WR_DeckPlate", 8.0)
+	var oxido := Formas.material_pbr("WR_RustSheet", 6.0)
+	Formas.caja_solida(self, Vector3(19, 2, 19), Vector3(0, 1, 0), Color("#3A3D44"), 8, true, cubierta)
 	for sx in [-1, 1]:
 		for sz in [-1, 1]:
-			var pilar := Formas.caja_solida(self, Vector3(2.4, 18, 2.4), Vector3(sx * 7.5, 11, sz * 7.5), Color("#4A4E56"), 8)
+			var pilar := Formas.caja_solida(self, Vector3(2.4, ALTURA_PEDESTAL - 2.0, 2.4), Vector3(sx * 7.5, ALTURA_PEDESTAL * 0.5 + 1.0, sz * 7.5), Color("#4A4E56"), 8, true, oxido)
 			pilar.name = "Pilar"
-	Formas.malla(self, "box", Vector3(18, 8, 18), Vector3(0, 24, 0), cuerpo)
-	Formas.malla(self, "box", Vector3(12, 3, 12), Vector3(0, 29.5, 0), metal)
+	Formas.caja_solida(self, Vector3(19, 1.5, 19), Vector3(0, ALTURA_PEDESTAL + 0.75, 0), Color("#3A3D44"), 8, true, cubierta)
+	Formas.malla(self, "box", Vector3(19.4, 0.5, 19.4), Vector3(0, ALTURA_PEDESTAL + 0.35, 0), Formas.material_franjas(Color.WHITE, 0.0, 4.0), false)
 	_cabeza = Node3D.new()
-	_cabeza.position = Vector3(0, 33, 0)
+	_cabeza.position = Vector3(0, ALTURA_PEDESTAL + 1.5, 0)
 	_cabeza.rotation.y = YAW_REPOSO
 	add_child(_cabeza)
-	Formas.malla(_cabeza, "sph", Vector3(7, 7, 7), Vector3.ZERO, metal)
 	_material_ojos = Formas.material(Color("#2A2D33"), 0.4)
 	_material_ojos.emission_enabled = true
 	_material_ojos.emission = Color.BLACK
-	for lado in [-1, 1]:
-		_ojos.append(Formas.malla(_cabeza, "box", Vector3(1.4, 1.0, 0.6), Vector3(lado * 1.4, 0.4, -3.3), _material_ojos, false))
-	for lado in [-1, 1]:
-		var brazo := Node3D.new()
-		brazo.position = Vector3(lado * 13.0, 26, 0)
-		add_child(brazo)
-		Formas.malla(brazo, "box", Vector3(4, 13, 4), Vector3(0, -6.5, 0), metal)
-		Formas.malla(brazo, "box", Vector3(7, 7, 7), Vector3(0, -15, 0), cuerpo)
-		_brazos.append(brazo)
+	_robot = Modelos.instanciar(String(datos.get("modelo", "")), true)
+	if _robot != null:
+		_robot.scale = Vector3.ONE * float(datos.get("escala", 0.7))
+		_cabeza.add_child(_robot)
+		for malla in Modelos.mallas(_robot):
+			match String(malla.name):
+				"Eyes":
+					_material_ojos = malla.material_override as StandardMaterial3D
+				"Core":
+					_material_pecho = malla.material_override as StandardMaterial3D
+				"ArmL", "ArmR":
+					_brazos.append(_pivote_brazo(malla))
+	else:
+		Formas.malla(_cabeza, "box", Vector3(14, 12, 10), Vector3(0, 6, 0), Formas.material(datos["color"], 0.8, 0.3))
+		for lado in [-1, 1]:
+			_ojos.append(Formas.malla(_cabeza, "box", Vector3(1.4, 1.0, 0.6), Vector3(lado * 1.4, 9.0, -5.2), _material_ojos, false))
 	var orientaciones := [
-		[Vector3(6.5, 6.5, 0), Vector3(1.6, 9, 8)],
-		[Vector3(-6.5, 6.5, 0), Vector3(1.6, 9, 8)],
-		[Vector3(0, 6.5, 6.5), Vector3(8, 9, 1.6)],
-		[Vector3(0, 6.5, -6.5), Vector3(8, 9, 1.6)],
+		[Vector3(6.5, 6.5, 0), Vector3(1.6, 9, 8), -PI * 0.5],
+		[Vector3(-6.5, 6.5, 0), Vector3(1.6, 9, 8), PI * 0.5],
+		[Vector3(0, 6.5, 6.5), Vector3(8, 9, 1.6), PI],
+		[Vector3(0, 6.5, -6.5), Vector3(8, 9, 1.6), 0.0],
 	]
 	for i in int(GameConfig.COLOSO["cantidad_placas"]):
-		var placa := BossPart.crear("placa", orientaciones[i][1], Formulas.vida_placa(numero), Color("#8A8F99"))
+		var placa := BossPart.crear("placa", orientaciones[i][1], Formulas.vida_placa(numero), Color("#8A8F99"), String(GameConfig.COLOSO["modelo_placa"]), orientaciones[i][2])
 		placa.position = orientaciones[i][0]
 		placa.name = "Placa%d" % (i + 1)
 		add_child(placa)
 		placa.destruida.connect(_al_romper_placa)
 		placa.golpeada.connect(_al_golpear)
 		placas.append(placa)
-	nucleo = BossPart.crear("nucleo", Vector3(5, 5, 5), Formulas.vida_nucleo(numero), Color("#5A1C1C"))
+	nucleo = BossPart.crear("nucleo", Vector3(5, 5, 5), Formulas.vida_nucleo(numero), Color("#5A1C1C"), String(GameConfig.COLOSO["modelo_nucleo"]))
 	nucleo.position = Vector3(0, 7.0, 0)
 	nucleo.name = "Nucleo"
 	add_child(nucleo)
 	nucleo.golpeada.connect(_al_golpear)
 	nucleo.destruida.connect(_al_romper_nucleo)
+
+
+func _pivote_brazo(malla: MeshInstance3D) -> Node3D:
+	var caja := malla.get_aabb()
+	var hombro := Vector3(caja.get_center().x, caja.end.y - caja.size.y * 0.08, caja.get_center().z)
+	var pivote := Node3D.new()
+	pivote.name = "Pivote" + String(malla.name)
+	pivote.position = hombro
+	_robot.add_child(pivote)
+	malla.get_parent().remove_child(malla)
+	pivote.add_child(malla)
+	malla.position = -hombro
+	return pivote
+
+
+func _refrescar_pecho() -> void:
+	if _material_pecho == null:
+		return
+	var color := Color("#FF7A1A")
+	var energia := 0.5
+	match estado:
+		Estado.INTRO, Estado.ARMADURA:
+			color = GameColors.ROJO
+			energia = 2.2
+		Estado.EXPUESTO:
+			color = GameColors.AMARILLO
+			energia = 3.5
+		Estado.DERROTADO, Estado.ENFRIAMIENTO:
+			color = COLOR_OJO_VERDE
+			energia = 1.2
+		_:
+			if GameState.coloso_vencido_p(numero):
+				color = COLOR_OJO_VERDE
+				energia = 1.0
+			elif esta_encendido():
+				energia = 1.8
+	_material_pecho.albedo_color = color
+	_material_pecho.emission = color
+	_material_pecho.emission_energy_multiplier = energia
 
 
 func refrescar_aspecto() -> void:
@@ -127,6 +177,7 @@ func refrescar_aspecto() -> void:
 	else:
 		_material_ojos.emission = Color.BLACK
 		_material_ojos.albedo_color = Color("#2A2D33")
+	_refrescar_pecho()
 
 
 func esta_encendido() -> bool:
@@ -362,7 +413,7 @@ func _animar_ataque() -> void:
 	_tween_ataque = create_tween()
 	_tween_ataque.set_parallel(true)
 	for brazo in _brazos:
-		brazo.rotation.x = deg_to_rad(-70)
+		brazo.rotation.x = deg_to_rad(GIRO_BRAZO)
 		_tween_ataque.tween_property(brazo, "rotation:x", 0.0, 0.9).set_delay(0.7)
 
 
@@ -370,6 +421,7 @@ func _cambiar_estado(nuevo: int) -> void:
 	estado = nuevo
 	if consola != null:
 		consola.habilitado = nuevo == Estado.INACTIVO
+	_refrescar_pecho()
 	estado_cambio.emit(nuevo)
 
 

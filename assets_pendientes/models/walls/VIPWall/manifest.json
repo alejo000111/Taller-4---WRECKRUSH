@@ -1,0 +1,81 @@
+{
+  "name": "VIPWall",
+  "atlas": 1024,
+  "texel_density": 25.274955838918686,
+  "triangles": 886,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 526,
+      "vertices": 472,
+      "center": [
+        -0.34999999999999964,
+        3.311715728752538,
+        0.0
+      ],
+      "size": [
+        40.7,
+        6.576568542494924,
+        2.0
+      ],
+      "fallback": [
+        232,
+        192,
+        63
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 360,
+      "vertices": 256,
+      "center": [
+        -4.957028823734364,
+        7.05,
+        2.7755575615628914e-17
+      ],
+      "size": [
+        30.814057647468726,
+        0.9000000000000004,
+        0.8559508646656382
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "VIPWall_color.png",
+    "normal": "VIPWall_normal.png",
+    "roughness": "VIPWall_roughness.png",
+    "metalness": "VIPWall_metalness.png"
+  },
+  "meta": {
+    "wall": {
+      "segment": 40.0,
+      "height": 6.0,
+      "thickness": 2.0,
+      "glow": "WallGlow",
+      "targets": [
+        "VIPArea/Perimeter"
+      ],
+      "part": "Wall"
+    }
+  }
+}

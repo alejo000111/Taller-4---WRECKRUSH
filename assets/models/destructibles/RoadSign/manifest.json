@@ -1,0 +1,96 @@
+{
+  "name": "RoadSign",
+  "atlas": 512,
+  "texel_density": 65.29905645549297,
+  "triangles": 474,
+  "budget": 700,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 474,
+      "vertices": 503,
+      "center": [
+        0.04259550937066636,
+        3.9500337783994084,
+        0.04747003650103643
+      ],
+      "size": [
+        2.7870772516414783,
+        8.022811272735249,
+        0.9484420060577603
+      ],
+      "fallback": [
+        139,
+        134,
+        130
+      ]
+    }
+  },
+  "points": {
+    "label": [
+      0.0,
+      9.0,
+      0.0
+    ]
+  },
+  "textures": {
+    "color": "RoadSign_color.png",
+    "normal": "RoadSign_normal.png",
+    "roughness": "RoadSign_roughness.png",
+    "metalness": "RoadSign_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "ScrapYard",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Cylinder",
+          "size": [
+            0.45,
+            8.0,
+            0.45
+          ],
+          "center": [
+            0.0,
+            4.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "SignPlate",
+          "shape": "Block",
+          "size": [
+            2.5,
+            2.6,
+            0.3
+          ],
+          "center": [
+            0.0,
+            6.7,
+            0.127
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

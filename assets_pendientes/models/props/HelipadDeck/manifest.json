@@ -1,0 +1,88 @@
+{
+  "name": "HelipadDeck",
+  "atlas": 1024,
+  "texel_density": 10.738039448857307,
+  "triangles": 828,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 540,
+      "vertices": 786,
+      "center": [
+        0.0,
+        0.09999999999999955,
+        0.0
+      ],
+      "size": [
+        30.0,
+        0.20000000000000093,
+        30.0
+      ],
+      "fallback": [
+        76,
+        79,
+        72
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        120,
+        255,
+        90
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 288,
+      "vertices": 480,
+      "center": [
+        0.0,
+        0.22,
+        0.0
+      ],
+      "size": [
+        29.240000000000002,
+        0.08000000000000002,
+        29.181051177665154
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "HelipadDeck_color.png",
+    "normal": "HelipadDeck_normal.png",
+    "roughness": "HelipadDeck_roughness.png",
+    "metalness": "HelipadDeck_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "Zones/Military/GroundDetail"
+      ],
+      "parts": [
+        "Helipad"
+      ],
+      "remove": [
+        "HelipadBarA",
+        "HelipadBarB",
+        "HelipadBarC"
+      ],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": true,
+      "functional": false
+    }
+  }
+}

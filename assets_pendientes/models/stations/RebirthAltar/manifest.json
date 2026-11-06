@@ -1,0 +1,158 @@
+{
+  "name": "RebirthAltar",
+  "atlas": 1024,
+  "texel_density": 27.810225397348404,
+  "triangles": 1250,
+  "budget": 3500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 534,
+      "vertices": 758,
+      "center": [
+        0.0,
+        4.120514001623944,
+        0.0
+      ],
+      "size": [
+        12.2,
+        8.605880816990272,
+        10.2
+      ],
+      "fallback": [
+        61,
+        50,
+        60
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 472,
+      "vertices": 564,
+      "center": [
+        0.0,
+        4.34725402050846,
+        0.0
+      ],
+      "size": [
+        11.4,
+        8.614508041016922,
+        10.26
+      ]
+    },
+    "Core": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        160
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 244,
+      "vertices": 311,
+      "center": [
+        -2.220446049250313e-16,
+        7.4,
+        -2.220446049250313e-16
+      ],
+      "size": [
+        6.5796969619670005,
+        3.1999999999999993,
+        6.5796969619670005
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "RebirthAltar_color.png",
+    "normal": "RebirthAltar_normal.png",
+    "roughness": "RebirthAltar_roughness.png",
+    "metalness": "RebirthAltar_metalness.png"
+  },
+  "meta": {
+    "station": {
+      "target": "RebirthAltar",
+      "parent": "Plaza",
+      "colliders": [
+        {
+          "name": "Platform",
+          "shape": "Block",
+          "size": [
+            12.0,
+            0.4,
+            10.0
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Dais",
+          "shape": "Cylinder",
+          "size": [
+            10.0,
+            2.2,
+            10.0
+          ],
+          "center": [
+            0.0,
+            1.1,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Core",
+          "shape": "Ball",
+          "size": [
+            3.2,
+            3.2,
+            3.2
+          ],
+          "center": [
+            0.0,
+            7.4,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

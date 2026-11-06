@@ -1,0 +1,181 @@
+{
+  "name": "TaxiCab",
+  "atlas": 1024,
+  "texel_density": 28.24285900592804,
+  "triangles": 2842,
+  "budget": 3000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2722,
+      "vertices": 2764,
+      "center": [
+        0.0,
+        2.835,
+        0.019999999999999574
+      ],
+      "size": [
+        7.0,
+        5.67,
+        13.94
+      ],
+      "fallback": [
+        137,
+        130,
+        112
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        36,
+        52,
+        70
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.35,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        3.701848367667498,
+        0.5546093626953932
+      ],
+      "size": [
+        5.4293648,
+        1.6428703363858626,
+        5.79020255448266
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        248,
+        220
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 88,
+      "center": [
+        0.0,
+        3.7160651096483486,
+        -3.02
+      ],
+      "size": [
+        5.3,
+        4.017869780703304,
+        7.64
+      ]
+    },
+    "Tail": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        48,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        2.06,
+        6.77
+      ],
+      "size": [
+        5.6,
+        0.2999999999999998,
+        0.03999999999999915
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "TaxiCab_color.png",
+    "normal": "TaxiCab_normal.png",
+    "roughness": "TaxiCab_roughness.png",
+    "metalness": "TaxiCab_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Downtown",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            6.8,
+            2.6,
+            13.6
+          ],
+          "center": [
+            0.0,
+            1.6,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Cabin",
+          "shape": "Block",
+          "size": [
+            5.6,
+            1.8,
+            4.4
+          ],
+          "center": [
+            0.0,
+            3.78,
+            0.5
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Sign",
+          "shape": "Block",
+          "size": [
+            2.6,
+            0.9,
+            0.9
+          ],
+          "center": [
+            0.0,
+            5.25,
+            0.55
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

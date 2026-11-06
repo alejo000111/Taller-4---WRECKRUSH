@@ -1,0 +1,162 @@
+{
+  "name": "TowerCrane",
+  "atlas": 1024,
+  "texel_density": 8.444410100579262,
+  "triangles": 3706,
+  "budget": 5000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 3520,
+      "vertices": 4585,
+      "center": [
+        21.996429719367608,
+        38.2,
+        0.25
+      ],
+      "size": [
+        80.12384554641878,
+        76.4,
+        9.5
+      ],
+      "fallback": [
+        148,
+        129,
+        68
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        60,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 162,
+      "vertices": 117,
+      "center": [
+        30.69184405196877,
+        70.925,
+        5.551115123125783e-17
+      ],
+      "size": [
+        62.51631189606247,
+        10.75,
+        1.331479122813215
+      ]
+    },
+    "Cab": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        214,
+        140
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        3.075,
+        61.599999999999994,
+        2.52
+      ],
+      "size": [
+        4.15,
+        1.7999999999999972,
+        3.96
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "TowerCrane_color.png",
+    "normal": "TowerCrane_normal.png",
+    "roughness": "TowerCrane_roughness.png",
+    "metalness": "TowerCrane_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Zones/ScrapYard/Landmarks"
+      ],
+      "name": "Crane",
+      "fit": "none",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "Mast",
+          "shape": "Block",
+          "size": [
+            4.0,
+            64.6,
+            4.0
+          ],
+          "center": [
+            0.0,
+            32.3,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Base",
+          "shape": "Block",
+          "size": [
+            9.0,
+            2.0,
+            9.0
+          ],
+          "center": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Car",
+          "shape": "Block",
+          "size": [
+            11.0,
+            3.0,
+            6.0
+          ],
+          "center": [
+            52.5,
+            33.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

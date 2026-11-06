@@ -1,0 +1,139 @@
+{
+  "name": "QuestBoard",
+  "atlas": 1024,
+  "texel_density": 30.573710709810257,
+  "triangles": 1066,
+  "budget": 3000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 970,
+      "vertices": 1024,
+      "center": [
+        0.0,
+        5.233786796564404,
+        0.0
+      ],
+      "size": [
+        12.2,
+        10.832426406871193,
+        10.2
+      ],
+      "fallback": [
+        95,
+        82,
+        68
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 48,
+      "vertices": 96,
+      "center": [
+        0.0,
+        4.42,
+        0.0
+      ],
+      "size": [
+        11.4,
+        8.760000000000002,
+        10.26
+      ]
+    },
+    "Lamp": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        220,
+        140
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 48,
+      "vertices": 80,
+      "center": [
+        0.0,
+        7.75,
+        -0.4999999999999999
+      ],
+      "size": [
+        11.1,
+        0.5500000000000007,
+        0.43301270189221946
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "QuestBoard_color.png",
+    "normal": "QuestBoard_normal.png",
+    "roughness": "QuestBoard_roughness.png",
+    "metalness": "QuestBoard_metalness.png"
+  },
+  "meta": {
+    "station": {
+      "target": "QuestBoard",
+      "parent": "Plaza",
+      "colliders": [
+        {
+          "name": "Platform",
+          "shape": "Block",
+          "size": [
+            12.0,
+            0.4,
+            10.0
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Board",
+          "shape": "Block",
+          "size": [
+            11.4,
+            9.8,
+            1.2
+          ],
+          "center": [
+            0.0,
+            4.9,
+            0.9
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

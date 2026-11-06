@@ -1,0 +1,138 @@
+{
+  "name": "FloatingShard",
+  "atlas": 1024,
+  "texel_density": 34.89241926372051,
+  "triangles": 656,
+  "budget": 2500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 396,
+      "vertices": 435,
+      "center": [
+        0.11395513714517325,
+        1.9000000000000001,
+        0.5682452370446565
+      ],
+      "size": [
+        9.92971336460522,
+        3.8000000000000003,
+        9.314307933394517
+      ],
+      "fallback": [
+        37,
+        37,
+        43
+      ]
+    },
+    "Shard": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        80,
+        220,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.25,
+      "triangles": 84,
+      "vertices": 252,
+      "center": [
+        -0.031766036394405006,
+        10.0,
+        -0.45652503631074515
+      ],
+      "size": [
+        6.308189823339872,
+        7.526037322435934,
+        5.055626655641099
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 176,
+      "vertices": 344,
+      "center": [
+        -4.440892098500626e-16,
+        7.089915506549434,
+        -0.416014860183604
+      ],
+      "size": [
+        6.9685879880048445,
+        11.959831013098869,
+        7.127970279632793
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "FloatingShard_color.png",
+    "normal": "FloatingShard_normal.png",
+    "roughness": "FloatingShard_roughness.png",
+    "metalness": "FloatingShard_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "ChaosCore",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            3.6,
+            8.0,
+            3.6
+          ],
+          "center": [
+            0.0,
+            10.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Altar",
+          "shape": "Cylinder",
+          "size": [
+            9.2,
+            1.5,
+            9.2
+          ],
+          "center": [
+            0.0,
+            0.75,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

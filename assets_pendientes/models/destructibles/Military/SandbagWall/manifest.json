@@ -1,0 +1,90 @@
+{
+  "name": "SandbagWall",
+  "atlas": 1024,
+  "texel_density": 52.07181780040264,
+  "triangles": 1812,
+  "budget": 2000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1812,
+      "vertices": 1624,
+      "center": [
+        0.0,
+        1.7978475417073208,
+        -0.00903855699891265
+      ],
+      "size": [
+        11.6,
+        3.5722636259095655,
+        3.418077113997825
+      ],
+      "fallback": [
+        124,
+        112,
+        86
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "SandbagWall_color.png",
+    "normal": "SandbagWall_normal.png",
+    "roughness": "SandbagWall_roughness.png",
+    "metalness": "SandbagWall_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Military",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            11.4,
+            3.511,
+            1.8
+          ],
+          "center": [
+            0.0,
+            1.7555,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Base",
+          "shape": "Block",
+          "size": [
+            11.6,
+            1.4,
+            3.4
+          ],
+          "center": [
+            0.0,
+            0.7,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

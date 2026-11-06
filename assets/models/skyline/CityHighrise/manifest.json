@@ -1,0 +1,100 @@
+{
+  "name": "CityHighrise",
+  "atlas": 1024,
+  "texel_density": 8.706858217716217,
+  "triangles": 510,
+  "budget": 1500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 438,
+      "vertices": 494,
+      "center": [
+        0.0,
+        44.0,
+        0.0
+      ],
+      "size": [
+        13.4,
+        88.0,
+        13.4
+      ],
+      "fallback": [
+        141,
+        136,
+        131
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        60,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 53,
+      "center": [
+        -3.0,
+        88.2,
+        3.0
+      ],
+      "size": [
+        0.7999999999999998,
+        0.8000000000000114,
+        0.7999999999999998
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "CityHighrise_color.png",
+    "normal": "CityHighrise_normal.png",
+    "roughness": "CityHighrise_roughness.png",
+    "metalness": "CityHighrise_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Zones/Downtown/Landmarks"
+      ],
+      "name": "Facade",
+      "fit": "box",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "Tower",
+          "shape": "Block",
+          "size": [
+            12.6,
+            80.0,
+            12.6
+          ],
+          "center": [
+            0.0,
+            40.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

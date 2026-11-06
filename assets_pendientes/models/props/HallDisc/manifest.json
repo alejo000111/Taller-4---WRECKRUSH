@@ -1,0 +1,86 @@
+{
+  "name": "HallDisc",
+  "atlas": 1024,
+  "texel_density": 6.6489501148462296,
+  "triangles": 764,
+  "budget": 1200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 508,
+      "vertices": 518,
+      "center": [
+        0.0,
+        0.06999999999999927,
+        0.0
+      ],
+      "size": [
+        48.4,
+        0.14000000000000148,
+        48.4
+      ],
+      "fallback": [
+        181,
+        147,
+        71
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 256,
+      "vertices": 260,
+      "center": [
+        0.0,
+        0.06,
+        0.0
+      ],
+      "size": [
+        46.6,
+        0.12,
+        46.6
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "HallDisc_color.png",
+    "normal": "HallDisc_normal.png",
+    "roughness": "HallDisc_roughness.png",
+    "metalness": "HallDisc_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "@Leaderboards/HallOfWreckers/Grounds"
+      ],
+      "parts": [
+        "PodiumDisc"
+      ],
+      "remove": [
+        "PodiumRingGlow"
+      ],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": true,
+      "functional": false
+    }
+  }
+}

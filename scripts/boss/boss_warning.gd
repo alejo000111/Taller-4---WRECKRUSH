@@ -65,6 +65,7 @@ func _process(delta: float) -> void:
 	if _tiempo >= duracion and not _impactado:
 		_impactado = true
 		impacto.emit()
+		Fx.onda(global_position + Vector3(0, 0.1, 0), radio, GameColors.NARANJA, 0.4)
 		Fx.sacudida_camara.emit(0.7)
 		Sfx.reproducir("jefe", -2.0)
 		var salida := create_tween()

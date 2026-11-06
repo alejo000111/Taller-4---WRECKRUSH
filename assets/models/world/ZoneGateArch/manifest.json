@@ -1,0 +1,198 @@
+{
+  "name": "ZoneGateArch",
+  "atlas": 1024,
+  "texel_density": 11.347509756684303,
+  "triangles": 2144,
+  "budget": 3000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1988,
+      "vertices": 2112,
+      "center": [
+        0.0,
+        16.917573593128807,
+        -0.0035631385285015416
+      ],
+      "size": [
+        48.4,
+        33.76485281374238,
+        5.207126277057004
+      ],
+      "fallback": [
+        74,
+        73,
+        73
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 60,
+      "vertices": 120,
+      "center": [
+        0.0,
+        11.2875,
+        0.0
+      ],
+      "size": [
+        40.5,
+        16.575,
+        5.75
+      ]
+    },
+    "Frame": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        183,
+        87,
+        18
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 96,
+      "vertices": 192,
+      "center": [
+        0.0,
+        28.0,
+        0.0
+      ],
+      "size": [
+        48.0,
+        11.200000000000003,
+        2.12
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ZoneGateArch_color.png",
+    "normal": "ZoneGateArch_normal.png",
+    "roughness": "ZoneGateArch_roughness.png",
+    "metalness": "ZoneGateArch_metalness.png"
+  },
+  "meta": {
+    "anchor_height": 28.0,
+    "prop": {
+      "targets": [
+        "Zones/ScrapYard/GateArch",
+        "Zones/Downtown/GateArch",
+        "Zones/Industrial/GateArch",
+        "Zones/Military/GateArch",
+        "Zones/FutureDistrict/GateArch",
+        "Zones/ChaosCore/GateArch",
+        "VIPArea/GateArch"
+      ],
+      "anchor": "ZoneSign",
+      "replace": [
+        "GatePillar",
+        "PillarGlow",
+        "Lintel",
+        "LintelGlow",
+        "ZoneSignFrame"
+      ],
+      "tint": {
+        "Glow": "PillarGlow",
+        "Frame": "ZoneSignFrame"
+      },
+      "ground": 0.0,
+      "colliders": [
+        {
+          "name": "TowerL",
+          "shape": "Block",
+          "size": [
+            5.2,
+            20.4,
+            5.2
+          ],
+          "center": [
+            -20.0,
+            10.2,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "TowerR",
+          "shape": "Block",
+          "size": [
+            5.2,
+            20.4,
+            5.2
+          ],
+          "center": [
+            20.0,
+            10.2,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Truss",
+          "shape": "Block",
+          "size": [
+            44.0,
+            3.4,
+            4.2
+          ],
+          "center": [
+            0.0,
+            21.3,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "SignFrame",
+          "shape": "Block",
+          "size": [
+            48.4,
+            11.6,
+            2.0
+          ],
+          "center": [
+            0.0,
+            28.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

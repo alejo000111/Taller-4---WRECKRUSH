@@ -1,0 +1,88 @@
+{
+  "name": "RuneGlyph",
+  "atlas": 256,
+  "texel_density": 60.749996438622475,
+  "triangles": 60,
+  "budget": 150,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        0.04,
+        0.0
+      ],
+      "size": [
+        4.0,
+        0.08,
+        1.0
+      ],
+      "fallback": [
+        95,
+        92,
+        109
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        245,
+        199,
+        116
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 48,
+      "vertices": 96,
+      "center": [
+        -0.17500000000000004,
+        0.1,
+        0.0
+      ],
+      "size": [
+        2.85,
+        0.06,
+        0.6
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "RuneGlyph_color.png",
+    "normal": "RuneGlyph_normal.png",
+    "roughness": "RuneGlyph_roughness.png",
+    "metalness": "RuneGlyph_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "Rune"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": true,
+      "functional": false,
+      "overlay": false,
+      "tint": {
+        "Glow": true
+      }
+    }
+  }
+}

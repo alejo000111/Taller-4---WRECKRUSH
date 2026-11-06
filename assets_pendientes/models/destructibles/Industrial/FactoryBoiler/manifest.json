@@ -1,0 +1,152 @@
+{
+  "name": "FactoryBoiler",
+  "atlas": 1024,
+  "texel_density": 17.730716601014137,
+  "triangles": 3758,
+  "budget": 6000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 3734,
+      "vertices": 4278,
+      "center": [
+        0.0,
+        12.811715728752539,
+        0.0
+      ],
+      "size": [
+        17.6,
+        25.576568542494925,
+        17.6
+      ],
+      "fallback": [
+        137,
+        124,
+        114
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        120,
+        30
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        2.9375,
+        -7.94
+      ],
+      "size": [
+        3.6,
+        2.7249999999999996,
+        0.2900000000000009
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "FactoryBoiler_color.png",
+    "normal": "FactoryBoiler_normal.png",
+    "roughness": "FactoryBoiler_roughness.png",
+    "metalness": "FactoryBoiler_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Industrial",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Cylinder",
+          "size": [
+            12.4,
+            19.0,
+            12.4
+          ],
+          "center": [
+            0.0,
+            10.4,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Foundation",
+          "shape": "Block",
+          "size": [
+            17.6,
+            1.0,
+            17.6
+          ],
+          "center": [
+            0.0,
+            0.5,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Stack",
+          "shape": "Cylinder",
+          "size": [
+            3.0,
+            6.0,
+            3.0
+          ],
+          "center": [
+            0.0,
+            22.6,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Firebox",
+          "shape": "Block",
+          "size": [
+            5.2,
+            5.2,
+            2.4
+          ],
+          "center": [
+            0.0,
+            4.0,
+            -6.6
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

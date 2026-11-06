@@ -1,0 +1,236 @@
+{
+  "name": "MilitaryWarden",
+  "atlas": 1024,
+  "texel_density": 10.16548639535904,
+  "triangles": 3748,
+  "budget": 7000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2344,
+      "vertices": 2196,
+      "center": [
+        0.0,
+        22.77,
+        -1.7049999999999996
+      ],
+      "size": [
+        28.6,
+        45.54,
+        16.61
+      ],
+      "fallback": [
+        75,
+        78,
+        67
+      ]
+    },
+    "ArmL": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 648,
+      "vertices": 531,
+      "center": [
+        -16.5,
+        21.615000000000002,
+        -2.084111542293909
+      ],
+      "size": [
+        10.767801179341635,
+        26.730000000000004,
+        9.502939571899962
+      ],
+      "fallback": [
+        81,
+        84,
+        67
+      ]
+    },
+    "ArmR": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 648,
+      "vertices": 531,
+      "center": [
+        16.5,
+        21.615000000000002,
+        -2.084111542293909
+      ],
+      "size": [
+        10.767801179341635,
+        26.730000000000004,
+        9.502939571899962
+      ],
+      "fallback": [
+        81,
+        84,
+        67
+      ]
+    },
+    "Eyes": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        210,
+        31
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        38.5,
+        -4.785
+      ],
+      "size": [
+        5.5,
+        0.6599999999999895,
+        0.33000000000000096
+      ]
+    },
+    "Core": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        140,
+        255,
+        90
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 96,
+      "vertices": 128,
+      "center": [
+        0.0,
+        31.240000000000002,
+        -7.590000000000002
+      ],
+      "size": [
+        3.08,
+        3.0799999999999983,
+        0.6599999999999993
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "MilitaryWarden_color.png",
+    "normal": "MilitaryWarden_normal.png",
+    "roughness": "MilitaryWarden_roughness.png",
+    "metalness": "MilitaryWarden_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            19.8,
+            37.4,
+            15.4
+          ],
+          "center": [
+            0.0,
+            18.7,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "motion": {
+        "ArmL": "Arm",
+        "ArmR": "Arm",
+        "Core": "Core"
+      },
+      "sockets": [
+        {
+          "name": "WeakSocket1",
+          "center": [
+            -0.0,
+            17.6,
+            -9.24
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "WeakSocket2",
+          "center": [
+            -9.24,
+            11.0,
+            -0.0
+          ],
+          "rotation": [
+            0.0,
+            90.0,
+            0.0
+          ]
+        },
+        {
+          "name": "WeakSocket3",
+          "center": [
+            -0.0,
+            17.6,
+            9.24
+          ],
+          "rotation": [
+            0.0,
+            180.0,
+            0.0
+          ]
+        },
+        {
+          "name": "WeakSocket4",
+          "center": [
+            9.24,
+            11.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            270.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

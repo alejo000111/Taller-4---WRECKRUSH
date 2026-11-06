@@ -1,0 +1,142 @@
+{
+  "name": "NightTowerA",
+  "atlas": 1024,
+  "texel_density": 2.970588117837906,
+  "triangles": 414,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 282,
+      "vertices": 532,
+      "center": [
+        0.0,
+        157.5,
+        -1.1999999999999993
+      ],
+      "size": [
+        41.2,
+        315.0,
+        41.6
+      ],
+      "fallback": [
+        116,
+        115,
+        115
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        196,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 48,
+      "vertices": 96,
+      "center": [
+        0.0,
+        271.2,
+        0.0
+      ],
+      "size": [
+        28.6,
+        0.6000000000000227,
+        26.6
+      ]
+    },
+    "Warm": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        188,
+        128
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.25,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        5.0,
+        -19.15
+      ],
+      "size": [
+        26.0,
+        8.0,
+        0.25
+      ]
+    },
+    "Beacon": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        36,
+        36
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 53,
+      "center": [
+        -3.5999999999999996,
+        316.0,
+        -2.16
+      ],
+      "size": [
+        2.1999999999999997,
+        2.2000000000000455,
+        2.2
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "NightTowerA_color.png",
+    "normal": "NightTowerA_normal.png",
+    "roughness": "NightTowerA_roughness.png",
+    "metalness": "NightTowerA_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/SkylineNext/Towers"
+      ],
+      "name": [
+        "NightTower"
+      ],
+      "fit": "box",
+      "keep": [],
+      "colliders": [],
+      "pick": [
+        2,
+        0
+      ],
+      "tint": {
+        "Glow": [
+          "CrownLight",
+          "Fin",
+          "Halo",
+          "BladeFace"
+        ]
+      }
+    }
+  }
+}

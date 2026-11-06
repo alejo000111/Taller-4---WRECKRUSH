@@ -1,0 +1,122 @@
+{
+  "name": "ExpeditionConsole",
+  "atlas": 512,
+  "texel_density": 16.954599976539612,
+  "triangles": 304,
+  "budget": 700,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 256,
+      "vertices": 256,
+      "center": [
+        0.0,
+        2.8,
+        0.0
+      ],
+      "size": [
+        8.0,
+        5.6,
+        6.8
+      ],
+      "fallback": [
+        59,
+        64,
+        71
+      ]
+    },
+    "Trim": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        239,
+        183,
+        95
+      ],
+      "skin": "Trim",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        2.3,
+        0.3999999999999999
+      ],
+      "size": [
+        6.6,
+        3.4000000000000004,
+        4.5
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        120,
+        230,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        2.722039160932215,
+        -2.2328117117060264
+      ],
+      "size": [
+        6.0,
+        4.29407832186443,
+        0.8656234234120526
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ExpeditionConsole_color.png",
+    "normal": "ExpeditionConsole_normal.png",
+    "roughness": "ExpeditionConsole_roughness.png",
+    "metalness": "ExpeditionConsole_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/VerdantFoundry",
+        "ExpeditionWorlds/FrostHarbor",
+        "ExpeditionWorlds/SkyRuins",
+        "ExpeditionWorlds/WorldsGate",
+        "BossIslands/ScrapColossus",
+        "BossIslands/DowntownCrusher",
+        "BossIslands/IndustrialTitan",
+        "BossIslands/MilitaryWarden",
+        "BossIslands/VoidSentinel",
+        "BossIslands/ChaosOverlord"
+      ],
+      "parts": [
+        "ReturnConsole",
+        "Console"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": true,
+      "overlay": false,
+      "tint": {
+        "Trim": true
+      }
+    }
+  }
+}

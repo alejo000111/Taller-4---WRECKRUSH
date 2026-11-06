@@ -1,0 +1,129 @@
+{
+  "name": "PlasmaCannon",
+  "atlas": 1024,
+  "texel_density": 96.686594247818,
+  "triangles": 6928,
+  "budget": 7000,
+  "roles": {
+    "Primary": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        40,
+        44,
+        58
+      ],
+      "skin": "Primary",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 320,
+      "vertices": 316,
+      "center": [
+        0.0,
+        1.13,
+        0.29500000000000004
+      ],
+      "size": [
+        1.1,
+        1.14,
+        2.51
+      ]
+    },
+    "AccentGlow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": "Accent",
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1312,
+      "vertices": 1026,
+      "center": [
+        0.0,
+        1.315,
+        -0.46889877161664106
+      ],
+      "size": [
+        1.33,
+        1.67,
+        5.067797543233282
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        180,
+        240,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.45,
+      "triangles": 840,
+      "vertices": 570,
+      "center": [
+        0.0,
+        1.717202456766718,
+        0.6843096281325638
+      ],
+      "size": [
+        1.42,
+        2.0455950864665637,
+        1.2586192562651273
+      ]
+    },
+    "Base": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 4456,
+      "vertices": 4854,
+      "center": [
+        0.0,
+        0.8399999999999999,
+        -0.47
+      ],
+      "size": [
+        1.47,
+        3.2199999999999998,
+        5.02
+      ],
+      "fallback": [
+        110,
+        112,
+        119
+      ]
+    }
+  },
+  "points": {
+    "muzzle": [
+      0.0,
+      1.0,
+      -2.95
+    ],
+    "grip": [
+      0.0,
+      -0.1,
+      0.0
+    ]
+  },
+  "textures": {
+    "color": "PlasmaCannon_color.png",
+    "normal": "PlasmaCannon_normal.png",
+    "roughness": "PlasmaCannon_roughness.png",
+    "metalness": "PlasmaCannon_metalness.png"
+  },
+  "meta": {}
+}

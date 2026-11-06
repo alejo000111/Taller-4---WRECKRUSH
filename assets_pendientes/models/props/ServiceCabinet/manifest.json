@@ -1,0 +1,79 @@
+{
+  "name": "ServiceCabinet",
+  "atlas": 512,
+  "texel_density": 39.819499760866165,
+  "triangles": 616,
+  "budget": 800,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 616,
+      "vertices": 634,
+      "center": [
+        0.07000000000000006,
+        2.9,
+        -0.02499999999999991
+      ],
+      "size": [
+        3.54,
+        5.8,
+        2.47
+      ],
+      "fallback": [
+        75,
+        77,
+        82
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ServiceCabinet_color.png",
+    "normal": "ServiceCabinet_normal.png",
+    "roughness": "ServiceCabinet_roughness.png",
+    "metalness": "ServiceCabinet_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/DesignExpansion_20261006"
+      ],
+      "name": [
+        "ServiceCabinet_1",
+        "ServiceCabinet_2"
+      ],
+      "fit": "box",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "Cabinet",
+          "shape": "Block",
+          "size": [
+            3.4,
+            5.4,
+            2.4
+          ],
+          "center": [
+            0.0,
+            2.7,
+            -0.06
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

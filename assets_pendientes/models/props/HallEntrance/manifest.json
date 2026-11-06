@@ -1,0 +1,125 @@
+{
+  "name": "HallEntrance",
+  "atlas": 1024,
+  "texel_density": 15.293933734297752,
+  "triangles": 1164,
+  "budget": 1600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1020,
+      "vertices": 1024,
+      "center": [
+        0.0,
+        20.25,
+        0.0
+      ],
+      "size": [
+        67.2,
+        40.5,
+        5.2
+      ],
+      "fallback": [
+        95,
+        87,
+        61
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 144,
+      "vertices": 288,
+      "center": [
+        0.0,
+        21.400000000000002,
+        0.0
+      ],
+      "size": [
+        62.8,
+        37.6,
+        4.26
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "HallEntrance_color.png",
+    "normal": "HallEntrance_normal.png",
+    "roughness": "HallEntrance_roughness.png",
+    "metalness": "HallEntrance_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "@Leaderboards/HallOfWreckers"
+      ],
+      "name": "Entrance",
+      "fit": "none",
+      "keep": [
+        "ArchSign"
+      ],
+      "colliders": [
+        {
+          "name": "PostL",
+          "shape": "Block",
+          "size": [
+            4.0,
+            30.0,
+            4.0
+          ],
+          "center": [
+            -31.0,
+            15.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "PostR",
+          "shape": "Block",
+          "size": [
+            4.0,
+            30.0,
+            4.0
+          ],
+          "center": [
+            31.0,
+            15.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "tint": {
+        "Glow": "ArchSignFrame"
+      },
+      "bounds_all": true
+    }
+  }
+}

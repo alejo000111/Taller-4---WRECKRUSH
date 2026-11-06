@@ -1,0 +1,107 @@
+{
+  "name": "FloodLight",
+  "atlas": 512,
+  "texel_density": 30.954660162329674,
+  "triangles": 684,
+  "budget": 1000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 648,
+      "vertices": 782,
+      "center": [
+        0.0,
+        9.188847058328568,
+        -1.1102230246251565e-16
+      ],
+      "size": [
+        5.1,
+        18.377694116657135,
+        2.217310878027088
+      ],
+      "fallback": [
+        95,
+        95,
+        98
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        244,
+        210
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 36,
+      "vertices": 72,
+      "center": [
+        0.0,
+        17.587776718550113,
+        -0.603086256386927
+      ],
+      "size": [
+        4.9,
+        0.684000457248743,
+        0.4998187512952865
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "FloodLight_color.png",
+    "normal": "FloodLight_normal.png",
+    "roughness": "FloodLight_roughness.png",
+    "metalness": "FloodLight_metalness.png"
+  },
+  "meta": {
+    "scatter": {
+      "target": [
+        "Zones/ScrapYard/FloodLights",
+        "Zones/Industrial/FloodLights"
+      ],
+      "key": "FloodPole",
+      "remove": [
+        "FloodPole",
+        "FloodHead",
+        "FloodBulb"
+      ],
+      "radius": 4.0,
+      "face": "FloodHead",
+      "tint": {},
+      "colliders": [
+        {
+          "name": "Pole",
+          "shape": "Cylinder",
+          "size": [
+            1.0,
+            18.0,
+            1.0
+          ],
+          "center": [
+            0.0,
+            9.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

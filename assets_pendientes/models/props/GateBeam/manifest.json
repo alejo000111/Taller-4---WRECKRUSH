@@ -1,0 +1,89 @@
+{
+  "name": "GateBeam",
+  "atlas": 512,
+  "texel_density": 8.333292216062546,
+  "triangles": 360,
+  "budget": 700,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 336,
+      "vertices": 672,
+      "center": [
+        0.0,
+        1.5,
+        4.440892098500626e-16
+      ],
+      "size": [
+        38.0,
+        3.0,
+        6.300000000000001
+      ],
+      "fallback": [
+        69,
+        70,
+        75
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        239,
+        183,
+        95
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        -0.05,
+        0.0
+      ],
+      "size": [
+        36.0,
+        0.15,
+        5.3500000000000005
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "GateBeam_color.png",
+    "normal": "GateBeam_normal.png",
+    "roughness": "GateBeam_roughness.png",
+    "metalness": "GateBeam_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/VerdantFoundry",
+        "ExpeditionWorlds/FrostHarbor",
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "EntryArch"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "tint": {
+        "Glow": true
+      }
+    }
+  }
+}

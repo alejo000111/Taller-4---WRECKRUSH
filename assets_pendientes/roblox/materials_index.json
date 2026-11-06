@@ -1,0 +1,122 @@
+{
+  "facade_glass": [
+    "color",
+    "normal",
+    "roughness",
+    "metalness"
+  ],
+  "facade_night": [
+    "color",
+    "normal",
+    "roughness",
+    "metalness"
+  ],
+  "facade_brick": [
+    "color",
+    "normal",
+    "roughness"
+  ],
+  "facade_ribbon": [
+    "color",
+    "normal",
+    "roughness",
+    "metalness"
+  ],
+  "asphalt": [
+    "color",
+    "normal",
+    "roughness"
+  ],
+  "sidewalk": [
+    "color",
+    "normal",
+    "roughness"
+  ],
+  "deck_plate": [
+    "color",
+    "normal",
+    "roughness",
+    "metalness"
+  ],
+  "wall_panel": [
+    "color",
+    "normal",
+    "roughness"
+  ],
+  "rust_sheet": [
+    "color",
+    "normal",
+    "roughness",
+    "metalness"
+  ],
+  "future_panel": [
+    "color",
+    "normal",
+    "roughness",
+    "metalness"
+  ],
+  "scrap_dirt": [
+    "color",
+    "normal",
+    "roughness",
+    "metalness"
+  ],
+  "factory_concrete": [
+    "color",
+    "normal",
+    "roughness"
+  ],
+  "military_pavers": [
+    "color",
+    "normal",
+    "roughness"
+  ],
+  "tech_floor": [
+    "color",
+    "normal",
+    "roughness",
+    "metalness"
+  ],
+  "chaos_rock": [
+    "color",
+    "normal",
+    "roughness"
+  ],
+  "vip_marble": [
+    "color",
+    "normal",
+    "roughness",
+    "metalness"
+  ],
+  "plaza_tiles": [
+    "color",
+    "normal",
+    "roughness",
+    "metalness"
+  ],
+  "road_paint": [
+    "color",
+    "normal",
+    "roughness"
+  ],
+  "moss_floor": [
+    "color",
+    "normal",
+    "roughness"
+  ],
+  "snow_field": [
+    "color",
+    "normal",
+    "roughness"
+  ],
+  "sky_stone": [
+    "color",
+    "normal",
+    "roughness"
+  ],
+  "cloud_sea": [
+    "color",
+    "normal",
+    "roughness"
+  ]
+}

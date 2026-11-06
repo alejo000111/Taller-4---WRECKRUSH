@@ -1,0 +1,181 @@
+{
+  "name": "OfficeFacade",
+  "atlas": 1024,
+  "texel_density": 10.187331646680832,
+  "triangles": 1644,
+  "budget": 6000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1356,
+      "vertices": 1576,
+      "center": [
+        0.0,
+        18.36171572875254,
+        0.2749999999999999
+      ],
+      "size": [
+        26.0,
+        36.67656854249493,
+        10.850000000000001
+      ],
+      "fallback": [
+        118,
+        119,
+        121
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        70,
+        120,
+        190
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.5,
+      "triangles": 96,
+      "vertices": 172,
+      "center": [
+        0.0,
+        15.849999999999998,
+        -0.20000000000000018
+      ],
+      "size": [
+        24.11,
+        29.699999999999996,
+        9.6
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        200,
+        244,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 120,
+      "vertices": 240,
+      "center": [
+        0.0,
+        18.515,
+        -3.35
+      ],
+      "size": [
+        21.9,
+        23.65,
+        2.62
+      ]
+    },
+    "Beacon": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        52,
+        52
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 53,
+      "center": [
+        -3.0,
+        36.75,
+        2.1
+      ],
+      "size": [
+        0.40000000000000036,
+        0.4000000000000057,
+        0.40000000000000013
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "OfficeFacade_color.png",
+    "normal": "OfficeFacade_normal.png",
+    "roughness": "OfficeFacade_roughness.png",
+    "metalness": "OfficeFacade_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Downtown",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            24.4,
+            33.6,
+            7.4
+          ],
+          "center": [
+            0.0,
+            16.8,
+            1.5
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Plinth",
+          "shape": "Block",
+          "size": [
+            26.0,
+            1.0,
+            9.6
+          ],
+          "center": [
+            0.0,
+            0.5,
+            0.2
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Lobby",
+          "shape": "Block",
+          "size": [
+            21.0,
+            5.9,
+            1.4
+          ],
+          "center": [
+            0.0,
+            3.95,
+            -2.7
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

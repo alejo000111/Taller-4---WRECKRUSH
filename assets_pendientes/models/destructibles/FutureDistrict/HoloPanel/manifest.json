@@ -1,0 +1,114 @@
+{
+  "name": "HoloPanel",
+  "atlas": 512,
+  "texel_density": 22.864655762910843,
+  "triangles": 520,
+  "budget": 1500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 436,
+      "vertices": 452,
+      "center": [
+        0.0,
+        4.875,
+        0.0
+      ],
+      "size": [
+        7.7,
+        9.75,
+        1.9
+      ],
+      "fallback": [
+        140,
+        142,
+        148
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 84,
+      "vertices": 168,
+      "center": [
+        0.0,
+        5.970000000000001,
+        0.0
+      ],
+      "size": [
+        7.08,
+        10.46,
+        1.0
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "HoloPanel_color.png",
+    "normal": "HoloPanel_normal.png",
+    "roughness": "HoloPanel_roughness.png",
+    "metalness": "HoloPanel_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "FutureDistrict",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            6.8,
+            5.6,
+            0.9
+          ],
+          "center": [
+            0.0,
+            6.0,
+            0.2
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Frame",
+          "shape": "Block",
+          "size": [
+            7.6,
+            9.9,
+            0.8
+          ],
+          "center": [
+            0.0,
+            4.95,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

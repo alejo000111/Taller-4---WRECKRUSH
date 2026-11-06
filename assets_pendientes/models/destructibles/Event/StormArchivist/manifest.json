@@ -1,0 +1,266 @@
+{
+  "name": "StormArchivist",
+  "atlas": 1024,
+  "texel_density": 8.611056417226791,
+  "triangles": 3852,
+  "budget": 6000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2456,
+      "vertices": 2322,
+      "center": [
+        0.0,
+        15.825,
+        -1.0750000000000002
+      ],
+      "size": [
+        27.45723376973538,
+        31.65,
+        20.65
+      ],
+      "fallback": [
+        124,
+        115,
+        113
+      ]
+    },
+    "ArmL": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 324,
+      "vertices": 328,
+      "center": [
+        -14.249002165115321,
+        15.75,
+        0.0
+      ],
+      "size": [
+        8.498004330230643,
+        17.700000000000003,
+        7.0
+      ],
+      "fallback": [
+        130,
+        118,
+        110
+      ]
+    },
+    "ArmR": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 324,
+      "vertices": 328,
+      "center": [
+        14.249002165115321,
+        15.75,
+        0.0
+      ],
+      "size": [
+        8.498004330230643,
+        17.700000000000003,
+        7.0
+      ],
+      "fallback": [
+        130,
+        118,
+        110
+      ]
+    },
+    "Eyes": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        245,
+        199,
+        116
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        25.0,
+        -5.35
+      ],
+      "size": [
+        10.0,
+        1.1000000000000014,
+        0.40000000000000036
+      ]
+    },
+    "Core": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        173,
+        161,
+        230
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 76,
+      "vertices": 120,
+      "center": [
+        0.0,
+        17.0,
+        -6.8
+      ],
+      "size": [
+        6.0,
+        5.706339097770922,
+        1.0
+      ]
+    },
+    "WingL": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 252,
+      "vertices": 272,
+      "center": [
+        -21.208037637623526,
+        23.181790937492174,
+        3.0
+      ],
+      "size": [
+        23.416075275247053,
+        16.800420587968553,
+        3.0
+      ],
+      "fallback": [
+        177,
+        155,
+        118
+      ]
+    },
+    "WingR": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 252,
+      "vertices": 272,
+      "center": [
+        21.208037637623526,
+        23.181790937492174,
+        3.0
+      ],
+      "size": [
+        23.416075275247053,
+        16.800420587968553,
+        3.0
+      ],
+      "fallback": [
+        178,
+        156,
+        120
+      ]
+    },
+    "Halo": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        245,
+        199,
+        116
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 144,
+      "vertices": 288,
+      "center": [
+        0.0,
+        32.0,
+        0.0
+      ],
+      "size": [
+        21.0,
+        0.5999999999999979,
+        21.0
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "StormArchivist_color.png",
+    "normal": "StormArchivist_normal.png",
+    "roughness": "StormArchivist_roughness.png",
+    "metalness": "StormArchivist_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            24.0,
+            24.0,
+            24.0
+          ],
+          "center": [
+            0.0,
+            12.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "motion": {
+        "ArmL": "Arm",
+        "ArmR": "Arm",
+        "Core": "Core",
+        "WingL": "Wing",
+        "WingR": "Wing"
+      }
+    }
+  }
+}

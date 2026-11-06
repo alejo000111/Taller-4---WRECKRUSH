@@ -1,0 +1,71 @@
+{
+  "name": "AmmoCrate",
+  "atlas": 512,
+  "texel_density": 23.689039409160614,
+  "triangles": 828,
+  "budget": 1200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 828,
+      "vertices": 878,
+      "center": [
+        0.0,
+        1.928357864376269,
+        0.0
+      ],
+      "size": [
+        5.316768748510237,
+        3.833284271247462,
+        6.8
+      ],
+      "fallback": [
+        93,
+        90,
+        76
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "AmmoCrate_color.png",
+    "normal": "AmmoCrate_normal.png",
+    "roughness": "AmmoCrate_roughness.png",
+    "metalness": "AmmoCrate_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Military",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            4.8,
+            3.84,
+            6.8
+          ],
+          "center": [
+            0.0,
+            1.92,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

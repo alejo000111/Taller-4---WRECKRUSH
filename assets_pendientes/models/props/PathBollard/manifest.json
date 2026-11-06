@@ -1,0 +1,88 @@
+{
+  "name": "PathBollard",
+  "atlas": 256,
+  "texel_density": 55.54539582133293,
+  "triangles": 180,
+  "budget": 300,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 120,
+      "vertices": 152,
+      "center": [
+        0.0,
+        1.5,
+        0.0
+      ],
+      "size": [
+        1.3,
+        3.0,
+        1.2363734711836998
+      ],
+      "fallback": [
+        89,
+        92,
+        97
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        214,
+        150
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 60,
+      "vertices": 86,
+      "center": [
+        0.0,
+        3.25,
+        0.0
+      ],
+      "size": [
+        1.1,
+        0.5,
+        1.046162167924669
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "PathBollard_color.png",
+    "normal": "PathBollard_normal.png",
+    "roughness": "PathBollard_roughness.png",
+    "metalness": "PathBollard_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/VerdantFoundry",
+        "ExpeditionWorlds/FrostHarbor",
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "PathPost"
+      ],
+      "remove": [
+        "PathCap"
+      ],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": true,
+      "functional": false
+    }
+  }
+}

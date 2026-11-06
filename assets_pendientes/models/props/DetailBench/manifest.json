@@ -1,0 +1,79 @@
+{
+  "name": "DetailBench",
+  "atlas": 512,
+  "texel_density": 25.21643741428852,
+  "triangles": 510,
+  "budget": 1400,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 510,
+      "vertices": 754,
+      "center": [
+        -0.012075020488325539,
+        2.4,
+        0.0
+      ],
+      "size": [
+        6.04070384729025,
+        4.8,
+        7.5206696833376565
+      ],
+      "fallback": [
+        118,
+        111,
+        106
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "DetailBench_color.png",
+    "normal": "DetailBench_normal.png",
+    "roughness": "DetailBench_roughness.png",
+    "metalness": "DetailBench_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/DesignExpansion_20261006"
+      ],
+      "name": [
+        "DetailBench_1",
+        "DetailBench_2"
+      ],
+      "fit": "none",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "Bench",
+          "shape": "Block",
+          "size": [
+            5.0,
+            4.0,
+            5.0
+          ],
+          "center": [
+            0.0,
+            2.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "name": "DowntownServiceDetail",
+  "atlas": 512,
+  "texel_density": 26.263117849826813,
+  "triangles": 198,
+  "budget": 700,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 186,
+      "vertices": 272,
+      "center": [
+        0.0,
+        1.4,
+        0.010000000000000009
+      ],
+      "size": [
+        19.0,
+        2.8,
+        3.1199999999999997
+      ],
+      "fallback": [
+        92,
+        102,
+        112
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        140,
+        190,
+        220
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.55,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        2.78,
+        0.0
+      ],
+      "size": [
+        18.4,
+        0.08000000000000007,
+        2.7
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "DowntownServiceDetail_color.png",
+    "normal": "DowntownServiceDetail_normal.png",
+    "roughness": "DowntownServiceDetail_roughness.png",
+    "metalness": "DowntownServiceDetail_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/DesignExpansion_20261006"
+      ],
+      "name": "DowntownService_Detail",
+      "fit": "box",
+      "keep": [],
+      "colliders": []
+    }
+  }
+}

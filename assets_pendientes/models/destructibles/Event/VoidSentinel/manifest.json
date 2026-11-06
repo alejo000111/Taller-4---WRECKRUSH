@@ -1,0 +1,213 @@
+{
+  "name": "VoidSentinel",
+  "atlas": 1024,
+  "texel_density": 11.586465075612068,
+  "triangles": 1786,
+  "budget": 7000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 800,
+      "vertices": 1222,
+      "center": [
+        0.0,
+        20.470000000000002,
+        0.0
+      ],
+      "size": [
+        17.25,
+        39.79,
+        18.133419314826167
+      ],
+      "fallback": [
+        95,
+        87,
+        118
+      ]
+    },
+    "ArmL": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 276,
+      "vertices": 501,
+      "center": [
+        -16.64708937425265,
+        20.225273246390596,
+        4.440892098500626e-16
+      ],
+      "size": [
+        16.361936915350842,
+        26.798155369475786,
+        7.478831914630944
+      ],
+      "fallback": [
+        73,
+        53,
+        110
+      ]
+    },
+    "ArmR": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 276,
+      "vertices": 501,
+      "center": [
+        16.64708937425265,
+        20.225273246390596,
+        4.440892098500626e-16
+      ],
+      "size": [
+        16.361936915350842,
+        26.798155369475786,
+        7.478831914630944
+      ],
+      "fallback": [
+        73,
+        54,
+        110
+      ]
+    },
+    "Halo": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 248,
+      "vertices": 635,
+      "center": [
+        0.0,
+        39.160247638479674,
+        0.0
+      ],
+      "size": [
+        21.61046353527021,
+        2.348046151138618,
+        22.722586055615174
+      ],
+      "fallback": [
+        113,
+        69,
+        193
+      ]
+    },
+    "Eyes": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        30.589999999999996,
+        -5.9799999999999995
+      ],
+      "size": [
+        6.238460670030361,
+        0.7794672990501859,
+        0.8537044380744074
+      ]
+    },
+    "Core": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 162,
+      "vertices": 108,
+      "center": [
+        0.11096557775392824,
+        24.15,
+        -6.439999999999999
+      ],
+      "size": [
+        7.1380688444921425,
+        7.359999999999999,
+        7.248185062169851
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "VoidSentinel_color.png",
+    "normal": "VoidSentinel_normal.png",
+    "roughness": "VoidSentinel_roughness.png",
+    "metalness": "VoidSentinel_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            18.4,
+            34.5,
+            18.4
+          ],
+          "center": [
+            0.0,
+            21.85,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "motion": {
+        "ArmL": "Wing",
+        "ArmR": "Wing",
+        "Halo": "Rotor",
+        "Core": "Core"
+      },
+      "sockets": []
+    }
+  }
+}

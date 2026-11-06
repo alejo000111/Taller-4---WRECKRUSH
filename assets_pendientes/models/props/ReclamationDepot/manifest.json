@@ -1,0 +1,121 @@
+{
+  "name": "ReclamationDepot",
+  "atlas": 1024,
+  "texel_density": 7.028129979968071,
+  "triangles": 1750,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1702,
+      "vertices": 1944,
+      "center": [
+        0.0,
+        14.25,
+        -0.2818366060525648
+      ],
+      "size": [
+        74.0,
+        28.5,
+        15.06367321210513
+      ],
+      "fallback": [
+        63,
+        69,
+        68
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        230,
+        150,
+        50
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 48,
+      "vertices": 96,
+      "center": [
+        0.0,
+        7.6625,
+        -5.15
+      ],
+      "size": [
+        60.4,
+        7.125,
+        0.1999999999999993
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ReclamationDepot_color.png",
+    "normal": "ReclamationDepot_normal.png",
+    "roughness": "ReclamationDepot_roughness.png",
+    "metalness": "ReclamationDepot_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/ImmersionPass_20261005"
+      ],
+      "name": "ReclamationDepot",
+      "fit": "box",
+      "keep": [
+        "SignText"
+      ],
+      "colliders": [
+        {
+          "name": "Shell",
+          "shape": "Block",
+          "size": [
+            71.0,
+            21.0,
+            10.0
+          ],
+          "center": [
+            0.0,
+            10.5,
+            0.25
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Roof",
+          "shape": "Block",
+          "size": [
+            70.0,
+            4.5,
+            12.0
+          ],
+          "center": [
+            0.0,
+            23.25,
+            0.25
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

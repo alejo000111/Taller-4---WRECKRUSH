@@ -1,0 +1,143 @@
+{
+  "name": "LandmarkWatchTower",
+  "atlas": 1024,
+  "texel_density": 14.676713854074478,
+  "triangles": 2490,
+  "budget": 4500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2376,
+      "vertices": 2878,
+      "center": [
+        0.0,
+        15.375,
+        0.08490668048556138
+      ],
+      "size": [
+        12.16223663640862,
+        30.75,
+        13.610186639028878
+      ],
+      "fallback": [
+        111,
+        108,
+        90
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        238,
+        180
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 50,
+      "center": [
+        3.9419574007493945,
+        26.9076618701535,
+        -6.453374139879199
+      ],
+      "size": [
+        1.0875693444439802,
+        1.1817693036146508,
+        0.5336249982993575
+      ]
+    },
+    "Beacon": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        60,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 90,
+      "vertices": 64,
+      "center": [
+        0.0381966011250105,
+        31.0,
+        2.7755575615628914e-17
+      ],
+      "size": [
+        0.723606797749979,
+        0.7999999999999972,
+        0.760845213036123
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "LandmarkWatchTower_color.png",
+    "normal": "LandmarkWatchTower_normal.png",
+    "roughness": "LandmarkWatchTower_roughness.png",
+    "metalness": "LandmarkWatchTower_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Zones/Military/Landmarks"
+      ],
+      "name": "WatchTower",
+      "fit": "box",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "Cabin",
+          "shape": "Block",
+          "size": [
+            11.4,
+            3.2,
+            11.4
+          ],
+          "center": [
+            0.0,
+            23.6,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Legs",
+          "shape": "Block",
+          "size": [
+            9.0,
+            22.0,
+            9.0
+          ],
+          "center": [
+            0.0,
+            11.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

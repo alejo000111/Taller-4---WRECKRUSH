@@ -69,6 +69,35 @@ static func punto_rojo() -> Panel:
 	return p
 
 
+static func icono(textura: Texture2D, tamano: float = 32.0) -> TextureRect:
+	var t := TextureRect.new()
+	t.texture = textura
+	t.custom_minimum_size = Vector2(tamano, tamano)
+	t.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	t.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	t.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	t.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	return t
+
+
+static func con_icono(textura: Texture2D, control: Control, tamano: float = 28.0, separacion: int = 8, centrado: bool = false) -> HBoxContainer:
+	var fila := HBoxContainer.new()
+	fila.add_theme_constant_override("separation", separacion)
+	fila.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	if centrado:
+		fila.alignment = BoxContainer.ALIGNMENT_CENTER
+	fila.add_child(icono(textura, tamano))
+	fila.add_child(control)
+	return fila
+
+
+static func poner_icono(boton: Button, textura: Texture2D, ancho: int = 28) -> void:
+	boton.icon = textura
+	boton.expand_icon = true
+	boton.add_theme_constant_override("icon_max_width", ancho)
+	boton.add_theme_constant_override("h_separation", 8)
+
+
 static func separador(alto: int = 8) -> Control:
 	var c := Control.new()
 	c.custom_minimum_size = Vector2(0, alto)

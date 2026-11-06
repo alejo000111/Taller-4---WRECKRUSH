@@ -1,0 +1,103 @@
+{
+  "name": "HallLamp",
+  "atlas": 512,
+  "texel_density": 34.34970511496067,
+  "triangles": 400,
+  "budget": 700,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 352,
+      "vertices": 374,
+      "center": [
+        0.0,
+        7.3,
+        0.0
+      ],
+      "size": [
+        2.2,
+        14.6,
+        2.2
+      ],
+      "fallback": [
+        160,
+        133,
+        61
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        200,
+        130
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 48,
+      "vertices": 61,
+      "center": [
+        0.0,
+        13.525,
+        0.0
+      ],
+      "size": [
+        2.0,
+        1.5500000000000007,
+        2.0
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "HallLamp_color.png",
+    "normal": "HallLamp_normal.png",
+    "roughness": "HallLamp_roughness.png",
+    "metalness": "HallLamp_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "@Leaderboards/HallOfWreckers/Decor"
+      ],
+      "name": "HallLamp",
+      "fit": "box",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "Pole",
+          "shape": "Block",
+          "size": [
+            1.0,
+            14.6,
+            1.0
+          ],
+          "center": [
+            0.0,
+            7.3,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "tint": {
+        "Glow": "LampHead"
+      }
+    }
+  }
+}

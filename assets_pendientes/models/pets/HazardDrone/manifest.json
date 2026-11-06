@@ -1,0 +1,96 @@
+{
+  "name": "HazardDrone",
+  "atlas": 512,
+  "texel_density": 76.50847731530666,
+  "triangles": 1130,
+  "budget": 2400,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 528,
+      "vertices": 766,
+      "center": [
+        0.0,
+        0.027830957392775413,
+        0.0
+      ],
+      "size": [
+        2.8987048957087502,
+        0.9043380852144491,
+        2.5766025403784436
+      ],
+      "fallback": [
+        90,
+        89,
+        84
+      ]
+    },
+    "Eye": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        59
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 90,
+      "vertices": 64,
+      "center": [
+        0.01909830056250525,
+        -0.14999999999999997,
+        -0.95
+      ],
+      "size": [
+        0.3618033988749895,
+        0.4,
+        0.38042260651806137
+      ]
+    },
+    "Rotors": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 512,
+      "vertices": 544,
+      "center": [
+        0.0,
+        0.28,
+        0.0
+      ],
+      "size": [
+        3.0,
+        0.06,
+        3.0
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "HazardDrone_color.png",
+    "normal": "HazardDrone_normal.png",
+    "roughness": "HazardDrone_roughness.png",
+    "metalness": "HazardDrone_metalness.png"
+  },
+  "meta": {
+    "pet": {}
+  }
+}

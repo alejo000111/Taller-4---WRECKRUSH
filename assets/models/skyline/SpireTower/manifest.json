@@ -1,0 +1,138 @@
+{
+  "name": "SpireTower",
+  "atlas": 1024,
+  "texel_density": 4.184158951044083,
+  "triangles": 764,
+  "budget": 1400,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 584,
+      "vertices": 508,
+      "center": [
+        0.0,
+        143.0,
+        0.0
+      ],
+      "size": [
+        42.0,
+        286.0,
+        38.0
+      ],
+      "fallback": [
+        142,
+        155,
+        168
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        196,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 96,
+      "vertices": 112,
+      "center": [
+        0.0,
+        73.33106601717799,
+        -0.45000000000000107
+      ],
+      "size": [
+        41.4,
+        126.66213203435598,
+        35.3
+      ]
+    },
+    "Warm": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        188,
+        128
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.25,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        4.5,
+        -19.15
+      ],
+      "size": [
+        28.0,
+        8.0,
+        0.25
+      ]
+    },
+    "Beacon": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        36,
+        36
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 53,
+      "center": [
+        10.0,
+        287.0,
+        0.0
+      ],
+      "size": [
+        2.1999999999999993,
+        2.2000000000000455,
+        2.2
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "SpireTower_color.png",
+    "normal": "SpireTower_normal.png",
+    "roughness": "SpireTower_roughness.png",
+    "metalness": "SpireTower_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/SkylineNext/Towers"
+      ],
+      "name": [
+        "SpireTower"
+      ],
+      "fit": "box",
+      "keep": [],
+      "colliders": [],
+      "tint": {
+        "Glow": [
+          "CrownLight",
+          "Fin",
+          "Halo",
+          "BladeFace"
+        ]
+      }
+    }
+  }
+}

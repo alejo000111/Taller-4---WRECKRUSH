@@ -1,0 +1,61 @@
+{
+  "name": "MasonryBlock",
+  "atlas": 256,
+  "texel_density": 11.62472477555275,
+  "triangles": 300,
+  "budget": 300,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 300,
+      "vertices": 216,
+      "center": [
+        0.044449664348137574,
+        2.066389089094541,
+        0.030249743199036727
+      ],
+      "size": [
+        10.373254359202992,
+        4.132778178189082,
+        5.106851270124883
+      ],
+      "fallback": [
+        129,
+        126,
+        139
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "MasonryBlock_color.png",
+    "normal": "MasonryBlock_normal.png",
+    "roughness": "MasonryBlock_roughness.png",
+    "metalness": "MasonryBlock_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "FallenMasonry"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "name": "PipeRack",
+  "atlas": 1024,
+  "texel_density": 6.240724608302116,
+  "triangles": 1280,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1280,
+      "vertices": 2272,
+      "center": [
+        0.0,
+        3.7,
+        0.0
+      ],
+      "size": [
+        160.0,
+        7.4,
+        194.39999999999998
+      ],
+      "fallback": [
+        83,
+        79,
+        80
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "PipeRack_color.png",
+    "normal": "PipeRack_normal.png",
+    "roughness": "PipeRack_roughness.png",
+    "metalness": "PipeRack_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Zones/Industrial/Landmarks"
+      ],
+      "name": "Pipes",
+      "fit": "box",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "RunN",
+          "shape": "Block",
+          "size": [
+            160.0,
+            7.4,
+            3.0
+          ],
+          "center": [
+            0.0,
+            3.7,
+            -95.2
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "RunS",
+          "shape": "Block",
+          "size": [
+            160.0,
+            7.4,
+            3.0
+          ],
+          "center": [
+            0.0,
+            3.7,
+            95.2
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

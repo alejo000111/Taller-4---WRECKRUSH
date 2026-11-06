@@ -1,0 +1,154 @@
+{
+  "name": "PortalArch",
+  "atlas": 1024,
+  "texel_density": 22.310530826449394,
+  "triangles": 708,
+  "budget": 2500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 432,
+      "vertices": 620,
+      "center": [
+        0.0,
+        12.85,
+        0.0
+      ],
+      "size": [
+        20.8,
+        25.7,
+        3.84
+      ],
+      "fallback": [
+        68,
+        68,
+        71
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 276,
+      "vertices": 370,
+      "center": [
+        0.0,
+        14.2,
+        0.0
+      ],
+      "size": [
+        18.900000000000002,
+        24.200000000000003,
+        2.0
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "PortalArch_color.png",
+    "normal": "PortalArch_normal.png",
+    "roughness": "PortalArch_roughness.png",
+    "metalness": "PortalArch_metalness.png"
+  },
+  "meta": {
+    "anchor_height": 22.2,
+    "prop": {
+      "targets": [
+        "Portals/ScrapYard",
+        "Portals/Downtown",
+        "Portals/Industrial",
+        "Portals/Military",
+        "Portals/FutureDistrict",
+        "Portals/ChaosCore",
+        "Portals/VIP",
+        "Portals/Hall"
+      ],
+      "anchor": "Sign",
+      "replace": [
+        "Pillar",
+        "PillarGlow",
+        "Lintel",
+        "LintelGlow"
+      ],
+      "tint": {
+        "Glow": "PillarGlow"
+      },
+      "ground": 0.0,
+      "colliders": [
+        {
+          "name": "PillarL",
+          "shape": "Block",
+          "size": [
+            3.4,
+            17.0,
+            3.4
+          ],
+          "center": [
+            -7.4,
+            8.5,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "PillarR",
+          "shape": "Block",
+          "size": [
+            3.4,
+            17.0,
+            3.4
+          ],
+          "center": [
+            7.4,
+            8.5,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Lintel",
+          "shape": "Block",
+          "size": [
+            20.8,
+            2.6,
+            2.8
+          ],
+          "center": [
+            0.0,
+            18.2,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

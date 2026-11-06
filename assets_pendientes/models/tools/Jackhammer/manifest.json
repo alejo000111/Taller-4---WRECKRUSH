@@ -1,0 +1,129 @@
+{
+  "name": "Jackhammer",
+  "atlas": 1024,
+  "texel_density": 119.939338773489,
+  "triangles": 5254,
+  "budget": 5500,
+  "roles": {
+    "Primary": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        210,
+        31
+      ],
+      "skin": "Primary",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 1308,
+      "vertices": 1319,
+      "center": [
+        0.0,
+        0.9050000000000001,
+        -1.79
+      ],
+      "size": [
+        1.2,
+        1.41,
+        2.0199999999999996
+      ]
+    },
+    "AccentTrim": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        50,
+        52,
+        58
+      ],
+      "skin": "Accent",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 1028,
+      "vertices": 1048,
+      "center": [
+        0.0,
+        0.745,
+        -1.115
+      ],
+      "size": [
+        1.3199999999999998,
+        1.39,
+        3.15
+      ]
+    },
+    "Base": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2702,
+      "vertices": 2362,
+      "center": [
+        0.0,
+        0.689580383726861,
+        -2.10482481547598
+      ],
+      "size": [
+        1.84,
+        2.919160767453722,
+        5.4903503690480395
+      ],
+      "fallback": [
+        94,
+        94,
+        99
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        60,
+        255,
+        120
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 216,
+      "vertices": 159,
+      "center": [
+        0.47,
+        1.2000000000000002,
+        -1.62
+      ],
+      "size": [
+        0.09000000000000002,
+        0.08999999999999986,
+        0.42999999999999994
+      ]
+    }
+  },
+  "points": {
+    "muzzle": [
+      0.0,
+      0.8,
+      -4.8
+    ],
+    "grip": [
+      0.0,
+      -0.1,
+      0.0
+    ]
+  },
+  "textures": {
+    "color": "Jackhammer_color.png",
+    "normal": "Jackhammer_normal.png",
+    "roughness": "Jackhammer_roughness.png",
+    "metalness": "Jackhammer_metalness.png"
+  },
+  "meta": {}
+}

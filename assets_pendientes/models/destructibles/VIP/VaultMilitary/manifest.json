@@ -1,0 +1,95 @@
+{
+  "name": "VaultMilitary",
+  "atlas": 1024,
+  "texel_density": 26.25042563676834,
+  "triangles": 2384,
+  "budget": 2500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2362,
+      "vertices": 2823,
+      "center": [
+        0.0,
+        4.430824146768446,
+        -0.9248720736740106
+      ],
+      "size": [
+        8.5,
+        9.038351706463107,
+        9.749744147348022
+      ],
+      "fallback": [
+        137,
+        126,
+        93
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        140,
+        200,
+        70
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 22,
+      "vertices": 45,
+      "center": [
+        0.0,
+        2.9914348903516514,
+        -0.355
+      ],
+      "size": [
+        8.5,
+        3.482869780703303,
+        8.61
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "VaultMilitary_color.png",
+    "normal": "VaultMilitary_normal.png",
+    "roughness": "VaultMilitary_roughness.png",
+    "metalness": "VaultMilitary_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "VIP",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            8.4,
+            8.5,
+            7.8
+          ],
+          "center": [
+            0.0,
+            4.25,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "name": "AlienMonolith",
+  "atlas": 1024,
+  "texel_density": 19.592261523008347,
+  "triangles": 630,
+  "budget": 3000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 252,
+      "vertices": 288,
+      "center": [
+        0.0,
+        14.717573593128808,
+        0.0
+      ],
+      "size": [
+        9.6,
+        29.364852813742388,
+        5.6
+      ],
+      "fallback": [
+        55,
+        41,
+        55
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        160
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 162,
+      "vertices": 195,
+      "center": [
+        0.0,
+        23.021511758694785,
+        0.0
+      ],
+      "size": [
+        5.7,
+        11.680343297844136,
+        3.126470723166394
+      ]
+    },
+    "Crystal": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        80,
+        220,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.25,
+      "triangles": 216,
+      "vertices": 648,
+      "center": [
+        -0.03970931687717405,
+        2.3000000000000003,
+        0.022549980053384377
+      ],
+      "size": [
+        9.319726590985333,
+        2.6000000000000005,
+        5.045086542781228
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "AlienMonolith_color.png",
+    "normal": "AlienMonolith_normal.png",
+    "roughness": "AlienMonolith_roughness.png",
+    "metalness": "AlienMonolith_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "ChaosCore",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            6.0,
+            24.4,
+            2.4
+          ],
+          "center": [
+            0.0,
+            14.4,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Plinth",
+          "shape": "Block",
+          "size": [
+            9.6,
+            2.2,
+            5.6
+          ],
+          "center": [
+            0.0,
+            1.1,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

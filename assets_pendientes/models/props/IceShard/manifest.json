@@ -1,0 +1,85 @@
+{
+  "name": "IceShard",
+  "atlas": 512,
+  "texel_density": 79.41828919947147,
+  "triangles": 234,
+  "budget": 700,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 90,
+      "vertices": 64,
+      "center": [
+        1.3982488331296157,
+        2.1186603997926703,
+        -0.2384509314282548
+      ],
+      "size": [
+        16.425700063029048,
+        4.237320799585341,
+        14.98211589260586
+      ],
+      "fallback": [
+        117,
+        129,
+        139
+      ]
+    },
+    "Ice": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        170,
+        220,
+        240
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.15,
+      "triangles": 144,
+      "vertices": 432,
+      "center": [
+        -2.02522912228304,
+        11.64,
+        -0.8057664523557624
+      ],
+      "size": [
+        13.181152221237937,
+        22.0,
+        11.60878175021563
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "IceShard_color.png",
+    "normal": "IceShard_normal.png",
+    "roughness": "IceShard_roughness.png",
+    "metalness": "IceShard_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/FrostHarbor"
+      ],
+      "parts": [
+        "IceCliff"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

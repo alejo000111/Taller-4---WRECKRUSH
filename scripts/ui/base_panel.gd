@@ -6,20 +6,22 @@ signal cerrado
 var titulo: String = "PANEL"
 var color_titulo: Color = GameColors.NARANJA
 var ancho: float = 760.0
+var icono: Texture2D
 var abierto: bool = false
 
 var contenido: VBoxContainer
 var _ventana: PanelContainer
 
 
-func _init(titulo_: String = "PANEL", color_: Color = GameColors.NARANJA, ancho_: float = 760.0) -> void:
+func _init(titulo_: String = "PANEL", color_: Color = GameColors.NARANJA, ancho_: float = 760.0, icono_: Texture2D = null) -> void:
 	titulo = titulo_
 	color_titulo = color_
 	ancho = ancho_
+	icono = icono_
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	visible = false
 	mouse_filter = Control.MOUSE_FILTER_STOP
 	var fondo := ColorRect.new()
@@ -39,10 +41,15 @@ func _ready() -> void:
 	raiz.add_theme_constant_override("separation", 10)
 	_ventana.add_child(raiz)
 	var cabecera := HBoxContainer.new()
+	cabecera.add_theme_constant_override("separation", 10)
+	if icono != null:
+		cabecera.add_child(UIKit.icono(icono, 44))
 	var t := UIKit.etiqueta(titulo, 30, color_titulo)
 	t.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	cabecera.add_child(t)
-	var cerrar_btn := UIKit.boton("X", GameColors.ROJO, Vector2(44, 40), 20)
+	var cerrar_btn := UIKit.boton("", GameColors.ROJO, Vector2(44, 40), 20)
+	UIKit.poner_icono(cerrar_btn, Iconos.CERRAR, 24)
+	cerrar_btn.icon_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	cerrar_btn.pressed.connect(cerrar)
 	cabecera.add_child(cerrar_btn)
 	raiz.add_child(cabecera)

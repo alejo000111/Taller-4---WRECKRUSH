@@ -1,0 +1,71 @@
+{
+  "name": "CargoContainer",
+  "atlas": 1024,
+  "texel_density": 28.050340101122856,
+  "triangles": 2928,
+  "budget": 3500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2928,
+      "vertices": 4048,
+      "center": [
+        0.0,
+        5.0,
+        0.0
+      ],
+      "size": [
+        10.0,
+        10.0,
+        24.0
+      ],
+      "fallback": [
+        79,
+        89,
+        98
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "CargoContainer_color.png",
+    "normal": "CargoContainer_normal.png",
+    "roughness": "CargoContainer_roughness.png",
+    "metalness": "CargoContainer_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Industrial",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            10.0,
+            10.0,
+            24.0
+          ],
+          "center": [
+            0.0,
+            5.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

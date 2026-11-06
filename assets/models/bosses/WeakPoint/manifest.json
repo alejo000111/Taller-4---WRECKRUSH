@@ -1,0 +1,98 @@
+{
+  "name": "WeakPoint",
+  "atlas": 512,
+  "texel_density": 27.851475089788437,
+  "triangles": 394,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 364,
+      "vertices": 392,
+      "center": [
+        0.0,
+        0.0,
+        0.8
+      ],
+      "size": [
+        5.948038475772933,
+        5.4,
+        4.0
+      ],
+      "fallback": [
+        103,
+        105,
+        102
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        230,
+        60
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 30,
+      "vertices": 34,
+      "center": [
+        0.18143385534379997,
+        1.1102230246251565e-16,
+        -1.65
+      ],
+      "size": [
+        3.4371322893124,
+        3.6140147619215837,
+        1.2999999999999998
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "WeakPoint_color.png",
+    "normal": "WeakPoint_normal.png",
+    "roughness": "WeakPoint_roughness.png",
+    "metalness": "WeakPoint_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            6.0,
+            6.0,
+            6.0
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "motion": {
+        "Glow": "Core"
+      }
+    }
+  }
+}

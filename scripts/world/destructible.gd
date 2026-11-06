@@ -20,6 +20,8 @@ var _raiz_visual: Node3D
 var _material_contorno: ShaderMaterial
 var _materiales: Array[StandardMaterial3D] = []
 var _colores_base: Array[Color] = []
+var _destello: StandardMaterial3D
+var _mallas: Array[MeshInstance3D] = []
 var _colision: CollisionShape3D
 var _barra: MeshInstance3D
 var _material_barra: ShaderMaterial
@@ -50,17 +52,27 @@ func _construir() -> void:
 	_raiz_visual = Node3D.new()
 	add_child(_raiz_visual)
 	_material_contorno = Formas.material_contorno(GameColors.AMARILLO, 0.28 if caja.y < 8.0 else 0.4)
-	var primero := true
-	for parte in def["partes"]:
-		var color: Color = parte[3]
-		if primero:
-			color_principal = color
-			primero = false
-		var material := Formas.material(color, 0.85, 0.12)
-		material.next_pass = _material_contorno
-		_materiales.append(material)
-		_colores_base.append(color)
-		Formas.malla(_raiz_visual, parte[0], parte[1], parte[2], material)
+	_destello = Formas.material_destello()
+	color_principal = def["partes"][0][3]
+	var modelo := Modelos.instanciar(String(def.get("modelo", "")), true)
+	if modelo != null:
+		_raiz_visual.add_child(modelo)
+		var escala := Modelos.encajar(modelo, caja)
+		_material_contorno.set_shader_parameter("grosor", (0.3 if caja.y < 8.0 else 0.42) / maxf(escala.x, 0.01))
+		for material in Modelos.materiales(modelo):
+			if Modelos.es_superficie(material):
+				material.next_pass = _material_contorno
+				_materiales.append(material)
+				_colores_base.append(material.albedo_color)
+	else:
+		for parte in def["partes"]:
+			var color: Color = parte[3]
+			var material := Formas.material(color, 0.85, 0.12)
+			material.next_pass = _material_contorno
+			_materiales.append(material)
+			_colores_base.append(color)
+			Formas.malla(_raiz_visual, parte[0], parte[1], parte[2], material)
+	_mallas = Modelos.mallas(_raiz_visual)
 	_colision = CollisionShape3D.new()
 	var forma := BoxShape3D.new()
 	forma.size = caja
@@ -96,26 +108,30 @@ func recibir_golpe(dano: float, critico: bool = false) -> bool:
 func _reaccion_golpe() -> void:
 	var proporcion := vida / vida_max
 	for i in _materiales.size():
-		_materiales[i].albedo_color = _colores_base[i].lerp(Color(0.08, 0.08, 0.09), (1.0 - proporcion) * 0.55)
-		_materiales[i].emission_enabled = true
-		_materiales[i].emission = Color.WHITE
-		_materiales[i].emission_energy_multiplier = 0.9
+		_materiales[i].albedo_color = _colores_base[i].lerp(Color(0.08, 0.08, 0.09, _colores_base[i].a), (1.0 - proporcion) * 0.55)
 	if _tween_golpe != null and _tween_golpe.is_valid():
 		_tween_golpe.kill()
 	_raiz_visual.scale = Vector3.ONE
+	_fijar_destello(true)
+	_destello.albedo_color.a = 0.8
 	_tween_golpe = create_tween()
 	_tween_golpe.set_parallel(true)
 	_tween_golpe.tween_property(_raiz_visual, "scale", Vector3(1.07, 0.94, 1.07), 0.04)
 	_tween_golpe.chain().tween_property(_raiz_visual, "scale", Vector3.ONE, 0.09)
-	for material in _materiales:
-		_tween_golpe.tween_property(material, "emission_energy_multiplier", 0.0, 0.14)
+	_tween_golpe.tween_property(_destello, "albedo_color:a", 0.0, 0.14)
+	_tween_golpe.chain().tween_callback(_fijar_destello.bind(false))
+
+
+func _fijar_destello(activo: bool) -> void:
+	for malla in _mallas:
+		malla.material_overlay = _destello if activo else null
 
 
 func _actualizar_barra() -> void:
 	if _barra == null:
 		_barra = MeshInstance3D.new()
 		var quad := QuadMesh.new()
-		quad.size = Vector2(maxf(caja.x, 3.0), 0.55)
+		quad.size = Vector2(maxf(maxf(caja.x, caja.z), 3.0), 0.55)
 		_barra.mesh = quad
 		_material_barra = ShaderMaterial.new()
 		_material_barra.shader = SHADER_BARRA
@@ -154,7 +170,7 @@ func _reaparecer() -> void:
 	_colision.set_deferred("disabled", false)
 	for i in _materiales.size():
 		_materiales[i].albedo_color = _colores_base[i]
-		_materiales[i].emission_enabled = false
+	_fijar_destello(false)
 	_fijar_opacidad_contorno(1.0)
 	_raiz_visual.visible = true
 	_raiz_visual.scale = Vector3.ONE * 0.02

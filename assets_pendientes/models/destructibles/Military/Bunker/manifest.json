@@ -1,0 +1,171 @@
+{
+  "name": "Bunker",
+  "atlas": 1024,
+  "texel_density": 13.695142030715942,
+  "triangles": 1852,
+  "budget": 6000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1780,
+      "vertices": 1830,
+      "center": [
+        0.0,
+        6.8073223304703365,
+        0.40000000000000036
+      ],
+      "size": [
+        27.2,
+        13.585355339059326,
+        21.2
+      ],
+      "fallback": [
+        121,
+        115,
+        97
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        210,
+        31
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 53,
+      "center": [
+        4.5,
+        13.75,
+        4.0
+      ],
+      "size": [
+        0.5600000000000005,
+        0.5599999999999987,
+        0.5600000000000005
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "Bunker_color.png",
+    "normal": "Bunker_normal.png",
+    "roughness": "Bunker_roughness.png",
+    "metalness": "Bunker_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Military",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            22.0,
+            7.6,
+            16.0
+          ],
+          "center": [
+            0.0,
+            3.8,
+            1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Slab",
+          "shape": "Block",
+          "size": [
+            24.0,
+            0.6,
+            20.0
+          ],
+          "center": [
+            0.0,
+            0.3,
+            1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Observation",
+          "shape": "Block",
+          "size": [
+            12.0,
+            3.0,
+            9.0
+          ],
+          "center": [
+            0.0,
+            9.1,
+            0.5
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "LeftBastion",
+          "shape": "Block",
+          "size": [
+            6.0,
+            3.6,
+            3.0
+          ],
+          "center": [
+            -6.4,
+            2.4,
+            -8.5
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "RightBastion",
+          "shape": "Block",
+          "size": [
+            6.0,
+            3.6,
+            3.0
+          ],
+          "center": [
+            6.4,
+            2.4,
+            -8.5
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

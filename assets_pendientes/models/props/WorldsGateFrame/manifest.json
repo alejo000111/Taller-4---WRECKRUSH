@@ -1,0 +1,123 @@
+{
+  "name": "WorldsGateFrame",
+  "atlas": 512,
+  "texel_density": 7.70032911002636,
+  "triangles": 1704,
+  "budget": 2000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1368,
+      "vertices": 1254,
+      "center": [
+        0.0,
+        15.15,
+        0.0
+      ],
+      "size": [
+        31.6,
+        30.3,
+        6.2
+      ],
+      "fallback": [
+        88,
+        100,
+        111
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        140,
+        206,
+        216
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 336,
+      "vertices": 456,
+      "center": [
+        0.0,
+        16.2875,
+        0.0
+      ],
+      "size": [
+        30.0,
+        26.575,
+        5.199999999999999
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "WorldsGateFrame_color.png",
+    "normal": "WorldsGateFrame_normal.png",
+    "roughness": "WorldsGateFrame_roughness.png",
+    "metalness": "WorldsGateFrame_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "ExpeditionWorlds"
+      ],
+      "name": "WorldsGate",
+      "fit": "none",
+      "keep": [
+        "Board",
+        "Console",
+        "WorldOrb"
+      ],
+      "colliders": [
+        {
+          "name": "PillarL",
+          "shape": "Block",
+          "size": [
+            4.0,
+            19.4,
+            5.0
+          ],
+          "center": [
+            -13.0,
+            9.7,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "PillarR",
+          "shape": "Block",
+          "size": [
+            4.0,
+            19.4,
+            5.0
+          ],
+          "center": [
+            13.0,
+            9.7,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

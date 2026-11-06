@@ -1,0 +1,114 @@
+{
+  "name": "Generator",
+  "atlas": 1024,
+  "texel_density": 34.47504071891308,
+  "triangles": 1314,
+  "budget": 3000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1302,
+      "vertices": 1512,
+      "center": [
+        0.0,
+        4.11,
+        -0.4137582339599897
+      ],
+      "size": [
+        7.6,
+        8.22,
+        10.427516467919979
+      ],
+      "fallback": [
+        114,
+        104,
+        93
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        40,
+        255,
+        210
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.09999999999999998,
+        3.55,
+        -4.0200000000000005
+      ],
+      "size": [
+        1.8,
+        0.7800000000000002,
+        0.019999999999999574
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "Generator_color.png",
+    "normal": "Generator_normal.png",
+    "roughness": "Generator_roughness.png",
+    "metalness": "Generator_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Industrial",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            7.2,
+            5.5,
+            8.4
+          ],
+          "center": [
+            0.0,
+            2.75,
+            0.4
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Guard",
+          "shape": "Block",
+          "size": [
+            7.2,
+            1.6,
+            0.4
+          ],
+          "center": [
+            0.0,
+            0.8,
+            -4.6
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

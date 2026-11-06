@@ -1,0 +1,142 @@
+{
+  "name": "GlassTowerB",
+  "atlas": 1024,
+  "texel_density": 4.043690323829651,
+  "triangles": 504,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 364,
+      "vertices": 632,
+      "center": [
+        0.0,
+        147.1,
+        0.0
+      ],
+      "size": [
+        42.0,
+        294.2,
+        36.0
+      ],
+      "fallback": [
+        115,
+        126,
+        132
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        196,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 56,
+      "vertices": 96,
+      "center": [
+        0.0,
+        243.5,
+        0.0
+      ],
+      "size": [
+        27.6,
+        27.0,
+        21.6
+      ]
+    },
+    "Warm": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        188,
+        128
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.25,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        5.0,
+        -17.65
+      ],
+      "size": [
+        26.0,
+        8.0,
+        0.25
+      ]
+    },
+    "Beacon": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        36,
+        36
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 53,
+      "center": [
+        -2.16,
+        295.2,
+        -1.08
+      ],
+      "size": [
+        2.2,
+        2.2000000000000455,
+        2.2
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "GlassTowerB_color.png",
+    "normal": "GlassTowerB_normal.png",
+    "roughness": "GlassTowerB_roughness.png",
+    "metalness": "GlassTowerB_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/SkylineNext/Towers"
+      ],
+      "name": [
+        "GlassTower"
+      ],
+      "fit": "box",
+      "keep": [],
+      "colliders": [],
+      "pick": [
+        2,
+        1
+      ],
+      "tint": {
+        "Glow": [
+          "CrownLight",
+          "Fin",
+          "Halo",
+          "BladeFace"
+        ]
+      }
+    }
+  }
+}

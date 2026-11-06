@@ -1,0 +1,143 @@
+{
+  "name": "ChaosSpire",
+  "atlas": 1024,
+  "texel_density": 20.113191440701485,
+  "triangles": 542,
+  "budget": 2000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 306,
+      "vertices": 223,
+      "center": [
+        0.43363271643780177,
+        2.3372679425033116,
+        -0.5813088959458295
+      ],
+      "size": [
+        18.157027989725,
+        4.674535885006623,
+        15.255108394136816
+      ],
+      "fallback": [
+        28,
+        23,
+        34
+      ]
+    },
+    "Crystal": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.2,
+      "triangles": 168,
+      "vertices": 504,
+      "center": [
+        0.3948101960027737,
+        16.0,
+        0.7181087606534957
+      ],
+      "size": [
+        9.38731154334045,
+        29.8356568610482,
+        15.432414374665926
+      ]
+    },
+    "Core": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        160
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 68,
+      "vertices": 204,
+      "center": [
+        0.5519500005375866,
+        18.960854960916823,
+        -1.0536571972300743
+      ],
+      "size": [
+        13.420232255225757,
+        31.790235410672203,
+        12.507892982514234
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ChaosSpire_color.png",
+    "normal": "ChaosSpire_normal.png",
+    "roughness": "ChaosSpire_roughness.png",
+    "metalness": "ChaosSpire_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Zones/ChaosCore/Landmarks"
+      ],
+      "name": "FloatingCrystal",
+      "fit": "box",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "Base",
+          "shape": "Block",
+          "size": [
+            14.0,
+            4.0,
+            11.0
+          ],
+          "center": [
+            0.0,
+            2.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Crystal",
+          "shape": "Block",
+          "size": [
+            7.0,
+            28.0,
+            7.0
+          ],
+          "center": [
+            0.0,
+            16.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

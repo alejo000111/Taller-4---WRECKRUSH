@@ -1,0 +1,157 @@
+{
+  "name": "NewsKiosk",
+  "atlas": 1024,
+  "texel_density": 34.871855437755585,
+  "triangles": 1376,
+  "budget": 2500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1352,
+      "vertices": 1518,
+      "center": [
+        0.013890857812519641,
+        4.0087867965644035,
+        -0.10250000000000004
+      ],
+      "size": [
+        8.627781715625039,
+        7.982426406871193,
+        6.405
+      ],
+      "fallback": [
+        150,
+        152,
+        148
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        120,
+        180,
+        210
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.55,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        4.71,
+        -1.6400000000000001
+      ],
+      "size": [
+        6.5,
+        2.2999999999999994,
+        0.029999999999999805
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        210,
+        31
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        8.049999999999999,
+        0.0
+      ],
+      "size": [
+        6.1,
+        0.10000000000000053,
+        0.22
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "NewsKiosk_color.png",
+    "normal": "NewsKiosk_normal.png",
+    "roughness": "NewsKiosk_roughness.png",
+    "metalness": "NewsKiosk_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Downtown",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            7.2,
+            6.4,
+            4.6
+          ],
+          "center": [
+            0.0,
+            3.4,
+            0.6
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Counter",
+          "shape": "Block",
+          "size": [
+            7.2,
+            3.5,
+            1.5
+          ],
+          "center": [
+            0.0,
+            1.75,
+            -2.25
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Base",
+          "shape": "Block",
+          "size": [
+            8.6,
+            0.35,
+            5.8
+          ],
+          "center": [
+            0.0,
+            0.175,
+            0.1
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

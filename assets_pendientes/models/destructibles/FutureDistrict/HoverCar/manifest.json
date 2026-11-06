@@ -1,0 +1,162 @@
+{
+  "name": "HoverCar",
+  "atlas": 1024,
+  "texel_density": 32.66707158088684,
+  "triangles": 1292,
+  "budget": 3000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1104,
+      "vertices": 1116,
+      "center": [
+        2.220446049250313e-16,
+        2.2575,
+        0.1900000000000004
+      ],
+      "size": [
+        7.7733707420276374,
+        3.925,
+        15.26
+      ],
+      "fallback": [
+        114,
+        116,
+        123
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        20,
+        26,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.2,
+      "triangles": 44,
+      "vertices": 44,
+      "center": [
+        0.0,
+        3.4250000000000003,
+        0.19999999999999996
+      ],
+      "size": [
+        5.4,
+        1.4500000000000002,
+        6.4
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 120,
+      "vertices": 246,
+      "center": [
+        0.0,
+        1.2799999999999998,
+        0.0674999999999999
+      ],
+      "size": [
+        7.12,
+        2.12,
+        14.905000000000001
+      ]
+    },
+    "Tail": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        60,
+        90
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        2.55,
+        7.32
+      ],
+      "size": [
+        6.4,
+        0.17999999999999972,
+        0.05000000000000071
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "HoverCar_color.png",
+    "normal": "HoverCar_normal.png",
+    "roughness": "HoverCar_roughness.png",
+    "metalness": "HoverCar_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "FutureDistrict",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            7.0,
+            2.0,
+            14.6
+          ],
+          "center": [
+            0.0,
+            1.85,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Canopy",
+          "shape": "Block",
+          "size": [
+            5.2,
+            1.4,
+            5.4
+          ],
+          "center": [
+            0.0,
+            3.45,
+            0.2
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

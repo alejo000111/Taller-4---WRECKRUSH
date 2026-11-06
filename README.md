@@ -49,7 +49,7 @@ godot --headless --path . --import
 godot --headless --path . res://tests/test_runner.tscn
 ```
 
-93 pruebas: fórmulas y tablas de los talleres (precios, objetos por vuelta, colosos), economía, metas, guardado, y la máquina de estados del coloso. Sale con código 1 si algo falla.
+98 pruebas: fórmulas y tablas de los talleres (precios, objetos por vuelta, colosos), economía, metas, guardado, assets (modelos, iconos y cielo) y la máquina de estados del coloso. Sale con código 1 si algo falla.
 
 ## Estructura
 
@@ -61,7 +61,9 @@ scripts/player    Player, CameraController, HammerController, interacción, tuto
 scripts/world     CityWorld, Destructible, AmbienceController
 scripts/boss      Coloso, BossPart, BossWarning
 scripts/ui        HUD y paneles
-shaders           contorno, barra de vida, aviso del jefe, suelo
+shaders           contorno, barra de vida, aviso del jefe, cielo
 tests             pruebas automáticas
 docs              arquitectura y alcance
+assets            arte que usa el juego: modelos, materiales, cielo, iconos, marca, efectos
+assets_pendientes arte guardado para siguientes cortes (Godot no lo importa)
 ```

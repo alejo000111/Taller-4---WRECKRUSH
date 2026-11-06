@@ -1,0 +1,60 @@
+{
+  "name": "RustPatch",
+  "atlas": 512,
+  "texel_density": 16.763301476836205,
+  "triangles": 116,
+  "budget": 200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 116,
+      "vertices": 124,
+      "center": [
+        -0.6777282689404327,
+        0.024999999999999988,
+        0.19481137126642123
+      ],
+      "size": [
+        9.982036968187252,
+        0.05000000000000056,
+        8.9861213340588
+      ],
+      "fallback": [
+        80,
+        55,
+        41
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "RustPatch_color.png",
+    "normal": "RustPatch_normal.png",
+    "roughness": "RustPatch_roughness.png",
+    "metalness": "RustPatch_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "Zones/ScrapYard/GroundDetail"
+      ],
+      "parts": [
+        "RustPatch"
+      ],
+      "remove": [],
+      "lift": 0.02,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false
+    }
+  }
+}

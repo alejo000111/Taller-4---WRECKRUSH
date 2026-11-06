@@ -1,0 +1,139 @@
+{
+  "name": "FrostPeak",
+  "atlas": 1024,
+  "texel_density": 3.369965687394142,
+  "triangles": 704,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 704,
+      "vertices": 391,
+      "center": [
+        0.0,
+        165.93325032022076,
+        0.0
+      ],
+      "size": [
+        300.0,
+        339.86650064044153,
+        220.0
+      ],
+      "fallback": [
+        185,
+        191,
+        198
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "FrostPeak_color.png",
+    "normal": "FrostPeak_normal.png",
+    "roughness": "FrostPeak_roughness.png",
+    "metalness": "FrostPeak_metalness.png"
+  },
+  "meta": {
+    "ring": [
+      {
+        "parent": "Backdrop",
+        "centers": [
+          [
+            2880.0,
+            0.0
+          ]
+        ],
+        "radius": 470.0,
+        "count": 16,
+        "scale": [
+          0.8,
+          1.25
+        ],
+        "seed": 43,
+        "sink": -140.0,
+        "offset": 0.0
+      },
+      {
+        "parent": "Backdrop",
+        "centers": [
+          [
+            2880.0,
+            0.0
+          ]
+        ],
+        "radius": 690.0,
+        "count": 18,
+        "scale": [
+          1.05,
+          1.5
+        ],
+        "seed": 143,
+        "sink": -165.0,
+        "offset": 0.5
+      },
+      {
+        "parent": "Backdrop",
+        "centers": [
+          [
+            4080.0,
+            -2400.0
+          ]
+        ],
+        "radius": 470.0,
+        "count": 16,
+        "scale": [
+          0.8,
+          1.25
+        ],
+        "seed": 206,
+        "sink": -140.0,
+        "offset": 0.0
+      },
+      {
+        "parent": "Backdrop",
+        "centers": [
+          [
+            0.0,
+            -4800.0
+          ]
+        ],
+        "radius": 470.0,
+        "count": 16,
+        "scale": [
+          0.8,
+          1.25
+        ],
+        "seed": 207,
+        "sink": -140.0,
+        "offset": 0.0
+      },
+      {
+        "parent": "Backdrop",
+        "centers": [
+          [
+            0.0,
+            -4800.0
+          ]
+        ],
+        "radius": 690.0,
+        "count": 18,
+        "scale": [
+          1.05,
+          1.5
+        ],
+        "seed": 208,
+        "sink": -165.0,
+        "offset": 0.5
+      }
+    ]
+  }
+}

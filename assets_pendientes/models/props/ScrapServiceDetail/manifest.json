@@ -1,0 +1,56 @@
+{
+  "name": "ScrapServiceDetail",
+  "atlas": 512,
+  "texel_density": 27.722173169255257,
+  "triangles": 882,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 882,
+      "vertices": 1046,
+      "center": [
+        0.0,
+        2.7500000000000004,
+        0.07711696879329377
+      ],
+      "size": [
+        18.0,
+        5.500000000000001,
+        1.4342339375865887
+      ],
+      "fallback": [
+        109,
+        113,
+        120
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ScrapServiceDetail_color.png",
+    "normal": "ScrapServiceDetail_normal.png",
+    "roughness": "ScrapServiceDetail_roughness.png",
+    "metalness": "ScrapServiceDetail_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/DesignExpansion_20261006"
+      ],
+      "name": "ScrapService_Detail",
+      "fit": "box",
+      "keep": [],
+      "colliders": []
+    }
+  }
+}

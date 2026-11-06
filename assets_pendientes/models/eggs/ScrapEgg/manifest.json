@@ -1,0 +1,99 @@
+{
+  "name": "ScrapEgg",
+  "atlas": 1024,
+  "texel_density": 100.98766794800758,
+  "triangles": 1724,
+  "budget": 3200,
+  "roles": {
+    "Shell": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 720,
+      "vertices": 423,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.045680367948266,
+        4.0,
+        3.045680367948266
+      ],
+      "fallback": [
+        196,
+        104,
+        36
+      ]
+    },
+    "Band": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 896,
+      "vertices": 835,
+      "center": [
+        0.0,
+        0.6320816807960881,
+        0.0
+      ],
+      "size": [
+        3.186637953059733,
+        3.846020687812057,
+        3.186637953059733
+      ],
+      "fallback": [
+        115,
+        115,
+        120
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        150,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 108,
+      "vertices": 75,
+      "center": [
+        0.020000000000000004,
+        2.6,
+        0.06000000000000001
+      ],
+      "size": [
+        0.14,
+        0.13999999999999968,
+        0.12124355652982147
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ScrapEgg_color.png",
+    "normal": "ScrapEgg_normal.png",
+    "roughness": "ScrapEgg_roughness.png",
+    "metalness": "ScrapEgg_metalness.png"
+  },
+  "meta": {}
+}

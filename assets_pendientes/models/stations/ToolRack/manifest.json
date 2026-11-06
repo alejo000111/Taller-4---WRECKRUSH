@@ -1,0 +1,140 @@
+{
+  "name": "ToolRack",
+  "atlas": 1024,
+  "texel_density": 28.571392059326172,
+  "triangles": 2362,
+  "budget": 4500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2316,
+      "vertices": 2642,
+      "center": [
+        0.0,
+        5.1337867965644035,
+        0.0
+      ],
+      "size": [
+        12.2,
+        10.632426406871192,
+        10.2
+      ],
+      "fallback": [
+        107,
+        95,
+        82
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 46,
+      "vertices": 93,
+      "center": [
+        0.0,
+        4.375,
+        0.0
+      ],
+      "size": [
+        11.4,
+        8.670000000000002,
+        10.26
+      ]
+    }
+  },
+  "points": {
+    "prompt": [
+      0.0,
+      4.8,
+      1.5
+    ]
+  },
+  "textures": {
+    "color": "ToolRack_color.png",
+    "normal": "ToolRack_normal.png",
+    "roughness": "ToolRack_roughness.png",
+    "metalness": "ToolRack_metalness.png"
+  },
+  "meta": {
+    "station": {
+      "target": "ToolRack",
+      "parent": "Plaza",
+      "colliders": [
+        {
+          "name": "Platform",
+          "shape": "Block",
+          "size": [
+            12.0,
+            0.4,
+            10.0
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Bench",
+          "shape": "Block",
+          "size": [
+            8.4,
+            2.9,
+            3.0
+          ],
+          "center": [
+            0.0,
+            1.65,
+            -2.5
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Wall",
+          "shape": "Block",
+          "size": [
+            11.2,
+            9.6,
+            1.0
+          ],
+          "center": [
+            0.0,
+            4.8,
+            1.6
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

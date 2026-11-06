@@ -1,0 +1,77 @@
+{
+  "name": "ScrapBarrel",
+  "atlas": 512,
+  "texel_density": 40.727298095822334,
+  "triangles": 1070,
+  "budget": 1200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1070,
+      "vertices": 959,
+      "center": [
+        0.0,
+        2.5,
+        0.0
+      ],
+      "size": [
+        3.9,
+        5.0,
+        3.9
+      ],
+      "fallback": [
+        126,
+        100,
+        87
+      ]
+    }
+  },
+  "points": {
+    "label": [
+      0.0,
+      5.8,
+      0.0
+    ]
+  },
+  "textures": {
+    "color": "ScrapBarrel_color.png",
+    "normal": "ScrapBarrel_normal.png",
+    "roughness": "ScrapBarrel_roughness.png",
+    "metalness": "ScrapBarrel_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "ScrapYard",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Cylinder",
+          "size": [
+            3.9,
+            5.0,
+            3.9
+          ],
+          "center": [
+            0.0,
+            2.5,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

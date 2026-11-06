@@ -1,0 +1,60 @@
+{
+  "name": "ChaosIslandBase",
+  "atlas": 1024,
+  "texel_density": 1.0620575994253159,
+  "triangles": 1368,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1368,
+      "vertices": 972,
+      "center": [
+        -1.457552404683554,
+        -75.19116434138121,
+        -0.08079312273420669
+      ],
+      "size": [
+        303.47166507148444,
+        149.61767131723758,
+        303.12094039229777
+      ],
+      "fallback": [
+        43,
+        28,
+        42
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ChaosIslandBase_color.png",
+    "normal": "ChaosIslandBase_normal.png",
+    "roughness": "ChaosIslandBase_roughness.png",
+    "metalness": "ChaosIslandBase_metalness.png"
+  },
+  "meta": {
+    "place": {
+      "targets": [
+        {
+          "path": "BossIslands/ChaosOverlord",
+          "center": [
+            -4080.0,
+            0.0,
+            2400.0
+          ],
+          "yaw": 186.0
+        }
+      ]
+    }
+  }
+}

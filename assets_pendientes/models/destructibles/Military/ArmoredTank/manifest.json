@@ -1,0 +1,133 @@
+{
+  "name": "ArmoredTank",
+  "atlas": 1024,
+  "texel_density": 18.193982377648354,
+  "triangles": 3468,
+  "budget": 4500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 3444,
+      "vertices": 4097,
+      "center": [
+        0.0,
+        4.55,
+        -1.4500000000000002
+      ],
+      "size": [
+        12.549999999999999,
+        9.1,
+        20.1
+      ],
+      "fallback": [
+        93,
+        91,
+        81
+      ]
+    },
+    "Lamp": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        236,
+        190
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        4.45,
+        -7.62
+      ],
+      "size": [
+        9.25,
+        0.27999999999999936,
+        0.03999999999999915
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ArmoredTank_color.png",
+    "normal": "ArmoredTank_normal.png",
+    "roughness": "ArmoredTank_roughness.png",
+    "metalness": "ArmoredTank_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Military",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            11.6,
+            4.3,
+            17.6
+          ],
+          "center": [
+            0.0,
+            2.15,
+            -0.2
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Turret",
+          "shape": "Block",
+          "size": [
+            6.6,
+            1.9,
+            8.2
+          ],
+          "center": [
+            0.0,
+            5.25,
+            0.6
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Barrel",
+          "shape": "Block",
+          "size": [
+            1.2,
+            1.2,
+            6.6
+          ],
+          "center": [
+            0.0,
+            5.25,
+            -8.4
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

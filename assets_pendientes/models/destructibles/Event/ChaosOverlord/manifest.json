@@ -1,0 +1,265 @@
+{
+  "name": "ChaosOverlord",
+  "atlas": 1024,
+  "texel_density": 7.587685719132423,
+  "triangles": 4220,
+  "budget": 8000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2292,
+      "vertices": 2142,
+      "center": [
+        0.0,
+        30.58491427788206,
+        -1.0350000000000001
+      ],
+      "size": [
+        29.9,
+        61.16982855576412,
+        19.32
+      ],
+      "fallback": [
+        100,
+        68,
+        55
+      ]
+    },
+    "ArmL": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 654,
+      "vertices": 704,
+      "center": [
+        -19.34145135013942,
+        28.914450078256213,
+        -0.9887376205605549
+      ],
+      "size": [
+        12.00290270027884,
+        42.509131484224746,
+        12.32747524112111
+      ],
+      "fallback": [
+        100,
+        67,
+        89
+      ]
+    },
+    "ArmR": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 654,
+      "vertices": 704,
+      "center": [
+        19.34145135013942,
+        28.914450078256213,
+        -0.9887376205605549
+      ],
+      "size": [
+        12.00290270027884,
+        42.509131484224746,
+        12.32747524112111
+      ],
+      "fallback": [
+        100,
+        67,
+        90
+      ]
+    },
+    "Crystals": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 408,
+      "vertices": 1224,
+      "center": [
+        0.07869347103282909,
+        29.77113331368425,
+        3.269303341104907
+      ],
+      "size": [
+        24.732568568145936,
+        33.81002376489837,
+        18.88564172129293
+      ],
+      "fallback": [
+        130,
+        53,
+        190
+      ]
+    },
+    "Eyes": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        150,
+        30
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 32,
+      "vertices": 96,
+      "center": [
+        0.0,
+        46.44913776416818,
+        -6.324999999999999
+      ],
+      "size": [
+        8.329680936149865,
+        1.9527436054329428,
+        1.8399999999999999
+      ]
+    },
+    "Core": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        160
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 180,
+      "vertices": 119,
+      "center": [
+        0.0,
+        34.49999999999999,
+        -8.05
+      ],
+      "size": [
+        11.04,
+        10.499663939898493,
+        11.040000000000001
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ChaosOverlord_color.png",
+    "normal": "ChaosOverlord_normal.png",
+    "roughness": "ChaosOverlord_roughness.png",
+    "metalness": "ChaosOverlord_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            27.6,
+            41.4,
+            18.4
+          ],
+          "center": [
+            0.0,
+            20.7,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "motion": {
+        "ArmL": "Arm",
+        "ArmR": "Arm",
+        "Core": "Core"
+      },
+      "sockets": [
+        {
+          "name": "PlateSocket1",
+          "center": [
+            -8.05,
+            17.25,
+            -5.52
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "PlateSocket2",
+          "center": [
+            8.05,
+            17.25,
+            -5.52
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "PlateSocket3",
+          "center": [
+            -13.11,
+            20.7,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            90.0,
+            0.0
+          ]
+        },
+        {
+          "name": "PlateSocket4",
+          "center": [
+            13.11,
+            20.7,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            -90.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "IndustrialServiceDetail",
+  "atlas": 512,
+  "texel_density": 11.925554633140564,
+  "triangles": 792,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 792,
+      "vertices": 958,
+      "center": [
+        0.0,
+        6.073866573253986,
+        -0.1683538063893174
+      ],
+      "size": [
+        19.5,
+        12.152266853492028,
+        1.7632923872213653
+      ],
+      "fallback": [
+        106,
+        91,
+        90
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "IndustrialServiceDetail_color.png",
+    "normal": "IndustrialServiceDetail_normal.png",
+    "roughness": "IndustrialServiceDetail_roughness.png",
+    "metalness": "IndustrialServiceDetail_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/DesignExpansion_20261006"
+      ],
+      "name": "IndustrialService_Detail",
+      "fit": "box",
+      "keep": [],
+      "colliders": []
+    }
+  }
+}

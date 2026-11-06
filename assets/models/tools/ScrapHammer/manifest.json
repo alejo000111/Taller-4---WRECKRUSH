@@ -1,0 +1,105 @@
+{
+  "name": "ScrapHammer",
+  "atlas": 1024,
+  "texel_density": 101.35635232925415,
+  "triangles": 2814,
+  "budget": 4000,
+  "roles": {
+    "Primary": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        150,
+        152,
+        160
+      ],
+      "skin": "Primary",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 720,
+      "vertices": 770,
+      "center": [
+        0.0,
+        1.7051999999999998,
+        0.136
+      ],
+      "size": [
+        1.1648,
+        1.2544,
+        2.822400000000001
+      ]
+    },
+    "Accent": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        66,
+        68,
+        76
+      ],
+      "skin": "Accent",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 692,
+      "vertices": 715,
+      "center": [
+        0.0,
+        0.20999999999999996,
+        0.0
+      ],
+      "size": [
+        0.56,
+        4.14,
+        0.5459596308218213
+      ]
+    },
+    "Base": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1402,
+      "vertices": 1144,
+      "center": [
+        0.0008182418118583001,
+        0.45759192250578895,
+        -0.14626983065083546
+      ],
+      "size": [
+        1.1683220108826269,
+        3.7551838450115778,
+        0.9053634214373052
+      ],
+      "fallback": [
+        109,
+        91,
+        80
+      ]
+    }
+  },
+  "points": {
+    "muzzle": [
+      0.0,
+      1.75,
+      -1.3
+    ],
+    "grip": [
+      0.0,
+      -0.75,
+      0.0
+    ]
+  },
+  "textures": {
+    "color": "ScrapHammer_color.png",
+    "normal": "ScrapHammer_normal.png",
+    "roughness": "ScrapHammer_roughness.png",
+    "metalness": "ScrapHammer_metalness.png"
+  },
+  "meta": {}
+}

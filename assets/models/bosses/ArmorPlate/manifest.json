@@ -1,0 +1,95 @@
+{
+  "name": "ArmorPlate",
+  "atlas": 512,
+  "texel_density": 17.160360276699066,
+  "triangles": 648,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 624,
+      "vertices": 632,
+      "center": [
+        0.0,
+        0.0,
+        -0.22499999999999998
+      ],
+      "size": [
+        9.0,
+        9.0,
+        2.8500000000000005
+      ],
+      "fallback": [
+        72,
+        68,
+        66
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        140,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        0.0,
+        -1.35
+      ],
+      "size": [
+        5.6,
+        5.6,
+        0.2999999999999998
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ArmorPlate_color.png",
+    "normal": "ArmorPlate_normal.png",
+    "roughness": "ArmorPlate_roughness.png",
+    "metalness": "ArmorPlate_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            9.0,
+            9.0,
+            3.0
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

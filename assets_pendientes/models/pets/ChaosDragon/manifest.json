@@ -1,0 +1,96 @@
+{
+  "name": "ChaosDragon",
+  "atlas": 512,
+  "texel_density": 47.30412220954895,
+  "triangles": 1750,
+  "budget": 4200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1610,
+      "vertices": 1563,
+      "center": [
+        0.0,
+        0.5177180986432143,
+        0.3279467651502548
+      ],
+      "size": [
+        4.663810014467099,
+        2.8836856668604467,
+        4.865893530300509
+      ],
+      "fallback": [
+        99,
+        61,
+        91
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        160
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 108,
+      "vertices": 75,
+      "center": [
+        0.0,
+        0.04999999999999999,
+        -0.75
+      ],
+      "size": [
+        0.56,
+        0.56,
+        0.48497422611928587
+      ]
+    },
+    "Eyes": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        160,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 32,
+      "vertices": 96,
+      "center": [
+        0.0,
+        1.2470033368938012,
+        -1.82
+      ],
+      "size": [
+        0.6067323765728998,
+        0.162416156680943,
+        0.16000000000000014
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ChaosDragon_color.png",
+    "normal": "ChaosDragon_normal.png",
+    "roughness": "ChaosDragon_roughness.png",
+    "metalness": "ChaosDragon_metalness.png"
+  },
+  "meta": {
+    "pet": {}
+  }
+}

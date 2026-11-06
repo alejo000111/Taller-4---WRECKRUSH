@@ -1,0 +1,124 @@
+{
+  "name": "DailySupplyDepot",
+  "atlas": 1024,
+  "texel_density": 20.499998837709427,
+  "triangles": 1056,
+  "budget": 2200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1044,
+      "vertices": 1264,
+      "center": [
+        0.0,
+        7.6499999999999995,
+        0.0
+      ],
+      "size": [
+        17.0,
+        15.299999999999999,
+        10.0
+      ],
+      "fallback": [
+        89,
+        87,
+        85
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        202,
+        140,
+        57
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        14.25,
+        2.18
+      ],
+      "size": [
+        12.0,
+        0.120000000000001,
+        0.1200000000000001
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "DailySupplyDepot_color.png",
+    "normal": "DailySupplyDepot_normal.png",
+    "roughness": "DailySupplyDepot_roughness.png",
+    "metalness": "DailySupplyDepot_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/StationExpansion_20261006"
+      ],
+      "name": "DailySupplyDepot",
+      "fit": "box",
+      "keep": [
+        "SignPanel"
+      ],
+      "colliders": [
+        {
+          "name": "Wall",
+          "shape": "Block",
+          "size": [
+            16.0,
+            11.0,
+            0.5
+          ],
+          "center": [
+            0.0,
+            5.9,
+            -3.5
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Shelves",
+          "shape": "Block",
+          "size": [
+            6.0,
+            7.0,
+            2.6
+          ],
+          "center": [
+            -3.65,
+            3.9,
+            -1.8
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "tint": {
+        "Glow": "AmberMarker"
+      }
+    }
+  }
+}

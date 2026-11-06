@@ -1,0 +1,76 @@
+{
+  "name": "TankTrap",
+  "atlas": 512,
+  "texel_density": 49.999997079372406,
+  "triangles": 282,
+  "budget": 800,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 282,
+      "vertices": 384,
+      "center": [
+        0.0,
+        1.9820508075688772,
+        0.0
+      ],
+      "size": [
+        5.0948413694824914,
+        4.018357873559796,
+        5.0948413694824914
+      ],
+      "fallback": [
+        96,
+        84,
+        74
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "TankTrap_color.png",
+    "normal": "TankTrap_normal.png",
+    "roughness": "TankTrap_roughness.png",
+    "metalness": "TankTrap_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Zones/Military/Landmarks"
+      ],
+      "name": "TankTrap",
+      "fit": "box",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "Trap",
+          "shape": "Block",
+          "size": [
+            4.0,
+            3.6,
+            4.0
+          ],
+          "center": [
+            0.0,
+            1.8,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

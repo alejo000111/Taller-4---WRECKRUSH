@@ -1,0 +1,121 @@
+{
+  "name": "FoundryPair",
+  "atlas": 1024,
+  "texel_density": 5.69617985188961,
+  "triangles": 1608,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1536,
+      "vertices": 2192,
+      "center": [
+        0.0,
+        23.0,
+        0.0
+      ],
+      "size": [
+        242.2,
+        46.0,
+        46.7
+      ],
+      "fallback": [
+        89,
+        85,
+        81
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        239,
+        183,
+        95
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 144,
+      "center": [
+        0.0,
+        14.0,
+        0.25
+      ],
+      "size": [
+        179.10000000000002,
+        6.0,
+        26.0
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "FoundryPair_color.png",
+    "normal": "FoundryPair_normal.png",
+    "roughness": "FoundryPair_roughness.png",
+    "metalness": "FoundryPair_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "ExpeditionWorlds/VerdantFoundry"
+      ],
+      "name": "ReclaimedFoundry",
+      "fit": "box",
+      "keep": [
+        "WindRotor"
+      ],
+      "colliders": [
+        {
+          "name": "FactoryL",
+          "shape": "Block",
+          "size": [
+            31.0,
+            22.0,
+            45.0
+          ],
+          "center": [
+            -105.0,
+            11.0,
+            0.25
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "FactoryR",
+          "shape": "Block",
+          "size": [
+            31.0,
+            22.0,
+            45.0
+          ],
+          "center": [
+            105.0,
+            11.0,
+            0.25
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

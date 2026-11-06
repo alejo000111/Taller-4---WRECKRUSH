@@ -1,0 +1,114 @@
+{
+  "name": "StreetLamp",
+  "atlas": 512,
+  "texel_density": 42.505977511405945,
+  "triangles": 1176,
+  "budget": 1200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1116,
+      "vertices": 1122,
+      "center": [
+        0.0,
+        6.599164001894823,
+        0.1299999999999999
+      ],
+      "size": [
+        1.56,
+        13.198328003789646,
+        3.7
+      ],
+      "fallback": [
+        108,
+        112,
+        117
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        236,
+        170
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 60,
+      "vertices": 64,
+      "center": [
+        0.0,
+        12.129999999999999,
+        -1.1
+      ],
+      "size": [
+        0.52,
+        0.22000000000000064,
+        0.49454938847347985
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "StreetLamp_color.png",
+    "normal": "StreetLamp_normal.png",
+    "roughness": "StreetLamp_roughness.png",
+    "metalness": "StreetLamp_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Downtown",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Cylinder",
+          "size": [
+            0.5,
+            13.05,
+            0.5
+          ],
+          "center": [
+            0.0,
+            6.525,
+            1.2
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Base",
+          "shape": "Cylinder",
+          "size": [
+            1.5,
+            1.4,
+            1.5
+          ],
+          "center": [
+            0.0,
+            0.7,
+            1.2
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

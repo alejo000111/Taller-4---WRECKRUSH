@@ -1,0 +1,86 @@
+{
+  "name": "ChaosWisp",
+  "atlas": 512,
+  "texel_density": 0.0,
+  "triangles": 516,
+  "budget": 1800,
+  "roles": {
+    "Core": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 144,
+      "vertices": 97,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.4,
+        1.4,
+        1.4
+      ]
+    },
+    "Shell": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        200,
+        140,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.55,
+      "triangles": 180,
+      "vertices": 119,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.0,
+        2.0,
+        1.9021130325903073
+      ]
+    },
+    "Shards": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        160
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 192,
+      "vertices": 294,
+      "center": [
+        0.22972303807218686,
+        -0.3486671167099097,
+        -0.04443589231057077
+      ],
+      "size": [
+        2.9805539238556262,
+        1.678551927502342,
+        2.9882159442919494
+      ]
+    }
+  },
+  "points": {},
+  "textures": {},
+  "meta": {
+    "pet": {}
+  }
+}

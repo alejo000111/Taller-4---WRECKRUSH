@@ -1,0 +1,99 @@
+{
+  "name": "DowntownEgg",
+  "atlas": 1024,
+  "texel_density": 101.0034111738205,
+  "triangles": 2374,
+  "budget": 3400,
+  "roles": {
+    "Shell": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 720,
+      "vertices": 423,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.045680367948266,
+        4.0,
+        3.045680367948266
+      ],
+      "fallback": [
+        192,
+        149,
+        35
+      ]
+    },
+    "Band": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1060,
+      "vertices": 1057,
+      "center": [
+        0.0,
+        0.592176939958601,
+        0.0
+      ],
+      "size": [
+        3.186141555722583,
+        4.535646120082799,
+        3.186141555722583
+      ],
+      "fallback": [
+        124,
+        124,
+        111
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        60,
+        210,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 594,
+      "vertices": 840,
+      "center": [
+        0.0,
+        0.7023690403893703,
+        1.1102230246251565e-16
+      ],
+      "size": [
+        2.9166996154819658,
+        4.235261919221259,
+        2.9239503578493675
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "DowntownEgg_color.png",
+    "normal": "DowntownEgg_normal.png",
+    "roughness": "DowntownEgg_roughness.png",
+    "metalness": "DowntownEgg_metalness.png"
+  },
+  "meta": {}
+}

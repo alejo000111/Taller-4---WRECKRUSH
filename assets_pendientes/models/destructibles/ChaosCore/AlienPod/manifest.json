@@ -1,0 +1,138 @@
+{
+  "name": "AlienPod",
+  "atlas": 512,
+  "texel_density": 27.829202696681023,
+  "triangles": 1484,
+  "budget": 1500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 742,
+      "vertices": 596,
+      "center": [
+        -0.0013085341894583102,
+        3.6,
+        0.1012998766753439
+      ],
+      "size": [
+        6.245260351625085,
+        7.2,
+        6.293104182710856
+      ],
+      "fallback": [
+        35,
+        46,
+        38
+      ]
+    },
+    "Shell": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        60,
+        200,
+        150
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.35,
+      "triangles": 168,
+      "vertices": 118,
+      "center": [
+        0.0,
+        4.0,
+        0.0
+      ],
+      "size": [
+        5.4,
+        5.4,
+        5.264610725781848
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        60,
+        220,
+        160
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 574,
+      "vertices": 530,
+      "center": [
+        0.07459088940460012,
+        4.770927533533147,
+        0.1913758057943511
+      ],
+      "size": [
+        5.235561503574667,
+        6.417255924480589,
+        5.121195187287732
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "AlienPod_color.png",
+    "normal": "AlienPod_normal.png",
+    "roughness": "AlienPod_roughness.png",
+    "metalness": "AlienPod_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "ChaosCore",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Ball",
+          "size": [
+            5.4,
+            5.4,
+            5.4
+          ],
+          "center": [
+            0.0,
+            3.9,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Base",
+          "shape": "Cylinder",
+          "size": [
+            6.0,
+            1.2,
+            6.0
+          ],
+          "center": [
+            0.0,
+            0.6,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}
