@@ -17,3 +17,14 @@ func _ready() -> void:
 ## El maxf evita dividir por cero en d = 0.
 static func atenuacion(d: float, exponente: float = 2.0) -> float:
 	return 1.0 / pow(maxf(d, 0.0001), exponente)
+
+
+## Nivel 3. Función pura: el brillo de Blinn-Phong, max(0, n · h)^brillo,
+## con h el vector medio entre "hacia la luz" y "hacia el ojo".
+static func blinn_phong(normal: Vector3, hacia_luz: Vector3,
+		hacia_ojo: Vector3, brillo: float) -> float:
+	var n := Vectores.normalizar(normal)
+	var l := Vectores.normalizar(hacia_luz)
+	var v := Vectores.normalizar(hacia_ojo)
+	var h := Vectores.normalizar(l + v)
+	return pow(maxf(0.0, n.dot(h)), brillo)
