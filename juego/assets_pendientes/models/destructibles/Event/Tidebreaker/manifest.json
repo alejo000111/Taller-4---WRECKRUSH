@@ -1,0 +1,266 @@
+{
+  "name": "Tidebreaker",
+  "atlas": 1024,
+  "texel_density": 8.260434031486511,
+  "triangles": 4552,
+  "budget": 6000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2340,
+      "vertices": 2166,
+      "center": [
+        0.0,
+        13.75,
+        -1.2000000000000002
+      ],
+      "size": [
+        27.45723376973538,
+        27.5,
+        20.4
+      ],
+      "fallback": [
+        94,
+        100,
+        105
+      ]
+    },
+    "ArmL": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 546,
+      "vertices": 518,
+      "center": [
+        -18.75242216975605,
+        15.850000000000001,
+        -7.17351660256832
+      ],
+      "size": [
+        17.504844339512097,
+        17.5,
+        21.34703320513664
+      ],
+      "fallback": [
+        113,
+        107,
+        103
+      ]
+    },
+    "ArmR": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 546,
+      "vertices": 518,
+      "center": [
+        19.0,
+        15.850000000000001,
+        -7.17351660256832
+      ],
+      "size": [
+        18.0,
+        17.5,
+        21.34703320513664
+      ],
+      "fallback": [
+        113,
+        106,
+        102
+      ]
+    },
+    "Eyes": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        239,
+        153,
+        94
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        25.0,
+        -5.35
+      ],
+      "size": [
+        10.0,
+        1.1000000000000014,
+        0.40000000000000036
+      ]
+    },
+    "Core": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        129,
+        207,
+        230
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 76,
+      "vertices": 120,
+      "center": [
+        0.0,
+        17.0,
+        -6.8
+      ],
+      "size": [
+        6.0,
+        5.706339097770922,
+        1.0
+      ]
+    },
+    "LegsL": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 396,
+      "vertices": 387,
+      "center": [
+        -16.517088979751207,
+        4.371198844164955,
+        0.0
+      ],
+      "size": [
+        11.191063291457873,
+        9.6414535125281,
+        16.868153360116338
+      ],
+      "fallback": [
+        128,
+        109,
+        96
+      ]
+    },
+    "LegsR": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 396,
+      "vertices": 387,
+      "center": [
+        16.517088979751207,
+        4.371198844164955,
+        0.0
+      ],
+      "size": [
+        11.191063291457873,
+        9.6414535125281,
+        16.868153360116338
+      ],
+      "fallback": [
+        130,
+        111,
+        97
+      ]
+    },
+    "Shell": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        150,
+        215,
+        240
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.2,
+      "triangles": 228,
+      "vertices": 435,
+      "center": [
+        0.0,
+        24.68,
+        6.0788154766421085
+      ],
+      "size": [
+        24.0,
+        11.36,
+        15.746088221404113
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "Tidebreaker_color.png",
+    "normal": "Tidebreaker_normal.png",
+    "roughness": "Tidebreaker_roughness.png",
+    "metalness": "Tidebreaker_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            24.0,
+            24.0,
+            24.0
+          ],
+          "center": [
+            0.0,
+            12.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "motion": {
+        "ArmL": "Arm",
+        "ArmR": "Arm",
+        "Core": "Core",
+        "LegsL": "Arm",
+        "LegsR": "Arm"
+      }
+    }
+  }
+}

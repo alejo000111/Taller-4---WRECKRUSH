@@ -1,0 +1,1472 @@
+{
+  "ScrapHammer": {
+    "color": "rbxassetid://121821665171373",
+    "normal": "rbxassetid://82088512260836",
+    "roughness": "rbxassetid://99982969803356",
+    "metalness": "rbxassetid://114821682552485"
+  },
+  "PowerHammer": {
+    "color": "rbxassetid://119384704087677",
+    "normal": "rbxassetid://139043600378320",
+    "roughness": "rbxassetid://93954470863925",
+    "metalness": "rbxassetid://87841597122534"
+  },
+  "Jackhammer": {
+    "color": "rbxassetid://124531310220667",
+    "normal": "rbxassetid://123592437646344",
+    "roughness": "rbxassetid://86455014840267",
+    "metalness": "rbxassetid://80894493357319"
+  },
+  "OwnerHammer": {
+    "color": "rbxassetid://82743218917560",
+    "normal": "rbxassetid://123038011511801",
+    "roughness": "rbxassetid://140592724447219",
+    "metalness": "rbxassetid://121372665592923"
+  },
+  "TNTLauncher": {
+    "color": "rbxassetid://76345264013471",
+    "normal": "rbxassetid://124497369549033",
+    "roughness": "rbxassetid://118258397650538",
+    "metalness": "rbxassetid://101699747657728"
+  },
+  "RocketRig": {
+    "color": "rbxassetid://118754104665266",
+    "normal": "rbxassetid://126091693442202",
+    "roughness": "rbxassetid://94567861098353",
+    "metalness": "rbxassetid://113706457795501"
+  },
+  "PlasmaCannon": {
+    "color": "rbxassetid://101307694506104",
+    "normal": "rbxassetid://138443468803115",
+    "roughness": "rbxassetid://83774874574406",
+    "metalness": "rbxassetid://109639432128877"
+  },
+  "ChaosRay": {
+    "color": "rbxassetid://139119853027275",
+    "normal": "rbxassetid://135994976021893",
+    "roughness": "rbxassetid://132754795285382",
+    "metalness": "rbxassetid://77253165684661"
+  },
+  "VoidBlaster": {
+    "color": "rbxassetid://102146680031343",
+    "normal": "rbxassetid://94973580370609",
+    "roughness": "rbxassetid://78071919431236",
+    "metalness": "rbxassetid://139538735537432"
+  },
+  "ScrapEgg": {
+    "color": "rbxassetid://108700204217023",
+    "normal": "rbxassetid://134653325656639",
+    "roughness": "rbxassetid://133687813782504",
+    "metalness": "rbxassetid://82688999884664"
+  },
+  "IndustrialEgg": {
+    "color": "rbxassetid://132471694326156",
+    "normal": "rbxassetid://113604880111798",
+    "roughness": "rbxassetid://92478585414233",
+    "metalness": "rbxassetid://135764727050180"
+  },
+  "ChaosEgg": {
+    "color": "rbxassetid://71268709611618",
+    "normal": "rbxassetid://120447779253404",
+    "roughness": "rbxassetid://98324685039972",
+    "metalness": "rbxassetid://104691649957502"
+  },
+  "EggIncubator": {
+    "color": "rbxassetid://120041377175962",
+    "normal": "rbxassetid://118551472161718",
+    "roughness": "rbxassetid://117620309940170",
+    "metalness": "rbxassetid://121933064976814"
+  },
+  "ShopKiosk": {
+    "color": "rbxassetid://80834190951679",
+    "normal": "rbxassetid://103624967463577",
+    "roughness": "rbxassetid://137854457023652",
+    "metalness": "rbxassetid://82928384414809"
+  },
+  "TireStack": {
+    "metalness": "rbxassetid://128401267631763",
+    "roughness": "rbxassetid://125676608626337",
+    "normal": "rbxassetid://105674922864720",
+    "color": "rbxassetid://74139662014306"
+  },
+  "ScrapBarrel": {
+    "roughness": "rbxassetid://72479086172948",
+    "color": "rbxassetid://138763136179680",
+    "metalness": "rbxassetid://74249225259855",
+    "normal": "rbxassetid://74424321055680"
+  },
+  "RoadSign": {
+    "metalness": "rbxassetid://88261956126825",
+    "roughness": "rbxassetid://94310137402451",
+    "normal": "rbxassetid://133210925852864",
+    "color": "rbxassetid://80663511312815"
+  },
+  "WoodenCrate": {
+    "roughness": "rbxassetid://94919276097877",
+    "metalness": "rbxassetid://74076472005569",
+    "normal": "rbxassetid://70885717849306",
+    "color": "rbxassetid://112955318518662"
+  },
+  "JunkTower": {
+    "normal": "rbxassetid://99204888130617",
+    "roughness": "rbxassetid://71089857744610",
+    "color": "rbxassetid://107341904016446",
+    "metalness": "rbxassetid://86764805515972"
+  },
+  "ScrapContainer": {
+    "metalness": "rbxassetid://103722273093906",
+    "roughness": "rbxassetid://124560188348374",
+    "normal": "rbxassetid://99269479830070",
+    "color": "rbxassetid://130179023921558"
+  },
+  "RustyCar": {
+    "roughness": "rbxassetid://84321732827230",
+    "metalness": "rbxassetid://138948918596911",
+    "normal": "rbxassetid://90155506620574",
+    "color": "rbxassetid://106539656906950"
+  },
+  "Forklift": {
+    "normal": "rbxassetid://133348651850252",
+    "roughness": "rbxassetid://105839955091772",
+    "metalness": "rbxassetid://118577360036223",
+    "color": "rbxassetid://83498356276510"
+  },
+  "NewsKiosk": {
+    "color": "rbxassetid://93768806269314",
+    "metalness": "rbxassetid://110314984857017",
+    "roughness": "rbxassetid://113712152892783",
+    "normal": "rbxassetid://79644290115525"
+  },
+  "StreetLamp": {
+    "roughness": "rbxassetid://83385182463528",
+    "color": "rbxassetid://80217352994858",
+    "metalness": "rbxassetid://120190443732344",
+    "normal": "rbxassetid://88594095134836"
+  },
+  "ParkingMeter": {
+    "metalness": "rbxassetid://95679824509763",
+    "normal": "rbxassetid://128312637971687",
+    "color": "rbxassetid://81829545289068",
+    "roughness": "rbxassetid://120692732031561"
+  },
+  "TaxiCab": {
+    "normal": "rbxassetid://71516005370480",
+    "color": "rbxassetid://90953288809845",
+    "roughness": "rbxassetid://91926772954662",
+    "metalness": "rbxassetid://74859015393614"
+  },
+  "OfficeFacade": {
+    "normal": "rbxassetid://134308401853713",
+    "metalness": "rbxassetid://129445015474772",
+    "color": "rbxassetid://118601998291465",
+    "roughness": "rbxassetid://71711016734744"
+  },
+  "ShopFront": {
+    "color": "rbxassetid://118761685279095",
+    "normal": "rbxassetid://130725933861861",
+    "metalness": "rbxassetid://112133156570513",
+    "roughness": "rbxassetid://102083930797375"
+  },
+  "CityVan": {
+    "color": "rbxassetid://113871845411844",
+    "roughness": "rbxassetid://89467621095871",
+    "normal": "rbxassetid://95775672895089",
+    "metalness": "rbxassetid://130990945360500"
+  },
+  "FuelTank": {
+    "metalness": "rbxassetid://129598662999410",
+    "roughness": "rbxassetid://77367024000332",
+    "normal": "rbxassetid://114267927983220",
+    "color": "rbxassetid://136761450287304"
+  },
+  "PipeStack": {
+    "metalness": "rbxassetid://114290419049810",
+    "normal": "rbxassetid://84321122501695",
+    "roughness": "rbxassetid://90499181976460",
+    "color": "rbxassetid://72592633706998"
+  },
+  "Generator": {
+    "metalness": "rbxassetid://122419442635825",
+    "color": "rbxassetid://77512030237320",
+    "normal": "rbxassetid://140516489228530",
+    "roughness": "rbxassetid://93623405824796"
+  },
+  "RobotArm": {
+    "color": "rbxassetid://105088720036737",
+    "normal": "rbxassetid://85234786325960",
+    "metalness": "rbxassetid://75254896054539",
+    "roughness": "rbxassetid://122657678170905"
+  },
+  "CargoContainer": {
+    "roughness": "rbxassetid://80412256053406",
+    "normal": "rbxassetid://106311727189626",
+    "metalness": "rbxassetid://111286033279437",
+    "color": "rbxassetid://70510809035073"
+  },
+  "HydraulicPress": {
+    "color": "rbxassetid://79775005042699",
+    "normal": "rbxassetid://84535750699323",
+    "metalness": "rbxassetid://140622027609404",
+    "roughness": "rbxassetid://80253219686078"
+  },
+  "FactoryBoiler": {
+    "color": "rbxassetid://85019625880004",
+    "roughness": "rbxassetid://76726735409248",
+    "normal": "rbxassetid://93728288403538",
+    "metalness": "rbxassetid://112186522115755"
+  },
+  "AmmoCrate": {
+    "metalness": "rbxassetid://116218000638623",
+    "normal": "rbxassetid://79018627807716",
+    "color": "rbxassetid://83608633244242",
+    "roughness": "rbxassetid://108656134262588"
+  },
+  "ArmyJeep": {
+    "roughness": "rbxassetid://80813499212898",
+    "normal": "rbxassetid://79165686233956",
+    "color": "rbxassetid://79263053084925",
+    "metalness": "rbxassetid://73344560573607"
+  },
+  "RadarDish": {
+    "color": "rbxassetid://90258185433351",
+    "normal": "rbxassetid://85953614609835",
+    "roughness": "rbxassetid://85749598068749",
+    "metalness": "rbxassetid://104284247983501"
+  },
+  "SandbagWall": {
+    "color": "rbxassetid://85805803012548",
+    "roughness": "rbxassetid://126534044457816",
+    "metalness": "rbxassetid://111075488667778",
+    "normal": "rbxassetid://123685634140564"
+  },
+  "WatchTower": {
+    "metalness": "rbxassetid://134731251692453",
+    "color": "rbxassetid://125180221112987",
+    "roughness": "rbxassetid://127972797029390",
+    "normal": "rbxassetid://71608813564612"
+  },
+  "ArmoredTank": {
+    "metalness": "rbxassetid://110782598099810",
+    "roughness": "rbxassetid://85885147621404",
+    "color": "rbxassetid://101439857067456",
+    "normal": "rbxassetid://90541849598197"
+  },
+  "Bunker": {
+    "roughness": "rbxassetid://84087689965828",
+    "metalness": "rbxassetid://110476867468547",
+    "normal": "rbxassetid://132637674212132",
+    "color": "rbxassetid://87292315637784"
+  },
+  "HoverCar": {
+    "color": "rbxassetid://90873784966575",
+    "normal": "rbxassetid://79887279815755",
+    "metalness": "rbxassetid://79375509776272",
+    "roughness": "rbxassetid://86619058557735"
+  },
+  "HoverDrone": {
+    "roughness": "rbxassetid://139407593031458",
+    "normal": "rbxassetid://109754761902538",
+    "color": "rbxassetid://91389095517872",
+    "metalness": "rbxassetid://129884435516038"
+  },
+  "HoloPanel": {
+    "metalness": "rbxassetid://70513931234536",
+    "color": "rbxassetid://138395034446471",
+    "roughness": "rbxassetid://83505566822994",
+    "normal": "rbxassetid://119324347104660"
+  },
+  "MiniReactor": {
+    "normal": "rbxassetid://106871250627016",
+    "color": "rbxassetid://75682407168910",
+    "metalness": "rbxassetid://78701072196374",
+    "roughness": "rbxassetid://127886238734089"
+  },
+  "MechBot": {
+    "normal": "rbxassetid://128396455466242",
+    "color": "rbxassetid://95151188311196",
+    "roughness": "rbxassetid://104072986131805",
+    "metalness": "rbxassetid://104876470726548"
+  },
+  "TechTower": {
+    "normal": "rbxassetid://112261152794684",
+    "metalness": "rbxassetid://81808858667102",
+    "color": "rbxassetid://83930816408962",
+    "roughness": "rbxassetid://123857495644745"
+  },
+  "ChaosCrystal": {
+    "roughness": "rbxassetid://80141618971631",
+    "color": "rbxassetid://82133684638662",
+    "metalness": "rbxassetid://109120378504147",
+    "normal": "rbxassetid://112689446795397"
+  },
+  "AlienPod": {
+    "color": "rbxassetid://106310592502947",
+    "metalness": "rbxassetid://109120378504147",
+    "roughness": "rbxassetid://77973142241421",
+    "normal": "rbxassetid://117058508456258"
+  },
+  "FloatingShard": {
+    "metalness": "rbxassetid://138335118339191",
+    "normal": "rbxassetid://91338805642730",
+    "color": "rbxassetid://104648143776323",
+    "roughness": "rbxassetid://131886607832565"
+  },
+  "DoomEngine": {
+    "roughness": "rbxassetid://87882028880500",
+    "color": "rbxassetid://81975289131440",
+    "normal": "rbxassetid://134819576735407",
+    "metalness": "rbxassetid://119617679606473"
+  },
+  "AlienMonolith": {
+    "normal": "rbxassetid://79333670908924",
+    "color": "rbxassetid://115535010977462",
+    "roughness": "rbxassetid://76049175350892",
+    "metalness": "rbxassetid://118643869490889"
+  },
+  "VoidReactor": {
+    "roughness": "rbxassetid://110859908420245",
+    "color": "rbxassetid://139535404666229",
+    "normal": "rbxassetid://76975600665294",
+    "metalness": "rbxassetid://77559959781437"
+  },
+  "VaultScrap": {
+    "normal": "rbxassetid://95848313292882",
+    "roughness": "rbxassetid://119172978514560",
+    "metalness": "rbxassetid://134316060227024",
+    "color": "rbxassetid://82597752570568"
+  },
+  "VaultDowntown": {
+    "color": "rbxassetid://111541934640025",
+    "normal": "rbxassetid://138387265801137",
+    "metalness": "rbxassetid://98045658128938",
+    "roughness": "rbxassetid://87437177706856"
+  },
+  "VaultIndustrial": {
+    "roughness": "rbxassetid://106814932146017",
+    "normal": "rbxassetid://133017487472023",
+    "metalness": "rbxassetid://115375247735462",
+    "color": "rbxassetid://123680446065838"
+  },
+  "VaultMilitary": {
+    "color": "rbxassetid://119802318295505",
+    "metalness": "rbxassetid://75522454426174",
+    "normal": "rbxassetid://85859412623369",
+    "roughness": "rbxassetid://121752706885437"
+  },
+  "VaultFuture": {
+    "normal": "rbxassetid://128144455954646",
+    "metalness": "rbxassetid://99128970936422",
+    "roughness": "rbxassetid://93831316800517",
+    "color": "rbxassetid://90318073665803"
+  },
+  "VaultChaos": {
+    "roughness": "rbxassetid://99657861275251",
+    "color": "rbxassetid://115266908560056",
+    "metalness": "rbxassetid://87822014457571",
+    "normal": "rbxassetid://121452901337087"
+  },
+  "GoldenCar": {
+    "normal": "rbxassetid://133098140352086",
+    "roughness": "rbxassetid://91240652255310",
+    "metalness": "rbxassetid://84115503827908",
+    "color": "rbxassetid://135315639459952"
+  },
+  "GoldCrate": {
+    "normal": "rbxassetid://80340780176136",
+    "color": "rbxassetid://111321379178785",
+    "roughness": "rbxassetid://138119104542211",
+    "metalness": "rbxassetid://136946573140081"
+  },
+  "ChaosGiant": {
+    "normal": "rbxassetid://133616655405608",
+    "color": "rbxassetid://93743135351102",
+    "metalness": "rbxassetid://89546151814539",
+    "roughness": "rbxassetid://103806339567820"
+  },
+  "ArmoredTruck": {
+    "metalness": "rbxassetid://111979022911397",
+    "roughness": "rbxassetid://128823141815934",
+    "color": "rbxassetid://85701386501017",
+    "normal": "rbxassetid://118352508665901"
+  },
+  "BossMachine": {
+    "metalness": "rbxassetid://108725188264638",
+    "normal": "rbxassetid://71319057938638",
+    "roughness": "rbxassetid://95412059022990",
+    "color": "rbxassetid://96617099085463"
+  },
+  "MeteorRock": {
+    "metalness": "rbxassetid://138335118339191",
+    "color": "rbxassetid://140458786921754",
+    "roughness": "rbxassetid://133730707202487",
+    "normal": "rbxassetid://124522489370771"
+  },
+  "GiantCrate": {
+    "roughness": "rbxassetid://127118785045777",
+    "color": "rbxassetid://129810731405994",
+    "normal": "rbxassetid://72702527695486",
+    "metalness": "rbxassetid://116956867330967"
+  },
+  "DailyPad": {
+    "roughness": "rbxassetid://84800802360537",
+    "normal": "rbxassetid://132199624547398",
+    "metalness": "rbxassetid://95462582497297",
+    "color": "rbxassetid://79380519820352"
+  },
+  "ToolRack": {
+    "color": "rbxassetid://138799394821282",
+    "normal": "rbxassetid://117128381971221",
+    "metalness": "rbxassetid://70900813674931",
+    "roughness": "rbxassetid://126651352989487"
+  },
+  "UpgradeStation": {
+    "roughness": "rbxassetid://139341344797754",
+    "metalness": "rbxassetid://97297699847880",
+    "normal": "rbxassetid://78055886184641",
+    "color": "rbxassetid://85820256720112"
+  },
+  "QuestBoard": {
+    "metalness": "rbxassetid://74642594204304",
+    "roughness": "rbxassetid://128492867468115",
+    "normal": "rbxassetid://104221357674229",
+    "color": "rbxassetid://138227834392324"
+  },
+  "ChaosShopTerminal": {
+    "color": "rbxassetid://138702833495276",
+    "roughness": "rbxassetid://137292975630236",
+    "normal": "rbxassetid://109345388904095",
+    "metalness": "rbxassetid://118034166251883"
+  },
+  "RebirthAltar": {
+    "roughness": "rbxassetid://103913096553901",
+    "metalness": "rbxassetid://95054819980795",
+    "normal": "rbxassetid://139717971486731",
+    "color": "rbxassetid://72177657610715"
+  },
+  "PortalArch": {
+    "color": "rbxassetid://92177765498581",
+    "metalness": "rbxassetid://88008812445493",
+    "roughness": "rbxassetid://89549980632043",
+    "normal": "rbxassetid://76640833497868"
+  },
+  "Monument": {
+    "metalness": "rbxassetid://113405977745707",
+    "color": "rbxassetid://98827831350438",
+    "normal": "rbxassetid://107349688344277",
+    "roughness": "rbxassetid://121679122457571"
+  },
+  "ZoneGateArch": {
+    "color": "rbxassetid://76204191158251",
+    "roughness": "rbxassetid://88393157102525",
+    "normal": "rbxassetid://108964027938115",
+    "metalness": "rbxassetid://82752211544443"
+  },
+  "ScrapWall": {
+    "metalness": "rbxassetid://80945659673327",
+    "roughness": "rbxassetid://80617896809566",
+    "normal": "rbxassetid://73048561503345",
+    "color": "rbxassetid://98067048498756"
+  },
+  "FactoryWall": {
+    "roughness": "rbxassetid://87905977690318",
+    "metalness": "rbxassetid://114851685987249",
+    "normal": "rbxassetid://95611560970072",
+    "color": "rbxassetid://91649873914855"
+  },
+  "CityWall": {
+    "roughness": "rbxassetid://92780267987594",
+    "normal": "rbxassetid://105482870481713",
+    "metalness": "rbxassetid://96252711880811",
+    "color": "rbxassetid://79069791240342"
+  },
+  "MilitaryWall": {
+    "roughness": "rbxassetid://72998665078611",
+    "color": "rbxassetid://123205255923755",
+    "normal": "rbxassetid://96418187300218",
+    "metalness": "rbxassetid://99583983049270"
+  },
+  "FutureWall": {
+    "metalness": "rbxassetid://105220873561898",
+    "roughness": "rbxassetid://107310210643632",
+    "color": "rbxassetid://107532974594370",
+    "normal": "rbxassetid://139241188860568"
+  },
+  "OuterBarrier": {
+    "color": "rbxassetid://119008564911654",
+    "roughness": "rbxassetid://126864391079284",
+    "normal": "rbxassetid://97179397040747",
+    "metalness": "rbxassetid://138335118339191"
+  },
+  "VIPWall": {
+    "metalness": "rbxassetid://104585974173804",
+    "roughness": "rbxassetid://95272595042856",
+    "normal": "rbxassetid://100997731475495",
+    "color": "rbxassetid://101157035229914"
+  },
+  "ChaosWall": {
+    "color": "rbxassetid://101580505086995",
+    "normal": "rbxassetid://117621122667587",
+    "metalness": "rbxassetid://81636515758123",
+    "roughness": "rbxassetid://75640104903739"
+  },
+  "CityHighrise": {
+    "roughness": "rbxassetid://99965715198550",
+    "normal": "rbxassetid://87125726239498",
+    "color": "rbxassetid://75486451249176",
+    "metalness": "rbxassetid://89583408376419"
+  },
+  "TowerCrane": {
+    "color": "rbxassetid://115349772648799",
+    "metalness": "rbxassetid://107432195632346",
+    "normal": "rbxassetid://122603410671535",
+    "roughness": "rbxassetid://108803955898181"
+  },
+  "Smokestack": {
+    "roughness": "rbxassetid://85642709090364",
+    "color": "rbxassetid://89732262552858",
+    "normal": "rbxassetid://89842645441850",
+    "metalness": "rbxassetid://99381832949584"
+  },
+  "NeonSpire": {
+    "color": "rbxassetid://90727496794086",
+    "roughness": "rbxassetid://100506862171901",
+    "metalness": "rbxassetid://117359566106209",
+    "normal": "rbxassetid://137717185180329"
+  },
+  "GoldPillar": {
+    "metalness": "rbxassetid://74047065408199",
+    "roughness": "rbxassetid://81132493588918",
+    "color": "rbxassetid://96394612579061",
+    "normal": "rbxassetid://117618168491946"
+  },
+  "ChaosSpire": {
+    "metalness": "rbxassetid://138335118339191",
+    "roughness": "rbxassetid://134355592498757",
+    "normal": "rbxassetid://73184989906222",
+    "color": "rbxassetid://129259881796397"
+  },
+  "ScrapHeap": {
+    "color": "rbxassetid://106843348034203",
+    "normal": "rbxassetid://103511177701827",
+    "roughness": "rbxassetid://123415011524309",
+    "metalness": "rbxassetid://90687932535849"
+  },
+  "TankTrap": {
+    "metalness": "rbxassetid://135865610256336",
+    "roughness": "rbxassetid://136415730169896",
+    "color": "rbxassetid://135301407184168",
+    "normal": "rbxassetid://95297476656773"
+  },
+  "LandmarkTank": {
+    "color": "rbxassetid://136761450287304",
+    "roughness": "rbxassetid://77367024000332",
+    "normal": "rbxassetid://114267927983220",
+    "metalness": "rbxassetid://129598662999410"
+  },
+  "LandmarkWatchTower": {
+    "roughness": "rbxassetid://127972797029390",
+    "color": "rbxassetid://125180221112987",
+    "normal": "rbxassetid://71608813564612",
+    "metalness": "rbxassetid://134731251692453"
+  },
+  "PlazaLamp": {
+    "metalness": "rbxassetid://103911137283500",
+    "roughness": "rbxassetid://89095408346133",
+    "color": "rbxassetid://121583955964047",
+    "normal": "rbxassetid://100487019494408"
+  },
+  "LandmarkStreetLight": {
+    "metalness": "rbxassetid://120190443732344",
+    "roughness": "rbxassetid://83385182463528",
+    "normal": "rbxassetid://88594095134836",
+    "color": "rbxassetid://80217352994858"
+  },
+  "FloodLight": {
+    "normal": "rbxassetid://132465624781162",
+    "color": "rbxassetid://80803582330723",
+    "roughness": "rbxassetid://125365564126549",
+    "metalness": "rbxassetid://124903160730217"
+  },
+  "GlassTowerA": {
+    "roughness": "rbxassetid://122488579467091",
+    "color": "rbxassetid://110092556323652",
+    "normal": "rbxassetid://122848201425619",
+    "metalness": "rbxassetid://136551174675134"
+  },
+  "NightTowerA": {
+    "metalness": "rbxassetid://107963762146475",
+    "color": "rbxassetid://139036151377036",
+    "roughness": "rbxassetid://121946174671738",
+    "normal": "rbxassetid://104614172011184"
+  },
+  "NightTowerB": {
+    "color": "rbxassetid://117131476856312",
+    "normal": "rbxassetid://109006659223436",
+    "roughness": "rbxassetid://75850287643697",
+    "metalness": "rbxassetid://120662927180021"
+  },
+  "SpireTower": {
+    "color": "rbxassetid://140335701014507",
+    "roughness": "rbxassetid://92879214960583",
+    "normal": "rbxassetid://89271718464905",
+    "metalness": "rbxassetid://99890054324037"
+  },
+  "OfficeSlab": {
+    "roughness": "rbxassetid://114134500206008",
+    "normal": "rbxassetid://78012145971887",
+    "color": "rbxassetid://92462703678641",
+    "metalness": "rbxassetid://107489040952818"
+  },
+  "GlassTowerB": {
+    "metalness": "rbxassetid://89905919984681",
+    "roughness": "rbxassetid://73538996540480",
+    "normal": "rbxassetid://118635909826040",
+    "color": "rbxassetid://82814097108441"
+  },
+  "ServiceWorkshop": {
+    "roughness": "rbxassetid://73564603302378",
+    "normal": "rbxassetid://113864065339844",
+    "metalness": "rbxassetid://77961571318422",
+    "color": "rbxassetid://86908966859336"
+  },
+  "CityEdgeBlockB": {
+    "color": "rbxassetid://122889337362798",
+    "roughness": "rbxassetid://100441955143346",
+    "metalness": "rbxassetid://88426465741463",
+    "normal": "rbxassetid://95529638828684"
+  },
+  "CityEdgeBlockA": {
+    "normal": "rbxassetid://131397905138106",
+    "metalness": "rbxassetid://132374558877509",
+    "color": "rbxassetid://99301054854257",
+    "roughness": "rbxassetid://94635402573297"
+  },
+  "MaintenanceGrate": {
+    "color": "rbxassetid://75605246861019",
+    "roughness": "rbxassetid://113888261889322",
+    "normal": "rbxassetid://76458304505597",
+    "metalness": "rbxassetid://83457585932367"
+  },
+  "ServicePanel": {
+    "roughness": "rbxassetid://138162417606449",
+    "normal": "rbxassetid://71175161549839",
+    "color": "rbxassetid://116837252708246",
+    "metalness": "rbxassetid://125115557884063"
+  },
+  "ReclamationDepot": {
+    "metalness": "rbxassetid://139793056528575",
+    "roughness": "rbxassetid://118007108709624",
+    "color": "rbxassetid://124374148608838",
+    "normal": "rbxassetid://81328504805464"
+  },
+  "CompanionBay": {
+    "normal": "rbxassetid://123717188862830",
+    "color": "rbxassetid://112624706714124",
+    "metalness": "rbxassetid://91387858925402",
+    "roughness": "rbxassetid://71116242925499"
+  },
+  "RebirthCoreArray": {
+    "normal": "rbxassetid://114396576753598",
+    "roughness": "rbxassetid://106202105473776",
+    "color": "rbxassetid://82043697884488",
+    "metalness": "rbxassetid://113780276350146"
+  },
+  "DetailBench": {
+    "color": "rbxassetid://127299772389743",
+    "roughness": "rbxassetid://96635859221453",
+    "metalness": "rbxassetid://80979065026783",
+    "normal": "rbxassetid://137681990970826"
+  },
+  "DailySupplyCart": {
+    "roughness": "rbxassetid://130681158752163",
+    "color": "rbxassetid://106852922549384",
+    "normal": "rbxassetid://114553446625321",
+    "metalness": "rbxassetid://98935952135318"
+  },
+  "DailySupplyDepot": {
+    "metalness": "rbxassetid://103936507186622",
+    "roughness": "rbxassetid://134990566865755",
+    "normal": "rbxassetid://105801512229976",
+    "color": "rbxassetid://109580058641953"
+  },
+  "ServiceBay": {
+    "normal": "rbxassetid://75166164739353",
+    "roughness": "rbxassetid://110862611426398",
+    "metalness": "rbxassetid://98118496761655",
+    "color": "rbxassetid://86054688516305"
+  },
+  "ServiceCabinet": {
+    "normal": "rbxassetid://136068016623157",
+    "metalness": "rbxassetid://138627753433226",
+    "roughness": "rbxassetid://79159806894003",
+    "color": "rbxassetid://75146257869411"
+  },
+  "DowntownServiceDetail": {
+    "normal": "rbxassetid://135595796592887",
+    "roughness": "rbxassetid://94761567897967",
+    "color": "rbxassetid://72256512205091",
+    "metalness": "rbxassetid://121168908191414"
+  },
+  "FloorRingMarker": {
+    "roughness": "rbxassetid://75963553983288",
+    "color": "rbxassetid://103430769837109",
+    "normal": "rbxassetid://72425262991325",
+    "metalness": "rbxassetid://108937764883047"
+  },
+  "ScrapServiceDetail": {
+    "normal": "rbxassetid://118607142931449",
+    "roughness": "rbxassetid://128526532312140",
+    "metalness": "rbxassetid://98528048496887",
+    "color": "rbxassetid://85495273571178"
+  },
+  "FloorCornerMarker": {
+    "metalness": "rbxassetid://138907683157450",
+    "normal": "rbxassetid://134119277333007",
+    "roughness": "rbxassetid://72659434007180",
+    "color": "rbxassetid://110951337363507"
+  },
+  "IndustrialServiceDetail": {
+    "roughness": "rbxassetid://139960399545405",
+    "color": "rbxassetid://118728000574621",
+    "metalness": "rbxassetid://107621153884481",
+    "normal": "rbxassetid://100442994211908"
+  },
+  "FutureServiceDetail": {
+    "normal": "rbxassetid://92812060935438",
+    "metalness": "rbxassetid://130261885078975",
+    "roughness": "rbxassetid://93523454425364",
+    "color": "rbxassetid://76454143117172"
+  },
+  "ChaosServiceDetail": {
+    "roughness": "rbxassetid://120143762377615",
+    "color": "rbxassetid://123490274119134",
+    "normal": "rbxassetid://140422345603550",
+    "metalness": "rbxassetid://116109570467014"
+  },
+  "CamoPatch": {
+    "roughness": "rbxassetid://73592276726388",
+    "normal": "rbxassetid://95471577975931",
+    "color": "rbxassetid://119467578863476",
+    "metalness": "rbxassetid://109120378504147"
+  },
+  "OilStain": {
+    "metalness": "rbxassetid://124878486295584",
+    "color": "rbxassetid://88390313497643",
+    "roughness": "rbxassetid://123893052002250",
+    "normal": "rbxassetid://130147077612106"
+  },
+  "RustPatch": {
+    "metalness": "rbxassetid://134109694100787",
+    "roughness": "rbxassetid://104212116809384",
+    "normal": "rbxassetid://104614854534725",
+    "color": "rbxassetid://95731418451268"
+  },
+  "MilitaryServiceDetail": {
+    "metalness": "rbxassetid://106148945064828",
+    "normal": "rbxassetid://110082699941271",
+    "roughness": "rbxassetid://109298850768416",
+    "color": "rbxassetid://128715419411122"
+  },
+  "HelipadDeck": {
+    "normal": "rbxassetid://97645397391107",
+    "color": "rbxassetid://136063803955493",
+    "metalness": "rbxassetid://107985863323599",
+    "roughness": "rbxassetid://90953465774940"
+  },
+  "EnergyVein": {
+    "normal": "rbxassetid://130147077612106",
+    "roughness": "rbxassetid://122796690128546",
+    "metalness": "rbxassetid://109120378504147",
+    "color": "rbxassetid://110027137075477"
+  },
+  "SpawnEmblem": {
+    "color": "rbxassetid://94369863046878",
+    "roughness": "rbxassetid://93031097222550",
+    "metalness": "rbxassetid://116103031738294",
+    "normal": "rbxassetid://99069256420942"
+  },
+  "JerseyBarrier": {
+    "color": "rbxassetid://123069808699201",
+    "metalness": "rbxassetid://123406103313810",
+    "roughness": "rbxassetid://109377096588300",
+    "normal": "rbxassetid://109318144046668"
+  },
+  "MonumentDisc": {
+    "color": "rbxassetid://126609963569457",
+    "metalness": "rbxassetid://75090480741386",
+    "roughness": "rbxassetid://97474052142124",
+    "normal": "rbxassetid://106552114638396"
+  },
+  "CoreSigil": {
+    "color": "rbxassetid://85899382272035",
+    "roughness": "rbxassetid://106447144444252",
+    "metalness": "rbxassetid://94642745539443",
+    "normal": "rbxassetid://89701157167005"
+  },
+  "PortalPad": {
+    "roughness": "rbxassetid://127241828661199",
+    "normal": "rbxassetid://102214467632893",
+    "metalness": "rbxassetid://70587051042246",
+    "color": "rbxassetid://81372574647652"
+  },
+  "ReturnPadRim": {
+    "color": "rbxassetid://136415986590632",
+    "metalness": "rbxassetid://116577749837966",
+    "normal": "rbxassetid://136853979566706",
+    "roughness": "rbxassetid://78951277856216"
+  },
+  "PipeRack": {
+    "normal": "rbxassetid://136945513303216",
+    "color": "rbxassetid://97419117140267",
+    "roughness": "rbxassetid://110633802270481",
+    "metalness": "rbxassetid://82275081028004"
+  },
+  "BeamPillarBase": {
+    "roughness": "rbxassetid://115300745077837",
+    "normal": "rbxassetid://102437879931333",
+    "color": "rbxassetid://84031162201981",
+    "metalness": "rbxassetid://138335118339191"
+  },
+  "GuideSign": {
+    "roughness": "rbxassetid://98724057140287",
+    "normal": "rbxassetid://86568306583729",
+    "metalness": "rbxassetid://79964077099600",
+    "color": "rbxassetid://81864542503159"
+  },
+  "SpawnPedestal": {
+    "metalness": "rbxassetid://106091084873747",
+    "normal": "rbxassetid://97757923574255",
+    "roughness": "rbxassetid://126850615863864",
+    "color": "rbxassetid://103396835874363"
+  },
+  "HallEntrance": {
+    "metalness": "rbxassetid://72639389820685",
+    "normal": "rbxassetid://87111176994164",
+    "color": "rbxassetid://121370283050597",
+    "roughness": "rbxassetid://88320766210773"
+  },
+  "HallLamp": {
+    "roughness": "rbxassetid://84918799922691",
+    "normal": "rbxassetid://96000340982187",
+    "color": "rbxassetid://124537018823652",
+    "metalness": "rbxassetid://100361133309317"
+  },
+  "RedCarpet": {
+    "color": "rbxassetid://96533637033264",
+    "roughness": "rbxassetid://125044686489510",
+    "metalness": "rbxassetid://138335118339191",
+    "normal": "rbxassetid://99854794596718"
+  },
+  "HallTrophy": {
+    "color": "rbxassetid://132972967182005",
+    "roughness": "rbxassetid://106007503963118",
+    "normal": "rbxassetid://117802604919188",
+    "metalness": "rbxassetid://112533061508354"
+  },
+  "HallPodium": {
+    "normal": "rbxassetid://89917563408313",
+    "roughness": "rbxassetid://72674311967533",
+    "metalness": "rbxassetid://98724620709896",
+    "color": "rbxassetid://70698937453383"
+  },
+  "HallBoard": {
+    "roughness": "rbxassetid://122501452209693",
+    "normal": "rbxassetid://131988166071028",
+    "color": "rbxassetid://125150126922759",
+    "metalness": "rbxassetid://106517832433685"
+  },
+  "HallDisc": {
+    "color": "rbxassetid://99425103772258",
+    "normal": "rbxassetid://122013702903352",
+    "roughness": "rbxassetid://90433044024693",
+    "metalness": "rbxassetid://87651458888373"
+  },
+  "ExpeditionConsole": {
+    "color": "rbxassetid://81210198193433",
+    "metalness": "rbxassetid://103979314832877",
+    "roughness": "rbxassetid://108394536461017",
+    "normal": "rbxassetid://73286605516423"
+  },
+  "FrostRock": {
+    "metalness": "rbxassetid://109120378504147",
+    "roughness": "rbxassetid://101810625915747",
+    "normal": "rbxassetid://103855254280982",
+    "color": "rbxassetid://130022783034070"
+  },
+  "GateBeam": {
+    "metalness": "rbxassetid://110124316294137",
+    "normal": "rbxassetid://97465572545270",
+    "roughness": "rbxassetid://129886374955000",
+    "color": "rbxassetid://77190912741636"
+  },
+  "PathBollard": {
+    "color": "rbxassetid://96182446150913",
+    "roughness": "rbxassetid://112485739133380",
+    "metalness": "rbxassetid://125767990334781",
+    "normal": "rbxassetid://74382928535082"
+  },
+  "SkyRock": {
+    "metalness": "rbxassetid://109120378504147",
+    "normal": "rbxassetid://94600027267965",
+    "roughness": "rbxassetid://137361597967355",
+    "color": "rbxassetid://131101272558778"
+  },
+  "VerdantRock": {
+    "metalness": "rbxassetid://109120378504147",
+    "normal": "rbxassetid://73041486152308",
+    "roughness": "rbxassetid://114818254116672",
+    "color": "rbxassetid://86924516927864"
+  },
+  "GatePier": {
+    "roughness": "rbxassetid://139855758269157",
+    "color": "rbxassetid://130413218224752",
+    "metalness": "rbxassetid://91776735779487",
+    "normal": "rbxassetid://104658838611077"
+  },
+  "SkyArena": {
+    "normal": "rbxassetid://109752046533781",
+    "color": "rbxassetid://125277687267702",
+    "roughness": "rbxassetid://79726979895132",
+    "metalness": "rbxassetid://106719238683801"
+  },
+  "FernFrond": {
+    "normal": "rbxassetid://132746433877698",
+    "color": "rbxassetid://114508553924639",
+    "roughness": "rbxassetid://79450199406277",
+    "metalness": "rbxassetid://114297278007708"
+  },
+  "InlaySegment": {
+    "roughness": "rbxassetid://125910542888551",
+    "normal": "rbxassetid://74953935804209",
+    "color": "rbxassetid://128955065230508",
+    "metalness": "rbxassetid://108355754247780"
+  },
+  "VerdantArena": {
+    "color": "rbxassetid://114215781153151",
+    "metalness": "rbxassetid://106719238683801",
+    "normal": "rbxassetid://109752046533781",
+    "roughness": "rbxassetid://79726979895132"
+  },
+  "FrostArena": {
+    "normal": "rbxassetid://109752046533781",
+    "metalness": "rbxassetid://106719238683801",
+    "color": "rbxassetid://110151219344268",
+    "roughness": "rbxassetid://79726979895132"
+  },
+  "BeaconPad": {
+    "metalness": "rbxassetid://90409712873745",
+    "roughness": "rbxassetid://77271169733245",
+    "color": "rbxassetid://118045957580301",
+    "normal": "rbxassetid://119821079925707"
+  },
+  "VerdantTree": {
+    "normal": "rbxassetid://107977642019410",
+    "metalness": "rbxassetid://109120378504147",
+    "color": "rbxassetid://124972087036445",
+    "roughness": "rbxassetid://78855132979811"
+  },
+  "WallVine": {
+    "normal": "rbxassetid://72944125722318",
+    "metalness": "rbxassetid://114297278007708",
+    "color": "rbxassetid://95354071458329",
+    "roughness": "rbxassetid://104769016338670"
+  },
+  "FoundryPair": {
+    "color": "rbxassetid://115338943760705",
+    "metalness": "rbxassetid://134306817187381",
+    "roughness": "rbxassetid://99188584968584",
+    "normal": "rbxassetid://123359462319690"
+  },
+  "SawRoof": {
+    "metalness": "rbxassetid://87049025282678",
+    "color": "rbxassetid://107668953766793",
+    "roughness": "rbxassetid://103171333307185",
+    "normal": "rbxassetid://83057882700665"
+  },
+  "WindRotor": {
+    "metalness": "rbxassetid://131707478000869",
+    "normal": "rbxassetid://126507843086062",
+    "color": "rbxassetid://104992084920809",
+    "roughness": "rbxassetid://73216270143350"
+  },
+  "ExpeditionContainer": {
+    "normal": "rbxassetid://124058730814153",
+    "metalness": "rbxassetid://111680402878871",
+    "color": "rbxassetid://123404836915630",
+    "roughness": "rbxassetid://138949837219119"
+  },
+  "Icebreaker": {
+    "normal": "rbxassetid://90826082104206",
+    "roughness": "rbxassetid://87594501942772",
+    "metalness": "rbxassetid://140363825279559",
+    "color": "rbxassetid://109181778181194"
+  },
+  "ReservoirTank": {
+    "color": "rbxassetid://118233820497413",
+    "roughness": "rbxassetid://105681664461831",
+    "normal": "rbxassetid://81879448066178",
+    "metalness": "rbxassetid://86335474922831"
+  },
+  "SnowDrift": {
+    "roughness": "rbxassetid://111570918291579",
+    "color": "rbxassetid://80998708904731",
+    "metalness": "rbxassetid://114297278007708",
+    "normal": "rbxassetid://109038103239410"
+  },
+  "IceShard": {
+    "metalness": "rbxassetid://109120378504147",
+    "roughness": "rbxassetid://85483400556350",
+    "normal": "rbxassetid://126033277571606",
+    "color": "rbxassetid://116743368674248"
+  },
+  "Porthole": {
+    "normal": "rbxassetid://111700833088533",
+    "metalness": "rbxassetid://134137527468934",
+    "roughness": "rbxassetid://118896438716633",
+    "color": "rbxassetid://113302889620654"
+  },
+  "CraneJib": {
+    "color": "rbxassetid://114659589727207",
+    "roughness": "rbxassetid://136018891133695",
+    "metalness": "rbxassetid://110976828734336",
+    "normal": "rbxassetid://126484389464687"
+  },
+  "TempleColumn": {
+    "roughness": "rbxassetid://125525386948975",
+    "metalness": "rbxassetid://139248271590739",
+    "color": "rbxassetid://97284148078186",
+    "normal": "rbxassetid://117908625270226"
+  },
+  "CraneMast": {
+    "color": "rbxassetid://77968469267782",
+    "normal": "rbxassetid://80681671154917",
+    "metalness": "rbxassetid://82769095367813",
+    "roughness": "rbxassetid://95107794274074"
+  },
+  "DockDeck": {
+    "roughness": "rbxassetid://135317382313701",
+    "color": "rbxassetid://135094911523180",
+    "metalness": "rbxassetid://102194071724149",
+    "normal": "rbxassetid://97087630596605"
+  },
+  "ColumnCapital": {
+    "metalness": "rbxassetid://104954772024457",
+    "color": "rbxassetid://129399486102504",
+    "normal": "rbxassetid://89700020232818",
+    "roughness": "rbxassetid://94637525078214"
+  },
+  "TempleLintel": {
+    "normal": "rbxassetid://138546692673491",
+    "roughness": "rbxassetid://85295512725300",
+    "color": "rbxassetid://138005424991706",
+    "metalness": "rbxassetid://124251527896153"
+  },
+  "MarbleStep": {
+    "color": "rbxassetid://89874149333069",
+    "roughness": "rbxassetid://139509909294008",
+    "normal": "rbxassetid://96391665325418",
+    "metalness": "rbxassetid://120353522166787"
+  },
+  "TempleFrieze": {
+    "normal": "rbxassetid://114126853327599",
+    "color": "rbxassetid://76021497205633",
+    "roughness": "rbxassetid://122318487478123",
+    "metalness": "rbxassetid://91031820303796"
+  },
+  "RuneGlyph": {
+    "normal": "rbxassetid://91153601934704",
+    "roughness": "rbxassetid://128054614333679",
+    "metalness": "rbxassetid://89368906082281",
+    "color": "rbxassetid://125179938457286"
+  },
+  "BrokenColumn": {
+    "normal": "rbxassetid://94671876878047",
+    "metalness": "rbxassetid://107602357101063",
+    "color": "rbxassetid://84772712948983",
+    "roughness": "rbxassetid://88706488632483"
+  },
+  "MasonryBlock": {
+    "normal": "rbxassetid://89130209327230",
+    "color": "rbxassetid://88740421719863",
+    "metalness": "rbxassetid://127168031528988",
+    "roughness": "rbxassetid://110951423706808"
+  },
+  "WorldsGateFrame": {
+    "color": "rbxassetid://79586497663765",
+    "roughness": "rbxassetid://88888361391674",
+    "metalness": "rbxassetid://109578322453941",
+    "normal": "rbxassetid://84720410729413"
+  },
+  "Tidebreaker": {
+    "roughness": "rbxassetid://121175992258908",
+    "color": "rbxassetid://89177083245097",
+    "normal": "rbxassetid://72030045251414",
+    "metalness": "rbxassetid://86635644185517"
+  },
+  "PowerRoot": {
+    "color": "rbxassetid://124067624819689",
+    "roughness": "rbxassetid://128339863333672",
+    "normal": "rbxassetid://96530634579666",
+    "metalness": "rbxassetid://111574671290177"
+  },
+  "CoolantPipe": {
+    "roughness": "rbxassetid://115182338296193",
+    "metalness": "rbxassetid://139072186138073",
+    "color": "rbxassetid://75509722966058",
+    "normal": "rbxassetid://87110483140038"
+  },
+  "StormArchivist": {
+    "color": "rbxassetid://73744827201619",
+    "metalness": "rbxassetid://76533341052577",
+    "normal": "rbxassetid://84020413637290",
+    "roughness": "rbxassetid://105978243716408"
+  },
+  "VerdantWarden": {
+    "roughness": "rbxassetid://124706304168256",
+    "metalness": "rbxassetid://111360073380761",
+    "normal": "rbxassetid://103999364352186",
+    "color": "rbxassetid://102212067447135"
+  },
+  "TireTurtle": {
+    "normal": "rbxassetid://121838432651447",
+    "metalness": "rbxassetid://107392146966738",
+    "color": "rbxassetid://97881535956206",
+    "roughness": "rbxassetid://84323596565788"
+  },
+  "VoidKitten": {
+    "color": "rbxassetid://108656855985324",
+    "metalness": "rbxassetid://109120378504147",
+    "normal": "rbxassetid://130147077612106",
+    "roughness": "rbxassetid://91998447987989"
+  },
+  "HazardDrone": {
+    "metalness": "rbxassetid://138459040492919",
+    "roughness": "rbxassetid://109651882110496",
+    "normal": "rbxassetid://82667293327654",
+    "color": "rbxassetid://81392629269916"
+  },
+  "MagmaGolem": {
+    "metalness": "rbxassetid://109120378504147",
+    "color": "rbxassetid://126915583095626",
+    "roughness": "rbxassetid://121573251140489",
+    "normal": "rbxassetid://81153153433572"
+  },
+  "GearBot": {
+    "color": "rbxassetid://96600833436870",
+    "normal": "rbxassetid://111422719580803",
+    "metalness": "rbxassetid://129542465141527",
+    "roughness": "rbxassetid://97691440289019"
+  },
+  "ScrapRat": {
+    "normal": "rbxassetid://118903085979943",
+    "metalness": "rbxassetid://135565600648920",
+    "roughness": "rbxassetid://136343040270076",
+    "color": "rbxassetid://104255004259625"
+  },
+  "BoltPup": {
+    "normal": "rbxassetid://71175490927528",
+    "color": "rbxassetid://95221241688015",
+    "roughness": "rbxassetid://128832473787696",
+    "metalness": "rbxassetid://81461432954499"
+  },
+  "WreckKing": {
+    "roughness": "rbxassetid://132723380790265",
+    "normal": "rbxassetid://137290973044540",
+    "color": "rbxassetid://118096623100156",
+    "metalness": "rbxassetid://74649681704985"
+  },
+  "MesaRidgeA": {
+    "color": "rbxassetid://107392911351240",
+    "metalness": "rbxassetid://138335118339191",
+    "normal": "rbxassetid://73263824405256",
+    "roughness": "rbxassetid://93670626708880"
+  },
+  "FrostPeak": {
+    "roughness": "rbxassetid://78238839181033",
+    "metalness": "rbxassetid://138335118339191",
+    "color": "rbxassetid://137945544223432",
+    "normal": "rbxassetid://138154569988864"
+  },
+  "MesaRidgeB": {
+    "normal": "rbxassetid://124476649673490",
+    "roughness": "rbxassetid://107003255757947",
+    "metalness": "rbxassetid://138335118339191",
+    "color": "rbxassetid://78679408780374"
+  },
+  "VerdantPeak": {
+    "metalness": "rbxassetid://138335118339191",
+    "normal": "rbxassetid://72319602336882",
+    "color": "rbxassetid://132670575976052",
+    "roughness": "rbxassetid://131235477663377"
+  },
+  "SkyCrag": {
+    "normal": "rbxassetid://81375906096106",
+    "roughness": "rbxassetid://116781312724322",
+    "metalness": "rbxassetid://138335118339191",
+    "color": "rbxassetid://128148151967445"
+  },
+  "FrostRim": {
+    "color": "rbxassetid://103727889440383",
+    "metalness": "rbxassetid://109120378504147",
+    "normal": "rbxassetid://100153201558646",
+    "roughness": "rbxassetid://119939760403863"
+  },
+  "VerdantRim": {
+    "roughness": "rbxassetid://131332836499385",
+    "metalness": "rbxassetid://109120378504147",
+    "normal": "rbxassetid://139463825930398",
+    "color": "rbxassetid://135313282399040"
+  },
+  "SkyRim": {
+    "color": "rbxassetid://137073225670897",
+    "roughness": "rbxassetid://104988737009462",
+    "normal": "rbxassetid://134145523632541",
+    "metalness": "rbxassetid://109120378504147"
+  },
+  "SignFrameBoard": {
+    "color": "rbxassetid://98736134712466",
+    "normal": "rbxassetid://94396561735191",
+    "metalness": "rbxassetid://117702252010562",
+    "roughness": "rbxassetid://111900518787886"
+  },
+  "SignFrameService": {
+    "roughness": "rbxassetid://121090306950489",
+    "metalness": "rbxassetid://117422524690129",
+    "color": "rbxassetid://135194585209155",
+    "normal": "rbxassetid://94960813015111"
+  },
+  "SignFrameGuide": {
+    "metalness": "rbxassetid://118852638337656",
+    "normal": "rbxassetid://137651788369457",
+    "color": "rbxassetid://76541462858809",
+    "roughness": "rbxassetid://110679981685748"
+  },
+  "SignFrameGate": {
+    "roughness": "rbxassetid://110896722107457",
+    "normal": "rbxassetid://71089424459302",
+    "metalness": "rbxassetid://71844586391563",
+    "color": "rbxassetid://112126370822336"
+  },
+  "VoidSentinel": {
+    "normal": "rbxassetid://101028237424235",
+    "color": "rbxassetid://117361464215835",
+    "roughness": "rbxassetid://132931065850952",
+    "metalness": "rbxassetid://120619652317073"
+  },
+  "DowntownCrusher": {
+    "roughness": "rbxassetid://81450806954577",
+    "metalness": "rbxassetid://86325464276634",
+    "normal": "rbxassetid://117666231404813",
+    "color": "rbxassetid://124085357986308"
+  },
+  "MilitaryWarden": {
+    "roughness": "rbxassetid://80053769920422",
+    "normal": "rbxassetid://128738535822602",
+    "color": "rbxassetid://78563773804399",
+    "metalness": "rbxassetid://121595699231945"
+  },
+  "ScrapColossus": {
+    "color": "rbxassetid://130723903420631",
+    "metalness": "rbxassetid://121760167908063",
+    "roughness": "rbxassetid://140405077923540",
+    "normal": "rbxassetid://75008636212778"
+  },
+  "IndustrialTitan": {
+    "metalness": "rbxassetid://82947469339986",
+    "roughness": "rbxassetid://114545223291313",
+    "color": "rbxassetid://132752202950190",
+    "normal": "rbxassetid://75247591166717"
+  },
+  "ChaosOverlord": {
+    "normal": "rbxassetid://83473868399483",
+    "color": "rbxassetid://100387649916419",
+    "roughness": "rbxassetid://138477335884688",
+    "metalness": "rbxassetid://87838741823740"
+  },
+  "ArmorPlate": {
+    "metalness": "rbxassetid://108082684776241",
+    "normal": "rbxassetid://105297393130202",
+    "color": "rbxassetid://114092645414930",
+    "roughness": "rbxassetid://129489836525972"
+  },
+  "VoidPylon": {
+    "normal": "rbxassetid://118091864988751",
+    "roughness": "rbxassetid://96640677535980",
+    "metalness": "rbxassetid://124217968474961",
+    "color": "rbxassetid://99727042033113"
+  },
+  "WeakPoint": {
+    "normal": "rbxassetid://93857614253601",
+    "metalness": "rbxassetid://97698945262943",
+    "roughness": "rbxassetid://140080318421344",
+    "color": "rbxassetid://127547996098680"
+  },
+  "VoidIslandRim": {
+    "metalness": "rbxassetid://78670369181469",
+    "roughness": "rbxassetid://123750404568790",
+    "color": "rbxassetid://104141085330725",
+    "normal": "rbxassetid://100267428013995"
+  },
+  "MilitaryIslandRim": {
+    "color": "rbxassetid://98832513268979",
+    "roughness": "rbxassetid://118427628221614",
+    "metalness": "rbxassetid://109120378504147",
+    "normal": "rbxassetid://82192872009979"
+  },
+  "DowntownIslandRim": {
+    "color": "rbxassetid://132088842330811",
+    "normal": "rbxassetid://137853172629046",
+    "metalness": "rbxassetid://109120378504147",
+    "roughness": "rbxassetid://108505114125539"
+  },
+  "ChaosIslandRim": {
+    "color": "rbxassetid://99465802177361",
+    "normal": "rbxassetid://116193578201385",
+    "roughness": "rbxassetid://92953686699651",
+    "metalness": "rbxassetid://109120378504147"
+  },
+  "IndustrialIslandRim": {
+    "color": "rbxassetid://95499404197514",
+    "metalness": "rbxassetid://139192146398067",
+    "roughness": "rbxassetid://126606543988116",
+    "normal": "rbxassetid://138569654315138"
+  },
+  "ScrapIslandRim": {
+    "roughness": "rbxassetid://108319433978879",
+    "normal": "rbxassetid://74805825101996",
+    "metalness": "rbxassetid://128210019053315",
+    "color": "rbxassetid://113614858581916"
+  },
+  "DowntownIslandBase": {
+    "normal": "rbxassetid://89445980316169",
+    "color": "rbxassetid://132267686083536",
+    "metalness": "rbxassetid://138335118339191",
+    "roughness": "rbxassetid://124295158365986"
+  },
+  "IndustrialIslandBase": {
+    "metalness": "rbxassetid://138335118339191",
+    "roughness": "rbxassetid://95218608638482",
+    "color": "rbxassetid://106901427690857",
+    "normal": "rbxassetid://87189841296036"
+  },
+  "VoidIslandBase": {
+    "roughness": "rbxassetid://106767993828358",
+    "normal": "rbxassetid://135332266620975",
+    "metalness": "rbxassetid://138335118339191",
+    "color": "rbxassetid://98343281442222"
+  },
+  "ChaosIslandBase": {
+    "normal": "rbxassetid://118060010683657",
+    "metalness": "rbxassetid://138335118339191",
+    "roughness": "rbxassetid://97090020785258",
+    "color": "rbxassetid://99094876822356"
+  },
+  "ScrapIslandBase": {
+    "metalness": "rbxassetid://138335118339191",
+    "roughness": "rbxassetid://89775700267774",
+    "normal": "rbxassetid://134323644236215",
+    "color": "rbxassetid://130004459695306"
+  },
+  "MilitaryIslandBase": {
+    "roughness": "rbxassetid://115073013649055",
+    "normal": "rbxassetid://130941540331148",
+    "color": "rbxassetid://73721439120717",
+    "metalness": "rbxassetid://138335118339191"
+  },
+  "RecyclerStation": {
+    "color": "rbxassetid://122293417356573",
+    "metalness": "rbxassetid://83609169597423",
+    "roughness": "rbxassetid://108445792970511",
+    "normal": "rbxassetid://76976378300067"
+  },
+  "ForgeStation": {
+    "roughness": "rbxassetid://111604856481006",
+    "color": "rbxassetid://121613073778603",
+    "normal": "rbxassetid://84771476588373",
+    "metalness": "rbxassetid://91566464317075"
+  },
+  "OverlordHammer": {
+    "normal": "rbxassetid://105359848536223",
+    "color": "rbxassetid://121527311356627",
+    "roughness": "rbxassetid://125683674949767",
+    "metalness": "rbxassetid://124836407594328"
+  },
+  "ArcWelder": {
+    "color": "rbxassetid://88615088768491",
+    "normal": "rbxassetid://134046672724438",
+    "metalness": "rbxassetid://124145143333486",
+    "roughness": "rbxassetid://102008791458956"
+  },
+  "WreckingMaul": {
+    "normal": "rbxassetid://84878555591626",
+    "color": "rbxassetid://73092206575232",
+    "metalness": "rbxassetid://75162675185199",
+    "roughness": "rbxassetid://84072668193438"
+  },
+  "RailDriver": {
+    "color": "rbxassetid://94392541001449",
+    "normal": "rbxassetid://109516888974218",
+    "roughness": "rbxassetid://87570458212045",
+    "metalness": "rbxassetid://117113726636697"
+  },
+  "ScrapCleaver": {
+    "metalness": "rbxassetid://139810012627019",
+    "roughness": "rbxassetid://112444498467379",
+    "normal": "rbxassetid://84388962933074",
+    "color": "rbxassetid://92526240129492"
+  },
+  "SingularityLauncher": {
+    "normal": "rbxassetid://74134803623042",
+    "roughness": "rbxassetid://128732265958086",
+    "color": "rbxassetid://82847744508595",
+    "metalness": "rbxassetid://84139049690129"
+  },
+  "ReactorCube": {
+    "color": "rbxassetid://111707717036998",
+    "normal": "rbxassetid://76511043385271",
+    "roughness": "rbxassetid://129865249426603",
+    "metalness": "rbxassetid://119633469548567"
+  },
+  "RustyBot": {
+    "metalness": "rbxassetid://126543918000669",
+    "roughness": "rbxassetid://72279974351775",
+    "normal": "rbxassetid://91629729814560",
+    "color": "rbxassetid://91860258907534"
+  },
+  "ScrapCrow": {
+    "color": "rbxassetid://100413572867316",
+    "metalness": "rbxassetid://78788152984553",
+    "roughness": "rbxassetid://124651813441002",
+    "normal": "rbxassetid://103486186616451"
+  },
+  "TNTPup": {
+    "metalness": "rbxassetid://77366903442603",
+    "normal": "rbxassetid://84892696964307",
+    "roughness": "rbxassetid://135592877505947",
+    "color": "rbxassetid://109378888464065"
+  },
+  "FutureEgg": {
+    "roughness": "rbxassetid://84703511319119",
+    "metalness": "rbxassetid://124573624410454",
+    "normal": "rbxassetid://87946747482554",
+    "color": "rbxassetid://96836247173840"
+  },
+  "ChaosDragon": {
+    "color": "rbxassetid://136546784175475",
+    "roughness": "rbxassetid://82627860060220",
+    "metalness": "rbxassetid://70497527138912",
+    "normal": "rbxassetid://106886661156410"
+  },
+  "CoreEgg": {
+    "roughness": "rbxassetid://107918829144402",
+    "metalness": "rbxassetid://85518586933114",
+    "color": "rbxassetid://134304829747779",
+    "normal": "rbxassetid://102103019247015"
+  },
+  "DowntownEgg": {
+    "metalness": "rbxassetid://97038502222517",
+    "normal": "rbxassetid://76540557570930",
+    "color": "rbxassetid://138797710457432",
+    "roughness": "rbxassetid://124526966223699"
+  }
+}

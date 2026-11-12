@@ -1,0 +1,81 @@
+{
+  "name": "FutureWall",
+  "atlas": 1024,
+  "texel_density": 25.274955838918686,
+  "triangles": 686,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 614,
+      "vertices": 604,
+      "center": [
+        -0.125,
+        3.2,
+        0.0
+      ],
+      "size": [
+        40.25,
+        6.4,
+        2.4
+      ],
+      "fallback": [
+        119,
+        122,
+        129
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 144,
+      "center": [
+        -0.02999999999999936,
+        3.0,
+        0.0
+      ],
+      "size": [
+        40.06,
+        5.4,
+        2.36
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "FutureWall_color.png",
+    "normal": "FutureWall_normal.png",
+    "roughness": "FutureWall_roughness.png",
+    "metalness": "FutureWall_metalness.png"
+  },
+  "meta": {
+    "wall": {
+      "segment": 40.0,
+      "height": 6.0,
+      "thickness": 2.0,
+      "glow": "WallGlow",
+      "targets": [
+        "Zones/FutureDistrict/Perimeter"
+      ],
+      "part": "Wall"
+    }
+  }
+}

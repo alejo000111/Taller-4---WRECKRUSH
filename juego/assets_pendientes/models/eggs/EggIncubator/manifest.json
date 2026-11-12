@@ -1,0 +1,176 @@
+{
+  "name": "EggIncubator",
+  "atlas": 1024,
+  "texel_density": 22.98651321232319,
+  "triangles": 6448,
+  "budget": 7000,
+  "roles": {
+    "Base": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 488,
+      "vertices": 437,
+      "center": [
+        0.0,
+        0.9396518275879572,
+        -0.5
+      ],
+      "size": [
+        14.0,
+        1.8793036551759144,
+        15.0
+      ],
+      "fallback": [
+        83,
+        82,
+        80
+      ]
+    },
+    "Cradle": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 3016,
+      "vertices": 3371,
+      "center": [
+        0.0,
+        4.0555318562152145,
+        0.0
+      ],
+      "size": [
+        13.34,
+        5.81106371243043,
+        13.34
+      ],
+      "fallback": [
+        83,
+        84,
+        91
+      ]
+    },
+    "Egg": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1176,
+      "vertices": 752,
+      "center": [
+        0.0,
+        6.3,
+        0.0
+      ],
+      "size": [
+        5.778682531996525,
+        7.4,
+        5.778682531996525
+      ],
+      "fallback": [
+        198,
+        138,
+        52
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        170,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1544,
+      "vertices": 1391,
+      "center": [
+        0.0,
+        2.665,
+        0.0
+      ],
+      "size": [
+        14.42,
+        4.609999999999999,
+        14.42
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        200,
+        230,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.55,
+      "triangles": 224,
+      "vertices": 352,
+      "center": [
+        -2.220446049250313e-16,
+        2.4,
+        2.220446049250313e-16
+      ],
+      "size": [
+        6.155432893255071,
+        2.2,
+        6.139386757051438
+      ]
+    }
+  },
+  "points": {
+    "prompt": [
+      0.0,
+      6.3,
+      0.0
+    ],
+    "label": [
+      0.0,
+      11.6,
+      0.0
+    ],
+    "particles": [
+      0.0,
+      6.3,
+      0.0
+    ]
+  },
+  "textures": {
+    "color": "EggIncubator_color.png",
+    "normal": "EggIncubator_normal.png",
+    "roughness": "EggIncubator_roughness.png",
+    "metalness": "EggIncubator_metalness.png"
+  },
+  "meta": {
+    "platform_radius": 7.0,
+    "platform_height": 1.2,
+    "egg": {
+      "center_y": 6.3,
+      "height": 7.4,
+      "radius": 2.75
+    }
+  }
+}

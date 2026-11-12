@@ -1,0 +1,87 @@
+{
+  "name": "CoreSigil",
+  "atlas": 1024,
+  "texel_density": 14.642786592245102,
+  "triangles": 752,
+  "budget": 1200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 156,
+      "vertices": 162,
+      "center": [
+        0.0,
+        0.04000000000000001,
+        0.0
+      ],
+      "size": [
+        22.0,
+        0.08000000000000135,
+        22.0
+      ],
+      "fallback": [
+        37,
+        34,
+        45
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 596,
+      "vertices": 836,
+      "center": [
+        0.0,
+        0.07,
+        0.0
+      ],
+      "size": [
+        21.3,
+        0.14,
+        21.3
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "CoreSigil_color.png",
+    "normal": "CoreSigil_normal.png",
+    "roughness": "CoreSigil_roughness.png",
+    "metalness": "CoreSigil_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "Zones/ChaosCore/GroundDetail"
+      ],
+      "parts": [
+        "CoreSigil"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": true,
+      "functional": false,
+      "tint": {
+        "Glow": true
+      }
+    }
+  }
+}

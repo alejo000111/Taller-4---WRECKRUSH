@@ -1,0 +1,135 @@
+{
+  "name": "OfficeSlab",
+  "atlas": 1024,
+  "texel_density": 2.9999998807907104,
+  "triangles": 324,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 228,
+      "vertices": 424,
+      "center": [
+        0.0,
+        117.0,
+        0.25
+      ],
+      "size": [
+        44.0,
+        234.0,
+        39.5
+      ],
+      "fallback": [
+        89,
+        89,
+        92
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        196,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        -18.9,
+        36.0,
+        -16.0
+      ],
+      "size": [
+        1.7999999999999972,
+        32.0,
+        6.0
+      ]
+    },
+    "Warm": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        188,
+        128
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.25,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        4.0,
+        -14.15
+      ],
+      "size": [
+        32.0,
+        6.0,
+        0.25
+      ]
+    },
+    "Beacon": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        36,
+        36
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 53,
+      "center": [
+        -3.5999999999999996,
+        235.0,
+        -1.6800000000000002
+      ],
+      "size": [
+        2.1999999999999997,
+        2.1999999999999886,
+        2.2
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "OfficeSlab_color.png",
+    "normal": "OfficeSlab_normal.png",
+    "roughness": "OfficeSlab_roughness.png",
+    "metalness": "OfficeSlab_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/SkylineNext/Towers"
+      ],
+      "name": [
+        "OfficeSlab"
+      ],
+      "fit": "box",
+      "keep": [],
+      "colliders": [],
+      "tint": {
+        "Glow": [
+          "BladeFace"
+        ]
+      }
+    }
+  }
+}

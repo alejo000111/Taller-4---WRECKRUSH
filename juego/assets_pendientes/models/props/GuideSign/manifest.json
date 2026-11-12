@@ -1,0 +1,113 @@
+{
+  "name": "GuideSign",
+  "atlas": 512,
+  "texel_density": 18.409078776836395,
+  "triangles": 200,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 188,
+      "vertices": 360,
+      "center": [
+        0.0,
+        5.15,
+        0.0
+      ],
+      "size": [
+        13.5,
+        10.3,
+        1.2
+      ],
+      "fallback": [
+        73,
+        72,
+        71
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        10.38,
+        0.0
+      ],
+      "size": [
+        13.0,
+        0.16000000000000014,
+        0.5
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "GuideSign_color.png",
+    "normal": "GuideSign_normal.png",
+    "roughness": "GuideSign_roughness.png",
+    "metalness": "GuideSign_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "PolishV10"
+      ],
+      "name": [
+        "ScrapYardGuide",
+        "DowntownGuide",
+        "IndustrialGuide",
+        "MilitaryGuide",
+        "FutureDistrictGuide",
+        "ChaosCoreGuide",
+        "CommunityBoard"
+      ],
+      "fit": "box",
+      "keep": [
+        "Board"
+      ],
+      "colliders": [
+        {
+          "name": "Sign",
+          "shape": "Block",
+          "size": [
+            13.6,
+            10.4,
+            0.6
+          ],
+          "center": [
+            0.0,
+            5.2,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "tint": {
+        "Glow": "Trim"
+      }
+    }
+  }
+}

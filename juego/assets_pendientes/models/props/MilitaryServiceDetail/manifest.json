@@ -1,0 +1,80 @@
+{
+  "name": "MilitaryServiceDetail",
+  "atlas": 512,
+  "texel_density": 48.44654342532158,
+  "triangles": 520,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 466,
+      "vertices": 562,
+      "center": [
+        0.0,
+        5.06,
+        0.07499999999999996
+      ],
+      "size": [
+        9.0,
+        10.12,
+        1.25
+      ],
+      "fallback": [
+        60,
+        66,
+        69
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        60,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 54,
+      "vertices": 42,
+      "center": [
+        0.04499999999999996,
+        10.05,
+        -0.30000000000000004
+      ],
+      "size": [
+        0.2700000000000001,
+        0.35999999999999943,
+        0.3117691453623979
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "MilitaryServiceDetail_color.png",
+    "normal": "MilitaryServiceDetail_normal.png",
+    "roughness": "MilitaryServiceDetail_roughness.png",
+    "metalness": "MilitaryServiceDetail_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/DesignExpansion_20261006"
+      ],
+      "name": "MilitaryService_Detail",
+      "fit": "box",
+      "keep": [],
+      "colliders": []
+    }
+  }
+}

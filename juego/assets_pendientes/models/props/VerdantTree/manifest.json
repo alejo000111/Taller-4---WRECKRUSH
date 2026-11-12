@@ -1,0 +1,56 @@
+{
+  "name": "VerdantTree",
+  "atlas": 512,
+  "texel_density": 7.423480212688446,
+  "triangles": 804,
+  "budget": 1400,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 804,
+      "vertices": 653,
+      "center": [
+        0.1496491661907653,
+        13.121054334547722,
+        -0.23865336026120332
+      ],
+      "size": [
+        17.314351570603208,
+        26.242108669095444,
+        15.539355076334385
+      ],
+      "fallback": [
+        59,
+        73,
+        49
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "VerdantTree_color.png",
+    "normal": "VerdantTree_normal.png",
+    "roughness": "VerdantTree_roughness.png",
+    "metalness": "VerdantTree_metalness.png"
+  },
+  "meta": {
+    "scatter": {
+      "target": "ExpeditionWorlds/VerdantFoundry",
+      "key": "Trunk",
+      "remove": [
+        "Trunk",
+        "Canopy"
+      ],
+      "radius": 6.0
+    }
+  }
+}

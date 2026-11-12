@@ -1,0 +1,61 @@
+{
+  "name": "WallVine",
+  "atlas": 256,
+  "texel_density": 15.140833914279938,
+  "triangles": 456,
+  "budget": 500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 456,
+      "vertices": 612,
+      "center": [
+        0.18126787449931608,
+        7.999892712174864,
+        0.2676563626177262
+      ],
+      "size": [
+        1.666512977106105,
+        16.01157413744534,
+        1.1267857173874343
+      ],
+      "fallback": [
+        70,
+        93,
+        68
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "WallVine_color.png",
+    "normal": "WallVine_normal.png",
+    "roughness": "WallVine_roughness.png",
+    "metalness": "WallVine_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/VerdantFoundry"
+      ],
+      "parts": [
+        "WallVine"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

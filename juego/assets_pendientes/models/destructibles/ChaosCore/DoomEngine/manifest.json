@@ -1,0 +1,176 @@
+{
+  "name": "DoomEngine",
+  "atlas": 1024,
+  "texel_density": 10.015742689371109,
+  "triangles": 2864,
+  "budget": 6000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1712,
+      "vertices": 2027,
+      "center": [
+        0.0,
+        12.3,
+        0.319641548356592
+      ],
+      "size": [
+        26.9,
+        24.6,
+        26.138358194024697
+      ],
+      "fallback": [
+        66,
+        64,
+        83
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 958,
+      "vertices": 1131,
+      "center": [
+        0.0,
+        11.746948243600459,
+        0.5135196756843428
+      ],
+      "size": [
+        26.2,
+        20.27389648720092,
+        25.08486237796259
+      ]
+    },
+    "Pink": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        160
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 194,
+      "vertices": 192,
+      "center": [
+        0.10252254466395572,
+        15.8,
+        -0.03082681987924607
+      ],
+      "size": [
+        6.594954910672088,
+        20.200000000000003,
+        6.758346360241507
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "DoomEngine_color.png",
+    "normal": "DoomEngine_normal.png",
+    "roughness": "DoomEngine_roughness.png",
+    "metalness": "DoomEngine_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "ChaosCore",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            16.4,
+            9.6,
+            16.4
+          ],
+          "center": [
+            0.0,
+            4.8,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Foundation",
+          "shape": "Cylinder",
+          "size": [
+            27.6,
+            2.4,
+            27.6
+          ],
+          "center": [
+            0.0,
+            1.2,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Core",
+          "shape": "Cylinder",
+          "size": [
+            8.0,
+            10.6,
+            8.0
+          ],
+          "center": [
+            0.0,
+            15.6,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Spire",
+          "shape": "Cylinder",
+          "size": [
+            2.0,
+            4.4,
+            2.0
+          ],
+          "center": [
+            0.0,
+            23.2,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

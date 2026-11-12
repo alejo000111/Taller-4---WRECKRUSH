@@ -1,0 +1,9 @@
+.godot/
+.import/
+export_presets.cfg
+*.translation
+.mono/
+data_*/
+mono_crash.*.json
+*.tmp
+assets_pendientes/models/out.zip

@@ -1,0 +1,61 @@
+{
+  "name": "MarbleStep",
+  "atlas": 256,
+  "texel_density": 10.139491766691208,
+  "triangles": 90,
+  "budget": 100,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 90,
+      "vertices": 80,
+      "center": [
+        0.0,
+        0.2617157287525381,
+        0.0
+      ],
+      "size": [
+        24.0,
+        0.47656854249492375,
+        5.0
+      ],
+      "fallback": [
+        158,
+        155,
+        173
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "MarbleStep_color.png",
+    "normal": "MarbleStep_normal.png",
+    "roughness": "MarbleStep_roughness.png",
+    "metalness": "MarbleStep_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "TempleStep"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

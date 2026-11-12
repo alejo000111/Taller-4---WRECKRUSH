@@ -1,0 +1,143 @@
+{
+  "name": "RebirthCoreArray",
+  "atlas": 1024,
+  "texel_density": 23.48986929655075,
+  "triangles": 1578,
+  "budget": 2000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1362,
+      "vertices": 1504,
+      "center": [
+        0.0,
+        8.53397994887963,
+        0.0
+      ],
+      "size": [
+        18.0,
+        17.038670575877916,
+        10.0
+      ],
+      "fallback": [
+        77,
+        79,
+        92
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        130,
+        80,
+        166
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 216,
+      "vertices": 294,
+      "center": [
+        0.0,
+        9.099999999999998,
+        -0.1859807621135334
+      ],
+      "size": [
+        16.32,
+        16.32,
+        0.7319615242270667
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "RebirthCoreArray_color.png",
+    "normal": "RebirthCoreArray_normal.png",
+    "roughness": "RebirthCoreArray_roughness.png",
+    "metalness": "RebirthCoreArray_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/StationExpansion_20261006"
+      ],
+      "name": "RebirthCoreArray",
+      "fit": "box",
+      "keep": [
+        "SignPanel"
+      ],
+      "colliders": [
+        {
+          "name": "Plinth",
+          "shape": "Block",
+          "size": [
+            18.0,
+            1.0,
+            6.0
+          ],
+          "center": [
+            0.0,
+            0.5,
+            -2.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "PostL",
+          "shape": "Block",
+          "size": [
+            1.6,
+            7.0,
+            2.6
+          ],
+          "center": [
+            -7.0,
+            3.89,
+            -1.2
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "PostR",
+          "shape": "Block",
+          "size": [
+            1.6,
+            7.0,
+            2.6
+          ],
+          "center": [
+            7.0,
+            3.89,
+            -1.2
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "tint": {
+        "Glow": "SegmentAccent"
+      }
+    }
+  }
+}

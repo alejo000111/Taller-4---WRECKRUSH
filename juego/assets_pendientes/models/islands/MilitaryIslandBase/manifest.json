@@ -1,0 +1,60 @@
+{
+  "name": "MilitaryIslandBase",
+  "atlas": 1024,
+  "texel_density": 1.0620575994253159,
+  "triangles": 1368,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1368,
+      "vertices": 972,
+      "center": [
+        0.7601122397912263,
+        -75.18851596017731,
+        0.5268875437958656
+      ],
+      "size": [
+        303.0773351433844,
+        149.62296807964537,
+        303.01841009531995
+      ],
+      "fallback": [
+        64,
+        66,
+        54
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "MilitaryIslandBase_color.png",
+    "normal": "MilitaryIslandBase_normal.png",
+    "roughness": "MilitaryIslandBase_roughness.png",
+    "metalness": "MilitaryIslandBase_metalness.png"
+  },
+  "meta": {
+    "place": {
+      "targets": [
+        {
+          "path": "BossIslands/MilitaryWarden",
+          "center": [
+            0.0,
+            0.0,
+            -4800.0
+          ],
+          "yaw": 164.0
+        }
+      ]
+    }
+  }
+}

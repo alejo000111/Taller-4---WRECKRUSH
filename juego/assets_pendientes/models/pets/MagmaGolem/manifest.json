@@ -1,0 +1,72 @@
+{
+  "name": "MagmaGolem",
+  "atlas": 512,
+  "texel_density": 28.446361556649208,
+  "triangles": 996,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 936,
+      "vertices": 662,
+      "center": [
+        0.05697966669202548,
+        0.025515531559303084,
+        -0.023197456427323182
+      ],
+      "size": [
+        3.6041780682994156,
+        3.438627042102002,
+        1.5184440697875894
+      ],
+      "fallback": [
+        47,
+        33,
+        26
+      ]
+    },
+    "Lava": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        120,
+        20
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 60,
+      "vertices": 120,
+      "center": [
+        0.06584177086446769,
+        0.3871554855803345,
+        -0.685
+      ],
+      "size": [
+        1.1585745383031663,
+        1.8934603195517772,
+        0.21000000000000008
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "MagmaGolem_color.png",
+    "normal": "MagmaGolem_normal.png",
+    "roughness": "MagmaGolem_roughness.png",
+    "metalness": "MagmaGolem_metalness.png"
+  },
+  "meta": {
+    "pet": {}
+  }
+}

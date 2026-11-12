@@ -1,0 +1,85 @@
+{
+  "name": "VerdantPeak",
+  "atlas": 1024,
+  "texel_density": 3.369965687394142,
+  "triangles": 704,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 704,
+      "vertices": 391,
+      "center": [
+        0.0,
+        156.37544516856454,
+        0.0
+      ],
+      "size": [
+        300.0,
+        320.7508903371291,
+        220.0
+      ],
+      "fallback": [
+        62,
+        82,
+        58
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "VerdantPeak_color.png",
+    "normal": "VerdantPeak_normal.png",
+    "roughness": "VerdantPeak_roughness.png",
+    "metalness": "VerdantPeak_metalness.png"
+  },
+  "meta": {
+    "ring": [
+      {
+        "parent": "Backdrop",
+        "centers": [
+          [
+            0.0,
+            -2880.0
+          ]
+        ],
+        "radius": 470.0,
+        "count": 16,
+        "scale": [
+          0.8,
+          1.25
+        ],
+        "seed": 41,
+        "sink": -140.0,
+        "offset": 0.0
+      },
+      {
+        "parent": "Backdrop",
+        "centers": [
+          [
+            0.0,
+            -2880.0
+          ]
+        ],
+        "radius": 690.0,
+        "count": 18,
+        "scale": [
+          1.05,
+          1.5
+        ],
+        "seed": 141,
+        "sink": -165.0,
+        "offset": 0.5
+      }
+    ]
+  }
+}

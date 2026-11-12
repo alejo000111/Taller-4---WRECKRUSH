@@ -1,0 +1,101 @@
+{
+  "name": "ChaosIslandRim",
+  "atlas": 512,
+  "texel_density": 12.316084265708923,
+  "triangles": 224,
+  "budget": 320,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 224,
+      "vertices": 150,
+      "center": [
+        0.0,
+        1.4087449746408698,
+        0.09499653634607341
+      ],
+      "size": [
+        41.76928060114111,
+        26.81748994928174,
+        9.810006927307853
+      ],
+      "fallback": [
+        41,
+        38,
+        46
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ChaosIslandRim_color.png",
+    "normal": "ChaosIslandRim_normal.png",
+    "roughness": "ChaosIslandRim_roughness.png",
+    "metalness": "ChaosIslandRim_metalness.png"
+  },
+  "meta": {
+    "rim": {
+      "targets": [
+        {
+          "path": "BossIslands/ChaosOverlord",
+          "center": [
+            -4080.0,
+            2400.0
+          ]
+        }
+      ],
+      "radius": 146.0,
+      "count": 24,
+      "offset": 0.5,
+      "colliders": [
+        {
+          "name": "RimCollider",
+          "shape": "Block",
+          "size": [
+            19.85682406412753,
+            11.5,
+            5.2
+          ],
+          "center": [
+            -9.509614990062802,
+            4.75,
+            -0.9113125611070529
+          ],
+          "rotation": [
+            0.0,
+            -3.7499999999999996,
+            0.0
+          ]
+        },
+        {
+          "name": "RimCollider",
+          "shape": "Block",
+          "size": [
+            19.85682406412753,
+            11.5,
+            5.2
+          ],
+          "center": [
+            9.509614990062802,
+            4.75,
+            -0.9113125611070529
+          ],
+          "rotation": [
+            0.0,
+            3.7499999999999996,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

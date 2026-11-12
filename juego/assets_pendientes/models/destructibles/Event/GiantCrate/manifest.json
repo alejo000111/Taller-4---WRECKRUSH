@@ -1,0 +1,95 @@
+{
+  "name": "GiantCrate",
+  "atlas": 1024,
+  "texel_density": 11.368988886475563,
+  "triangles": 604,
+  "budget": 2500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 556,
+      "vertices": 792,
+      "center": [
+        0.0,
+        10.225,
+        0.0
+      ],
+      "size": [
+        20.599999999999998,
+        20.45,
+        20.599999999999998
+      ],
+      "fallback": [
+        94,
+        78,
+        62
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        210,
+        31
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 48,
+      "vertices": 96,
+      "center": [
+        0.0,
+        20.55,
+        0.0
+      ],
+      "size": [
+        20.0,
+        0.20000000000000284,
+        20.0
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "GiantCrate_color.png",
+    "normal": "GiantCrate_normal.png",
+    "roughness": "GiantCrate_roughness.png",
+    "metalness": "GiantCrate_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            20.0,
+            20.0,
+            20.0
+          ],
+          "center": [
+            0.0,
+            10.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

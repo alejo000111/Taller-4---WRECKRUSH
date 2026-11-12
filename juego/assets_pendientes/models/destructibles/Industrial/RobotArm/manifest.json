@@ -1,0 +1,114 @@
+{
+  "name": "RobotArm",
+  "atlas": 1024,
+  "texel_density": 39.13338801264763,
+  "triangles": 2380,
+  "budget": 3000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2180,
+      "vertices": 2604,
+      "center": [
+        0.0,
+        6.303227376397005,
+        0.29095724830913583
+      ],
+      "size": [
+        5.6,
+        12.60645475279401,
+        6.096837913486636
+      ],
+      "fallback": [
+        117,
+        108,
+        105
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        40,
+        240,
+        220
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 200,
+      "vertices": 189,
+      "center": [
+        0.0,
+        5.38,
+        0.0
+      ],
+      "size": [
+        4.36,
+        8.76,
+        4.36
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "RobotArm_color.png",
+    "normal": "RobotArm_normal.png",
+    "roughness": "RobotArm_roughness.png",
+    "metalness": "RobotArm_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Industrial",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Cylinder",
+          "size": [
+            5.6,
+            2.5,
+            5.6
+          ],
+          "center": [
+            0.0,
+            1.25,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Arm",
+          "shape": "Block",
+          "size": [
+            2.6,
+            10.6,
+            3.6
+          ],
+          "center": [
+            0.0,
+            7.6,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

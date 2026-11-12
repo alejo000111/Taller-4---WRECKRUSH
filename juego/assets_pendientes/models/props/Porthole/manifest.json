@@ -1,0 +1,88 @@
+{
+  "name": "Porthole",
+  "atlas": 256,
+  "texel_density": 30.939710199832916,
+  "triangles": 196,
+  "budget": 200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 140,
+      "vertices": 90,
+      "center": [
+        1.3877787807814457e-17,
+        1.5,
+        0.0
+      ],
+      "size": [
+        0.3804226065180616,
+        2.9000000000000004,
+        2.8272909453272885
+      ],
+      "fallback": [
+        189,
+        155,
+        97
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        129,
+        207,
+        230
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 56,
+      "vertices": 88,
+      "center": [
+        -0.05,
+        1.5,
+        0.0
+      ],
+      "size": [
+        0.10000000000000014,
+        2.2,
+        2.1448414068000123
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "Porthole_color.png",
+    "normal": "Porthole_normal.png",
+    "roughness": "Porthole_roughness.png",
+    "metalness": "Porthole_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/FrostHarbor"
+      ],
+      "parts": [
+        "Porthole"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false,
+      "tint": {
+        "Glow": true
+      }
+    }
+  }
+}

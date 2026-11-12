@@ -1,0 +1,61 @@
+{
+  "name": "DockDeck",
+  "atlas": 512,
+  "texel_density": 5.172381982207298,
+  "triangles": 456,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 456,
+      "vertices": 812,
+      "center": [
+        0.0,
+        1.6,
+        0.0
+      ],
+      "size": [
+        30.001683152955373,
+        3.2,
+        15.9
+      ],
+      "fallback": [
+        94,
+        86,
+        79
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "DockDeck_color.png",
+    "normal": "DockDeck_normal.png",
+    "roughness": "DockDeck_roughness.png",
+    "metalness": "DockDeck_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/FrostHarbor"
+      ],
+      "parts": [
+        "Dock"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": true,
+      "overlay": false
+    }
+  }
+}

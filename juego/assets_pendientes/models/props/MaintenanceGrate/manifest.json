@@ -1,0 +1,56 @@
+{
+  "name": "MaintenanceGrate",
+  "atlas": 256,
+  "texel_density": 24.999998569488525,
+  "triangles": 34,
+  "budget": 120,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 34,
+      "vertices": 68,
+      "center": [
+        0.0,
+        0.05,
+        0.0
+      ],
+      "size": [
+        8.0,
+        0.1,
+        4.0
+      ],
+      "fallback": [
+        85,
+        89,
+        96
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "MaintenanceGrate_color.png",
+    "normal": "MaintenanceGrate_normal.png",
+    "roughness": "MaintenanceGrate_roughness.png",
+    "metalness": "MaintenanceGrate_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/ImmersionPass_20261005"
+      ],
+      "name": "MaintenanceGrate",
+      "fit": "box",
+      "keep": [],
+      "colliders": []
+    }
+  }
+}

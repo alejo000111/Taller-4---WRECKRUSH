@@ -1,0 +1,81 @@
+{
+  "name": "MilitaryWall",
+  "atlas": 1024,
+  "texel_density": 26.16664482653141,
+  "triangles": 496,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 472,
+      "vertices": 864,
+      "center": [
+        0.0,
+        3.1431933403244408,
+        0.0
+      ],
+      "size": [
+        39.88,
+        6.31361331935112,
+        5.25916793746091
+      ],
+      "fallback": [
+        116,
+        112,
+        101
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        0.75,
+        0.0
+      ],
+      "size": [
+        40.0,
+        0.1200000000000001,
+        2.1
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "MilitaryWall_color.png",
+    "normal": "MilitaryWall_normal.png",
+    "roughness": "MilitaryWall_roughness.png",
+    "metalness": "MilitaryWall_metalness.png"
+  },
+  "meta": {
+    "wall": {
+      "segment": 40.0,
+      "height": 6.0,
+      "thickness": 2.0,
+      "glow": "WallGlow",
+      "targets": [
+        "Zones/Military/Perimeter"
+      ],
+      "part": "Wall"
+    }
+  }
+}

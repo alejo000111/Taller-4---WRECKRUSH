@@ -1,0 +1,162 @@
+{
+  "name": "ArmoredTruck",
+  "atlas": 1024,
+  "texel_density": 20.833291471004486,
+  "triangles": 3028,
+  "budget": 4500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2816,
+      "vertices": 2690,
+      "center": [
+        0.0,
+        4.659400000000001,
+        -0.34465293599575997
+      ],
+      "size": [
+        10.970111636944715,
+        9.2812,
+        20.58930587199152
+      ],
+      "fallback": [
+        110,
+        101,
+        70
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        30,
+        34,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.25,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        6.64,
+        -7.24
+      ],
+      "size": [
+        7.6,
+        1.2812618227384593,
+        1.4562359042578095
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        210,
+        31
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 120,
+      "vertices": 128,
+      "center": [
+        0.0,
+        7.74,
+        -4.6
+      ],
+      "size": [
+        7.4399999999999995,
+        0.4800000000000004,
+        0.6086761704288985
+      ]
+    },
+    "Lamp": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        248,
+        220
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 80,
+      "vertices": 106,
+      "center": [
+        0.0,
+        4.0,
+        -9.89
+      ],
+      "size": [
+        7.4399999999999995,
+        0.7988874736879286,
+        0.14000000000000057
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ArmoredTruck_color.png",
+    "normal": "ArmoredTruck_normal.png",
+    "roughness": "ArmoredTruck_roughness.png",
+    "metalness": "ArmoredTruck_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            9.0,
+            8.0,
+            12.8
+          ],
+          "center": [
+            0.0,
+            5.0,
+            3.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Cab",
+          "shape": "Block",
+          "size": [
+            8.8,
+            6.3,
+            6.3
+          ],
+          "center": [
+            0.0,
+            4.15,
+            -6.45
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

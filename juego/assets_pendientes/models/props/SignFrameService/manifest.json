@@ -1,0 +1,56 @@
+{
+  "name": "SignFrameService",
+  "atlas": 512,
+  "texel_density": 28.59598322212696,
+  "triangles": 480,
+  "budget": 700,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 480,
+      "vertices": 480,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        17.570000000000004,
+        3.57,
+        0.58
+      ],
+      "fallback": [
+        122,
+        110,
+        79
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "SignFrameService_color.png",
+    "normal": "SignFrameService_normal.png",
+    "roughness": "SignFrameService_roughness.png",
+    "metalness": "SignFrameService_metalness.png"
+  },
+  "meta": {
+    "frame": {
+      "part": "SignPanel",
+      "size": [
+        17.0,
+        3.0,
+        0.18
+      ],
+      "scope": "Map"
+    }
+  }
+}

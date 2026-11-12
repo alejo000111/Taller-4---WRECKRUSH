@@ -1,0 +1,96 @@
+{
+  "name": "ScrapRat",
+  "atlas": 512,
+  "texel_density": 34.19959528744221,
+  "triangles": 1180,
+  "budget": 1600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 976,
+      "vertices": 798,
+      "center": [
+        0.0,
+        0.3199999999999999,
+        0.07907785426513114
+      ],
+      "size": [
+        1.9,
+        2.38,
+        4.788367011789294
+      ],
+      "fallback": [
+        125,
+        98,
+        95
+      ]
+    },
+    "Eyes": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        210,
+        31
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 180,
+      "vertices": 128,
+      "center": [
+        0.013368810393753677,
+        0.65,
+        -1.72
+      ],
+      "size": [
+        0.8732623792124927,
+        0.28,
+        0.266295824562643
+      ]
+    },
+    "Bolt": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 40,
+      "center": [
+        0.0,
+        0.82,
+        0.20000000000000004
+      ],
+      "size": [
+        0.6,
+        0.30000000000000004,
+        0.5196152422706632
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ScrapRat_color.png",
+    "normal": "ScrapRat_normal.png",
+    "roughness": "ScrapRat_roughness.png",
+    "metalness": "ScrapRat_metalness.png"
+  },
+  "meta": {
+    "pet": {}
+  }
+}

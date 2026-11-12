@@ -1,0 +1,103 @@
+{
+  "name": "MesaRidgeA",
+  "atlas": 1024,
+  "texel_density": 2.40712708234787,
+  "triangles": 672,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 672,
+      "vertices": 375,
+      "center": [
+        0.0,
+        88.0,
+        0.0
+      ],
+      "size": [
+        420.0,
+        184.0,
+        260.0
+      ],
+      "fallback": [
+        136,
+        99,
+        73
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "MesaRidgeA_color.png",
+    "normal": "MesaRidgeA_normal.png",
+    "roughness": "MesaRidgeA_roughness.png",
+    "metalness": "MesaRidgeA_metalness.png"
+  },
+  "meta": {
+    "ring": [
+      {
+        "parent": "Backdrop",
+        "centers": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "radius": 1320.0,
+        "count": 16,
+        "scale": [
+          0.95,
+          1.35
+        ],
+        "seed": 5,
+        "sink": -6.0,
+        "offset": 0.0
+      },
+      {
+        "parent": "Backdrop",
+        "centers": [
+          [
+            0.0,
+            4800.0
+          ]
+        ],
+        "radius": 470.0,
+        "count": 16,
+        "scale": [
+          1.0,
+          1.4
+        ],
+        "seed": 201,
+        "sink": -70.0,
+        "offset": 0.0
+      },
+      {
+        "parent": "Backdrop",
+        "centers": [
+          [
+            4080.0,
+            2400.0
+          ]
+        ],
+        "radius": 690.0,
+        "count": 18,
+        "scale": [
+          1.2,
+          1.6
+        ],
+        "seed": 202,
+        "sink": -90.0,
+        "offset": 0.5
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "name": "BeamPillarBase",
+  "atlas": 1024,
+  "texel_density": 26.817547887563705,
+  "triangles": 552,
+  "budget": 1400,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 216,
+      "vertices": 219,
+      "center": [
+        0.0,
+        1.1,
+        0.0
+      ],
+      "size": [
+        11.59110991546882,
+        2.2,
+        11.59110991546882
+      ],
+      "fallback": [
+        47,
+        44,
+        50
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 336,
+      "vertices": 536,
+      "center": [
+        0.0,
+        0.9999999999999999,
+        0.0
+      ],
+      "size": [
+        12.3,
+        2.854375194461946,
+        12.3
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "BeamPillarBase_color.png",
+    "normal": "BeamPillarBase_normal.png",
+    "roughness": "BeamPillarBase_roughness.png",
+    "metalness": "BeamPillarBase_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Zones/ChaosCore/Landmarks"
+      ],
+      "name": "BeamPillar",
+      "fit": "none",
+      "keep": [
+        "SkyBeam"
+      ],
+      "colliders": [
+        {
+          "name": "Base",
+          "shape": "Block",
+          "size": [
+            11.0,
+            1.6,
+            11.0
+          ],
+          "center": [
+            0.0,
+            0.8,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "tint": {
+        "Glow": "BeamRing"
+      }
+    }
+  }
+}

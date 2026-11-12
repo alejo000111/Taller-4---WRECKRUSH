@@ -1,0 +1,61 @@
+{
+  "name": "OilStain",
+  "atlas": 512,
+  "texel_density": 16.182998850941658,
+  "triangles": 108,
+  "budget": 200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 108,
+      "vertices": 126,
+      "center": [
+        -0.6964277402390144,
+        0.020000000000000018,
+        -0.2682699230714456
+      ],
+      "size": [
+        9.443265847474557,
+        0.04000000000000059,
+        9.520041140552845
+      ],
+      "fallback": [
+        37,
+        35,
+        34
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "OilStain_color.png",
+    "normal": "OilStain_normal.png",
+    "roughness": "OilStain_roughness.png",
+    "metalness": "OilStain_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "Zones/ScrapYard/GroundDetail",
+        "Zones/Industrial/GroundDetail"
+      ],
+      "parts": [
+        "OilStain"
+      ],
+      "remove": [],
+      "lift": 0.025,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false
+    }
+  }
+}

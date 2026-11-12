@@ -1,0 +1,84 @@
+{
+  "name": "ForgeStation",
+  "atlas": 1024,
+  "texel_density": 28.769951969385147,
+  "triangles": 1720,
+  "budget": 4000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1628,
+      "vertices": 1632,
+      "center": [
+        -0.10751285544055378,
+        7.0,
+        -0.050000000000000266
+      ],
+      "size": [
+        13.415025710881107,
+        14.0,
+        11.100000000000001
+      ],
+      "fallback": [
+        80,
+        76,
+        76
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        120,
+        30
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 92,
+      "vertices": 132,
+      "center": [
+        2.075,
+        3.0999999999999996,
+        -2.156646193610683
+      ],
+      "size": [
+        5.25,
+        2.4,
+        3.9132923872213654
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ForgeStation_color.png",
+    "normal": "ForgeStation_normal.png",
+    "roughness": "ForgeStation_roughness.png",
+    "metalness": "ForgeStation_metalness.png"
+  },
+  "meta": {
+    "place": {
+      "targets": [
+        {
+          "path": "Plaza",
+          "center": [
+            74.0,
+            0.0,
+            30.0
+          ],
+          "yaw": 90.0
+        }
+      ]
+    }
+  }
+}

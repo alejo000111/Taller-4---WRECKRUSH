@@ -1,0 +1,238 @@
+{
+  "name": "VoidReactor",
+  "atlas": 1024,
+  "texel_density": 23.662556618452072,
+  "triangles": 1340,
+  "budget": 4000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 384,
+      "vertices": 502,
+      "center": [
+        -4.440892098500626e-16,
+        8.975,
+        -4.440892098500626e-16
+      ],
+      "size": [
+        12.564761642153499,
+        17.95,
+        12.564761642153499
+      ],
+      "fallback": [
+        57,
+        44,
+        74
+      ]
+    },
+    "Void": {
+      "kind": "plain",
+      "material": "Glass",
+      "color": [
+        6,
+        4,
+        10
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 180,
+      "vertices": 119,
+      "center": [
+        0.0,
+        11.0,
+        0.0
+      ],
+      "size": [
+        5.6,
+        5.600000000000001,
+        5.32591649125286
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 536,
+      "vertices": 654,
+      "center": [
+        0.0,
+        9.735,
+        -4.440892098500626e-16
+      ],
+      "size": [
+        11.677837290942666,
+        16.25,
+        11.677837290942666
+      ]
+    },
+    "Pink": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        160
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 240,
+      "vertices": 408,
+      "center": [
+        0.0429711762656364,
+        11.595675848747854,
+        0.0
+      ],
+      "size": [
+        6.470911896961107,
+        9.408648302504293,
+        8.685881251725256
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "VoidReactor_color.png",
+    "normal": "VoidReactor_normal.png",
+    "roughness": "VoidReactor_roughness.png",
+    "metalness": "VoidReactor_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "ChaosCore",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Ball",
+          "size": [
+            6.4,
+            6.4,
+            6.4
+          ],
+          "center": [
+            0.0,
+            11.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Base",
+          "shape": "Cylinder",
+          "size": [
+            13.6,
+            4.2,
+            13.6
+          ],
+          "center": [
+            0.0,
+            2.1,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Pylon1",
+          "shape": "Block",
+          "size": [
+            1.4,
+            12.8,
+            1.4
+          ],
+          "center": [
+            3.2527,
+            8.6,
+            3.2527
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Pylon2",
+          "shape": "Block",
+          "size": [
+            1.4,
+            12.8,
+            1.4
+          ],
+          "center": [
+            -3.2527,
+            8.6,
+            3.2527
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Pylon3",
+          "shape": "Block",
+          "size": [
+            1.4,
+            12.8,
+            1.4
+          ],
+          "center": [
+            -3.2527,
+            8.6,
+            -3.2527
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Pylon4",
+          "shape": "Block",
+          "size": [
+            1.4,
+            12.8,
+            1.4
+          ],
+          "center": [
+            3.2527,
+            8.6,
+            -3.2527
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

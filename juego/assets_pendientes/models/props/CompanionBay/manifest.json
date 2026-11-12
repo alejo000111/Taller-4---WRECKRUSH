@@ -1,0 +1,181 @@
+{
+  "name": "CompanionBay",
+  "atlas": 1024,
+  "texel_density": 19.897911980748177,
+  "triangles": 1460,
+  "budget": 2400,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1448,
+      "vertices": 1690,
+      "center": [
+        0.0,
+        7.6125,
+        0.0
+      ],
+      "size": [
+        21.0,
+        14.725,
+        10.0
+      ],
+      "fallback": [
+        96,
+        100,
+        103
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        202,
+        140,
+        57
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        13.89,
+        2.4
+      ],
+      "size": [
+        14.0,
+        0.120000000000001,
+        0.1200000000000001
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "CompanionBay_color.png",
+    "normal": "CompanionBay_normal.png",
+    "roughness": "CompanionBay_roughness.png",
+    "metalness": "CompanionBay_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/StationExpansion_20261006"
+      ],
+      "name": "CompanionBay",
+      "fit": "box",
+      "keep": [
+        "SignPanel"
+      ],
+      "colliders": [
+        {
+          "name": "Wall",
+          "shape": "Block",
+          "size": [
+            20.0,
+            11.0,
+            0.6
+          ],
+          "center": [
+            0.0,
+            5.85,
+            -3.5
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "BenchL",
+          "shape": "Block",
+          "size": [
+            3.0,
+            2.8,
+            4.7
+          ],
+          "center": [
+            -7.91,
+            1.4,
+            -0.9
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "BenchR",
+          "shape": "Block",
+          "size": [
+            3.0,
+            2.8,
+            4.7
+          ],
+          "center": [
+            7.91,
+            1.4,
+            -0.9
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "LockerL",
+          "shape": "Block",
+          "size": [
+            3.4,
+            5.5,
+            1.3
+          ],
+          "center": [
+            -4.4,
+            3.65,
+            -2.55
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "LockerR",
+          "shape": "Block",
+          "size": [
+            3.4,
+            5.5,
+            1.3
+          ],
+          "center": [
+            4.4,
+            3.65,
+            -2.55
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "tint": {
+        "Glow": "WarmAccent"
+      }
+    }
+  }
+}

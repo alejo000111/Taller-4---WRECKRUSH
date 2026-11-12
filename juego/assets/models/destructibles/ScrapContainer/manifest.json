@@ -1,0 +1,81 @@
+{
+  "name": "ScrapContainer",
+  "atlas": 1024,
+  "texel_density": 27.671709418296814,
+  "triangles": 2978,
+  "budget": 3500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2978,
+      "vertices": 4148,
+      "center": [
+        0.0,
+        5.0,
+        0.0
+      ],
+      "size": [
+        10.0,
+        10.0,
+        24.0
+      ],
+      "fallback": [
+        117,
+        70,
+        52
+      ]
+    }
+  },
+  "points": {
+    "label": [
+      0.0,
+      11.5,
+      0.0
+    ]
+  },
+  "textures": {
+    "color": "ScrapContainer_color.png",
+    "normal": "ScrapContainer_normal.png",
+    "roughness": "ScrapContainer_roughness.png",
+    "metalness": "ScrapContainer_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "ScrapYard",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            10.0,
+            10.0,
+            24.0
+          ],
+          "center": [
+            0.0,
+            5.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "footprint": [
+      10.0,
+      24.0
+    ]
+  }
+}

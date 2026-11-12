@@ -1,0 +1,186 @@
+{
+  "name": "Monument",
+  "atlas": 1024,
+  "texel_density": 8.435928285121918,
+  "triangles": 5948,
+  "budget": 7000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 5628,
+      "vertices": 6935,
+      "center": [
+        0.0,
+        33.6,
+        0.0
+      ],
+      "size": [
+        48.0,
+        66.8,
+        26.0
+      ],
+      "fallback": [
+        96,
+        95,
+        96
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 200,
+      "vertices": 346,
+      "center": [
+        0.0,
+        34.03,
+        0.0
+      ],
+      "size": [
+        47.4,
+        65.34,
+        25.24
+      ]
+    },
+    "Lamp": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        244,
+        210
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 120,
+      "vertices": 240,
+      "center": [
+        0.0,
+        22.318517809897166,
+        0.0
+      ],
+      "size": [
+        25.1,
+        37.07589515878736,
+        20.289230484541324
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "Monument_color.png",
+    "normal": "Monument_normal.png",
+    "roughness": "Monument_roughness.png",
+    "metalness": "Monument_metalness.png"
+  },
+  "meta": {
+    "station": {
+      "target": "Monument",
+      "parent": "Plaza",
+      "colliders": [
+        {
+          "name": "Plinth",
+          "shape": "Cylinder",
+          "size": [
+            26.0,
+            2.65,
+            26.0
+          ],
+          "center": [
+            0.0,
+            1.62,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Tower",
+          "shape": "Block",
+          "size": [
+            8.4,
+            34.95,
+            8.4
+          ],
+          "center": [
+            0.0,
+            20.525,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Catwalk",
+          "shape": "Block",
+          "size": [
+            16.0,
+            0.5,
+            8.0
+          ],
+          "center": [
+            0.0,
+            38.25,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "SignFrame",
+          "shape": "Block",
+          "size": [
+            48.0,
+            28.0,
+            3.2
+          ],
+          "center": [
+            0.0,
+            53.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "root": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keep": [
+        "WreckSign"
+      ]
+    }
+  }
+}

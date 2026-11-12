@@ -1,0 +1,88 @@
+{
+  "name": "BeaconPad",
+  "atlas": 512,
+  "texel_density": 14.439650163054466,
+  "triangles": 448,
+  "budget": 800,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 216,
+      "vertices": 296,
+      "center": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "size": [
+        11.6,
+        2.0,
+        11.0
+      ],
+      "fallback": [
+        76,
+        79,
+        86
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        200,
+        240,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 232,
+      "vertices": 312,
+      "center": [
+        0.0,
+        1.04,
+        0.0
+      ],
+      "size": [
+        9.2,
+        2.08,
+        9.2
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "BeaconPad_color.png",
+    "normal": "BeaconPad_normal.png",
+    "roughness": "BeaconPad_roughness.png",
+    "metalness": "BeaconPad_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/VerdantFoundry",
+        "ExpeditionWorlds/FrostHarbor",
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "Beacon1",
+        "Beacon2",
+        "Beacon3"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": true
+    }
+  }
+}

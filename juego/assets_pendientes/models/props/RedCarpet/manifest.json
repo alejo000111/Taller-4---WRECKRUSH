@@ -1,0 +1,86 @@
+{
+  "name": "RedCarpet",
+  "atlas": 1024,
+  "texel_density": 4.680497705936432,
+  "triangles": 36,
+  "budget": 300,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        0.04,
+        0.0
+      ],
+      "size": [
+        12.0,
+        0.08000000000000589,
+        96.0
+      ],
+      "fallback": [
+        38,
+        10,
+        13
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        196,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        0.05,
+        0.0
+      ],
+      "size": [
+        11.99,
+        0.1,
+        96.0
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "RedCarpet_color.png",
+    "normal": "RedCarpet_normal.png",
+    "roughness": "RedCarpet_roughness.png",
+    "metalness": "RedCarpet_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "@Leaderboards/HallOfWreckers/Grounds"
+      ],
+      "parts": [
+        "Carpet"
+      ],
+      "remove": [
+        "CarpetTrim"
+      ],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": true,
+      "functional": false
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "name": "MonumentDisc",
+  "atlas": 1024,
+  "texel_density": 5.915608689188957,
+  "triangles": 764,
+  "budget": 1200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 508,
+      "vertices": 518,
+      "center": [
+        0.0,
+        0.07999999999999918,
+        0.0
+      ],
+      "size": [
+        54.4,
+        0.16000000000000164,
+        54.4
+      ],
+      "fallback": [
+        61,
+        63,
+        70
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 256,
+      "vertices": 260,
+      "center": [
+        0.0,
+        0.065,
+        0.0
+      ],
+      "size": [
+        52.8,
+        0.13,
+        52.8
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "MonumentDisc_color.png",
+    "normal": "MonumentDisc_normal.png",
+    "roughness": "MonumentDisc_roughness.png",
+    "metalness": "MonumentDisc_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "Plaza/Floor"
+      ],
+      "parts": [
+        "MonumentDisc"
+      ],
+      "remove": [
+        "MonumentRingGlow"
+      ],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": true,
+      "functional": false
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "name": "ServicePanel",
+  "atlas": 1024,
+  "texel_density": 33.6081869751215,
+  "triangles": 658,
+  "budget": 1200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 506,
+      "vertices": 664,
+      "center": [
+        0.0,
+        6.85,
+        -0.018284271247461792
+      ],
+      "size": [
+        17.4,
+        9.7,
+        2.0765685424949236
+      ],
+      "fallback": [
+        81,
+        88,
+        96
+      ]
+    },
+    "Trim": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        139,
+        80,
+        48
+      ],
+      "skin": "Trim",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 140,
+      "vertices": 232,
+      "center": [
+        0.0,
+        4.0,
+        -0.2425
+      ],
+      "size": [
+        17.0,
+        8.0,
+        1.725
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        139,
+        80,
+        48
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        4.7,
+        5.9,
+        0.98
+      ],
+      "size": [
+        2.5,
+        0.22000000000000064,
+        0.18000000000000005
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ServicePanel_color.png",
+    "normal": "ServicePanel_normal.png",
+    "roughness": "ServicePanel_roughness.png",
+    "metalness": "ServicePanel_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/ImmersionPass_20261005"
+      ],
+      "name": [
+        "ScrapService",
+        "IndustrialService",
+        "DowntownService",
+        "ChaosService",
+        "FutureService",
+        "MilitaryService"
+      ],
+      "fit": "box",
+      "keep": [
+        "SignPanel"
+      ],
+      "colliders": [
+        {
+          "name": "Panel",
+          "shape": "Block",
+          "size": [
+            17.0,
+            6.0,
+            1.0
+          ],
+          "center": [
+            0.0,
+            5.0,
+            -0.58
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "tint": {
+        "Trim": "Pipe",
+        "Glow": "StatusSlit"
+      }
+    }
+  }
+}

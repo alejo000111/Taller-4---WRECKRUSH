@@ -1,0 +1,115 @@
+{
+  "name": "OwnerHammer",
+  "atlas": 1024,
+  "texel_density": 78.96496972441673,
+  "triangles": 4016,
+  "budget": 8000,
+  "roles": {
+    "Base": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 524,
+      "vertices": 568,
+      "center": [
+        0.0,
+        0.88,
+        -0.28
+      ],
+      "size": [
+        2.04,
+        5.48,
+        2.86
+      ],
+      "fallback": [
+        76,
+        73,
+        83
+      ]
+    },
+    "Gold": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2316,
+      "vertices": 2370,
+      "center": [
+        0.0,
+        1.0699999999999998,
+        0.3736012283833591
+      ],
+      "size": [
+        2.90361352687674,
+        6.38,
+        3.7927975432332817
+      ],
+      "fallback": [
+        212,
+        177,
+        85
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        40,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1176,
+      "vertices": 1573,
+      "center": [
+        0.0,
+        1.0499999999999998,
+        -0.4396891108675446
+      ],
+      "size": [
+        2.2025778849896107,
+        6.92,
+        2.5606217782649106
+      ]
+    }
+  },
+  "points": {
+    "muzzle": [
+      0.0,
+      2.6,
+      -1.95
+    ],
+    "aura": [
+      0.0,
+      2.6,
+      0.0
+    ],
+    "grip": [
+      0.0,
+      -1.1,
+      0.0
+    ]
+  },
+  "textures": {
+    "color": "OwnerHammer_color.png",
+    "normal": "OwnerHammer_normal.png",
+    "roughness": "OwnerHammer_roughness.png",
+    "metalness": "OwnerHammer_metalness.png"
+  },
+  "meta": {}
+}

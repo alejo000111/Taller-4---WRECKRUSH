@@ -1,0 +1,129 @@
+{
+  "name": "HallBoard",
+  "atlas": 1024,
+  "texel_density": 11.735842660069466,
+  "triangles": 1286,
+  "budget": 2400,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1028,
+      "vertices": 1044,
+      "center": [
+        0.0,
+        21.5,
+        -0.04999999999999982
+      ],
+      "size": [
+        31.417310878027088,
+        43.0,
+        7.1
+      ],
+      "fallback": [
+        88,
+        80,
+        58
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        59
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 258,
+      "vertices": 318,
+      "center": [
+        0.0,
+        22.41,
+        0.0
+      ],
+      "size": [
+        30.1,
+        41.82,
+        7.1
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "HallBoard_color.png",
+    "normal": "HallBoard_normal.png",
+    "roughness": "HallBoard_roughness.png",
+    "metalness": "HallBoard_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "@Leaderboards/HallOfWreckers/Boards"
+      ],
+      "name": [
+        "Board_TopDamage",
+        "Board_TopWrecks",
+        "Board_TopRebirths",
+        "Board_TopCash"
+      ],
+      "fit": "box",
+      "keep": [
+        "Screen"
+      ],
+      "colliders": [
+        {
+          "name": "Base",
+          "shape": "Block",
+          "size": [
+            30.0,
+            3.0,
+            7.0
+          ],
+          "center": [
+            0.0,
+            1.5,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Panel",
+          "shape": "Block",
+          "size": [
+            31.2,
+            40.0,
+            2.0
+          ],
+          "center": [
+            0.0,
+            22.0,
+            0.3
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "tint": {
+        "Glow": "FrameTop"
+      }
+    }
+  }
+}

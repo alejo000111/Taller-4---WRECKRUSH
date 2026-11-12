@@ -1,0 +1,56 @@
+{
+  "name": "SignFrameGate",
+  "atlas": 512,
+  "texel_density": 27.713630333542824,
+  "triangles": 480,
+  "budget": 700,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 480,
+      "vertices": 480,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        15.44,
+        9.44,
+        0.9999999999999999
+      ],
+      "fallback": [
+        123,
+        112,
+        82
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "SignFrameGate_color.png",
+    "normal": "SignFrameGate_normal.png",
+    "roughness": "SignFrameGate_roughness.png",
+    "metalness": "SignFrameGate_metalness.png"
+  },
+  "meta": {
+    "frame": {
+      "part": "Sign",
+      "size": [
+        14.0,
+        8.0,
+        0.6
+      ],
+      "scope": "Map"
+    }
+  }
+}

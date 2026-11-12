@@ -1,0 +1,61 @@
+{
+  "name": "CraneJib",
+  "atlas": 512,
+  "texel_density": 6.230717286467552,
+  "triangles": 540,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 540,
+      "vertices": 1080,
+      "center": [
+        0.0,
+        1.2750000000000001,
+        0.0
+      ],
+      "size": [
+        39.276891637275135,
+        5.35,
+        5.0
+      ],
+      "fallback": [
+        129,
+        110,
+        96
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "CraneJib_color.png",
+    "normal": "CraneJib_normal.png",
+    "roughness": "CraneJib_roughness.png",
+    "metalness": "CraneJib_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/FrostHarbor"
+      ],
+      "parts": [
+        "CraneArm"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "WR_Asphalt": {
+    "color": "rbxassetid://82529132481202",
+    "normal": "rbxassetid://129036096167655",
+    "roughness": "rbxassetid://125754958605904"
+  },
+  "WR_DeckPlate": {
+    "color": "rbxassetid://112979696078711",
+    "metalness": "rbxassetid://116913851505312",
+    "normal": "rbxassetid://88917606598231",
+    "roughness": "rbxassetid://86288711276251"
+  },
+  "WR_FacadeBrick": {
+    "color": "rbxassetid://86271307618565",
+    "normal": "rbxassetid://84788435463182",
+    "roughness": "rbxassetid://136075268518677"
+  },
+  "WR_FacadeGlass": {
+    "color": "rbxassetid://99550421205532",
+    "metalness": "rbxassetid://123733763077476",
+    "normal": "rbxassetid://120059215012571",
+    "roughness": "rbxassetid://109115401754749"
+  },
+  "WR_FacadeNight": {
+    "color": "rbxassetid://108448667146927",
+    "metalness": "rbxassetid://86882512793212",
+    "normal": "rbxassetid://123291409446264",
+    "roughness": "rbxassetid://94789434736134"
+  },
+  "WR_FacadeRibbon": {
+    "color": "rbxassetid://131640472776977",
+    "metalness": "rbxassetid://70731035145233",
+    "normal": "rbxassetid://73651235887000",
+    "roughness": "rbxassetid://125431500517402"
+  },
+  "WR_FuturePanel": {
+    "color": "rbxassetid://89347777433195",
+    "metalness": "rbxassetid://71004030952619",
+    "normal": "rbxassetid://85674006784682",
+    "roughness": "rbxassetid://116538646043288"
+  },
+  "WR_RustSheet": {
+    "color": "rbxassetid://140691251730109",
+    "metalness": "rbxassetid://101729249418722",
+    "normal": "rbxassetid://117812635365110",
+    "roughness": "rbxassetid://135656127393976"
+  },
+  "WR_Sidewalk": {
+    "color": "rbxassetid://120368577849074",
+    "normal": "rbxassetid://133642124225160",
+    "roughness": "rbxassetid://118245516995806"
+  },
+  "WR_WallPanel": {
+    "color": "rbxassetid://130392640152840",
+    "normal": "rbxassetid://132304048737451",
+    "roughness": "rbxassetid://135427339971081"
+  },
+  "WR_MilitaryPavers": {
+    "roughness": "rbxassetid://73700215013445",
+    "color": "rbxassetid://126923453437667",
+    "normal": "rbxassetid://120161975908182"
+  },
+  "WR_FactoryConcrete": {
+    "roughness": "rbxassetid://139450131058586",
+    "normal": "rbxassetid://112972603778321",
+    "color": "rbxassetid://105682872029123"
+  },
+  "WR_ScrapDirt": {
+    "normal": "rbxassetid://91400372935864",
+    "color": "rbxassetid://80938687552394",
+    "metalness": "rbxassetid://85584263425534",
+    "roughness": "rbxassetid://137415094708430"
+  },
+  "WR_TechFloor": {
+    "normal": "rbxassetid://77138525365559",
+    "metalness": "rbxassetid://75482426678514",
+    "color": "rbxassetid://102401494204642",
+    "roughness": "rbxassetid://83608818993587"
+  },
+  "WR_PlazaTiles": {
+    "roughness": "rbxassetid://71873824686109",
+    "normal": "rbxassetid://129145884624811",
+    "metalness": "rbxassetid://99790434707004",
+    "color": "rbxassetid://87416084154352"
+  },
+  "WR_VIPMarble": {
+    "roughness": "rbxassetid://137304161072835",
+    "color": "rbxassetid://105200351752174",
+    "normal": "rbxassetid://128603964699946",
+    "metalness": "rbxassetid://104903266016458"
+  },
+  "WR_ChaosRock": {
+    "color": "rbxassetid://72310200101586",
+    "normal": "rbxassetid://80039395820049",
+    "roughness": "rbxassetid://95968386698007"
+  },
+  "WR_RoadPaint": {
+    "color": "rbxassetid://127225651068797",
+    "normal": "rbxassetid://103621219555076",
+    "roughness": "rbxassetid://80867251175647"
+  },
+  "WR_MossFloor": {
+    "color": "rbxassetid://102608333619603",
+    "normal": "rbxassetid://89463093849103",
+    "roughness": "rbxassetid://74028940094670"
+  },
+  "WR_SnowField": {
+    "color": "rbxassetid://135599651636314",
+    "normal": "rbxassetid://107012529845691",
+    "roughness": "rbxassetid://115408226872472"
+  },
+  "WR_SkyStone": {
+    "color": "rbxassetid://72064110274990",
+    "normal": "rbxassetid://102655305483006",
+    "roughness": "rbxassetid://121156488421237"
+  },
+  "WR_CloudSea": {
+    "color": "rbxassetid://98948903668071",
+    "normal": "rbxassetid://75746080994484",
+    "roughness": "rbxassetid://114505671436419"
+  },
+  "WR_DuskSky": {
+    "Ft": "rbxassetid://116659163844731",
+    "Bk": "rbxassetid://122806379772758",
+    "Lf": "rbxassetid://118043174683321",
+    "Rt": "rbxassetid://126090643043218",
+    "Up": "rbxassetid://140056297378365",
+    "Dn": "rbxassetid://87646198286976"
+  }
+}

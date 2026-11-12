@@ -1,0 +1,101 @@
+{
+  "name": "IndustrialIslandRim",
+  "atlas": 512,
+  "texel_density": 12.316084265708923,
+  "triangles": 252,
+  "budget": 320,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 252,
+      "vertices": 225,
+      "center": [
+        0.0,
+        -0.6206710306957479,
+        0.30997245158182807
+      ],
+      "size": [
+        41.76928060114111,
+        22.758657938608504,
+        9.380055096836344
+      ],
+      "fallback": [
+        132,
+        127,
+        121
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "IndustrialIslandRim_color.png",
+    "normal": "IndustrialIslandRim_normal.png",
+    "roughness": "IndustrialIslandRim_roughness.png",
+    "metalness": "IndustrialIslandRim_metalness.png"
+  },
+  "meta": {
+    "rim": {
+      "targets": [
+        {
+          "path": "BossIslands/IndustrialTitan",
+          "center": [
+            4080.0,
+            -2400.0
+          ]
+        }
+      ],
+      "radius": 146.0,
+      "count": 24,
+      "offset": 0.5,
+      "colliders": [
+        {
+          "name": "RimCollider",
+          "shape": "Block",
+          "size": [
+            19.85682406412753,
+            11.5,
+            5.2
+          ],
+          "center": [
+            -9.509614990062802,
+            4.75,
+            -0.9113125611070529
+          ],
+          "rotation": [
+            0.0,
+            -3.7499999999999996,
+            0.0
+          ]
+        },
+        {
+          "name": "RimCollider",
+          "shape": "Block",
+          "size": [
+            19.85682406412753,
+            11.5,
+            5.2
+          ],
+          "center": [
+            9.509614990062802,
+            4.75,
+            -0.9113125611070529
+          ],
+          "rotation": [
+            0.0,
+            3.7499999999999996,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

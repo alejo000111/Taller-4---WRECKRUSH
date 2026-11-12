@@ -1,0 +1,100 @@
+{
+  "name": "GoldPillar",
+  "atlas": 1024,
+  "texel_density": 24.45386728644371,
+  "triangles": 800,
+  "budget": 1500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 272,
+      "vertices": 314,
+      "center": [
+        -2.220446049250313e-16,
+        24.0,
+        -2.220446049250313e-16
+      ],
+      "size": [
+        7.021484447085779,
+        48.0,
+        7.021484447085779
+      ],
+      "fallback": [
+        197,
+        167,
+        73
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        214,
+        90
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 528,
+      "vertices": 505,
+      "center": [
+        0.0,
+        30.875,
+        0.0
+      ],
+      "size": [
+        5.4,
+        42.25,
+        5.4
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "GoldPillar_color.png",
+    "normal": "GoldPillar_normal.png",
+    "roughness": "GoldPillar_roughness.png",
+    "metalness": "GoldPillar_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "VIPArea/Landmarks"
+      ],
+      "name": "GoldPillar",
+      "fit": "box",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "Pillar",
+          "shape": "Block",
+          "size": [
+            6.0,
+            50.0,
+            6.0
+          ],
+          "center": [
+            0.0,
+            25.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

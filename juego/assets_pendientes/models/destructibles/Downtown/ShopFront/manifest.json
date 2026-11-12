@@ -1,0 +1,119 @@
+{
+  "name": "ShopFront",
+  "atlas": 1024,
+  "texel_density": 18.999998927116394,
+  "triangles": 1886,
+  "budget": 4500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1802,
+      "vertices": 2136,
+      "center": [
+        0.0,
+        8.675,
+        -0.012499999999999734
+      ],
+      "size": [
+        20.4,
+        17.450000000000003,
+        8.425
+      ],
+      "fallback": [
+        110,
+        127,
+        120
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        110,
+        190,
+        220
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.6,
+      "triangles": 60,
+      "vertices": 120,
+      "center": [
+        -0.5499999999999998,
+        7.249999999999999,
+        -1.6425
+      ],
+      "size": [
+        16.299999999999997,
+        14.299999999999999,
+        0.09499999999999975
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        10.4,
+        -1.85
+      ],
+      "size": [
+        14.2,
+        2.9800000000000004,
+        0.18000000000000016
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ShopFront_color.png",
+    "normal": "ShopFront_normal.png",
+    "roughness": "ShopFront_roughness.png",
+    "metalness": "ShopFront_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Downtown",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            20.0,
+            16.0,
+            6.2
+          ],
+          "center": [
+            0.0,
+            8.0,
+            0.85
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

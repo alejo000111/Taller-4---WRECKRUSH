@@ -1,0 +1,152 @@
+{
+  "name": "HydraulicPress",
+  "atlas": 1024,
+  "texel_density": 18.481143698096275,
+  "triangles": 1828,
+  "budget": 4500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1552,
+      "vertices": 1550,
+      "center": [
+        -0.05091998177278434,
+        9.700000000000001,
+        -0.5
+      ],
+      "size": [
+        14.101839963545569,
+        19.400000000000002,
+        12.6
+      ],
+      "fallback": [
+        121,
+        107,
+        107
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        52,
+        52
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 276,
+      "vertices": 267,
+      "center": [
+        1.0100000000000002,
+        11.147830957392776,
+        -6.095000000000001
+      ],
+      "size": [
+        11.02,
+        14.30433808521445,
+        1.8899999999999997
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "HydraulicPress_color.png",
+    "normal": "HydraulicPress_normal.png",
+    "roughness": "HydraulicPress_roughness.png",
+    "metalness": "HydraulicPress_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Industrial",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            13.6,
+            2.4,
+            11.6
+          ],
+          "center": [
+            0.0,
+            1.2,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "LeftFrame",
+          "shape": "Block",
+          "size": [
+            2.2,
+            13.2,
+            10.0
+          ],
+          "center": [
+            -5.6,
+            9.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "RightFrame",
+          "shape": "Block",
+          "size": [
+            2.2,
+            13.2,
+            10.0
+          ],
+          "center": [
+            5.6,
+            9.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Crown",
+          "shape": "Block",
+          "size": [
+            13.6,
+            2.2,
+            10.4
+          ],
+          "center": [
+            0.0,
+            16.7,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

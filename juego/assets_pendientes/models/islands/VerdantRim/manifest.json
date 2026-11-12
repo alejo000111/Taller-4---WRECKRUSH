@@ -1,0 +1,101 @@
+{
+  "name": "VerdantRim",
+  "atlas": 512,
+  "texel_density": 10.454356282949448,
+  "triangles": 252,
+  "budget": 300,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 252,
+      "vertices": 180,
+      "center": [
+        0.0,
+        -0.3745951499240263,
+        -0.11082161262328327
+      ],
+      "size": [
+        48.96134216160251,
+        23.250809700151947,
+        10.221643225246567
+      ],
+      "fallback": [
+        81,
+        91,
+        76
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "VerdantRim_color.png",
+    "normal": "VerdantRim_normal.png",
+    "roughness": "VerdantRim_roughness.png",
+    "metalness": "VerdantRim_metalness.png"
+  },
+  "meta": {
+    "rim": {
+      "targets": [
+        {
+          "path": "ExpeditionWorlds/VerdantFoundry",
+          "center": [
+            0.0,
+            -2880.0
+          ]
+        }
+      ],
+      "radius": 172.0,
+      "count": 24,
+      "offset": 0.5,
+      "colliders": [
+        {
+          "name": "RimCollider",
+          "shape": "Block",
+          "size": [
+            23.250505061848873,
+            11.5,
+            5.2
+          ],
+          "center": [
+            -11.210096350046522,
+            4.75,
+            -0.9669805569033656
+          ],
+          "rotation": [
+            0.0,
+            -3.7499999999999996,
+            0.0
+          ]
+        },
+        {
+          "name": "RimCollider",
+          "shape": "Block",
+          "size": [
+            23.250505061848873,
+            11.5,
+            5.2
+          ],
+          "center": [
+            11.210096350046522,
+            4.75,
+            -0.9669805569033656
+          ],
+          "rotation": [
+            0.0,
+            3.7499999999999996,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

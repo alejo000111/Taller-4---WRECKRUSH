@@ -1,0 +1,84 @@
+{
+  "name": "RecyclerStation",
+  "atlas": 1024,
+  "texel_density": 22.73340119421482,
+  "triangles": 960,
+  "budget": 4000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 936,
+      "vertices": 1086,
+      "center": [
+        0.0,
+        4.8,
+        -0.050000000000000266
+      ],
+      "size": [
+        13.2,
+        9.6,
+        11.100000000000001
+      ],
+      "fallback": [
+        77,
+        74,
+        72
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        2.3999999999999995,
+        5.1625,
+        -1.6125
+      ],
+      "size": [
+        6.6,
+        2.5250000000000004,
+        0.5750000000000002
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "RecyclerStation_color.png",
+    "normal": "RecyclerStation_normal.png",
+    "roughness": "RecyclerStation_roughness.png",
+    "metalness": "RecyclerStation_metalness.png"
+  },
+  "meta": {
+    "place": {
+      "targets": [
+        {
+          "path": "Plaza",
+          "center": [
+            -74.0,
+            0.0,
+            32.0
+          ],
+          "yaw": -90.0
+        }
+      ]
+    }
+  }
+}

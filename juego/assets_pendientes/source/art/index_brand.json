@@ -1,0 +1,13 @@
+{
+  "Logo": "assets/brand/logo_main.png",
+  "LogoWhite": "assets/brand/logo_white.png",
+  "LogoBlack": "assets/brand/logo_black.png",
+  "LogoIcon": "assets/brand/logo_icon.png",
+  "GameIcon": "assets/brand/game_icon.png",
+  "LoadingBackground": "assets/brand/loading_background.png",
+  "Thumbnail1": "assets/thumbnails/thumbnail_01_destroy_the_city.png",
+  "Thumbnail2": "assets/thumbnails/thumbnail_02_get_rich.png",
+  "Thumbnail3": "assets/thumbnails/thumbnail_03_new_chaos_event.png",
+  "Thumbnail4": "assets/thumbnails/thumbnail_04_rebirth.png",
+  "Thumbnail5": "assets/thumbnails/thumbnail_05_ultimate_tool.png"
+}

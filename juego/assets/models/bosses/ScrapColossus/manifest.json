@@ -1,0 +1,236 @@
+{
+  "name": "ScrapColossus",
+  "atlas": 1024,
+  "texel_density": 8.684036642313004,
+  "triangles": 4392,
+  "budget": 6500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 3256,
+      "vertices": 3172,
+      "center": [
+        0.0,
+        18.2,
+        0.45355484581150485
+      ],
+      "size": [
+        22.0,
+        36.4,
+        18.507109691623008
+      ],
+      "fallback": [
+        104,
+        99,
+        97
+      ]
+    },
+    "ArmL": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 414,
+      "vertices": 377,
+      "center": [
+        -15.358714002807446,
+        20.86809808558897,
+        -0.8801728663807613
+      ],
+      "size": [
+        9.117428005614896,
+        23.063803828822063,
+        11.239654267238478
+      ],
+      "fallback": [
+        95,
+        86,
+        79
+      ]
+    },
+    "ArmR": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 454,
+      "vertices": 365,
+      "center": [
+        14.721884705062546,
+        19.048750379313365,
+        -1.9987113310646196
+      ],
+      "size": [
+        7.156230589874907,
+        26.702499241373268,
+        11.618446215432304
+      ],
+      "fallback": [
+        64,
+        63,
+        64
+      ]
+    },
+    "Eyes": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        214,
+        120
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 192,
+      "vertices": 256,
+      "center": [
+        0.0,
+        33.6,
+        -4.2
+      ],
+      "size": [
+        6.300000000000001,
+        1.9000000000000057,
+        0.40000000000000036
+      ]
+    },
+    "Core": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 76,
+      "vertices": 120,
+      "center": [
+        0.0,
+        24.6,
+        -6.4
+      ],
+      "size": [
+        6.6,
+        6.2769730075480155,
+        1.0
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ScrapColossus_color.png",
+    "normal": "ScrapColossus_normal.png",
+    "roughness": "ScrapColossus_roughness.png",
+    "metalness": "ScrapColossus_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            22.0,
+            32.0,
+            14.0
+          ],
+          "center": [
+            0.0,
+            16.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "motion": {
+        "ArmL": "Arm",
+        "ArmR": "Arm",
+        "Core": "Core"
+      },
+      "sockets": [
+        {
+          "name": "PlateSocket1",
+          "center": [
+            -5.0,
+            20.0,
+            -6.9
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "PlateSocket2",
+          "center": [
+            5.0,
+            20.0,
+            -6.9
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "PlateSocket3",
+          "center": [
+            -9.6,
+            15.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            90.0,
+            0.0
+          ]
+        },
+        {
+          "name": "PlateSocket4",
+          "center": [
+            9.6,
+            15.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            -90.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

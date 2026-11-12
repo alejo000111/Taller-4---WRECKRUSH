@@ -1,0 +1,129 @@
+{
+  "name": "TNTLauncher",
+  "atlas": 1024,
+  "texel_density": 108.51067213714123,
+  "triangles": 4176,
+  "budget": 6000,
+  "roles": {
+    "Primary": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        59,
+        59
+      ],
+      "skin": "Primary",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 384,
+      "vertices": 398,
+      "center": [
+        0.0,
+        1.4,
+        -0.31000000000000005
+      ],
+      "size": [
+        1.12,
+        1.12,
+        3.62
+      ]
+    },
+    "AccentTrim": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        210,
+        31
+      ],
+      "skin": "Accent",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 768,
+      "vertices": 800,
+      "center": [
+        0.0,
+        1.4,
+        -0.30000000000000004
+      ],
+      "size": [
+        1.0,
+        1.0,
+        2.0
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        160,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 152,
+      "vertices": 207,
+      "center": [
+        -0.14030894056446996,
+        2.4436174129416868,
+        -0.09208480425994658
+      ],
+      "size": [
+        0.6293821188710601,
+        0.9898933033276462,
+        2.325830391480107
+      ]
+    },
+    "Base": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2872,
+      "vertices": 3108,
+      "center": [
+        5.551115123125783e-17,
+        0.9975270705920889,
+        -0.13500000000000012
+      ],
+      "size": [
+        1.2138370571716832,
+        3.535054141184178,
+        4.21
+      ],
+      "fallback": [
+        98,
+        79,
+        76
+      ]
+    }
+  },
+  "points": {
+    "muzzle": [
+      0.0,
+      1.4,
+      -2.2
+    ],
+    "grip": [
+      0.0,
+      -0.1,
+      0.0
+    ]
+  },
+  "textures": {
+    "color": "TNTLauncher_color.png",
+    "normal": "TNTLauncher_normal.png",
+    "roughness": "TNTLauncher_roughness.png",
+    "metalness": "TNTLauncher_metalness.png"
+  },
+  "meta": {}
+}

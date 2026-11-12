@@ -1,0 +1,61 @@
+{
+  "name": "FrostRock",
+  "atlas": 512,
+  "texel_density": 79.41828919947147,
+  "triangles": 126,
+  "budget": 400,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 126,
+      "vertices": 86,
+      "center": [
+        0.07265269035845012,
+        2.453938543118461,
+        -0.09943683189565622
+      ],
+      "size": [
+        9.91577940888029,
+        4.907877086236922,
+        8.383005497767984
+      ],
+      "fallback": [
+        111,
+        124,
+        134
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "FrostRock_color.png",
+    "normal": "FrostRock_normal.png",
+    "roughness": "FrostRock_roughness.png",
+    "metalness": "FrostRock_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/FrostHarbor"
+      ],
+      "parts": [
+        "IslandCliff",
+        "Outcrop"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false
+    }
+  }
+}

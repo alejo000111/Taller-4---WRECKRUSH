@@ -1,0 +1,129 @@
+{
+  "name": "RocketRig",
+  "atlas": 1024,
+  "texel_density": 87.73199385404587,
+  "triangles": 5334,
+  "budget": 6500,
+  "roles": {
+    "Primary": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        230,
+        230,
+        236
+      ],
+      "skin": "Primary",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 640,
+      "vertices": 808,
+      "center": [
+        0.0,
+        1.37,
+        -0.41500000000000004
+      ],
+      "size": [
+        1.26,
+        1.2600000000000005,
+        3.5300000000000002
+      ]
+    },
+    "AccentTrim": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        230,
+        40,
+        40
+      ],
+      "skin": "Accent",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 1240,
+      "vertices": 1280,
+      "center": [
+        0.0,
+        1.37,
+        -0.7500000000000001
+      ],
+      "size": [
+        1.6400000000000001,
+        1.33,
+        2.9000000000000004
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        50,
+        50
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 86,
+      "vertices": 94,
+      "center": [
+        -0.45875,
+        1.1025,
+        -0.8501554445662277
+      ],
+      "size": [
+        0.9975,
+        1.105,
+        0.12031088913245536
+      ]
+    },
+    "Base": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 3368,
+      "vertices": 3278,
+      "center": [
+        -0.15499999999999992,
+        0.894772705870164,
+        -0.15500000000000014
+      ],
+      "size": [
+        1.8299999999999998,
+        3.329545411740328,
+        4.17
+      ],
+      "fallback": [
+        82,
+        71,
+        73
+      ]
+    }
+  },
+  "points": {
+    "muzzle": [
+      0.0,
+      1.37,
+      -2.2
+    ],
+    "grip": [
+      0.0,
+      -0.1,
+      0.0
+    ]
+  },
+  "textures": {
+    "color": "RocketRig_color.png",
+    "normal": "RocketRig_normal.png",
+    "roughness": "RocketRig_roughness.png",
+    "metalness": "RocketRig_metalness.png"
+  },
+  "meta": {}
+}

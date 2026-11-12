@@ -1,0 +1,119 @@
+{
+  "name": "Icebreaker",
+  "atlas": 1024,
+  "texel_density": 5.65273343026638,
+  "triangles": 530,
+  "budget": 3200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 506,
+      "vertices": 604,
+      "center": [
+        0.0,
+        21.0,
+        -4.337499999999999
+      ],
+      "size": [
+        33.0,
+        42.0,
+        94.675
+      ],
+      "fallback": [
+        118,
+        111,
+        108
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        129,
+        207,
+        230
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        27.0,
+        -8.0
+      ],
+      "size": [
+        23.6,
+        3.3999999999999986,
+        18.0
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "Icebreaker_color.png",
+    "normal": "Icebreaker_normal.png",
+    "roughness": "Icebreaker_roughness.png",
+    "metalness": "Icebreaker_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "ExpeditionWorlds/FrostHarbor"
+      ],
+      "name": "Icebreaker",
+      "fit": "box",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "Hull",
+          "shape": "Block",
+          "size": [
+            33.0,
+            17.0,
+            86.0
+          ],
+          "center": [
+            0.0,
+            8.5,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Bridge",
+          "shape": "Block",
+          "size": [
+            23.0,
+            17.0,
+            26.0
+          ],
+          "center": [
+            0.0,
+            25.5,
+            -8.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

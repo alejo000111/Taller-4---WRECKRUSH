@@ -1,0 +1,123 @@
+{
+  "name": "CoreEgg",
+  "atlas": 1024,
+  "texel_density": 101.29246412217617,
+  "triangles": 3544,
+  "budget": 3600,
+  "roles": {
+    "Shell": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 720,
+      "vertices": 423,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.045680367948266,
+        4.0,
+        3.045680367948266
+      ],
+      "fallback": [
+        39,
+        37,
+        44
+      ]
+    },
+    "Band": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1804,
+      "vertices": 1477,
+      "center": [
+        0.0,
+        0.38512888549505164,
+        0.0
+      ],
+      "size": [
+        3.1770503571232864,
+        4.329742229009897,
+        3.258577272173644
+      ],
+      "fallback": [
+        107,
+        75,
+        58
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        160
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 600,
+      "vertices": 492,
+      "center": [
+        0.0,
+        0.6418992850447248,
+        -1.1102230246251565e-16
+      ],
+      "size": [
+        3.175177334521335,
+        4.256201429910551,
+        2.7497842332160367
+      ]
+    },
+    "Heat": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 420,
+      "vertices": 480,
+      "center": [
+        0.0,
+        0.8866365316301725,
+        0.3610695342246736
+      ],
+      "size": [
+        2.8799458208089073,
+        3.176726936739655,
+        2.518765741160321
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "CoreEgg_color.png",
+    "normal": "CoreEgg_normal.png",
+    "roughness": "CoreEgg_roughness.png",
+    "metalness": "CoreEgg_metalness.png"
+  },
+  "meta": {}
+}

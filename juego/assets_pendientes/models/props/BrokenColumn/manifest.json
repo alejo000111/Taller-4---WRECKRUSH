@@ -1,0 +1,61 @@
+{
+  "name": "BrokenColumn",
+  "atlas": 512,
+  "texel_density": 18.28356011211872,
+  "triangles": 188,
+  "budget": 600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 188,
+      "vertices": 189,
+      "center": [
+        0.0,
+        10.445224678735732,
+        0.0
+      ],
+      "size": [
+        6.4,
+        20.890449357471464,
+        6.239538637963672
+      ],
+      "fallback": [
+        138,
+        136,
+        154
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "BrokenColumn_color.png",
+    "normal": "BrokenColumn_normal.png",
+    "roughness": "BrokenColumn_roughness.png",
+    "metalness": "BrokenColumn_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "BrokenPillar"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

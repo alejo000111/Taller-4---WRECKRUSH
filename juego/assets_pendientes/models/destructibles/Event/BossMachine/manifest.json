@@ -1,0 +1,152 @@
+{
+  "name": "BossMachine",
+  "atlas": 1024,
+  "texel_density": 9.5066507011652,
+  "triangles": 4010,
+  "budget": 6000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 3384,
+      "vertices": 3995,
+      "center": [
+        -0.05000000000000071,
+        15.2,
+        -1.5500000000000007
+      ],
+      "size": [
+        27.5,
+        30.4,
+        27.5
+      ],
+      "fallback": [
+        128,
+        99,
+        92
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        90,
+        60
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 626,
+      "vertices": 627,
+      "center": [
+        -0.9102613056609279,
+        19.05,
+        -2.10844063749685
+      ],
+      "size": [
+        24.320522611321856,
+        23.7,
+        24.3168812749937
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "BossMachine_color.png",
+    "normal": "BossMachine_normal.png",
+    "roughness": "BossMachine_roughness.png",
+    "metalness": "BossMachine_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            16.4,
+            11.0,
+            13.0
+          ],
+          "center": [
+            0.0,
+            14.5,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Tracks",
+          "shape": "Block",
+          "size": [
+            27.0,
+            9.0,
+            24.0
+          ],
+          "center": [
+            0.0,
+            4.5,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Head",
+          "shape": "Block",
+          "size": [
+            9.0,
+            5.5,
+            7.5
+          ],
+          "center": [
+            0.0,
+            24.2,
+            -0.5
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Arms",
+          "shape": "Block",
+          "size": [
+            27.0,
+            5.0,
+            12.0
+          ],
+          "center": [
+            0.0,
+            15.0,
+            -4.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

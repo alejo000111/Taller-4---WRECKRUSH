@@ -1,0 +1,87 @@
+{
+  "name": "PortalPad",
+  "atlas": 512,
+  "texel_density": 14.439650163054466,
+  "triangles": 396,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 76,
+      "vertices": 88,
+      "center": [
+        0.0,
+        0.27499999999999986,
+        4.440892098500626e-16
+      ],
+      "size": [
+        10.162674857624156,
+        0.5500000000000004,
+        10.162674857624154
+      ],
+      "fallback": [
+        72,
+        72,
+        75
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 320,
+      "vertices": 424,
+      "center": [
+        0.0,
+        0.18,
+        0.0
+      ],
+      "size": [
+        9.3,
+        0.36,
+        9.3
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "PortalPad_color.png",
+    "normal": "PortalPad_normal.png",
+    "roughness": "PortalPad_roughness.png",
+    "metalness": "PortalPad_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "Portals"
+      ],
+      "parts": [
+        "Pad"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": true,
+      "functional": true,
+      "tint": {
+        "Glow": true
+      }
+    }
+  }
+}

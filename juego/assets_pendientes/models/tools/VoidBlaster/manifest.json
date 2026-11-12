@@ -1,0 +1,134 @@
+{
+  "name": "VoidBlaster",
+  "atlas": 1024,
+  "texel_density": 101.03550782799721,
+  "triangles": 3716,
+  "budget": 8000,
+  "roles": {
+    "Primary": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        14,
+        10,
+        22
+      ],
+      "skin": "Primary",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 992,
+      "vertices": 2976,
+      "center": [
+        0.0,
+        1.3387649500767733,
+        -0.53
+      ],
+      "size": [
+        1.56,
+        2.5272009401239415,
+        4.619999999999999
+      ]
+    },
+    "AccentGlow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        150,
+        70,
+        255
+      ],
+      "skin": "Accent",
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1576,
+      "vertices": 1887,
+      "center": [
+        -1.1102230246251565e-16,
+        1.05,
+        -0.5349999999999998
+      ],
+      "size": [
+        1.920803883722122,
+        1.920803883722122,
+        4.7
+      ]
+    },
+    "Aura": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        120,
+        40,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.7,
+      "triangles": 180,
+      "vertices": 119,
+      "center": [
+        0.0,
+        1.05,
+        -2.05
+      ],
+      "size": [
+        1.12,
+        1.12,
+        1.065183298250572
+      ]
+    },
+    "Base": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 968,
+      "vertices": 1176,
+      "center": [
+        0.0,
+        0.7174247078195544,
+        -1.2599999999999998
+      ],
+      "size": [
+        2.3096988312782174,
+        2.9748494156391088,
+        3.24
+      ],
+      "fallback": [
+        119,
+        116,
+        128
+      ]
+    }
+  },
+  "points": {
+    "muzzle": [
+      0.0,
+      1.05,
+      -2.9
+    ],
+    "grip": [
+      0.0,
+      -0.1,
+      0.0
+    ],
+    "core": [
+      0.0,
+      1.05,
+      -2.05
+    ]
+  },
+  "textures": {
+    "color": "VoidBlaster_color.png",
+    "normal": "VoidBlaster_normal.png",
+    "roughness": "VoidBlaster_roughness.png",
+    "metalness": "VoidBlaster_metalness.png"
+  },
+  "meta": {}
+}

@@ -1,0 +1,60 @@
+{
+  "name": "ScrapIslandBase",
+  "atlas": 1024,
+  "texel_density": 1.0620575994253159,
+  "triangles": 1368,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1368,
+      "vertices": 972,
+      "center": [
+        -0.4814969589352245,
+        -75.19099591660493,
+        1.7950887067244992
+      ],
+      "size": [
+        303.02245875561533,
+        149.61800816679013,
+        305.7363434054313
+      ],
+      "fallback": [
+        73,
+        57,
+        47
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ScrapIslandBase_color.png",
+    "normal": "ScrapIslandBase_normal.png",
+    "roughness": "ScrapIslandBase_roughness.png",
+    "metalness": "ScrapIslandBase_metalness.png"
+  },
+  "meta": {
+    "place": {
+      "targets": [
+        {
+          "path": "BossIslands/ScrapColossus",
+          "center": [
+            0.0,
+            0.0,
+            4800.0
+          ],
+          "yaw": 131.0
+        }
+      ]
+    }
+  }
+}

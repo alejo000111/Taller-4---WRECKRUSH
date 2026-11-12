@@ -1,0 +1,99 @@
+{
+  "name": "IndustrialEgg",
+  "atlas": 1024,
+  "texel_density": 100.35287423431873,
+  "triangles": 2266,
+  "budget": 3400,
+  "roles": {
+    "Shell": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 720,
+      "vertices": 423,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.045680367948266,
+        4.0,
+        3.045680367948266
+      ],
+      "fallback": [
+        193,
+        51,
+        51
+      ]
+    },
+    "Band": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1528,
+      "vertices": 1551,
+      "center": [
+        0.0,
+        0.6516434890351651,
+        0.0
+      ],
+      "size": [
+        3.2067959519409897,
+        3.32328697807033,
+        3.2067959519409897
+      ],
+      "fallback": [
+        104,
+        103,
+        104
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        60,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 18,
+      "vertices": 22,
+      "center": [
+        0.9212573382704174,
+        1.4041546177568258,
+        -0.5301100607633519
+      ],
+      "size": [
+        0.14929681011190699,
+        0.15540388478162437,
+        0.15342005417596455
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "IndustrialEgg_color.png",
+    "normal": "IndustrialEgg_normal.png",
+    "roughness": "IndustrialEgg_roughness.png",
+    "metalness": "IndustrialEgg_metalness.png"
+  },
+  "meta": {}
+}

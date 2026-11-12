@@ -1,0 +1,71 @@
+{
+  "name": "TireStack",
+  "atlas": 512,
+  "texel_density": 24.046923205256462,
+  "triangles": 1904,
+  "budget": 2000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1904,
+      "vertices": 1188,
+      "center": [
+        0.03499279780025266,
+        2.340375674949599,
+        0.0028785788841871884
+      ],
+      "size": [
+        4.807212208687336,
+        4.640751349899199,
+        4.6914694553184555
+      ],
+      "fallback": [
+        72,
+        66,
+        63
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "TireStack_color.png",
+    "normal": "TireStack_normal.png",
+    "roughness": "TireStack_roughness.png",
+    "metalness": "TireStack_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "ScrapYard",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Cylinder",
+          "size": [
+            4.8,
+            4.7,
+            4.8
+          ],
+          "center": [
+            0.0,
+            2.35,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

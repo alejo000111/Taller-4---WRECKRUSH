@@ -1,0 +1,105 @@
+{
+  "name": "ReactorCube",
+  "atlas": 512,
+  "texel_density": 43.749997451901436,
+  "triangles": 2004,
+  "budget": 2200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1440,
+      "vertices": 1440,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.76,
+        1.76,
+        1.76
+      ],
+      "fallback": [
+        98,
+        98,
+        100
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 504,
+      "vertices": 353,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.747807865846125,
+        1.2,
+        2.6765806098107925
+      ]
+    },
+    "Ring": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 60,
+      "vertices": 42,
+      "center": [
+        0.13097754643603943,
+        0.0018288345927667815,
+        0.038843524015546915
+      ],
+      "size": [
+        2.4812742537888752,
+        1.215601305887648,
+        2.5381102444886614
+      ],
+      "fallback": [
+        90,
+        93,
+        101
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ReactorCube_color.png",
+    "normal": "ReactorCube_normal.png",
+    "roughness": "ReactorCube_roughness.png",
+    "metalness": "ReactorCube_metalness.png"
+  },
+  "meta": {
+    "pet": {
+      "motion": {
+        "Ring": "Rotor"
+      }
+    }
+  }
+}

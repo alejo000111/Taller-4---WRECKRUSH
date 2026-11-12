@@ -1,0 +1,101 @@
+{
+  "name": "ScrapIslandRim",
+  "atlas": 512,
+  "texel_density": 12.316084265708923,
+  "triangles": 252,
+  "budget": 320,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 252,
+      "vertices": 165,
+      "center": [
+        0.0,
+        0.5980923294962821,
+        0.21198120281266597
+      ],
+      "size": [
+        41.76928060114111,
+        25.196184658992564,
+        9.576037594374668
+      ],
+      "fallback": [
+        107,
+        76,
+        59
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ScrapIslandRim_color.png",
+    "normal": "ScrapIslandRim_normal.png",
+    "roughness": "ScrapIslandRim_roughness.png",
+    "metalness": "ScrapIslandRim_metalness.png"
+  },
+  "meta": {
+    "rim": {
+      "targets": [
+        {
+          "path": "BossIslands/ScrapColossus",
+          "center": [
+            0.0,
+            4800.0
+          ]
+        }
+      ],
+      "radius": 146.0,
+      "count": 24,
+      "offset": 0.5,
+      "colliders": [
+        {
+          "name": "RimCollider",
+          "shape": "Block",
+          "size": [
+            19.85682406412753,
+            11.5,
+            5.2
+          ],
+          "center": [
+            -9.509614990062802,
+            4.75,
+            -0.9113125611070529
+          ],
+          "rotation": [
+            0.0,
+            -3.7499999999999996,
+            0.0
+          ]
+        },
+        {
+          "name": "RimCollider",
+          "shape": "Block",
+          "size": [
+            19.85682406412753,
+            11.5,
+            5.2
+          ],
+          "center": [
+            9.509614990062802,
+            4.75,
+            -0.9113125611070529
+          ],
+          "rotation": [
+            0.0,
+            3.7499999999999996,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

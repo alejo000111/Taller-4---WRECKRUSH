@@ -1,0 +1,72 @@
+{
+  "name": "RustyBot",
+  "atlas": 512,
+  "texel_density": 61.92573471367359,
+  "triangles": 1804,
+  "budget": 2000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1624,
+      "vertices": 1546,
+      "center": [
+        0.0,
+        0.42407665406247697,
+        0.0
+      ],
+      "size": [
+        2.3999131190365266,
+        2.948153308124954,
+        1.5
+      ],
+      "fallback": [
+        91,
+        87,
+        88
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        196,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 180,
+      "vertices": 149,
+      "center": [
+        0.04749999999999999,
+        1.455,
+        -0.23
+      ],
+      "size": [
+        0.845,
+        1.0699999999999998,
+        0.8400000000000001
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "RustyBot_color.png",
+    "normal": "RustyBot_normal.png",
+    "roughness": "RustyBot_roughness.png",
+    "metalness": "RustyBot_metalness.png"
+  },
+  "meta": {
+    "pet": {}
+  }
+}

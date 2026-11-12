@@ -1,0 +1,56 @@
+{
+  "name": "SignFrameGuide",
+  "atlas": 512,
+  "texel_density": 33.491760328412056,
+  "triangles": 480,
+  "budget": 700,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 480,
+      "vertices": 480,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        13.855,
+        6.855,
+        0.9
+      ],
+      "fallback": [
+        169,
+        143,
+        76
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "SignFrameGuide_color.png",
+    "normal": "SignFrameGuide_normal.png",
+    "roughness": "SignFrameGuide_roughness.png",
+    "metalness": "SignFrameGuide_metalness.png"
+  },
+  "meta": {
+    "frame": {
+      "part": "Board",
+      "size": [
+        13.0,
+        6.0,
+        0.5
+      ],
+      "scope": "Map"
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "name": "ChaosRay",
+  "atlas": 1024,
+  "texel_density": 123.86031730473042,
+  "triangles": 6944,
+  "budget": 8000,
+  "roles": {
+    "Primary": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        70,
+        40,
+        110
+      ],
+      "skin": "Primary",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 892,
+      "vertices": 594,
+      "center": [
+        0.0,
+        0.9273699045477743,
+        0.29500000000000004
+      ],
+      "size": [
+        0.9694796181910977,
+        1.0147398090955488,
+        2.13
+      ]
+    },
+    "Dish": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": "Primary",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 984,
+      "vertices": 549,
+      "center": [
+        0.0,
+        0.9500000000000001,
+        -1.7012465142665256
+      ],
+      "size": [
+        1.9683558761475373,
+        1.9683558761475373,
+        0.4224930285330506
+      ]
+    },
+    "Base": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2988,
+      "vertices": 2615,
+      "center": [
+        -1.1102230246251565e-16,
+        0.6199999999999999,
+        -0.12499999999999978
+      ],
+      "size": [
+        1.506545429051543,
+        2.66,
+        4.449999999999999
+      ],
+      "fallback": [
+        96,
+        94,
+        104
+      ]
+    },
+    "Accent": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": "Accent",
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1576,
+      "vertices": 1370,
+      "center": [
+        0.0595763906820852,
+        1.041862214305377,
+        -0.10627641290737899
+      ],
+      "size": [
+        2.5619550663470823,
+        2.2437244286107543,
+        3.712552825814758
+      ]
+    },
+    "AccentPink": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        160
+      ],
+      "skin": "Accent",
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 336,
+      "vertices": 427,
+      "center": [
+        -0.24586230614911914,
+        0.9493374999885582,
+        -0.4789944287529071
+      ],
+      "size": [
+        2.1269444210572996,
+        2.63025987189149,
+        4.7863492277086355
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        196,
+        160,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.55,
+      "triangles": 168,
+      "vertices": 115,
+      "center": [
+        0.0,
+        0.95,
+        1.72
+      ],
+      "size": [
+        0.64,
+        0.6400000000000001,
+        0.6400000000000001
+      ]
+    }
+  },
+  "points": {
+    "muzzle": [
+      0.0,
+      0.95,
+      -2.88
+    ],
+    "grip": [
+      0.0,
+      -0.1,
+      0.0
+    ],
+    "orb": [
+      0.0,
+      0.95,
+      1.72
+    ],
+    "dish": [
+      0.0,
+      0.95,
+      -1.62
+    ]
+  },
+  "textures": {
+    "color": "ChaosRay_color.png",
+    "normal": "ChaosRay_normal.png",
+    "roughness": "ChaosRay_roughness.png",
+    "metalness": "ChaosRay_metalness.png"
+  },
+  "meta": {}
+}

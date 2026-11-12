@@ -1,0 +1,158 @@
+{
+  "name": "UpgradeStation",
+  "atlas": 1024,
+  "texel_density": 26.61703532934189,
+  "triangles": 2226,
+  "budget": 4500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2038,
+      "vertices": 2482,
+      "center": [
+        0.0,
+        6.808786796564404,
+        0.0
+      ],
+      "size": [
+        12.2,
+        13.982426406871193,
+        10.2
+      ],
+      "fallback": [
+        115,
+        99,
+        91
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        59
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 80,
+      "vertices": 136,
+      "center": [
+        0.0,
+        6.099942329745458,
+        0.0
+      ],
+      "size": [
+        11.4,
+        12.119884659490918,
+        10.26
+      ]
+    },
+    "Hot": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        140,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 108,
+      "vertices": 96,
+      "center": [
+        -0.19999999999999996,
+        2.86,
+        -2.6
+      ],
+      "size": [
+        2.222614696492411,
+        0.2999999999999998,
+        0.9132136496351322
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "UpgradeStation_color.png",
+    "normal": "UpgradeStation_normal.png",
+    "roughness": "UpgradeStation_roughness.png",
+    "metalness": "UpgradeStation_metalness.png"
+  },
+  "meta": {
+    "station": {
+      "target": "UpgradeStation",
+      "parent": "Plaza",
+      "colliders": [
+        {
+          "name": "Platform",
+          "shape": "Block",
+          "size": [
+            12.0,
+            0.4,
+            10.0
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Machine",
+          "shape": "Block",
+          "size": [
+            9.4,
+            8.4,
+            4.6
+          ],
+          "center": [
+            0.0,
+            4.4,
+            2.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Anvil",
+          "shape": "Block",
+          "size": [
+            5.2,
+            3.0,
+            2.4
+          ],
+          "center": [
+            0.0,
+            1.6,
+            -2.6
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

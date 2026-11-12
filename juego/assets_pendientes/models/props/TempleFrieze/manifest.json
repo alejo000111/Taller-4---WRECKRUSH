@@ -1,0 +1,88 @@
+{
+  "name": "TempleFrieze",
+  "atlas": 256,
+  "texel_density": 2549.9999701082706,
+  "triangles": 72,
+  "budget": 300,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "size": [
+        15.0,
+        1.0,
+        73.0
+      ],
+      "fallback": [
+        103,
+        103,
+        112
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        173,
+        161,
+        230
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 48,
+      "vertices": 96,
+      "center": [
+        0.0,
+        0.5,
+        0.0
+      ],
+      "size": [
+        14.75,
+        0.25,
+        72.75
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "TempleFrieze_color.png",
+    "normal": "TempleFrieze_normal.png",
+    "roughness": "TempleFrieze_roughness.png",
+    "metalness": "TempleFrieze_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "TempleFrieze"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false,
+      "tint": {
+        "Glow": true
+      }
+    }
+  }
+}

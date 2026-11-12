@@ -1,0 +1,129 @@
+{
+  "name": "PowerHammer",
+  "atlas": 1024,
+  "texel_density": 115.5488703995943,
+  "triangles": 4508,
+  "budget": 5000,
+  "roles": {
+    "Primary": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": "Primary",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 600,
+      "vertices": 432,
+      "center": [
+        0.0,
+        2.15,
+        -0.04999999999999999
+      ],
+      "size": [
+        1.42,
+        1.3200000000000003,
+        1.6400000000000001
+      ]
+    },
+    "AccentTrim": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": "Accent",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 128,
+      "vertices": 151,
+      "center": [
+        0.0,
+        -1.62,
+        0.0
+      ],
+      "size": [
+        0.7,
+        0.3600000000000001,
+        0.7
+      ]
+    },
+    "AccentGlow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        210,
+        31
+      ],
+      "skin": "Accent",
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 184,
+      "vertices": 216,
+      "center": [
+        0.0,
+        2.15,
+        0.3725
+      ],
+      "size": [
+        1.4000000000000001,
+        1.13,
+        2.125
+      ]
+    },
+    "Base": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 3596,
+      "vertices": 3697,
+      "center": [
+        0.0,
+        0.7249999999999999,
+        -0.015000000000000013
+      ],
+      "size": [
+        2.02,
+        4.49,
+        2.91
+      ],
+      "fallback": [
+        117,
+        118,
+        123
+      ]
+    }
+  },
+  "points": {
+    "muzzle": [
+      0.0,
+      2.15,
+      -1.5
+    ],
+    "grip": [
+      0.0,
+      -0.9,
+      0.0
+    ]
+  },
+  "textures": {
+    "color": "PowerHammer_color.png",
+    "normal": "PowerHammer_normal.png",
+    "roughness": "PowerHammer_roughness.png",
+    "metalness": "PowerHammer_metalness.png"
+  },
+  "meta": {}
+}

@@ -1,0 +1,177 @@
+{
+  "name": "ChaosShopTerminal",
+  "atlas": 1024,
+  "texel_density": 35.70832109451294,
+  "triangles": 570,
+  "budget": 3000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 354,
+      "vertices": 380,
+      "center": [
+        0.0,
+        3.6087867965644036,
+        0.0
+      ],
+      "size": [
+        12.2,
+        7.5824264068711935,
+        10.2
+      ],
+      "fallback": [
+        78,
+        65,
+        65
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        200,
+        150,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 144,
+      "center": [
+        0.0,
+        3.7925,
+        0.0
+      ],
+      "size": [
+        11.4,
+        7.505,
+        10.26
+      ]
+    },
+    "Crystal": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 144,
+      "vertices": 432,
+      "center": [
+        0.304900745171353,
+        2.48,
+        1.1072946312652818
+      ],
+      "size": [
+        9.880343665203036,
+        4.2,
+        2.426003811684785
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ChaosShopTerminal_color.png",
+    "normal": "ChaosShopTerminal_normal.png",
+    "roughness": "ChaosShopTerminal_roughness.png",
+    "metalness": "ChaosShopTerminal_metalness.png"
+  },
+  "meta": {
+    "station": {
+      "target": "ChaosShopTerminal",
+      "parent": "Plaza",
+      "colliders": [
+        {
+          "name": "Platform",
+          "shape": "Block",
+          "size": [
+            12.0,
+            0.4,
+            10.0
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Terminal",
+          "shape": "Block",
+          "size": [
+            4.6,
+            7.2,
+            4.0
+          ],
+          "center": [
+            0.0,
+            3.8,
+            0.75
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "CrystalL",
+          "shape": "Block",
+          "size": [
+            1.8,
+            4.4,
+            1.8
+          ],
+          "center": [
+            -4.1,
+            2.4,
+            1.4
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "CrystalR",
+          "shape": "Block",
+          "size": [
+            1.8,
+            4.4,
+            1.8
+          ],
+          "center": [
+            4.1,
+            2.4,
+            1.4
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

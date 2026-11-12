@@ -1,0 +1,99 @@
+{
+  "name": "ChaosEgg",
+  "atlas": 1024,
+  "texel_density": 105.66151438653469,
+  "triangles": 1776,
+  "budget": 3600,
+  "roles": {
+    "Shell": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 720,
+      "vertices": 423,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.045680367948266,
+        4.0,
+        3.045680367948266
+      ],
+      "fallback": [
+        40,
+        20,
+        56
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        59,
+        160
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 768,
+      "vertices": 872,
+      "center": [
+        -0.005454214160969251,
+        0.0506106122579042,
+        -0.00866390774575676
+      ],
+      "size": [
+        3.416419204653208,
+        3.1581796290109674,
+        3.577737352984598
+      ]
+    },
+    "Crystal": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 288,
+      "vertices": 864,
+      "center": [
+        -0.4043302782814985,
+        -0.1816493867081037,
+        -0.23015485720059992
+      ],
+      "size": [
+        3.188097476724585,
+        3.247337237493747,
+        3.476663743063093
+      ],
+      "fallback": [
+        110,
+        48,
+        185
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ChaosEgg_color.png",
+    "normal": "ChaosEgg_normal.png",
+    "roughness": "ChaosEgg_roughness.png",
+    "metalness": "ChaosEgg_metalness.png"
+  },
+  "meta": {}
+}

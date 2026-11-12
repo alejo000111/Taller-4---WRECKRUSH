@@ -1,0 +1,72 @@
+{
+  "name": "BoltPup",
+  "atlas": 512,
+  "texel_density": 71.3214505314827,
+  "triangles": 1338,
+  "budget": 1600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1138,
+      "vertices": 992,
+      "center": [
+        0.0,
+        0.397549452527276,
+        -0.5777975432332819
+      ],
+      "size": [
+        1.5,
+        3.295098905054552,
+        3.255595086466564
+      ],
+      "fallback": [
+        111,
+        100,
+        58
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 200,
+      "vertices": 164,
+      "center": [
+        0.012413895365628425,
+        0.9715143958142115,
+        -0.36681867355918507
+      ],
+      "size": [
+        0.8351722092687431,
+        0.8430287916284229,
+        3.03363734711837
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "BoltPup_color.png",
+    "normal": "BoltPup_normal.png",
+    "roughness": "BoltPup_roughness.png",
+    "metalness": "BoltPup_metalness.png"
+  },
+  "meta": {
+    "pet": {}
+  }
+}

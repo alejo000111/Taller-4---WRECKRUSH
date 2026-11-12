@@ -1,0 +1,169 @@
+{
+  "name": "ServiceBay",
+  "atlas": 1024,
+  "texel_density": 24.949961960315704,
+  "triangles": 840,
+  "budget": 2000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 756,
+      "vertices": 872,
+      "center": [
+        0.0,
+        9.340808018357986,
+        0.004999999999999893
+      ],
+      "size": [
+        20.3,
+        18.69161603671597,
+        20.65
+      ],
+      "fallback": [
+        74,
+        81,
+        91
+      ]
+    },
+    "Trim": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        202,
+        140,
+        57
+      ],
+      "skin": "Trim",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 144,
+      "center": [
+        0.0,
+        7.8775,
+        4.284999999999999
+      ],
+      "size": [
+        19.72,
+        14.795,
+        11.51
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        202,
+        140,
+        57
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        17.95,
+        10.1
+      ],
+      "size": [
+        16.0,
+        0.11999999999999744,
+        0.16000000000000014
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ServiceBay_color.png",
+    "normal": "ServiceBay_normal.png",
+    "roughness": "ServiceBay_roughness.png",
+    "metalness": "ServiceBay_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/DesignExpansion_20261006"
+      ],
+      "name": [
+        "UpgradeBay",
+        "ToolsBay"
+      ],
+      "fit": "box",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "PostL",
+          "shape": "Block",
+          "size": [
+            0.7,
+            18.5,
+            0.7
+          ],
+          "center": [
+            -9.5,
+            9.25,
+            9.68
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "PostR",
+          "shape": "Block",
+          "size": [
+            0.7,
+            18.5,
+            0.7
+          ],
+          "center": [
+            9.5,
+            9.25,
+            9.68
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Roof",
+          "shape": "Block",
+          "size": [
+            20.0,
+            0.8,
+            20.0
+          ],
+          "center": [
+            0.0,
+            18.3,
+            -0.32
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "tint": {
+        "Trim": "PaintedSupportBand",
+        "Glow": "FrontLightStrip"
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "CamoPatch",
+  "atlas": 512,
+  "texel_density": 17.223211139440536,
+  "triangles": 116,
+  "budget": 200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 116,
+      "vertices": 130,
+      "center": [
+        -0.13516153439757117,
+        0.030000000000000027,
+        -0.46706061226275297
+      ],
+      "size": [
+        11.511456030701964,
+        0.060000000000000386,
+        6.2915741857024665
+      ],
+      "fallback": [
+        73,
+        75,
+        53
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "CamoPatch_color.png",
+    "normal": "CamoPatch_normal.png",
+    "roughness": "CamoPatch_roughness.png",
+    "metalness": "CamoPatch_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "Zones/Military/GroundDetail"
+      ],
+      "parts": [
+        "CamoPatch"
+      ],
+      "remove": [],
+      "lift": 0.02,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "ReservoirTank",
+  "atlas": 512,
+  "texel_density": 9.343299478292465,
+  "triangles": 584,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 584,
+      "vertices": 794,
+      "center": [
+        0.0,
+        6.8,
+        0.0
+      ],
+      "size": [
+        17.0,
+        13.6,
+        17.0
+      ],
+      "fallback": [
+        97,
+        91,
+        83
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ReservoirTank_color.png",
+    "normal": "ReservoirTank_normal.png",
+    "roughness": "ReservoirTank_roughness.png",
+    "metalness": "ReservoirTank_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/VerdantFoundry"
+      ],
+      "parts": [
+        "Reservoir"
+      ],
+      "remove": [
+        "ReservoirBand"
+      ],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

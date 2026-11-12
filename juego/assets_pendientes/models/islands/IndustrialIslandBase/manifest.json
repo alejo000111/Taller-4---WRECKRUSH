@@ -1,0 +1,60 @@
+{
+  "name": "IndustrialIslandBase",
+  "atlas": 1024,
+  "texel_density": 1.0620575994253159,
+  "triangles": 1368,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1368,
+      "vertices": 972,
+      "center": [
+        -0.7565774224202357,
+        -75.1926557399199,
+        0.7550018123091604
+      ],
+      "size": [
+        303.21076049120603,
+        149.6146885201602,
+        303.26584075550244
+      ],
+      "fallback": [
+        62,
+        53,
+        48
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "IndustrialIslandBase_color.png",
+    "normal": "IndustrialIslandBase_normal.png",
+    "roughness": "IndustrialIslandBase_roughness.png",
+    "metalness": "IndustrialIslandBase_metalness.png"
+  },
+  "meta": {
+    "place": {
+      "targets": [
+        {
+          "path": "BossIslands/IndustrialTitan",
+          "center": [
+            4080.0,
+            0.0,
+            -2400.0
+          ],
+          "yaw": 153.0
+        }
+      ]
+    }
+  }
+}

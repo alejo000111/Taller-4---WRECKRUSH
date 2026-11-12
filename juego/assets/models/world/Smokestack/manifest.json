@@ -1,0 +1,100 @@
+{
+  "name": "Smokestack",
+  "atlas": 1024,
+  "texel_density": 11.823406726121902,
+  "triangles": 1334,
+  "budget": 2500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1118,
+      "vertices": 1645,
+      "center": [
+        -4.440892098500626e-16,
+        36.3,
+        -4.440892098500626e-16
+      ],
+      "size": [
+        15.1516243331851,
+        72.6,
+        15.1516243331851
+      ],
+      "fallback": [
+        102,
+        95,
+        96
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        40,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 216,
+      "vertices": 159,
+      "center": [
+        0.0,
+        68.0,
+        -1.2521428571428572
+      ],
+      "size": [
+        9.675100187623547,
+        1.0,
+        8.512857142857142
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "Smokestack_color.png",
+    "normal": "Smokestack_normal.png",
+    "roughness": "Smokestack_roughness.png",
+    "metalness": "Smokestack_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Zones/Industrial/Landmarks"
+      ],
+      "name": "Smokestack",
+      "fit": "height",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "Stack",
+          "shape": "Cylinder",
+          "size": [
+            13.0,
+            72.0,
+            13.0
+          ],
+          "center": [
+            0.0,
+            36.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

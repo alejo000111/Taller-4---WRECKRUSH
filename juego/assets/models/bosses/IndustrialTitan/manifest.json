@@ -1,0 +1,183 @@
+{
+  "name": "IndustrialTitan",
+  "atlas": 1024,
+  "texel_density": 9.256284594535828,
+  "triangles": 4408,
+  "budget": 7000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2468,
+      "vertices": 2688,
+      "center": [
+        0.0,
+        24.200000000000003,
+        -0.6600000000000001
+      ],
+      "size": [
+        26.84,
+        48.400000000000006,
+        16.060000000000002
+      ],
+      "fallback": [
+        95,
+        84,
+        82
+      ]
+    },
+    "ArmL": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 924,
+      "vertices": 735,
+      "center": [
+        -16.912178419147885,
+        17.699284285423545,
+        -0.5635929360909107
+      ],
+      "size": [
+        8.744356838295769,
+        35.44143142915293,
+        7.727185872181822
+      ],
+      "fallback": [
+        72,
+        65,
+        65
+      ]
+    },
+    "ArmR": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 812,
+      "vertices": 839,
+      "center": [
+        17.985,
+        20.900000000000006,
+        0.0
+      ],
+      "size": [
+        10.890000000000004,
+        29.04000000000001,
+        9.9
+      ],
+      "fallback": [
+        111,
+        106,
+        107
+      ]
+    },
+    "Eyes": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        120,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        38.06,
+        -5.335
+      ],
+      "size": [
+        6.6000000000000005,
+        0.8799999999999955,
+        0.33000000000000007
+      ]
+    },
+    "Core": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        80,
+        30
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 180,
+      "vertices": 119,
+      "center": [
+        0.0,
+        28.6,
+        -5.940000000000001
+      ],
+      "size": [
+        9.240000000000002,
+        8.78776221056722,
+        9.240000000000002
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "IndustrialTitan_color.png",
+    "normal": "IndustrialTitan_normal.png",
+    "roughness": "IndustrialTitan_roughness.png",
+    "metalness": "IndustrialTitan_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            24.2,
+            33.0,
+            15.4
+          ],
+          "center": [
+            0.0,
+            16.5,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "motion": {
+        "ArmL": "Arm",
+        "ArmR": "Arm",
+        "Core": "Core"
+      },
+      "sockets": []
+    }
+  }
+}

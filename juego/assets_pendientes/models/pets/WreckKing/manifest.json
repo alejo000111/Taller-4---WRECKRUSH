@@ -1,0 +1,120 @@
+{
+  "name": "WreckKing",
+  "atlas": 512,
+  "texel_density": 51.119474679231644,
+  "triangles": 1974,
+  "budget": 4200,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1524,
+      "vertices": 1429,
+      "center": [
+        0.02769253581563269,
+        -0.17000000000000004,
+        0.1719151076012827
+      ],
+      "size": [
+        2.8246149283687343,
+        3.0599999999999996,
+        1.9238302152025655
+      ],
+      "fallback": [
+        120,
+        96,
+        56
+      ]
+    },
+    "Visor": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        200,
+        20,
+        28
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 198,
+      "vertices": 160,
+      "center": [
+        0.0,
+        0.45499999999999996,
+        -0.6781813264408151
+      ],
+      "size": [
+        1.4,
+        1.07,
+        0.28363734711836996
+      ]
+    },
+    "Gold": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        196,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 180,
+      "vertices": 128,
+      "center": [
+        0.012413895365628425,
+        0.12,
+        -0.83
+      ],
+      "size": [
+        0.8951722092687432,
+        0.26,
+        0.24727469423673987
+      ]
+    },
+    "Flame": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        40,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 72,
+      "vertices": 107,
+      "center": [
+        0.5049999999999999,
+        -0.6394049135334361,
+        -0.12000000000000002
+      ],
+      "size": [
+        1.65,
+        3.221190172933128,
+        0.8800000000000001
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "WreckKing_color.png",
+    "normal": "WreckKing_normal.png",
+    "roughness": "WreckKing_roughness.png",
+    "metalness": "WreckKing_metalness.png"
+  },
+  "meta": {
+    "pet": {}
+  }
+}

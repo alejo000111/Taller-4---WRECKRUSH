@@ -1,0 +1,83 @@
+{
+  "name": "ChaosServiceDetail",
+  "atlas": 512,
+  "texel_density": 24.3797886967659,
+  "triangles": 308,
+  "budget": 1100,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 240,
+      "vertices": 276,
+      "center": [
+        0.0,
+        5.15,
+        0.0
+      ],
+      "size": [
+        18.0,
+        10.3,
+        2.1
+      ],
+      "fallback": [
+        67,
+        51,
+        68
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 68,
+      "vertices": 168,
+      "center": [
+        0.0,
+        6.3,
+        0.325
+      ],
+      "size": [
+        16.7,
+        7.6,
+        1.35
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ChaosServiceDetail_color.png",
+    "normal": "ChaosServiceDetail_normal.png",
+    "roughness": "ChaosServiceDetail_roughness.png",
+    "metalness": "ChaosServiceDetail_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/DesignExpansion_20261006"
+      ],
+      "name": "ChaosService_Detail",
+      "fit": "box",
+      "keep": [],
+      "colliders": [],
+      "tint": {
+        "Glow": "ContainmentAccent"
+      }
+    }
+  }
+}

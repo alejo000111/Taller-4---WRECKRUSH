@@ -1,0 +1,61 @@
+{
+  "name": "WindRotor",
+  "atlas": 256,
+  "texel_density": 8.360507249832153,
+  "triangles": 92,
+  "budget": 400,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 92,
+      "vertices": 135,
+      "center": [
+        0.0,
+        -5.551115123125783e-17,
+        0.0
+      ],
+      "size": [
+        29.0,
+        1.9021130325903073,
+        3.0
+      ],
+      "fallback": [
+        108,
+        104,
+        95
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "WindRotor_color.png",
+    "normal": "WindRotor_normal.png",
+    "roughness": "WindRotor_roughness.png",
+    "metalness": "WindRotor_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/VerdantFoundry"
+      ],
+      "parts": [
+        "WindRotor"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

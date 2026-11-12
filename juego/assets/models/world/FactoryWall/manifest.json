@@ -1,0 +1,81 @@
+{
+  "name": "FactoryWall",
+  "atlas": 1024,
+  "texel_density": 25.124235808849335,
+  "triangles": 244,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 220,
+      "vertices": 352,
+      "center": [
+        -0.07000000000000028,
+        3.0500000000000003,
+        0.0
+      ],
+      "size": [
+        40.14,
+        6.1000000000000005,
+        2.0000000000000027
+      ],
+      "fallback": [
+        120,
+        116,
+        101
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        122,
+        26
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        3.1,
+        0.0
+      ],
+      "size": [
+        40.0,
+        0.13999999999999968,
+        0.94
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "FactoryWall_color.png",
+    "normal": "FactoryWall_normal.png",
+    "roughness": "FactoryWall_roughness.png",
+    "metalness": "FactoryWall_metalness.png"
+  },
+  "meta": {
+    "wall": {
+      "segment": 40.0,
+      "height": 6.0,
+      "thickness": 2.0,
+      "glow": "WallGlow",
+      "targets": [
+        "Zones/Industrial/Perimeter"
+      ],
+      "part": "Wall"
+    }
+  }
+}

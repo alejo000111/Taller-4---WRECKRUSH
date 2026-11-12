@@ -1,0 +1,94 @@
+{
+  "name": "SignFrameBoard",
+  "atlas": 512,
+  "texel_density": 17.21735319495201,
+  "triangles": 696,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 480,
+      "vertices": 480,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        23.680000000000003,
+        10.68,
+        1.4000000000000004
+      ],
+      "fallback": [
+        144,
+        136,
+        117
+      ]
+    },
+    "Leg": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 216,
+      "vertices": 192,
+      "center": [
+        0.0,
+        -9.18,
+        0.0
+      ],
+      "size": [
+        15.0,
+        8.0,
+        1.0
+      ],
+      "fallback": [
+        58,
+        60,
+        66
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "SignFrameBoard_color.png",
+    "normal": "SignFrameBoard_normal.png",
+    "roughness": "SignFrameBoard_roughness.png",
+    "metalness": "SignFrameBoard_metalness.png"
+  },
+  "meta": {
+    "frame": {
+      "part": [
+        "Board",
+        "EncounterBoard"
+      ],
+      "size": [
+        22.0,
+        9.0,
+        1.0
+      ],
+      "scope": "Map",
+      "legs": {
+        "role": "Leg",
+        "x": 7.0,
+        "top": 5.18,
+        "sink": 0.4
+      }
+    }
+  }
+}

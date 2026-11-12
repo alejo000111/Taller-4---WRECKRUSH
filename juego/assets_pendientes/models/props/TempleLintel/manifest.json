@@ -1,0 +1,61 @@
+{
+  "name": "TempleLintel",
+  "atlas": 1024,
+  "texel_density": 7.916645914316177,
+  "triangles": 312,
+  "budget": 900,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 312,
+      "vertices": 304,
+      "center": [
+        0.0,
+        3.5,
+        0.0
+      ],
+      "size": [
+        14.0,
+        7.0,
+        72.0
+      ],
+      "fallback": [
+        186,
+        163,
+        121
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "TempleLintel_color.png",
+    "normal": "TempleLintel_normal.png",
+    "roughness": "TempleLintel_roughness.png",
+    "metalness": "TempleLintel_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "TempleLintel"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

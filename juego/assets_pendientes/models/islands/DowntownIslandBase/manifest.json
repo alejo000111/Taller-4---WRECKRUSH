@@ -1,0 +1,60 @@
+{
+  "name": "DowntownIslandBase",
+  "atlas": 1024,
+  "texel_density": 1.0620575994253159,
+  "triangles": 1368,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1368,
+      "vertices": 972,
+      "center": [
+        0.20203269431424076,
+        -75.18883936165604,
+        -0.058708523776175525
+      ],
+      "size": [
+        303.1517416920651,
+        149.62232127668793,
+        303.1558878168426
+      ],
+      "fallback": [
+        65,
+        65,
+        68
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "DowntownIslandBase_color.png",
+    "normal": "DowntownIslandBase_normal.png",
+    "roughness": "DowntownIslandBase_roughness.png",
+    "metalness": "DowntownIslandBase_metalness.png"
+  },
+  "meta": {
+    "place": {
+      "targets": [
+        {
+          "path": "BossIslands/DowntownCrusher",
+          "center": [
+            4080.0,
+            0.0,
+            2400.0
+          ],
+          "yaw": 142.0
+        }
+      ]
+    }
+  }
+}

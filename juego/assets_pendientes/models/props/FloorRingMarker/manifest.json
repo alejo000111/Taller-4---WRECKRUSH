@@ -1,0 +1,83 @@
+{
+  "name": "FloorRingMarker",
+  "atlas": 256,
+  "texel_density": 37.894676834344864,
+  "triangles": 192,
+  "budget": 400,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 96,
+      "vertices": 192,
+      "center": [
+        0.0,
+        0.025,
+        0.0
+      ],
+      "size": [
+        14.3,
+        0.05,
+        14.3
+      ],
+      "fallback": [
+        69,
+        74,
+        82
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        202,
+        140,
+        57
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 96,
+      "vertices": 192,
+      "center": [
+        0.0,
+        0.04,
+        0.0
+      ],
+      "size": [
+        14.13,
+        0.08,
+        14.13
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "FloorRingMarker_color.png",
+    "normal": "FloorRingMarker_normal.png",
+    "roughness": "FloorRingMarker_roughness.png",
+    "metalness": "FloorRingMarker_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/StationExpansion_20261006"
+      ],
+      "name": "PetStation_Markers",
+      "fit": "box",
+      "keep": [],
+      "colliders": [],
+      "tint": {
+        "Glow": "RingMarker"
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "SnowDrift",
+  "atlas": 256,
+  "texel_density": 38.674637734889984,
+  "triangles": 108,
+  "budget": 300,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 108,
+      "vertices": 75,
+      "center": [
+        0.18637229523851317,
+        1.6826728377179254,
+        0.12648770331596415
+      ],
+      "size": [
+        20.751235456058645,
+        3.365345675435851,
+        11.07724679711555
+      ],
+      "fallback": [
+        182,
+        189,
+        195
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "SnowDrift_color.png",
+    "normal": "SnowDrift_normal.png",
+    "roughness": "SnowDrift_roughness.png",
+    "metalness": "SnowDrift_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/FrostHarbor"
+      ],
+      "parts": [
+        "SnowDrift"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

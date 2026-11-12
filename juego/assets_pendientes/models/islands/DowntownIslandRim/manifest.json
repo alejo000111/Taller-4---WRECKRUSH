@@ -1,0 +1,101 @@
+{
+  "name": "DowntownIslandRim",
+  "atlas": 512,
+  "texel_density": 12.316084265708923,
+  "triangles": 252,
+  "budget": 320,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 252,
+      "vertices": 210,
+      "center": [
+        0.0,
+        -1.084608285520587,
+        0.10745323237274818
+      ],
+      "size": [
+        41.76928060114111,
+        21.830783428958824,
+        9.785093535254504
+      ],
+      "fallback": [
+        146,
+        146,
+        143
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "DowntownIslandRim_color.png",
+    "normal": "DowntownIslandRim_normal.png",
+    "roughness": "DowntownIslandRim_roughness.png",
+    "metalness": "DowntownIslandRim_metalness.png"
+  },
+  "meta": {
+    "rim": {
+      "targets": [
+        {
+          "path": "BossIslands/DowntownCrusher",
+          "center": [
+            4080.0,
+            2400.0
+          ]
+        }
+      ],
+      "radius": 146.0,
+      "count": 24,
+      "offset": 0.5,
+      "colliders": [
+        {
+          "name": "RimCollider",
+          "shape": "Block",
+          "size": [
+            19.85682406412753,
+            11.5,
+            5.2
+          ],
+          "center": [
+            -9.509614990062802,
+            4.75,
+            -0.9113125611070529
+          ],
+          "rotation": [
+            0.0,
+            -3.7499999999999996,
+            0.0
+          ]
+        },
+        {
+          "name": "RimCollider",
+          "shape": "Block",
+          "size": [
+            19.85682406412753,
+            11.5,
+            5.2
+          ],
+          "center": [
+            9.509614990062802,
+            4.75,
+            -0.9113125611070529
+          ],
+          "rotation": [
+            0.0,
+            3.7499999999999996,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

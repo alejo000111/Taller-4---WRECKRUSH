@@ -1,0 +1,129 @@
+{
+  "name": "RailDriver",
+  "atlas": 1024,
+  "texel_density": 148.03489482402802,
+  "triangles": 1436,
+  "budget": 3500,
+  "roles": {
+    "Primary": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        86,
+        96,
+        58
+      ],
+      "skin": "Primary",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 300,
+      "vertices": 216,
+      "center": [
+        0.0,
+        1.15,
+        0.19999999999999996
+      ],
+      "size": [
+        0.8,
+        0.7000000000000001,
+        2.0
+      ]
+    },
+    "AccentTrim": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        210,
+        31
+      ],
+      "skin": "Accent",
+      "overlay": true,
+      "transparency": 0.0,
+      "triangles": 60,
+      "vertices": 120,
+      "center": [
+        0.0,
+        1.3499999999999999,
+        -2.4
+      ],
+      "size": [
+        0.7,
+        0.1200000000000001,
+        2.5199999999999996
+      ]
+    },
+    "AccentGlow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        140,
+        255,
+        90
+      ],
+      "skin": "Accent",
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 192,
+      "vertices": 264,
+      "center": [
+        0.0,
+        1.7,
+        0.14999999999999997
+      ],
+      "size": [
+        0.24,
+        0.5,
+        1.1400000000000001
+      ]
+    },
+    "Base": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 884,
+      "vertices": 874,
+      "center": [
+        0.0,
+        0.33999999999999997,
+        -0.9500000000000002
+      ],
+      "size": [
+        0.64,
+        2.2199999999999998,
+        6.5
+      ],
+      "fallback": [
+        95,
+        95,
+        99
+      ]
+    }
+  },
+  "points": {
+    "muzzle": [
+      0.0,
+      1.15,
+      -4.2
+    ],
+    "grip": [
+      0.0,
+      -0.1,
+      0.0
+    ]
+  },
+  "textures": {
+    "color": "RailDriver_color.png",
+    "normal": "RailDriver_normal.png",
+    "roughness": "RailDriver_roughness.png",
+    "metalness": "RailDriver_metalness.png"
+  },
+  "meta": {}
+}

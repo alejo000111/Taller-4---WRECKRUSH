@@ -1,0 +1,123 @@
+{
+  "name": "FutureEgg",
+  "atlas": 1024,
+  "texel_density": 100.98852223157883,
+  "triangles": 2316,
+  "budget": 3400,
+  "roles": {
+    "Shell": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 720,
+      "vertices": 423,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.045680367948266,
+        4.0,
+        3.045680367948266
+      ],
+      "fallback": [
+        208,
+        211,
+        217
+      ]
+    },
+    "Band": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 396,
+      "vertices": 413,
+      "center": [
+        0.07814694373094011,
+        0.1349999999999999,
+        0.0
+      ],
+      "size": [
+        3.3429061125381203,
+        3.87,
+        3.18661222507624
+      ],
+      "fallback": [
+        55,
+        57,
+        68
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        0,
+        220,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 468,
+      "vertices": 397,
+      "center": [
+        0.0389965294511081,
+        0.5755930620608709,
+        0.0
+      ],
+      "size": [
+        3.281206941097784,
+        4.026186124121741,
+        3.203213882195568
+      ]
+    },
+    "Accent": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        170,
+        80,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 732,
+      "vertices": 710,
+      "center": [
+        0.0,
+        0.64,
+        0.0
+      ],
+      "size": [
+        2.9125777085888034,
+        3.34,
+        2.9125777085888034
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "FutureEgg_color.png",
+    "normal": "FutureEgg_normal.png",
+    "roughness": "FutureEgg_roughness.png",
+    "metalness": "FutureEgg_metalness.png"
+  },
+  "meta": {}
+}

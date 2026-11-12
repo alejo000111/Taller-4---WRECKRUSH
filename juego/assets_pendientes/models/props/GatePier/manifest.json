@@ -1,0 +1,86 @@
+{
+  "name": "GatePier",
+  "atlas": 512,
+  "texel_density": 14.761898130178452,
+  "triangles": 380,
+  "budget": 600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 356,
+      "vertices": 380,
+      "center": [
+        0.0,
+        9.5,
+        0.0
+      ],
+      "size": [
+        5.0,
+        19.0,
+        6.0
+      ],
+      "fallback": [
+        100,
+        100,
+        98
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        210,
+        150
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        9.5,
+        0.0
+      ],
+      "size": [
+        0.2,
+        11.0,
+        5.3
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "GatePier_color.png",
+    "normal": "GatePier_normal.png",
+    "roughness": "GatePier_roughness.png",
+    "metalness": "GatePier_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/VerdantFoundry",
+        "ExpeditionWorlds/FrostHarbor",
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "EntryPier"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false
+    }
+  }
+}

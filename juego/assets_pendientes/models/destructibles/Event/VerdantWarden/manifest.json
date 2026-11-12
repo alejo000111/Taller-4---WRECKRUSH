@@ -1,0 +1,212 @@
+{
+  "name": "VerdantWarden",
+  "atlas": 1024,
+  "texel_density": 8.681961953639984,
+  "triangles": 4216,
+  "budget": 6000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 2772,
+      "vertices": 2502,
+      "center": [
+        0.0,
+        19.65230499462644,
+        -1.2000000000000002
+      ],
+      "size": [
+        33.68821373371778,
+        39.30460998925288,
+        20.4
+      ],
+      "fallback": [
+        81,
+        80,
+        66
+      ]
+    },
+    "ArmL": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 396,
+      "vertices": 427,
+      "center": [
+        -14.45,
+        14.402522544663956,
+        0.0
+      ],
+      "size": [
+        8.899999999999999,
+        20.39495491067209,
+        7.0
+      ],
+      "fallback": [
+        83,
+        80,
+        69
+      ]
+    },
+    "ArmR": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 396,
+      "vertices": 427,
+      "center": [
+        14.45,
+        14.402522544663956,
+        0.0
+      ],
+      "size": [
+        8.899999999999999,
+        20.39495491067209,
+        7.0
+      ],
+      "fallback": [
+        82,
+        81,
+        70
+      ]
+    },
+    "Eyes": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        239,
+        183,
+        95
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 24,
+      "vertices": 48,
+      "center": [
+        0.0,
+        25.0,
+        -5.35
+      ],
+      "size": [
+        10.0,
+        1.1000000000000014,
+        0.40000000000000036
+      ]
+    },
+    "Core": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        109,
+        206,
+        145
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 76,
+      "vertices": 120,
+      "center": [
+        0.0,
+        17.0,
+        -6.8
+      ],
+      "size": [
+        6.0,
+        5.706339097770922,
+        1.0
+      ]
+    },
+    "Leaves": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 552,
+      "vertices": 408,
+      "center": [
+        0.3621711961473384,
+        36.07498168615477,
+        1.0534074866885144
+      ],
+      "size": [
+        39.15290879096273,
+        10.483835941965467,
+        10.342558138922268
+      ],
+      "fallback": [
+        71,
+        133,
+        94
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "VerdantWarden_color.png",
+    "normal": "VerdantWarden_normal.png",
+    "roughness": "VerdantWarden_roughness.png",
+    "metalness": "VerdantWarden_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Block",
+          "size": [
+            24.0,
+            24.0,
+            24.0
+          ],
+          "center": [
+            0.0,
+            12.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "motion": {
+        "ArmL": "Arm",
+        "ArmR": "Arm",
+        "Core": "Core",
+        "Leaves": "Leaf"
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "name": "ScrapCrow",
+  "atlas": 512,
+  "texel_density": 50.18073907494545,
+  "triangles": 784,
+  "budget": 1500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 640,
+      "vertices": 730,
+      "center": [
+        0.0,
+        0.010000000000000009,
+        0.018701774877111332
+      ],
+      "size": [
+        3.271521659948806,
+        2.18,
+        3.737403549754223
+      ],
+      "fallback": [
+        104,
+        97,
+        92
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        70,
+        40
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 144,
+      "vertices": 106,
+      "center": [
+        0.0,
+        0.78,
+        -1.15
+      ],
+      "size": [
+        0.88,
+        0.21999999999999997,
+        0.2200000000000002
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ScrapCrow_color.png",
+    "normal": "ScrapCrow_normal.png",
+    "roughness": "ScrapCrow_roughness.png",
+    "metalness": "ScrapCrow_metalness.png"
+  },
+  "meta": {
+    "pet": {}
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "name": "PowerRoot",
+  "atlas": 512,
+  "texel_density": 15.43360909819603,
+  "triangles": 852,
+  "budget": 1600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 438,
+      "vertices": 470,
+      "center": [
+        0.0,
+        4.6,
+        0.057973794505816745
+      ],
+      "size": [
+        9.0,
+        9.2,
+        9.115947589011633
+      ],
+      "fallback": [
+        91,
+        87,
+        69
+      ]
+    },
+    "Bands": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        109,
+        206,
+        145
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 288,
+      "vertices": 312,
+      "center": [
+        0.0,
+        4.6,
+        0.0
+      ],
+      "size": [
+        5.9,
+        5.140000000000001,
+        5.9
+      ]
+    },
+    "Charge": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        160,
+        255,
+        190
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.15,
+      "triangles": 126,
+      "vertices": 86,
+      "center": [
+        0.12378891512197598,
+        10.0,
+        0.0
+      ],
+      "size": [
+        4.7524221697560485,
+        5.0,
+        4.874639560909118
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "PowerRoot_color.png",
+    "normal": "PowerRoot_normal.png",
+    "roughness": "PowerRoot_roughness.png",
+    "metalness": "PowerRoot_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Base",
+          "shape": "Cylinder",
+          "size": [
+            9.0,
+            2.0,
+            9.0
+          ],
+          "center": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "motion": {
+        "Charge": "Orb"
+      }
+    }
+  }
+}

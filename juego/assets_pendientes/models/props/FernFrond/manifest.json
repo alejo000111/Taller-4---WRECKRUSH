@@ -1,0 +1,61 @@
+{
+  "name": "FernFrond",
+  "atlas": 256,
+  "texel_density": 18.171771004796028,
+  "triangles": 180,
+  "budget": 300,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 180,
+      "vertices": 204,
+      "center": [
+        0.9318504873319191,
+        3.3146873402885384,
+        0.10362890178500667
+      ],
+      "size": [
+        1.914800019042187,
+        6.6637892667581395,
+        1.861242113709483
+      ],
+      "fallback": [
+        72,
+        97,
+        72
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "FernFrond_color.png",
+    "normal": "FernFrond_normal.png",
+    "roughness": "FernFrond_roughness.png",
+    "metalness": "FernFrond_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/VerdantFoundry"
+      ],
+      "parts": [
+        "Fern"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

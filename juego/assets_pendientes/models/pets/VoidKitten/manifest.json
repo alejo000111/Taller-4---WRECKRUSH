@@ -1,0 +1,72 @@
+{
+  "name": "VoidKitten",
+  "atlas": 512,
+  "texel_density": 35.15846757590771,
+  "triangles": 1238,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 898,
+      "vertices": 658,
+      "center": [
+        0.0,
+        0.4837633669871232,
+        -0.1208996957740569
+      ],
+      "size": [
+        1.6,
+        2.8675267339742465,
+        3.49107038915519
+      ],
+      "fallback": [
+        23,
+        21,
+        30
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        150,
+        70,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 340,
+      "vertices": 316,
+      "center": [
+        0.0,
+        1.39,
+        -1.117642228555668
+      ],
+      "size": [
+        1.34,
+        1.3199999999999998,
+        1.3549268461476949
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "VoidKitten_color.png",
+    "normal": "VoidKitten_normal.png",
+    "roughness": "VoidKitten_roughness.png",
+    "metalness": "VoidKitten_metalness.png"
+  },
+  "meta": {
+    "pet": {}
+  }
+}

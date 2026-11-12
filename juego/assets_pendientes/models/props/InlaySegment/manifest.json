@@ -1,0 +1,89 @@
+{
+  "name": "InlaySegment",
+  "atlas": 256,
+  "texel_density": 11.62673844397068,
+  "triangles": 22,
+  "budget": 120,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 10,
+      "vertices": 20,
+      "center": [
+        0.0,
+        0.06,
+        0.0
+      ],
+      "size": [
+        20.9,
+        0.12,
+        1.0
+      ],
+      "fallback": [
+        82,
+        86,
+        92
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        109,
+        206,
+        145
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 12,
+      "vertices": 24,
+      "center": [
+        0.0,
+        0.12,
+        0.0
+      ],
+      "size": [
+        19.6,
+        0.08000000000000002,
+        0.35
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "InlaySegment_color.png",
+    "normal": "InlaySegment_normal.png",
+    "roughness": "InlaySegment_roughness.png",
+    "metalness": "InlaySegment_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/VerdantFoundry",
+        "ExpeditionWorlds/FrostHarbor",
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "Inlay"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": true,
+      "functional": false,
+      "tint": {
+        "Glow": true
+      }
+    }
+  }
+}

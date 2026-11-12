@@ -1,0 +1,122 @@
+{
+  "name": "CoolantPipe",
+  "atlas": 512,
+  "texel_density": 15.458322301506996,
+  "triangles": 866,
+  "budget": 1600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 452,
+      "vertices": 564,
+      "center": [
+        0.0,
+        4.6,
+        0.0
+      ],
+      "size": [
+        9.0,
+        9.2,
+        9.0
+      ],
+      "fallback": [
+        111,
+        117,
+        120
+      ]
+    },
+    "Bands": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        129,
+        207,
+        230
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 288,
+      "vertices": 312,
+      "center": [
+        0.0,
+        4.6,
+        0.0
+      ],
+      "size": [
+        5.9,
+        5.140000000000001,
+        5.9
+      ]
+    },
+    "Charge": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        170,
+        230,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.15,
+      "triangles": 126,
+      "vertices": 86,
+      "center": [
+        0.12378891512197598,
+        10.0,
+        0.0
+      ],
+      "size": [
+        4.7524221697560485,
+        5.0,
+        4.874639560909118
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "CoolantPipe_color.png",
+    "normal": "CoolantPipe_normal.png",
+    "roughness": "CoolantPipe_roughness.png",
+    "metalness": "CoolantPipe_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "Event",
+      "colliders": [
+        {
+          "name": "Base",
+          "shape": "Cylinder",
+          "size": [
+            9.0,
+            2.0,
+            9.0
+          ],
+          "center": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "motion": {
+        "Charge": "Orb"
+      }
+    }
+  }
+}

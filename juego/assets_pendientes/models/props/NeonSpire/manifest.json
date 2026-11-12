@@ -1,0 +1,124 @@
+{
+  "name": "NeonSpire",
+  "atlas": 1024,
+  "texel_density": 10.026726335287094,
+  "triangles": 864,
+  "budget": 2500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 348,
+      "vertices": 443,
+      "center": [
+        -4.440892098500626e-16,
+        43.5,
+        0.0
+      ],
+      "size": [
+        13.509996299037244,
+        87.0,
+        15.6
+      ],
+      "fallback": [
+        166,
+        169,
+        175
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 84,
+      "vertices": 122,
+      "center": [
+        0.029992305390313057,
+        47.498641035212195,
+        0.0
+      ],
+      "size": [
+        13.395501494092416,
+        89.00271792957561,
+        15.46777501410914
+      ]
+    },
+    "Accent": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        166,
+        77,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 432,
+      "vertices": 456,
+      "center": [
+        0.0,
+        41.6,
+        0.0
+      ],
+      "size": [
+        17.439999999999998,
+        40.239999999999995,
+        17.175047212532906
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "NeonSpire_color.png",
+    "normal": "NeonSpire_normal.png",
+    "roughness": "NeonSpire_roughness.png",
+    "metalness": "NeonSpire_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Zones/FutureDistrict/Landmarks"
+      ],
+      "name": "NeonTower",
+      "fit": "box",
+      "keep": [],
+      "colliders": [
+        {
+          "name": "Tower",
+          "shape": "Block",
+          "size": [
+            13.0,
+            80.0,
+            13.0
+          ],
+          "center": [
+            0.0,
+            40.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

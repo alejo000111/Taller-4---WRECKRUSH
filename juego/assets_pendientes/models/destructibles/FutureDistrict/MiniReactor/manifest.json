@@ -1,0 +1,138 @@
+{
+  "name": "MiniReactor",
+  "atlas": 1024,
+  "texel_density": 21.66664509475231,
+  "triangles": 1286,
+  "budget": 3500,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 920,
+      "vertices": 1132,
+      "center": [
+        0.0,
+        7.3,
+        0.0
+      ],
+      "size": [
+        11.2,
+        14.6,
+        11.2
+      ],
+      "fallback": [
+        114,
+        116,
+        123
+      ]
+    },
+    "Glass": {
+      "kind": "glass",
+      "material": "Glass",
+      "color": [
+        150,
+        220,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.6,
+      "triangles": 32,
+      "vertices": 34,
+      "center": [
+        0.0,
+        7.7,
+        0.0
+      ],
+      "size": [
+        4.4,
+        9.4,
+        4.4
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        34,
+        225,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 334,
+      "vertices": 396,
+      "center": [
+        -4.440892098500626e-16,
+        8.195,
+        -4.440892098500626e-16
+      ],
+      "size": [
+        10.199630038924607,
+        14.01,
+        10.199630038924603
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "MiniReactor_color.png",
+    "normal": "MiniReactor_normal.png",
+    "roughness": "MiniReactor_roughness.png",
+    "metalness": "MiniReactor_metalness.png"
+  },
+  "meta": {
+    "destructible": {
+      "zone": "FutureDistrict",
+      "colliders": [
+        {
+          "name": "Hitbox",
+          "shape": "Cylinder",
+          "size": [
+            8.4,
+            11.8,
+            8.4
+          ],
+          "center": [
+            0.0,
+            7.1,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Base",
+          "shape": "Cylinder",
+          "size": [
+            11.8,
+            1.2,
+            11.8
+          ],
+          "center": [
+            0.0,
+            0.6,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

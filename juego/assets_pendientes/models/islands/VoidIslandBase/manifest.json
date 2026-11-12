@@ -1,0 +1,60 @@
+{
+  "name": "VoidIslandBase",
+  "atlas": 1024,
+  "texel_density": 1.0620575994253159,
+  "triangles": 1368,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1368,
+      "vertices": 972,
+      "center": [
+        0.5746480802653622,
+        -75.19394267322002,
+        2.093177038671527
+      ],
+      "size": [
+        303.217832116673,
+        149.61211465355996,
+        304.9217151803906
+      ],
+      "fallback": [
+        42,
+        34,
+        58
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "VoidIslandBase_color.png",
+    "normal": "VoidIslandBase_normal.png",
+    "roughness": "VoidIslandBase_roughness.png",
+    "metalness": "VoidIslandBase_metalness.png"
+  },
+  "meta": {
+    "place": {
+      "targets": [
+        {
+          "path": "BossIslands/VoidSentinel",
+          "center": [
+            -4080.0,
+            0.0,
+            -2400.0
+          ],
+          "yaw": 175.0
+        }
+      ]
+    }
+  }
+}

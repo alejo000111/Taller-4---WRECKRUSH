@@ -1,0 +1,85 @@
+{
+  "name": "VerdantArena",
+  "atlas": 512,
+  "texel_density": 4.999999761581421,
+  "triangles": 1340,
+  "budget": 1400,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1052,
+      "vertices": 1312,
+      "center": [
+        0.0,
+        0.025,
+        0.0
+      ],
+      "size": [
+        160.7,
+        0.05,
+        160.7
+      ],
+      "fallback": [
+        102,
+        104,
+        102
+      ]
+    },
+    "Glow": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        109,
+        206,
+        145
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 288,
+      "vertices": 320,
+      "center": [
+        0.0,
+        0.035,
+        0.0
+      ],
+      "size": [
+        162.2,
+        0.07,
+        162.2
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "VerdantArena_color.png",
+    "normal": "VerdantArena_normal.png",
+    "roughness": "VerdantArena_roughness.png",
+    "metalness": "VerdantArena_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/VerdantFoundry"
+      ],
+      "parts": [
+        "Arena"
+      ],
+      "remove": [],
+      "lift": 0.4,
+      "uniform": false,
+      "keep_height": true,
+      "functional": false,
+      "overlay": true
+    }
+  }
+}

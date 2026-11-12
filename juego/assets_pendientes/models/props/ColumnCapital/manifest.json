@@ -1,0 +1,61 @@
+{
+  "name": "ColumnCapital",
+  "atlas": 256,
+  "texel_density": 10.742921069264412,
+  "triangles": 328,
+  "budget": 400,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 328,
+      "vertices": 336,
+      "center": [
+        0.0,
+        1.5,
+        0.0
+      ],
+      "size": [
+        8.76,
+        3.0,
+        8.0
+      ],
+      "fallback": [
+        189,
+        165,
+        118
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "ColumnCapital_color.png",
+    "normal": "ColumnCapital_normal.png",
+    "roughness": "ColumnCapital_roughness.png",
+    "metalness": "ColumnCapital_metalness.png"
+  },
+  "meta": {
+    "patch": {
+      "targets": [
+        "ExpeditionWorlds/SkyRuins"
+      ],
+      "parts": [
+        "Capital"
+      ],
+      "remove": [],
+      "lift": 0.0,
+      "uniform": false,
+      "keep_height": false,
+      "functional": false,
+      "overlay": false
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "name": "CityEdgeBlockB",
+  "atlas": 1024,
+  "texel_density": 6.691176131367683,
+  "triangles": 950,
+  "budget": 2000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 950,
+      "vertices": 1242,
+      "center": [
+        0.0,
+        14.45,
+        1.011715728752538
+      ],
+      "size": [
+        68.0,
+        28.9,
+        17.976568542494924
+      ],
+      "fallback": [
+        90,
+        92,
+        96
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "CityEdgeBlockB_color.png",
+    "normal": "CityEdgeBlockB_normal.png",
+    "roughness": "CityEdgeBlockB_roughness.png",
+    "metalness": "CityEdgeBlockB_metalness.png"
+  },
+  "meta": {
+    "model": {
+      "parent": [
+        "Decor/ImmersionPass_20261005"
+      ],
+      "name": [
+        "CityEdgeBlock_1",
+        "CityEdgeBlock_3",
+        "CityEdgeBlock_4",
+        "CityEdgeBlock_6"
+      ],
+      "fit": "box",
+      "keep": [
+        "SignPanel"
+      ],
+      "colliders": [
+        {
+          "name": "Block",
+          "shape": "Block",
+          "size": [
+            66.0,
+            21.55,
+            14.0
+          ],
+          "center": [
+            0.0,
+            10.775,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Roof",
+          "shape": "Block",
+          "size": [
+            28.0,
+            7.0,
+            10.0
+          ],
+          "center": [
+            -12.0,
+            25.05,
+            -1.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "name": "MesaRidgeB",
+  "atlas": 1024,
+  "texel_density": 2.40712708234787,
+  "triangles": 672,
+  "budget": 2600,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 672,
+      "vertices": 375,
+      "center": [
+        0.0,
+        124.28573008325833,
+        0.0
+      ],
+      "size": [
+        420.0,
+        256.57146016651666,
+        260.0
+      ],
+      "fallback": [
+        125,
+        90,
+        67
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "MesaRidgeB_color.png",
+    "normal": "MesaRidgeB_normal.png",
+    "roughness": "MesaRidgeB_roughness.png",
+    "metalness": "MesaRidgeB_metalness.png"
+  },
+  "meta": {
+    "ring": [
+      {
+        "parent": "Backdrop",
+        "centers": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "radius": 1320.0,
+        "count": 16,
+        "scale": [
+          0.95,
+          1.35
+        ],
+        "seed": 9,
+        "sink": -6.0,
+        "offset": 0.5
+      },
+      {
+        "parent": "Backdrop",
+        "centers": [
+          [
+            0.0,
+            4800.0
+          ]
+        ],
+        "radius": 690.0,
+        "count": 18,
+        "scale": [
+          1.2,
+          1.6
+        ],
+        "seed": 203,
+        "sink": -90.0,
+        "offset": 0.5
+      },
+      {
+        "parent": "Backdrop",
+        "centers": [
+          [
+            4080.0,
+            2400.0
+          ]
+        ],
+        "radius": 470.0,
+        "count": 16,
+        "scale": [
+          1.0,
+          1.4
+        ],
+        "seed": 204,
+        "sink": -70.0,
+        "offset": 0.0
+      },
+      {
+        "parent": "Backdrop",
+        "centers": [
+          [
+            4080.0,
+            -2400.0
+          ]
+        ],
+        "radius": 690.0,
+        "count": 18,
+        "scale": [
+          1.2,
+          1.6
+        ],
+        "seed": 205,
+        "sink": -90.0,
+        "offset": 0.5
+      }
+    ]
+  }
+}

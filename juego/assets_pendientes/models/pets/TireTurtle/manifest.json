@@ -1,0 +1,72 @@
+{
+  "name": "TireTurtle",
+  "atlas": 512,
+  "texel_density": 32.601474806666374,
+  "triangles": 1394,
+  "budget": 2000,
+  "roles": {
+    "Body": {
+      "kind": "surface",
+      "material": "Metal",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 1214,
+      "vertices": 1067,
+      "center": [
+        0.0025000000000000577,
+        0.125,
+        -0.27877641290737876
+      ],
+      "size": [
+        2.6450000000000005,
+        1.57,
+        3.657552825814758
+      ],
+      "fallback": [
+        95,
+        111,
+        69
+      ]
+    },
+    "Eyes": {
+      "kind": "neon",
+      "material": "Neon",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "skin": null,
+      "overlay": false,
+      "transparency": 0.0,
+      "triangles": 180,
+      "vertices": 128,
+      "center": [
+        0.00954915028125261,
+        0.32,
+        -1.98
+      ],
+      "size": [
+        0.6609016994374948,
+        0.20000000000000004,
+        0.1902113032590309
+      ]
+    }
+  },
+  "points": {},
+  "textures": {
+    "color": "TireTurtle_color.png",
+    "normal": "TireTurtle_normal.png",
+    "roughness": "TireTurtle_roughness.png",
+    "metalness": "TireTurtle_metalness.png"
+  },
+  "meta": {
+    "pet": {}
+  }
+}
