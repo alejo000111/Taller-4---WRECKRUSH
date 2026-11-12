@@ -31,6 +31,7 @@ func _ready() -> void:
 	_test_progreso()
 	_test_guardado()
 	_test_seleccion()
+	_test_camara()
 	_test_ambiente()
 	_test_assets()
 	await _test_coloso()
@@ -201,6 +202,34 @@ func _test_seleccion() -> void:
 	var elegidos := HammerController.seleccionar(lista, 1)
 	_verificar(elegidos.size() == 1 and elegidos[0]["id"] == 2, "elige el objetivo mas cercano")
 	_verificar(HammerController.seleccionar(lista, 3).size() == 3, "se puede pedir mas de un objetivo")
+
+
+func _test_camara() -> void:
+	print("Camara")
+	_verificar(not CameraController.fuera_de_vista(0.0, 0.3), "objetivo de frente: la camara no gira")
+	_verificar(CameraController.fuera_de_vista(0.0, PI), "objetivo detras: la camara debe girar")
+	_verificar(not CameraController.fuera_de_vista(3.0, -3.0), "el angulo da la vuelta (3.0 y -3.0 estan cerca)")
+	var cam := CameraController.new()
+	cam.seguir_mirada(0.3)
+	_verificar(not cam.siguiendo_mirada(), "objetivo a la vista: no empieza a seguir")
+	cam.seguir_mirada(PI)
+	_verificar(cam.siguiendo_mirada(), "objetivo fuera de vista: empieza a seguir")
+	for i in 60:
+		cam.girar_hacia_mirada(0.1)
+	_verificar(_cerca(absf(cam.yaw), PI, 0.03) and not cam.siguiendo_mirada(), "gira hasta quedar detras del jugador y se detiene")
+	cam.yaw = 0.0
+	cam.pausar_giro_automatico()
+	cam.seguir_mirada(PI)
+	_verificar(not cam.siguiendo_mirada(), "mover la camara a mano pausa el giro automatico")
+	for i in 25:
+		cam.girar_hacia_mirada(0.1)
+	cam.seguir_mirada(PI)
+	_verificar(cam.siguiendo_mirada(), "pasada la pausa vuelve a seguir")
+	cam.yaw = 1.0
+	var atras := Vector2(cam.desfase_actual().x, cam.desfase_actual().z).normalized()
+	var mira := Basis(Vector3.UP, 1.0) * Vector3(0, 0, -1)
+	_verificar(_cerca(atras.dot(Vector2(mira.x, mira.z)), -1.0), "con el yaw del modelo, la camara queda detras del jugador")
+	cam.free()
 
 
 func _test_ambiente() -> void:

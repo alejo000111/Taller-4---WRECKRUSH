@@ -124,6 +124,8 @@ func animar_golpe(hacia: Vector3) -> void:
 	var plano := Vector3(hacia.x - global_position.x, 0, hacia.z - global_position.z)
 	if plano.length() > 0.1:
 		_modelo.rotation.y = atan2(-plano.x, -plano.z)
+		if camara != null:
+			camara.seguir_mirada(_modelo.rotation.y)
 	if _tween_golpe != null and _tween_golpe.is_valid():
 		_tween_golpe.kill()
 	_pivote_martillo.rotation.x = POSE_PREPARADO

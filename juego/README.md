@@ -40,6 +40,8 @@ godot --path .
 | Mejoras / Ajustes | U / Tab |
 | Cerrar panel | Retroceso o Esc |
 
+La cámara también gira sola hacia donde mira el jugador cuando este se voltea a golpear un objeto que quedó fuera de pantalla (más de unos 35° a un lado). Si la giras a mano con clic derecho, el giro automático se pausa 2 s.
+
 Trucos de desarrollo (solo builds de debug): **F1** +10K Scrap, **F2** mejoras al máximo, **F3** abrir las 3 islas, **F4** despertar a los colosos.
 
 ## Pruebas
@@ -49,7 +51,7 @@ godot --headless --path . --import
 godot --headless --path . res://tests/test_runner.tscn
 ```
 
-98 pruebas: fórmulas y tablas de los talleres (precios, objetos por vuelta, colosos), economía, metas, guardado, assets (modelos, iconos y cielo) y la máquina de estados del coloso. Sale con código 1 si algo falla.
+107 pruebas: fórmulas y tablas de los talleres (precios, objetos por vuelta, colosos), economía, metas, guardado, cámara, assets (modelos, iconos y cielo) y la máquina de estados del coloso. Sale con código 1 si algo falla.
 
 ## Estructura
 
