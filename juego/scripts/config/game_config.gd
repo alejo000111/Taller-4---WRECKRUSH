@@ -10,7 +10,6 @@ const AUTOGUARDADO_SEGUNDOS := 120.0
 const LIMITE_MAPA := 382.0
 const ALTURA_CAIDA := -40.0
 const REAPARICION_COLOSO := 45.0
-const DANO_REQUERIDO_COLOSO := 40.0
 const RADIO_ARENA := 60.0
 const SALTO_ALTURA_METROS := 1.0
 const SALTO_TIEMPO_AIRE := 0.9
@@ -20,8 +19,8 @@ const HORA_ARENA := 16.3
 const ZONAS := {
 	"plaza": {"nombre": "SPAWN PLAZA", "centro": Vector2(0, 0), "costo": 0, "tinte": Color("#FFB070"), "material": "WR_PlazaTiles", "baldosa": 16.0, "icono": "res://assets/brand/logo_icon.png"},
 	"scrap_yard": {"nombre": "SCRAP YARD", "isla": 1, "centro": Vector2(0, -240), "costo": 0, "tinte": Color("#FFA45C"), "material": "WR_ScrapDirt", "baldosa": 18.0, "icono": "res://assets/icons/zones/zone_scrap_yard.png"},
-	"downtown": {"nombre": "DOWNTOWN", "isla": 2, "centro": Vector2(240, -240), "costo": 1500, "tinte": Color("#E8A0B8"), "material": "WR_Sidewalk", "baldosa": 14.0, "icono": "res://assets/icons/zones/zone_downtown.png"},
-	"industrial": {"nombre": "INDUSTRIAL", "isla": 3, "centro": Vector2(240, 0), "costo": 6000, "tinte": Color("#A9B6CC"), "material": "WR_FactoryConcrete", "baldosa": 18.0, "icono": "res://assets/icons/zones/zone_industrial.png"},
+	"downtown": {"nombre": "DOWNTOWN", "isla": 2, "centro": Vector2(240, -240), "costo": 1500, "multiplicador_scrap": 2.0, "tinte": Color("#E8A0B8"), "material": "WR_Sidewalk", "baldosa": 14.0, "icono": "res://assets/icons/zones/zone_downtown.png"},
+	"industrial": {"nombre": "INDUSTRIAL", "isla": 3, "centro": Vector2(240, 0), "costo": 6000, "multiplicador_scrap": 3.0, "tinte": Color("#A9B6CC"), "material": "WR_FactoryConcrete", "baldosa": 18.0, "icono": "res://assets/icons/zones/zone_industrial.png"},
 }
 
 const ORDEN_ZONAS := ["scrap_yard", "downtown", "industrial"]
@@ -79,9 +78,9 @@ const ORDEN_MEJORAS := ["damage", "attack_speed"]
 const MARTILLO := {"nombre": "SCRAP HAMMER", "dano": 10.0, "cooldown": 0.45, "alcance": 11.0, "color": Color("#B7BCC4"), "modelo": "ScrapHammer", "icono": "res://assets/icons/tools/tool_scrap_hammer.png"}
 
 const COLOSOS := [
-	{"numero": 1, "id": "scrap_colossus", "nombre": "SCRAP COLOSSUS", "zona": "scrap_yard", "recompensa": 1500, "maestria_segundos": 50.0, "ojos_rojos": 15, "giro_cabeza": 29, "color": Color("#7A3B24"), "modelo": "ScrapColossus", "escala": 0.68},
-	{"numero": 2, "id": "downtown_crusher", "nombre": "DOWNTOWN CRUSHER", "zona": "downtown", "recompensa": 3600, "maestria_segundos": 60.0, "ojos_rojos": 12, "giro_cabeza": 24, "color": Color("#4E5F77"), "modelo": "DowntownCrusher", "escala": 0.7},
-	{"numero": 3, "id": "industrial_titan", "nombre": "INDUSTRIAL TITAN", "zona": "industrial", "recompensa": 0, "maestria_segundos": 70.0, "ojos_rojos": 12, "giro_cabeza": 24, "color": Color("#8C5A1A"), "modelo": "IndustrialTitan", "escala": 0.62},
+	{"numero": 1, "id": "scrap_colossus", "nombre": "SCRAP COLOSSUS", "zona": "scrap_yard", "dano_requerido": 25.0, "recompensa": 1500, "maestria_segundos": 50.0, "ojos_rojos": 15, "giro_cabeza": 29, "color": Color("#7A3B24"), "modelo": "ScrapColossus", "escala": 0.68},
+	{"numero": 2, "id": "downtown_crusher", "nombre": "DOWNTOWN CRUSHER", "zona": "downtown", "dano_requerido": 35.0, "recompensa": 3600, "maestria_segundos": 60.0, "ojos_rojos": 12, "giro_cabeza": 24, "color": Color("#4E5F77"), "modelo": "DowntownCrusher", "escala": 0.7},
+	{"numero": 3, "id": "industrial_titan", "nombre": "INDUSTRIAL TITAN", "zona": "industrial", "dano_requerido": 40.0, "recompensa": 0, "maestria_segundos": 70.0, "ojos_rojos": 12, "giro_cabeza": 24, "color": Color("#8C5A1A"), "modelo": "IndustrialTitan", "escala": 0.62},
 ]
 
 const COLOSO := {
@@ -107,7 +106,7 @@ const TUTORIAL := [
 	{"titulo": "GET SCRAP", "texto": "Wreck objects to collect Scrap"},
 	{"titulo": "UPGRADE", "texto": "Open UPGRADES and buy DAMAGE for 38 Scrap"},
 	{"titulo": "WRECK MORE", "texto": "Wreck 10 objects"},
-	{"titulo": "PLAY YOUR WAY", "texto": "Save Scrap for the next island gate. Reach damage 40 to challenge the colossi"},
+	{"titulo": "PLAY YOUR WAY", "texto": "Reach damage 25 to challenge the first colossus. Each new island pays more Scrap"},
 ]
 
 
@@ -130,6 +129,18 @@ static func scrap_por_vuelta(zona: String) -> int:
 	for def in OBJETOS[zona]:
 		total += int(def["scrap"]) * int(def["cantidad"])
 	return total
+
+
+static func multiplicador_scrap(zona: String) -> float:
+	return float(ZONAS.get(zona, {}).get("multiplicador_scrap", 1.0))
+
+
+static func dano_requerido(numero: int) -> float:
+	return float(COLOSOS[numero - 1]["dano_requerido"])
+
+
+static func texto_dano(valor: float) -> String:
+	return str(int(valor)) if is_equal_approx(valor, floorf(valor)) else "%.1f" % valor
 
 
 static func coloso_de_zona(zona: String) -> Dictionary:

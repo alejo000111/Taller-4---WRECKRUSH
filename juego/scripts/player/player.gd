@@ -16,6 +16,8 @@ const INTERVALO_PUNTO_SEGURO := 0.5
 const POSE_DESCANSO := 0.87
 const POSE_PREPARADO := 2.1
 const POSE_GOLPE := -0.35
+const VELOCIDAD_GIRO := 3.0
+const FACTOR_RETROCESO := 0.6
 
 var camara: CameraController
 var salud: float = GameConfig.VIDA_JUGADOR
@@ -42,6 +44,14 @@ func _ready() -> void:
 	colision.position = Vector3(0, ALTURA_CAPSULA * 0.5, 0)
 	add_child(colision)
 	_construir_modelo()
+
+
+static func direccion_adelante(yaw_modelo: float) -> Vector2:
+	return Vector2(-sin(yaw_modelo), -cos(yaw_modelo))
+
+
+func yaw_mirada() -> float:
+	return _modelo.rotation.y
 
 
 func _construir_modelo() -> void:
@@ -80,18 +90,19 @@ func _physics_process(delta: float) -> void:
 		velocity.y -= GRAVEDAD * delta
 	elif velocity.y < 0.0:
 		velocity.y = 0.0
-	var entrada := Vector2.ZERO
+	var giro := 0.0
+	var avance := 0.0
 	if not GameState.hay_panel_abierto():
-		entrada = Input.get_vector("move_left", "move_right", "move_forward", "move_back")
+		giro = Input.get_axis("move_left", "move_right")
+		avance = Input.get_axis("move_back", "move_forward")
 		if Input.is_action_just_pressed("jump") and is_on_floor():
 			velocity.y = VELOCIDAD_SALTO
-	var yaw := camara.yaw if camara != null else 0.0
-	var direccion := Basis(Vector3.UP, yaw) * Vector3(entrada.x, 0.0, entrada.y)
+	_modelo.rotation.y -= giro * VELOCIDAD_GIRO * delta
 	var horizontal := Vector2(velocity.x, velocity.z)
-	if entrada.length() > 0.01:
-		var meta := Vector2(direccion.x, direccion.z).normalized() * VELOCIDAD
+	if absf(avance) > 0.01:
+		var factor := 1.0 if avance > 0.0 else FACTOR_RETROCESO
+		var meta := direccion_adelante(_modelo.rotation.y) * avance * VELOCIDAD * factor
 		horizontal = horizontal.move_toward(meta, ACELERACION * delta)
-		_modelo.rotation.y = lerp_angle(_modelo.rotation.y, atan2(-direccion.x, -direccion.z), clampf(14.0 * delta, 0.0, 1.0))
 	else:
 		horizontal = horizontal.move_toward(Vector2.ZERO, FRICCION * delta)
 	velocity.x = horizontal.x
@@ -124,8 +135,6 @@ func animar_golpe(hacia: Vector3) -> void:
 	var plano := Vector3(hacia.x - global_position.x, 0, hacia.z - global_position.z)
 	if plano.length() > 0.1:
 		_modelo.rotation.y = atan2(-plano.x, -plano.z)
-		if camara != null:
-			camara.seguir_mirada(_modelo.rotation.y)
 	if _tween_golpe != null and _tween_golpe.is_valid():
 		_tween_golpe.kill()
 	_pivote_martillo.rotation.x = POSE_PREPARADO

@@ -31,6 +31,7 @@ func _ready() -> void:
 	_test_progreso()
 	_test_guardado()
 	_test_seleccion()
+	_test_ritmo()
 	_test_camara()
 	_test_ambiente()
 	_test_assets()
@@ -126,7 +127,7 @@ func _test_economia() -> void:
 	_verificar(gs.desbloquear_zona("downtown") and gs.zona_abierta("downtown") and gs.scrap == 0, "Downtown se paga con 1,500 y queda abierta")
 	_verificar(gs.rotos_en("scrap_yard") == 2, "se cuentan los objetos rotos por isla")
 	gs.mejoras["damage"] = 12
-	_verificar(gs.estado_mejora("damage")["razon"] == "MAXED" and gs.puede_retar_coloso(), "DAMAGE 12 = 40: tope y permite retar")
+	_verificar(gs.estado_mejora("damage")["razon"] == "MAXED" and gs.puede_retar_coloso(3), "DAMAGE 12 = 40: tope y permite retar al coloso 3")
 	gs.free()
 
 
@@ -134,22 +135,20 @@ func _test_progreso() -> void:
 	print("Progreso y metas")
 	var gs := _nuevo_estado()
 	_verificar(gs.siguiente_meta()["texto"] == "DAMAGE 1" and gs.siguiente_meta()["meta"] == 38, "primera meta: DAMAGE 1 = 38")
-	for n in 8:
+	for n in 6:
 		gs.mejoras["damage"] = n + 1
-	_verificar(gs.siguiente_meta()["texto"] == "ISLAND 2" and gs.siguiente_meta()["meta"] == 1500, "con daño 8 la meta es la puerta de 1,500")
-	gs.zonas.append("downtown")
-	gs.mejoras["damage"] = 10
-	gs.mejoras["attack_speed"] = 3
-	_verificar(gs.siguiente_meta()["texto"] == "ISLAND 3" and gs.siguiente_meta()["meta"] == 6000, "luego la puerta de 6,000")
-	gs.zonas.append("industrial")
-	gs.mejoras["damage"] = 12
-	_verificar(gs.siguiente_meta()["texto"] == "WAKE COLOSSUS 1", "con daño 40 toca despertar al coloso 1")
+	_verificar(gs.siguiente_meta()["texto"] == "WAKE COLOSSUS 1", "con daño 25 (nivel 6) toca despertar al coloso 1")
 	gs.rotos_por_zona["scrap_yard"] = 29
 	_verificar(gs.siguiente_meta()["texto"] == "COLOSSUS 1" and gs.siguiente_meta()["listo"], "con 29 objetos rotos el coloso 1 esta listo")
 	var r1: Dictionary = gs.registrar_victoria_coloso(1, 62.0, false, false)
 	_verificar(r1["scrap"] == 1500 and gs.scrap == 1500 and gs.coloso_vencido_p(1), "coloso 1: premio 1,500 Scrap")
 	var r1b: Dictionary = gs.registrar_victoria_coloso(1, 45.0, true, true)
 	_verificar(r1b["estrellas"] == 2 and gs.scrap == 1500 and r1b["scrap"] == 0, "maestria: 2 estrellas, sin Scrap")
+	_verificar(gs.siguiente_meta()["texto"] == "ISLAND 2" and gs.siguiente_meta()["meta"] == 1500, "tras el coloso 1 la meta es la puerta de 1,500 y su premio la paga")
+	gs.zonas.append("downtown")
+	gs.mejoras["damage"] = 10
+	gs.rotos_por_zona["downtown"] = 24
+	_verificar(gs.siguiente_meta()["texto"] == "COLOSSUS 2" and gs.siguiente_meta()["listo"], "con daño 35 y 24 objetos el coloso 2 esta listo")
 	_verificar(not gs.completado, "no hay final hasta vencer a los 3")
 	var r2: Dictionary = gs.registrar_victoria_coloso(2, 76.0, false, false)
 	_verificar(r2["scrap"] == 3600, "coloso 2: premio 3,600 Scrap")
@@ -204,32 +203,74 @@ func _test_seleccion() -> void:
 	_verificar(HammerController.seleccionar(lista, 3).size() == 3, "se puede pedir mas de un objetivo")
 
 
+func _test_ritmo() -> void:
+	print("Ritmo (islas y colosos)")
+	var gs := _nuevo_estado()
+	var barril := GameConfig.objeto_por_id("scrap_yard", "scrap_barrel")
+	var buzon := GameConfig.objeto_por_id("downtown", "mailbox")
+	var tuberia := GameConfig.objeto_por_id("industrial", "pipe_stack")
+	_verificar(gs.registrar_objeto_roto(barril, "scrap_yard") == 12, "isla 1 paga x1 (barril 12)")
+	_verificar(gs.registrar_objeto_roto(buzon, "downtown") == 96, "isla 2 paga x2 (buzon 48 -> 96)")
+	_verificar(gs.registrar_objeto_roto(tuberia, "industrial") == 216, "isla 3 paga x3 (tuberia 72 -> 216)")
+	_verificar(gs.scrap == 12 + 96 + 216, "el Scrap suma lo que pago cada objeto")
+	_verificar(GameConfig.scrap_por_vuelta("downtown") == 6396, "las tablas del taller no cambian (6,396 por vuelta en la isla 2)")
+	gs.mejoras["damage"] = 5
+	_verificar(not gs.puede_retar_coloso(1), "con daño 22.5 aun no se puede retar al coloso 1")
+	gs.mejoras["damage"] = 6
+	_verificar(gs.puede_retar_coloso(1) and not gs.puede_retar_coloso(2), "con daño 25 si al coloso 1, no al 2")
+	gs.mejoras["damage"] = 10
+	_verificar(gs.puede_retar_coloso(2) and not gs.puede_retar_coloso(3), "con daño 35 si al coloso 2, no al 3")
+	gs.mejoras["damage"] = 12
+	_verificar(gs.puede_retar_coloso(3), "con daño 40 se puede retar a los tres")
+	_verificar(GameConfig.texto_dano(25.0) == "25" and GameConfig.texto_dano(32.5) == "32.5", "el texto del daño no muestra decimales de mas")
+	gs.free()
+
+
 func _test_camara() -> void:
-	print("Camara")
-	_verificar(not CameraController.fuera_de_vista(0.0, 0.3), "objetivo de frente: la camara no gira")
-	_verificar(CameraController.fuera_de_vista(0.0, PI), "objetivo detras: la camara debe girar")
-	_verificar(not CameraController.fuera_de_vista(3.0, -3.0), "el angulo da la vuelta (3.0 y -3.0 estan cerca)")
+	print("Camara y control")
+	var adelante0 := Player.direccion_adelante(0.0)
+	_verificar(_cerca(adelante0.x, 0.0) and _cerca(adelante0.y, -1.0), "con yaw 0 el jugador avanza hacia -Z")
+	_verificar(_cerca(Player.direccion_adelante(PI * 0.5).x, -1.0), "con yaw +90 grados avanza hacia -X (su izquierda)")
 	var cam := CameraController.new()
-	cam.seguir_mirada(0.3)
-	_verificar(not cam.siguiendo_mirada(), "objetivo a la vista: no empieza a seguir")
-	cam.seguir_mirada(PI)
-	_verificar(cam.siguiendo_mirada(), "objetivo fuera de vista: empieza a seguir")
 	for i in 60:
-		cam.girar_hacia_mirada(0.1)
-	_verificar(_cerca(absf(cam.yaw), PI, 0.03) and not cam.siguiendo_mirada(), "gira hasta quedar detras del jugador y se detiene")
+		cam.seguir_jugador(1.5, 0.1)
+	_verificar(_cerca(cam.yaw, 1.5, 0.02), "la camara termina detras del jugador cuando este se voltea")
 	cam.yaw = 0.0
-	cam.pausar_giro_automatico()
-	cam.seguir_mirada(PI)
-	_verificar(not cam.siguiendo_mirada(), "mover la camara a mano pausa el giro automatico")
-	for i in 25:
-		cam.girar_hacia_mirada(0.1)
-	cam.seguir_mirada(PI)
-	_verificar(cam.siguiendo_mirada(), "pasada la pausa vuelve a seguir")
+	var yaw_jugador := 0.0
+	var max_desfase := 0.0
+	for i in 60:
+		yaw_jugador -= Player.VELOCIDAD_GIRO / 60.0
+		cam.seguir_jugador(yaw_jugador, 1.0 / 60.0)
+		max_desfase = maxf(max_desfase, absf(angle_difference(cam.yaw, yaw_jugador)))
+	_verificar(max_desfase < 0.6, "si el jugador gira 1 s seguido, la camara va casi pegada a el")
+	cam.yaw = 0.0
+	cam.girar_a_mano(1.0)
+	_verificar(_cerca(cam.yaw, 1.0), "girar a mano mueve la camara al instante")
+	for i in 10:
+		cam.seguir_jugador(0.0, 0.1)
+	_verificar(absf(cam.yaw - 1.0) < 0.05, "durante la pausa la camara se queda donde la dejaste")
+	for i in 60:
+		cam.seguir_jugador(0.0, 0.1)
+	_verificar(absf(cam.yaw) < 0.05, "despues de la pausa vuelve sola detras del jugador")
 	cam.yaw = 1.0
 	var atras := Vector2(cam.desfase_actual().x, cam.desfase_actual().z).normalized()
-	var mira := Basis(Vector3.UP, 1.0) * Vector3(0, 0, -1)
-	_verificar(_cerca(atras.dot(Vector2(mira.x, mira.z)), -1.0), "con el yaw del modelo, la camara queda detras del jugador")
+	_verificar(_cerca(atras.dot(Player.direccion_adelante(1.0)), -1.0), "con el mismo yaw, la camara queda detras de la direccion de avance")
 	cam.free()
+	print("Menus con teclado")
+	var panel := Control.new()
+	var cerrar := UIKit.boton("X")
+	cerrar.set_meta("sin_foco_inicial", true)
+	var comprar := UIKit.boton("BUY")
+	panel.add_child(cerrar)
+	panel.add_child(comprar)
+	add_child(panel)
+	UIKit.activar_foco(panel)
+	_verificar(comprar.focus_mode == Control.FOCUS_ALL and cerrar.focus_mode == Control.FOCUS_ALL, "los botones del menu se pueden enfocar con el teclado")
+	_verificar(comprar.has_focus(), "el foco inicial va al primer boton util, no a cerrar")
+	comprar.disabled = true
+	UIKit.activar_foco(panel)
+	_verificar(cerrar.has_focus(), "si no hay nada que comprar, el foco queda en cerrar")
+	panel.queue_free()
 
 
 func _test_ambiente() -> void:

@@ -478,3 +478,4 @@ func _mostrar_tarjeta(texto: String) -> void:
 	if not _victoria.visible:
 		GameState.abrir_panel()
 	_victoria.visible = true
+	UIKit.activar_foco(_victoria)

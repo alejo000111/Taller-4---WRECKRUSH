@@ -20,8 +20,10 @@ func refrescar() -> void:
 	_lista.add_child(UIKit.con_icono(Iconos.SCRAP, UIKit.etiqueta("SCRAP  %s" % Formulas.abreviar(GameState.scrap), 22, GameColors.AMARILLO), 32))
 	for id in GameConfig.ORDEN_MEJORAS:
 		_lista.add_child(_tarjeta(id, GameConfig.MEJORAS[id]))
-	var requisito := "Challenging a colossus needs DAMAGE 40 (level 12)."
+	var requisito := "Colossi need DAMAGE 25 / 35 / 40 (levels 6 / 10 / 12)."
 	_lista.add_child(UIKit.etiqueta(requisito, 15, Color("#8A909C")))
+	if abierto:
+		enfocar()
 
 
 func _valor_texto(id: String, nivel: int) -> String:

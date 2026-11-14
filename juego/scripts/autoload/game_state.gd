@@ -99,8 +99,8 @@ func alcance_ataque() -> float:
 	return float(GameConfig.MARTILLO["alcance"])
 
 
-func puede_retar_coloso() -> bool:
-	return dano_base_golpe() >= GameConfig.DANO_REQUERIDO_COLOSO
+func puede_retar_coloso(numero: int) -> bool:
+	return dano_base_golpe() >= GameConfig.dano_requerido(numero)
 
 
 func agregar_scrap(cantidad: int) -> void:
@@ -127,7 +127,7 @@ func registrar_golpe(dano: float) -> void:
 
 
 func registrar_objeto_roto(def: Dictionary, zona: String) -> int:
-	var pago := int(def["scrap"])
+	var pago := roundi(float(def["scrap"]) * GameConfig.multiplicador_scrap(zona))
 	agregar_scrap(pago)
 	objetos_rotos += 1
 	rotos_por_zona[zona] = int(rotos_por_zona.get(zona, 0)) + 1
@@ -235,22 +235,22 @@ func registrar_victoria_coloso(numero: int, tiempo: float, sin_dano: bool, maest
 
 func plan_de_metas() -> Array:
 	var plan: Array = []
-	for n in range(1, 9):
+	for n in range(1, 7):
 		plan.append(["damage", n])
+	plan.append(["coloso", 1])
 	plan.append(["zona", "downtown"])
-	plan.append(["damage", 9])
+	for n in range(7, 11):
+		plan.append(["damage", n])
+	plan.append(["coloso", 2])
 	plan.append(["attack_speed", 1])
-	plan.append(["damage", 10])
 	plan.append(["attack_speed", 2])
-	plan.append(["attack_speed", 3])
 	plan.append(["zona", "industrial"])
 	plan.append(["damage", 11])
 	plan.append(["damage", 12])
-	plan.append(["coloso", 1])
-	plan.append(["coloso", 2])
+	plan.append(["attack_speed", 3])
+	plan.append(["coloso", 3])
 	plan.append(["attack_speed", 4])
 	plan.append(["attack_speed", 5])
-	plan.append(["coloso", 3])
 	return plan
 
 
@@ -284,8 +284,9 @@ func siguiente_meta() -> Dictionary:
 					return {"texto": "ISLAND %d" % int(GameConfig.ZONAS[datos["zona"]]["isla"]), "actual": scrap, "meta": int(GameConfig.ZONAS[datos["zona"]]["costo"]), "listo": false}
 				if rotos < umbral:
 					return {"texto": "WAKE COLOSSUS %d" % int(meta[1]), "actual": rotos, "meta": umbral, "listo": false}
-				if not puede_retar_coloso():
-					return {"texto": "DAMAGE 40", "actual": int(dano_base_golpe()), "meta": 40, "listo": false}
+				if not puede_retar_coloso(int(meta[1])):
+					var requerido := GameConfig.dano_requerido(int(meta[1]))
+					return {"texto": "DAMAGE %s" % GameConfig.texto_dano(requerido), "actual": int(dano_base_golpe()), "meta": ceili(requerido), "listo": false}
 				return {"texto": "COLOSSUS %d" % int(meta[1]), "actual": 1, "meta": 1, "listo": true}
 	return {"texto": "MASTERY STARS", "actual": 1, "meta": 1, "listo": true}
 

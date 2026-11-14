@@ -24,7 +24,7 @@ func construir() -> void:
 		fila.add_child(boton)
 		contenido.add_child(fila)
 	contenido.add_child(UIKit.separador(10))
-	contenido.add_child(UIKit.etiqueta("MOVE WASD · JUMP SPACE · WRECK LEFT CLICK / F · INTERACT E · LOOK RIGHT MOUSE DRAG", 14, Color("#8A909C")))
+	contenido.add_child(UIKit.etiqueta("MOVE W/S · TURN A/D · JUMP SPACE · WRECK F · INTERACT E · MENUS ARROWS + ENTER", 14, Color("#8A909C")))
 	_boton_reinicio = UIKit.boton("RESET PROGRESS", GameColors.ROJO, Vector2(260, 44), 18)
 	_boton_reinicio.pressed.connect(_reiniciar)
 	contenido.add_child(_boton_reinicio)
@@ -47,7 +47,7 @@ func refrescar() -> void:
 func _reiniciar() -> void:
 	if not _confirmar_reinicio:
 		_confirmar_reinicio = true
-		_boton_reinicio.text = "SURE? CLICK AGAIN"
+		_boton_reinicio.text = "SURE? PRESS AGAIN"
 		return
 	GameState.borrar_guardado()
 	GameState.reiniciar()

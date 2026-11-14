@@ -31,3 +31,23 @@ Fuente: `Tramo_1.docx` (Alejandro Rivera), `Tramo_2.docx` (Cristian Serrano) y `
 - **Los premios se pagan una sola vez** por coloso; en maestría no dan Scrap (así lo dice el Tramo 3, pero no aclara si se puede repetir antes de vencer a los 3: aquí no).
 - **Muerte**: los tramos no dicen cuánto esperar; se mantuvieron los 45 s del Rol 3.
 - Todos los tiempos de los tramos son cálculos, no pruebas de juego: hay que cronometrar jugando.
+
+## Ajuste de ritmo tras jugarlo (12-nov-2026)
+
+Jugando, el primer coloso no aparecía ni a los 10 minutos: con "todos los colosos piden daño 40" el daño 12 (9,657 Scrap en mejoras) se alcanza hacia el minuto 34 y el primer coloso cae cerca del 35. Además las islas 2 y 3 no subían el ingreso: sus objetos tienen 4× y 8× la vida y pagan 30 %, así que el Scrap por golpe es igual en las tres islas. Dos cambios, sin tocar las tablas, los precios ni la vida de los colosos:
+
+| Antes | Ahora | Dónde |
+|---|---|---|
+| Los 3 colosos piden daño 40 (nivel 12) | Piden **25 / 35 / 40** (niveles 6 / 10 / 12) | `GameConfig.COLOSOS[...].dano_requerido`, `GameState.puede_retar_coloso(numero)` |
+| Todas las islas pagan igual | Scrap **×1 / ×2 / ×3** por isla (Scrap Yard / Downtown / Industrial) | `GameConfig.ZONAS[...].multiplicador_scrap`, `GameState.registrar_objeto_roto` |
+| Orden de metas: daño 1-8, puerta 2, ..., colosos al final | Daño 1-6, coloso 1, puerta 2 (la paga su premio de 1,500), daño 7-10, coloso 2, velocidad 1-2, puerta 3, daño 11-12, velocidad 3, coloso 3 | `GameState.plan_de_metas` |
+
+Tiempos estimados con una simulación calibrada contra el Tramo 1 (puerta 2 hacia 8:51), jugador que golpea sin parar y compra en cuanto puede:
+
+| | Antes | Ahora |
+|---|---|---|
+| Coloso 1 | ~35:30 | ~4:00 |
+| Coloso 2 | ~37:00 | ~8:40 |
+| Coloso 3 (fin) | ~38:00 | ~16:00 |
+
+Son cálculos, no pruebas de juego: un jugador real tardará más. **Los Tramos 1-3 y el Documento de concepto dicen "retar un coloso pide daño 40" y los tiempos de 35:57; si se quedan estos valores hay que actualizarlos.** El premio del coloso 1 (1,500) sigue igualando la puerta de la isla 2, y el del coloso 2 (3,600) más lo ganado en la isla 2 cubre la puerta de 6,000.

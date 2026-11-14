@@ -196,8 +196,8 @@ func _texto_consola() -> String:
 		return "Colossus asleep · break %d more objects" % faltan
 	if GameState.coloso_vencido_p(numero) and not GameState.todos_vencidos():
 		return "%s defeated" % datos["nombre"]
-	if not GameState.puede_retar_coloso():
-		return "DAMAGE 40 REQUIRED"
+	if not GameState.puede_retar_coloso(numero):
+		return "DAMAGE %s REQUIRED" % GameConfig.texto_dano(GameConfig.dano_requerido(numero))
 	if GameState.coloso_vencido_p(numero):
 		return "Mastery · %s · stars %d/%d" % [datos["nombre"], GameState.estrellas(numero), int(GameConfig.COLOSO["estrellas_maximas"])]
 	return "Challenge %s" % datos["nombre"]
@@ -209,8 +209,8 @@ func _intentar_retar() -> void:
 	if not esta_encendido():
 		GameState.toast.emit("BREAK %d MORE OBJECTS" % (int(datos["giro_cabeza"]) - GameState.rotos_en(datos["zona"])), "bad")
 		return
-	if not GameState.puede_retar_coloso():
-		GameState.toast.emit("DAMAGE 40 REQUIRED", "bad")
+	if not GameState.puede_retar_coloso(numero):
+		GameState.toast.emit("DAMAGE %s REQUIRED" % GameConfig.texto_dano(GameConfig.dano_requerido(numero)), "bad")
 		Sfx.reproducir("error")
 		return
 	var vencido := GameState.coloso_vencido_p(numero)

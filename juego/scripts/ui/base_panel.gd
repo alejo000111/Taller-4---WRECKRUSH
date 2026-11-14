@@ -51,6 +51,7 @@ func _ready() -> void:
 	UIKit.poner_icono(cerrar_btn, Iconos.CERRAR, 24)
 	cerrar_btn.icon_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	cerrar_btn.pressed.connect(cerrar)
+	cerrar_btn.set_meta("sin_foco_inicial", true)
 	cabecera.add_child(cerrar_btn)
 	raiz.add_child(cabecera)
 	contenido = VBoxContainer.new()
@@ -80,6 +81,11 @@ func abrir() -> void:
 	var t := create_tween().set_parallel(true)
 	t.tween_property(_ventana, "scale", Vector2.ONE, 0.14).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 	t.tween_property(self, "modulate:a", 1.0, 0.12)
+	enfocar()
+
+
+func enfocar() -> void:
+	UIKit.activar_foco(self)
 
 
 func cerrar() -> void:

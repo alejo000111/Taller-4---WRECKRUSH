@@ -38,7 +38,31 @@ static func boton(texto: String, color: Color = GameColors.NARANJA, tamano: Vect
 	b.add_theme_stylebox_override("hover", estilo(color.lightened(0.18), color.darkened(0.3), 10, 3))
 	b.add_theme_stylebox_override("pressed", estilo(color.darkened(0.2), color.darkened(0.55), 10, 3))
 	b.add_theme_stylebox_override("disabled", estilo(Color("#454A54"), Color("#353941"), 10, 3))
+	b.add_theme_stylebox_override("focus", estilo(Color.TRANSPARENT, Color.WHITE, 10, 4))
 	return b
+
+
+static func activar_foco(raiz: Node, preferido: Button = null) -> void:
+	var botones: Array[Button] = []
+	_recoger_botones(raiz, botones)
+	var elegido := preferido
+	for b in botones:
+		b.focus_mode = Control.FOCUS_ALL
+		if elegido == null and not b.disabled and not b.has_meta("sin_foco_inicial"):
+			elegido = b
+	if elegido == null and not botones.is_empty():
+		elegido = botones[0]
+	if elegido != null and elegido.is_visible_in_tree():
+		elegido.grab_focus()
+
+
+static func _recoger_botones(nodo: Node, lista: Array[Button]) -> void:
+	for hijo in nodo.get_children():
+		if hijo.is_queued_for_deletion():
+			continue
+		if hijo is Button:
+			lista.append(hijo)
+		_recoger_botones(hijo, lista)
 
 
 static func barra(color: Color, tamano: Vector2) -> ProgressBar:
