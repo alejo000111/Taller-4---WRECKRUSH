@@ -228,6 +228,31 @@ func estrellas(numero: int) -> int:
 	return int(bool(colosos[numero]["est_tiempo"])) + int(bool(colosos[numero]["est_sin_dano"]))
 
 
+func resumen_coloso(numero: int) -> Dictionary:
+	var def: Dictionary = GameConfig.COLOSOS[numero - 1]
+	var entrada: Dictionary = colosos[numero]
+	var estado := "REQUIREMENTS MET"
+	if not zona_abierta(def["zona"]):
+		estado = "ISLAND LOCKED"
+	elif entrada["vencido"]:
+		estado = "MASTERY AVAILABLE" if todos_vencidos() else "DEFEATED · BEAT ALL 3 FOR MASTERY"
+	elif rotos_en(def["zona"]) < int(def["giro_cabeza"]):
+		estado = "BREAK MORE OBJECTS"
+	elif not puede_retar_coloso(numero):
+		estado = "MORE DAMAGE REQUIRED"
+	return {
+		"estado": estado,
+		"rotos": mini(rotos_en(def["zona"]), int(def["giro_cabeza"])),
+		"meta_objetos": int(def["giro_cabeza"]),
+		"dano": dano_base_golpe(),
+		"dano_requerido": GameConfig.dano_requerido(numero),
+		"mejor_tiempo": float(entrada["mejor_tiempo"]),
+		"estrellas": estrellas(numero),
+		"est_tiempo": bool(entrada["est_tiempo"]),
+		"est_sin_dano": bool(entrada["est_sin_dano"]),
+	}
+
+
 func registrar_victoria_coloso(numero: int, tiempo: float, sin_dano: bool, maestria: bool) -> Dictionary:
 	var datos: Dictionary = GameConfig.COLOSOS[numero - 1]
 	var entrada: Dictionary = colosos[numero]

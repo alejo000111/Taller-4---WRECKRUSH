@@ -30,6 +30,7 @@ func _ready() -> void:
 	_test_economia()
 	_test_compra_max()
 	_test_progreso()
+	_test_resumen_colosos()
 	_test_victoria_repetida()
 	_test_guardado()
 	_test_guardado_ajustes()
@@ -211,6 +212,33 @@ func _test_progreso() -> void:
 	m.agregar_scrap(20)
 	_verificar(avisos.size() == 1, "aviso al llegar a la mitad de la meta (19 de 38)")
 	m.free()
+
+
+func _test_resumen_colosos() -> void:
+	print("Panel de progreso de colosos")
+	var gs := _nuevo_estado()
+	_verificar(gs.resumen_coloso(2)["estado"] == "ISLAND LOCKED", "resumen indica isla bloqueada")
+	_verificar(gs.resumen_coloso(1)["estado"] == "BREAK MORE OBJECTS", "resumen indica que faltan objetos")
+	gs.rotos_por_zona["scrap_yard"] = 100
+	var resumen: Dictionary = gs.resumen_coloso(1)
+	_verificar(resumen["rotos"] == 29 and resumen["estado"] == "MORE DAMAGE REQUIRED", "barra limita los objetos y avisa que falta daño")
+	gs.mejoras["damage"] = 6
+	_verificar(gs.resumen_coloso(1)["estado"] == "REQUIREMENTS MET", "requisitos completos permiten ir a la consola")
+	gs.registrar_victoria_coloso(1, 62.0, false, false)
+	resumen = gs.resumen_coloso(1)
+	_verificar(resumen["estado"] == "DEFEATED · BEAT ALL 3 FOR MASTERY" and _cerca(resumen["mejor_tiempo"], 62.0), "victoria muestra record y explica el bloqueo de maestria")
+	gs.zonas.append("downtown")
+	gs.zonas.append("industrial")
+	gs.registrar_victoria_coloso(2, 80.0, false, false)
+	gs.registrar_victoria_coloso(3, 90.0, false, false)
+	_verificar(gs.resumen_coloso(1)["estado"] == "MASTERY AVAILABLE", "vencer los tres habilita maestria en el resumen")
+	gs.registrar_victoria_coloso(1, 49.0, false, true)
+	resumen = gs.resumen_coloso(1)
+	_verificar(resumen["est_tiempo"] and not resumen["est_sin_dano"] and resumen["estrellas"] == 1, "resumen distingue la estrella de tiempo de la de no recibir daño")
+	gs.registrar_victoria_coloso(1, 60.0, true, true)
+	resumen = gs.resumen_coloso(1)
+	_verificar(resumen["estrellas"] == 2 and resumen["est_sin_dano"] and _cerca(resumen["mejor_tiempo"], 49.0), "resumen conserva el record al completar la segunda estrella")
+	gs.free()
 
 
 func _test_victoria_repetida() -> void:

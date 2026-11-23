@@ -98,6 +98,7 @@ func _construir_menu() -> void:
 	_punto_mejoras.position = Vector2(-6, -6)
 	_boton_mejoras.add_child(_punto_mejoras)
 	_boton_menu(col, "SETTINGS [TAB]", GameColors.CIAN.darkened(0.45), "settings", Iconos.AJUSTES)
+	_boton_menu(col, "COLOSSI [B]", GameColors.NARANJA.darkened(0.35), "colossi", Iconos.JEFE)
 
 
 func _boton_menu(padre: Control, texto: String, color: Color, panel: String, icono: Texture2D) -> Button:
@@ -332,6 +333,7 @@ func _construir_portada() -> void:
 func _construir_paneles() -> void:
 	paneles["upgrades"] = UpgradesPanel.new()
 	paneles["settings"] = SettingsPanel.new()
+	paneles["colossi"] = ColossiPanel.new()
 	for id in ["downtown", "industrial"]:
 		var panel := UnlockPanel.new()
 		panel.zona = id
@@ -356,6 +358,8 @@ func _unhandled_input(evento: InputEvent) -> void:
 		_alternar("upgrades")
 	elif evento.is_action_pressed("open_settings"):
 		_alternar("settings")
+	elif evento.is_action_pressed("open_colossi"):
+		_alternar("colossi")
 
 
 func _alternar(nombre: String) -> void:

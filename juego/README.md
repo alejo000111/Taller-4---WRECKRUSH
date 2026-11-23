@@ -38,6 +38,7 @@ godot --path .
 | Saltar (esquivar al jefe) | Espacio |
 | Interactuar (mantener en consolas) | E |
 | Mejoras / Ajustes | U / Tab |
+| Progreso y récords de colosos | B |
 | Moverse en los menús | Flechas + Enter o Espacio |
 | Cerrar panel | Retroceso o Esc |
 | Mirar alrededor (opcional) | Arrastrar con clic derecho |
