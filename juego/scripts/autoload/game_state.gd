@@ -346,6 +346,7 @@ func hay_panel_abierto() -> bool:
 func cambiar_ajuste(clave: String, valor: bool) -> void:
 	ajustes[clave] = valor
 	ajustes_cambio.emit()
+	guardar()
 
 
 func a_diccionario() -> Dictionary:

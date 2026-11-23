@@ -31,6 +31,7 @@ func _ready() -> void:
 	_test_progreso()
 	_test_victoria_repetida()
 	_test_guardado()
+	_test_guardado_ajustes()
 	_test_seleccion()
 	_test_ritmo()
 	_test_camara()
@@ -227,6 +228,29 @@ func _test_guardado() -> void:
 	_verificar(otro.nivel_mejora("damage") == 12 and otro.nivel_mejora("attack_speed") == 0 and otro.zona_abierta("scrap_yard"), "guardado corrupto se sanea")
 	gs.free()
 	otro.free()
+
+
+func _test_guardado_ajustes() -> void:
+	print("Guardado inmediato de ajustes")
+	var gs := _nuevo_estado()
+	gs.ruta_guardado = "user://wreckrush_test_ajustes_%d.json" % Time.get_ticks_usec()
+	gs.guardado_habilitado = true
+	gs.agregar_scrap(777)
+	gs.mejoras["damage"] = 3
+	gs.cambiar_ajuste("sfx", false)
+	gs.cambiar_ajuste("camera_shake", false)
+	gs.cambiar_ajuste("damage_numbers", false)
+	var copia := _nuevo_estado()
+	copia.ruta_guardado = gs.ruta_guardado
+	_verificar(copia.cargar(), "cambiar ajustes crea un archivo que se puede cargar")
+	_verificar(not copia.ajustes["sfx"] and not copia.ajustes["camera_shake"] and not copia.ajustes["damage_numbers"], "los tres ajustes se recuperan sin esperar al autoguardado")
+	_verificar(copia.scrap == 777 and copia.nivel_mejora("damage") == 3, "guardar ajustes conserva tambien el progreso actual")
+	gs.cambiar_ajuste("sfx", true)
+	copia.cargar()
+	_verificar(copia.ajustes["sfx"] and not copia.ajustes["camera_shake"], "reactivar sonido se guarda y conserva los demas ajustes")
+	gs.borrar_guardado()
+	gs.free()
+	copia.free()
 
 
 func _test_seleccion() -> void:
