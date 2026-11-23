@@ -72,3 +72,8 @@ docs              arquitectura y alcance
 assets            arte que usa el juego: modelos, materiales, cielo, iconos, marca, efectos
 assets_pendientes arte guardado para siguientes cortes (Godot no lo importa)
 ```
+
+## Carpetas
+
+- Raiz: el juego WRECKRUSH (abrir esta carpeta en Godot).
+- `taller/`: el proyecto del Taller 4 (su propio `project.godot`).

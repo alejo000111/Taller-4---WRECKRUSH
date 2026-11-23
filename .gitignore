@@ -3,3 +3,12 @@
 /android/
 *.tmp
 
+
+# del juego
+.import/
+export_presets.cfg
+*.translation
+.mono/
+data_*/
+mono_crash.*.json
+assets_pendientes/models/out.zip
