@@ -74,35 +74,27 @@ func coloso_de(zona: String) -> Coloso:
 func _construir_suelos() -> void:
 	var base := Formas.caja_solida(self, Vector3(900, 2, 900), Vector3(0, -1, 0), Color.BLACK, 1, false)
 	base.name = "SueloBase"
-	var exterior := MeshInstance3D.new()
-	var plano := PlaneMesh.new()
-	plano.size = Vector2(5200, 5200)
-	exterior.mesh = plano
-	exterior.material_override = Formas.material_pbr("WR_ScrapDirt", 30.0, Color("#C08068"))
-	exterior.position = Vector3(0, -0.6, 0)
-	add_child(exterior)
-	var calles := MeshInstance3D.new()
-	var plano_calles := PlaneMesh.new()
-	plano_calles.size = Vector2(780, 780)
-	calles.mesh = plano_calles
-	calles.material_override = Formas.material_pbr("WR_Asphalt", 24.0, Color(0.85, 0.85, 0.9))
-	calles.position = Vector3(0, 0.01, 0)
-	add_child(calles)
+	_plano(5200, Formas.material_pbr("WR_ScrapDirt", 30.0, Color("#C08068")), Vector3(0, -0.6, 0))
+	_plano(780, Formas.material_pbr("WR_Asphalt", 24.0, Color(0.85, 0.85, 0.9)), Vector3(0, 0.01, 0))
 	_suelo_zona("plaza")
 	for id in GameConfig.ORDEN_ZONAS:
 		_suelo_zona(id)
 
 
+func _plano(lado: float, material: Material, posicion: Vector3) -> void:
+	var m := MeshInstance3D.new()
+	var plano := PlaneMesh.new()
+	plano.size = Vector2(lado, lado)
+	m.mesh = plano
+	m.material_override = material
+	m.position = posicion
+	add_child(m)
+
+
 func _suelo_zona(id: String) -> void:
 	var datos: Dictionary = GameConfig.ZONAS[id]
 	var centro: Vector2 = datos["centro"]
-	var m := MeshInstance3D.new()
-	var plano := PlaneMesh.new()
-	plano.size = Vector2(200, 200)
-	m.mesh = plano
-	m.material_override = Formas.material_pbr(String(datos["material"]), float(datos["baldosa"]))
-	m.position = Vector3(centro.x, 0.06, centro.y)
-	add_child(m)
+	_plano(200, Formas.material_pbr(String(datos["material"]), float(datos["baldosa"])), Vector3(centro.x, 0.06, centro.y))
 
 
 func _construir_limites() -> void:
@@ -123,15 +115,7 @@ func _construir_plaza() -> void:
 	var cubierta := Formas.material_pbr("WR_DeckPlate", 8.0)
 	Modelos.colocar(raiz, "SpawnEmblem", Vector3(0, 0.08, 0), 1.25, 0.0, false)
 	Formas.caja_solida(raiz, Vector3(16, 5, 16), Vector3(0, 2.5, 0), Color("#3A3F48"), 1, true, cubierta)
-	var fuste := StaticBody3D.new()
-	var forma_fuste := CollisionShape3D.new()
-	var cilindro := CylinderShape3D.new()
-	cilindro.radius = 4.5
-	cilindro.height = 62
-	forma_fuste.shape = cilindro
-	forma_fuste.position = Vector3(0, 36, 0)
-	fuste.add_child(forma_fuste)
-	raiz.add_child(fuste)
+	_cilindro_solido(raiz, Vector3(0, 36, 0), 4.5, 62.0)
 	Formas.malla(raiz, "cyl", Vector3(9, 62, 9), Vector3(0, 36, 0), Formas.material_pbr("WR_FacadeRibbon", 10.0))
 	Formas.malla(raiz, "box", Vector3(18, 1.2, 18), Vector3(0, 52, 0), cubierta)
 	Formas.malla(raiz, "sph", Vector3(9, 9, 9), Vector3(0, 71, 0), Formas.material(GameColors.NARANJA, 0.3, 0.0, 2.5))
@@ -153,6 +137,21 @@ func _construir_plaza() -> void:
 	_portal(raiz, "ISLAND 2 · DOWNTOWN", Vector3(52, 0, 54), "downtown")
 	_portal(raiz, "ISLAND 3 · INDUSTRIAL", Vector3(35, 0, 72), "industrial")
 	Formas.etiqueta(raiz, "SCRAP YARD  >>", Vector3(0, 6, -108), 0.07, GameColors.AMARILLO, 0.0, true)
+
+
+# Cuerpo solido cilindrico invisible; altura_centro es donde queda el centro de la forma.
+func _cilindro_solido(padre: Node3D, posicion: Vector3, radio: float, alto: float, altura_centro: float = 0.0) -> StaticBody3D:
+	var cuerpo := StaticBody3D.new()
+	cuerpo.position = posicion
+	var forma := CollisionShape3D.new()
+	var cil := CylinderShape3D.new()
+	cil.radius = radio
+	cil.height = alto
+	forma.shape = cil
+	forma.position = Vector3(0, altura_centro, 0)
+	cuerpo.add_child(forma)
+	padre.add_child(cuerpo)
+	return cuerpo
 
 
 func _farola(padre: Node3D, posicion: Vector3, modelo: String = "LandmarkStreetLight", giro_y: float = 0.0) -> void:
@@ -218,15 +217,7 @@ func _construir_scrap_yard() -> void:
 		var montana := Modelos.colocar(raiz, "ScrapHeap", posicion, 3.0, monte.x * 0.05)
 		if montana == null:
 			Formas.malla(raiz, "cone", Vector3(40, 18, 40), posicion + Vector3(0, 9, 0), Formas.material(Color("#3E3A36"), 0.95, 0.2))
-		var cuerpo := StaticBody3D.new()
-		cuerpo.position = posicion + Vector3(0, 6, 0)
-		var forma := CollisionShape3D.new()
-		var cil := CylinderShape3D.new()
-		cil.radius = 15
-		cil.height = 12
-		forma.shape = cil
-		cuerpo.add_child(forma)
-		raiz.add_child(cuerpo)
+		_cilindro_solido(raiz, posicion + Vector3(0, 6, 0), 15.0, 12.0)
 	for punto in [Vector3(-90, 0, 90), Vector3(90, 0, 90), Vector3(-90, 0, -90), Vector3(90, 0, -90)]:
 		_reflector(raiz, Vector3(centro.x + punto.x, 0, centro.y + punto.z), atan2(punto.x, punto.z))
 	_retorno(raiz, Vector3(-60, 0, centro.y + 90))
@@ -265,16 +256,7 @@ func _construir_industrial() -> void:
 			Modelos.colocar(raiz, "Smokestack", Vector3(centro.x + x, 0, centro.y - 85), 0.65)
 		else:
 			Formas.malla(raiz, "box", Vector3(7.6, 2.4, 7.6), Vector3(centro.x + x, 46.8, centro.y - 85), Formas.material(GameColors.ROJO, 0.6, 0.2))
-	var tanque := StaticBody3D.new()
-	tanque.position = Vector3(centro.x - 70, 0, centro.y + 55)
-	var forma := CollisionShape3D.new()
-	var cil := CylinderShape3D.new()
-	cil.radius = 12.0
-	cil.height = 19.0
-	forma.shape = cil
-	forma.position = Vector3(0, 9.5, 0)
-	tanque.add_child(forma)
-	raiz.add_child(tanque)
+	var tanque := _cilindro_solido(raiz, Vector3(centro.x - 70, 0, centro.y + 55), 12.0, 19.0, 9.5)
 	if Modelos.colocar(tanque, "ReservoirTank", Vector3.ZERO, 1.4) == null:
 		Formas.malla(tanque, "cyl", Vector3(24, 22, 24), Vector3(0, 11, 0), oxido)
 	for x in [-10.0, 20.0, 50.0]:
