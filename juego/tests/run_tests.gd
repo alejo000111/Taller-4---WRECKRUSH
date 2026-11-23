@@ -29,6 +29,7 @@ func _ready() -> void:
 	_test_tablas_taller()
 	_test_economia()
 	_test_progreso()
+	_test_victoria_repetida()
 	_test_guardado()
 	_test_seleccion()
 	_test_ritmo()
@@ -183,6 +184,26 @@ func _test_progreso() -> void:
 	m.agregar_scrap(20)
 	_verificar(avisos.size() == 1, "aviso al llegar a la mitad de la meta (19 de 38)")
 	m.free()
+
+
+func _test_victoria_repetida() -> void:
+	print("Victorias repetidas")
+	var gs := _nuevo_estado()
+	var avisos: Array = []
+	gs.coloso_vencido.connect(func(r: Dictionary) -> void: avisos.append(r))
+	gs.registrar_victoria_coloso(1, 62.0, false, false)
+	var repetida: Dictionary = gs.registrar_victoria_coloso(1, 40.0, true, false)
+	_verificar(gs.scrap == 1500 and gs.scrap_total == 1500, "victoria normal repetida no vuelve a pagar Scrap")
+	_verificar(repetida["scrap"] == 0 and avisos.size() == 1, "victoria repetida no vuelve a anunciar premio")
+	_verificar(not repetida["nuevo_record"] and _cerca(float(gs.colosos[1]["mejor_tiempo"]), 62.0), "victoria repetida no modifica el record")
+	var copia := _nuevo_estado()
+	copia.desde_diccionario(JSON.parse_string(JSON.stringify(gs.a_diccionario())))
+	copia.registrar_victoria_coloso(1, 40.0, true, false)
+	_verificar(copia.scrap == 1500, "cargar la partida no permite cobrar otra vez el premio")
+	var maestria: Dictionary = copia.registrar_victoria_coloso(1, 40.0, true, true)
+	_verificar(maestria["nuevo_record"] and maestria["estrellas"] == 2 and copia.scrap == 1500, "maestria sigue actualizando record y estrellas sin pagar Scrap")
+	gs.free()
+	copia.free()
 
 
 func _test_guardado() -> void:

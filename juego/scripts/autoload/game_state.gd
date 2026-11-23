@@ -207,6 +207,10 @@ func registrar_victoria_coloso(numero: int, tiempo: float, sin_dano: bool, maest
 	var datos: Dictionary = GameConfig.COLOSOS[numero - 1]
 	var entrada: Dictionary = colosos[numero]
 	var resultado := {"numero": numero, "nombre": datos["nombre"], "tiempo": tiempo, "sin_dano": sin_dano, "maestria": maestria, "scrap": 0, "estrellas_nuevas": 0, "estrellas": estrellas(numero)}
+	if entrada["vencido"] and not maestria:
+		resultado["nuevo_record"] = false
+		resultado["mejor_tiempo"] = entrada["mejor_tiempo"]
+		return resultado
 	resultado["nuevo_record"] = float(entrada["mejor_tiempo"]) <= 0.0 or tiempo < float(entrada["mejor_tiempo"])
 	if resultado["nuevo_record"]:
 		entrada["mejor_tiempo"] = tiempo
