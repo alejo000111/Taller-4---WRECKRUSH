@@ -28,7 +28,7 @@ func refrescar() -> void:
 
 func _valor_texto(id: String, nivel: int) -> String:
 	if id == "damage":
-		return "%s per hit" % Formulas.abreviar(Formulas.dano_golpe(float(GameConfig.MARTILLO["dano"]), nivel))
+		return "%s per hit" % GameConfig.texto_dano(Formulas.dano_golpe(float(GameConfig.MARTILLO["dano"]), nivel))
 	return "every %.3fs" % Formulas.cooldown_ataque(float(GameConfig.MARTILLO["cooldown"]), nivel)
 
 
@@ -49,7 +49,12 @@ func _tarjeta(id: String, def: Dictionary) -> Control:
 	info.add_child(UIKit.etiqueta("%s   LV %d/%d" % [def["nombre"], nivel, int(def["max"])], 20))
 	var siguiente := _valor_texto(id, nivel + 1) if nivel < int(def["max"]) else "MAX"
 	info.add_child(UIKit.etiqueta("%s  >  %s" % [_valor_texto(id, nivel), siguiente], 16, Color("#B8BDC8")))
+	if nivel < int(def["max"]) and not estado["ok"]:
+		var falta := GameState.precio_mejora(id) - GameState.scrap
+		info.add_child(UIKit.etiqueta("NEED %d MORE SCRAP" % falta, 14, Color("#FF9A9A")))
 	fila.add_child(info)
+	var acciones := VBoxContainer.new()
+	fila.add_child(acciones)
 	var comprar: Button
 	if nivel >= int(def["max"]):
 		comprar = UIKit.boton("MAXED", Color("#5A5F6A"), Vector2(190, 48), 16)
@@ -60,13 +65,30 @@ func _tarjeta(id: String, def: Dictionary) -> Control:
 		UIKit.poner_icono(comprar, Iconos.SCRAP, 30)
 		comprar.disabled = not estado["ok"]
 		comprar.pressed.connect(func() -> void: _comprar(id))
-	fila.add_child(comprar)
+	acciones.add_child(comprar)
+	if nivel < int(def["max"]):
+		var plan := GameState.plan_compra_mejoras(id)
+		var maximo := UIKit.boton("BUY MAX (+%d)" % int(plan["niveles"]), GameColors.CIAN.darkened(0.45), Vector2(190, 40), 15)
+		maximo.disabled = int(plan["niveles"]) == 0
+		maximo.tooltip_text = "%d LEVELS · %d SCRAP" % [int(plan["niveles"]), int(plan["costo"])]
+		maximo.pressed.connect(func() -> void: _comprar_max(id))
+		acciones.add_child(maximo)
 	return tarjeta
 
 
 func _comprar(id: String) -> void:
 	if GameState.comprar_mejora(id)["ok"]:
 		Sfx.reproducir("comprar")
+	else:
+		Sfx.reproducir("error")
+	refrescar()
+
+
+func _comprar_max(id: String) -> void:
+	var cantidad := GameState.comprar_max_mejoras(id)
+	if cantidad > 0:
+		Sfx.reproducir("comprar")
+		GameState.toast.emit("%s +%d LEVELS" % [GameConfig.MEJORAS[id]["nombre"], cantidad], "good")
 	else:
 		Sfx.reproducir("error")
 	refrescar()

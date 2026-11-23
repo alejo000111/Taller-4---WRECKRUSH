@@ -28,6 +28,7 @@ func _ready() -> void:
 	_test_formulas()
 	_test_tablas_taller()
 	_test_economia()
+	_test_compra_max()
 	_test_progreso()
 	_test_victoria_repetida()
 	_test_guardado()
@@ -130,6 +131,31 @@ func _test_economia() -> void:
 	_verificar(gs.rotos_en("scrap_yard") == 2, "se cuentan los objetos rotos por isla")
 	gs.mejoras["damage"] = 12
 	_verificar(gs.estado_mejora("damage")["razon"] == "MAXED" and gs.puede_retar_coloso(3), "DAMAGE 12 = 40: tope y permite retar al coloso 3")
+	gs.free()
+
+
+func _test_compra_max() -> void:
+	print("Compra de varias mejoras")
+	var gs := _nuevo_estado()
+	_verificar(gs.comprar_max_mejoras("damage") == 0 and gs.scrap == 0, "BUY MAX sin Scrap no compra niveles")
+	gs.agregar_scrap(200)
+	var plan: Dictionary = gs.plan_compra_mejoras("damage")
+	_verificar(plan["niveles"] == 3 and plan["costo"] == 178 and gs.nivel_mejora("damage") == 0 and gs.scrap == 200, "vista previa calcula 38 + 56 + 84 sin gastar")
+	_verificar(gs.comprar_max_mejoras("damage") == 3 and gs.nivel_mejora("damage") == 3 and gs.scrap == 22, "BUY MAX compra tres niveles y conserva el sobrante")
+	gs.reiniciar()
+	gs.agregar_scrap(38)
+	_verificar(gs.comprar_max_mejoras("damage") == 1 and gs.scrap == 0, "BUY MAX permite comprar con el saldo exacto")
+	gs.reiniciar()
+	gs.agregar_scrap(100000)
+	_verificar(gs.comprar_max_mejoras("damage") == 12 and gs.nivel_mejora("damage") == 12 and gs.scrap == 90343, "BUY MAX respeta el tope de daño y cobra 9657")
+	_verificar(gs.comprar_max_mejoras("damage") == 0 and gs.scrap == 90343, "mejora al maximo no vuelve a cobrar")
+	gs.reiniciar()
+	gs.mejoras["attack_speed"] = 4
+	gs.agregar_scrap(4000)
+	_verificar(gs.comprar_max_mejoras("attack_speed") == 1 and gs.scrap == 962 and gs.nivel_mejora("attack_speed") == 5, "velocidad usa su precio de 3038 y su propio limite")
+	var panel := UpgradesPanel.new()
+	_verificar(panel._valor_texto("damage", 1) == "12.5 per hit", "panel muestra el daño decimal completo")
+	panel.free()
 	gs.free()
 
 

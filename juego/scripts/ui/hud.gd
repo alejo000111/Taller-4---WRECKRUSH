@@ -402,7 +402,7 @@ func _refrescar_todo() -> void:
 
 func _refrescar_recursos() -> void:
 	_scrap.text = "SCRAP %s" % Formulas.abreviar(GameState.scrap)
-	_dano.text = "DAMAGE %s" % Formulas.abreviar(GameState.dano_base_golpe())
+	_dano.text = "DAMAGE %s" % GameConfig.texto_dano(GameState.dano_base_golpe())
 	_ritmo.text = "HIT EVERY %.2fs" % GameState.cooldown_ataque()
 
 

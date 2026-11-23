@@ -161,6 +161,31 @@ func comprar_mejora(id: String) -> Dictionary:
 	return estado
 
 
+func plan_compra_mejoras(id: String) -> Dictionary:
+	var def: Dictionary = GameConfig.MEJORAS[id]
+	var nivel := nivel_mejora(id)
+	var costo := 0
+	var cantidad := 0
+	while nivel < int(def["max"]):
+		var precio := Formulas.precio_mejora(float(def["base"]), nivel + 1, int(def["desfase"]))
+		if costo + precio > scrap:
+			break
+		costo += precio
+		cantidad += 1
+		nivel += 1
+	return {"niveles": cantidad, "costo": costo}
+
+
+func comprar_max_mejoras(id: String) -> int:
+	var plan := plan_compra_mejoras(id)
+	var compradas := 0
+	for i in int(plan["niveles"]):
+		if not comprar_mejora(id)["ok"]:
+			break
+		compradas += 1
+	return compradas
+
+
 func hay_mejora_asequible() -> bool:
 	for id in GameConfig.ORDEN_MEJORAS:
 		if estado_mejora(id)["ok"]:
