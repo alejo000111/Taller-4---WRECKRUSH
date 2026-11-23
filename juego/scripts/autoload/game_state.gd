@@ -177,9 +177,8 @@ func plan_compra_mejoras(id: String) -> Dictionary:
 
 
 func comprar_max_mejoras(id: String) -> int:
-	var plan := plan_compra_mejoras(id)
 	var compradas := 0
-	for i in int(plan["niveles"]):
+	for i in int(plan_compra_mejoras(id)["niveles"]):
 		if not comprar_mejora(id)["ok"]:
 			break
 		compradas += 1
@@ -293,20 +292,11 @@ func plan_de_metas() -> Array:
 	var plan: Array = []
 	for n in range(1, 7):
 		plan.append(["damage", n])
-	plan.append(["coloso", 1])
-	plan.append(["zona", "downtown"])
+	plan.append_array([["coloso", 1], ["zona", "downtown"]])
 	for n in range(7, 11):
 		plan.append(["damage", n])
-	plan.append(["coloso", 2])
-	plan.append(["attack_speed", 1])
-	plan.append(["attack_speed", 2])
-	plan.append(["zona", "industrial"])
-	plan.append(["damage", 11])
-	plan.append(["damage", 12])
-	plan.append(["attack_speed", 3])
-	plan.append(["coloso", 3])
-	plan.append(["attack_speed", 4])
-	plan.append(["attack_speed", 5])
+	plan.append_array([["coloso", 2], ["attack_speed", 1], ["attack_speed", 2], ["zona", "industrial"],
+			["damage", 11], ["damage", 12], ["attack_speed", 3], ["coloso", 3], ["attack_speed", 4], ["attack_speed", 5]])
 	return plan
 
 
@@ -440,9 +430,8 @@ func desde_diccionario(datos: Dictionary) -> void:
 	var guardados: Dictionary = datos.get("colosos", {})
 	for numero in colosos:
 		var e: Dictionary = guardados.get(str(numero), {})
-		colosos[numero]["vencido"] = bool(e.get("vencido", false))
-		colosos[numero]["est_tiempo"] = bool(e.get("est_tiempo", false))
-		colosos[numero]["est_sin_dano"] = bool(e.get("est_sin_dano", false))
+		for clave in ["vencido", "est_tiempo", "est_sin_dano"]:
+			colosos[numero][clave] = bool(e.get(clave, false))
 		colosos[numero]["mejor_tiempo"] = float(e.get("mejor_tiempo", 0.0))
 	objetos_rotos = int(datos.get("objetos_rotos", 0))
 	golpes = int(datos.get("golpes", 0))

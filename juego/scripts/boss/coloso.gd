@@ -164,19 +164,17 @@ func _refrescar_pecho() -> void:
 
 
 func refrescar_aspecto() -> void:
-	var vencido := GameState.coloso_vencido_p(numero)
-	var rotos := GameState.rotos_en(datos["zona"])
-	if vencido:
-		_material_ojos.emission = COLOR_OJO_VERDE
-		_material_ojos.emission_energy_multiplier = 3.0
-		_material_ojos.albedo_color = COLOR_OJO_VERDE
-	elif rotos >= int(datos["ojos_rojos"]):
-		_material_ojos.emission = GameColors.ROJO
-		_material_ojos.emission_energy_multiplier = 3.0
-		_material_ojos.albedo_color = GameColors.ROJO
-	else:
-		_material_ojos.emission = Color.BLACK
+	var color := Color.BLACK
+	if GameState.coloso_vencido_p(numero):
+		color = COLOR_OJO_VERDE
+	elif GameState.rotos_en(datos["zona"]) >= int(datos["ojos_rojos"]):
+		color = GameColors.ROJO
+	_material_ojos.emission = color
+	if color == Color.BLACK:
 		_material_ojos.albedo_color = Color("#2A2D33")
+	else:
+		_material_ojos.emission_energy_multiplier = 3.0
+		_material_ojos.albedo_color = color
 	_refrescar_pecho()
 
 
@@ -305,11 +303,15 @@ func _girar_cabeza(delta: float) -> void:
 	_cabeza.rotation.y = lerp_angle(_cabeza.rotation.y, meta, clampf(2.5 * delta, 0.0, 1.0))
 
 
-func _entrar_armadura() -> void:
+func _poner_armadura() -> void:
 	for placa in placas:
 		placa.reiniciar(true)
 		placa.establecer_vulnerable(true)
 	nucleo.establecer_vulnerable(false)
+
+
+func _entrar_armadura() -> void:
+	_poner_armadura()
 	_proximo_ataque = PRIMER_ATAQUE
 	_cambiar_estado(Estado.ARMADURA)
 
@@ -322,10 +324,7 @@ func _exponer() -> void:
 
 
 func _restaurar_armadura() -> void:
-	nucleo.establecer_vulnerable(false)
-	for placa in placas:
-		placa.reiniciar(true)
-		placa.establecer_vulnerable(true)
+	_poner_armadura()
 	_cambiar_estado(Estado.ARMADURA)
 	GameState.toast.emit("ARMOR RESTORED", "bad")
 
@@ -389,13 +388,15 @@ func _actualizar_ataques(delta: float) -> void:
 
 
 func _lanzar_disco() -> void:
-	var aviso := BossWarning.mostrar(self, jugador.global_position, float(GameConfig.COLOSO["radio_disco"]), float(GameConfig.COLOSO["aviso"]))
-	aviso.impacto.connect(_resolver_impacto.bind(aviso))
-	_animar_ataque()
+	_lanzar_aviso(jugador.global_position, float(GameConfig.COLOSO["radio_disco"]))
 
 
 func _lanzar_anillo() -> void:
-	var aviso := BossWarning.mostrar(self, global_position, float(GameConfig.COLOSO["radio_anillo_exterior"]), float(GameConfig.COLOSO["aviso"]), float(GameConfig.COLOSO["radio_anillo_interior"]))
+	_lanzar_aviso(global_position, float(GameConfig.COLOSO["radio_anillo_exterior"]), float(GameConfig.COLOSO["radio_anillo_interior"]))
+
+
+func _lanzar_aviso(centro: Vector3, radio: float, radio_interior: float = 0.0) -> void:
+	var aviso := BossWarning.mostrar(self, centro, radio, float(GameConfig.COLOSO["aviso"]), radio_interior)
 	aviso.impacto.connect(_resolver_impacto.bind(aviso))
 	_animar_ataque()
 

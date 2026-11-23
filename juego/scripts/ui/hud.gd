@@ -67,6 +67,14 @@ func _process(_delta: float) -> void:
 		_vida.value = jugador.salud / GameConfig.VIDA_JUGADOR
 
 
+func _anclar(c: Control, preset: int, izq: float, arr: float, der: float, aba: float) -> void:
+	c.set_anchors_preset(preset)
+	c.offset_left = izq
+	c.offset_top = arr
+	c.offset_right = der
+	c.offset_bottom = aba
+
+
 func _texto_meta(meta: Dictionary) -> String:
 	if meta["listo"]:
 		return "READY: %s" % meta["texto"]
@@ -111,12 +119,7 @@ func _boton_menu(padre: Control, texto: String, color: Color, panel: String, ico
 
 func _construir_centro() -> void:
 	var raiz := VBoxContainer.new()
-	raiz.set_anchors_preset(Control.PRESET_CENTER_TOP)
-	raiz.anchor_left = 0.5
-	raiz.anchor_right = 0.5
-	raiz.offset_left = -260
-	raiz.offset_right = 260
-	raiz.offset_top = 12
+	_anclar(raiz, Control.PRESET_CENTER_TOP, -260, 12, 260, 12)
 	raiz.add_theme_constant_override("separation", 6)
 	raiz.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(raiz)
@@ -167,13 +170,7 @@ func _pildora(padre: Control, texto: String, color: Color, icono: Texture2D) -> 
 
 func _construir_inferior() -> void:
 	var barra := HBoxContainer.new()
-	barra.set_anchors_preset(Control.PRESET_CENTER_BOTTOM)
-	barra.anchor_left = 0.5
-	barra.anchor_right = 0.5
-	barra.offset_left = -95
-	barra.offset_right = 95
-	barra.offset_top = -86
-	barra.offset_bottom = -16
+	_anclar(barra, Control.PRESET_CENTER_BOTTOM, -95, -86, 95, -16)
 	barra.alignment = BoxContainer.ALIGNMENT_CENTER
 	barra.add_theme_constant_override("separation", 8)
 	add_child(barra)
@@ -183,13 +180,7 @@ func _construir_inferior() -> void:
 	barra.add_child(b)
 	_casillas.append(b)
 	_aviso = PanelContainer.new()
-	_aviso.set_anchors_preset(Control.PRESET_CENTER_BOTTOM)
-	_aviso.anchor_left = 0.5
-	_aviso.anchor_right = 0.5
-	_aviso.offset_left = -190
-	_aviso.offset_right = 190
-	_aviso.offset_top = -156
-	_aviso.offset_bottom = -100
+	_anclar(_aviso, Control.PRESET_CENTER_BOTTOM, -190, -156, 190, -100)
 	_aviso.visible = false
 	_aviso.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_aviso.add_theme_stylebox_override("panel", UIKit.estilo(Color(0.12, 0.13, 0.16, 0.92), GameColors.AMARILLO, 12, 3, 8))
@@ -204,47 +195,23 @@ func _construir_inferior() -> void:
 	UIKit.poner_icono(wreck, Iconos.WRECK, 64)
 	wreck.icon_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	wreck.vertical_icon_alignment = VERTICAL_ALIGNMENT_TOP
-	wreck.set_anchors_preset(Control.PRESET_BOTTOM_RIGHT)
-	wreck.anchor_left = 1.0
-	wreck.anchor_top = 1.0
-	wreck.anchor_right = 1.0
-	wreck.anchor_bottom = 1.0
-	wreck.offset_left = -196
-	wreck.offset_top = -136
-	wreck.offset_right = -26
-	wreck.offset_bottom = -26
+	_anclar(wreck, Control.PRESET_BOTTOM_RIGHT, -196, -136, -26, -26)
 	wreck.button_down.connect(func() -> void: GameState.boton_wreck = true)
 	wreck.button_up.connect(func() -> void: GameState.boton_wreck = false)
 	add_child(wreck)
 	_vida = UIKit.barra(GameColors.ROJO, Vector2(260, 18))
-	_vida.set_anchors_preset(Control.PRESET_BOTTOM_LEFT)
-	_vida.anchor_top = 1.0
-	_vida.anchor_bottom = 1.0
-	_vida.offset_left = 20
-	_vida.offset_top = -44
-	_vida.offset_right = 280
-	_vida.offset_bottom = -26
+	_anclar(_vida, Control.PRESET_BOTTOM_LEFT, 20, -44, 280, -26)
 	_vida.max_value = 1.0
 	_vida.visible = false
 	add_child(_vida)
 	_fps = UIKit.etiqueta("", 13, Color("#8A909C"), HORIZONTAL_ALIGNMENT_RIGHT)
-	_fps.set_anchors_preset(Control.PRESET_TOP_RIGHT)
-	_fps.anchor_left = 1.0
-	_fps.anchor_right = 1.0
-	_fps.offset_left = -90
-	_fps.offset_top = 4
-	_fps.offset_right = -8
+	_anclar(_fps, Control.PRESET_TOP_RIGHT, -90, 4, -8, 20)
 	add_child(_fps)
 
 
 func _construir_tutorial() -> void:
 	_tutorial = PanelContainer.new()
-	_tutorial.set_anchors_preset(Control.PRESET_TOP_RIGHT)
-	_tutorial.anchor_left = 1.0
-	_tutorial.anchor_right = 1.0
-	_tutorial.offset_left = -330
-	_tutorial.offset_right = -16
-	_tutorial.offset_top = 30
+	_anclar(_tutorial, Control.PRESET_TOP_RIGHT, -330, 30, -16, 30)
 	_tutorial.add_theme_stylebox_override("panel", UIKit.estilo(Color(0.17, 0.18, 0.21, 0.92), GameColors.AMARILLO, 12, 3, 12))
 	var col := VBoxContainer.new()
 	col.add_theme_constant_override("separation", 4)
