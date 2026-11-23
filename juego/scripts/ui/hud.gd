@@ -452,6 +452,9 @@ func _mostrar_coloso_vencido(r: Dictionary) -> void:
 	_victoria_insignia.texture = Iconos.INSIGNIA_COLOSO
 	_victoria_titulo.text = "%s DEFEATED" % r["nombre"]
 	var lineas := "FIGHT TIME %s" % Formulas.formato_tiempo(r["tiempo"])
+	lineas += "\nBEST TIME %s" % Formulas.formato_tiempo(r["mejor_tiempo"])
+	if r["nuevo_record"]:
+		lineas += "\nNEW RECORD!"
 	if int(r["scrap"]) > 0:
 		lineas = "+%s SCRAP\n" % Formulas.abreviar(r["scrap"]) + lineas
 	lineas += "\nIts eyes turn green."
@@ -463,6 +466,9 @@ func _mostrar_maestria(r: Dictionary) -> void:
 	_victoria_insignia.texture = Iconos.INSIGNIA_COLOSO
 	_victoria_titulo.text = "MASTERY · %s" % r["nombre"]
 	var lineas := "FIGHT TIME %s\n%s\nSTARS %d / %d" % [Formulas.formato_tiempo(r["tiempo"]), "NO DAMAGE TAKEN" if r["sin_dano"] else "DAMAGE TAKEN", int(r["estrellas"]), int(GameConfig.COLOSO["estrellas_maximas"])]
+	lineas += "\nBEST TIME %s" % Formulas.formato_tiempo(r["mejor_tiempo"])
+	if r["nuevo_record"]:
+		lineas += "\nNEW RECORD!"
 	_mostrar_tarjeta(lineas)
 
 
