@@ -134,93 +134,67 @@ func onda(posicion: Vector3, radio: float, color: Color, duracion: float = 0.45)
 func _chispas(posicion: Vector3, cantidad: int, color: Color, velocidad: float, vida: float) -> void:
 	if cantidad <= 0:
 		return
-	var particulas := CPUParticles3D.new()
-	particulas.amount = cantidad
-	particulas.lifetime = vida * 0.6
-	particulas.one_shot = true
-	particulas.explosiveness = 1.0
-	particulas.direction = Vector3.UP
-	particulas.spread = 180.0
-	particulas.initial_velocity_min = velocidad * 0.4
-	particulas.initial_velocity_max = velocidad
-	particulas.gravity = Vector3(0, -70, 0)
-	particulas.scale_amount_min = 0.6
-	particulas.scale_amount_max = 1.4
-	particulas.angle_min = 0.0
-	particulas.angle_max = 360.0
-	particulas.color = color
-	var malla := QuadMesh.new()
-	malla.size = Vector2(0.9, 0.9)
-	malla.material = _material_chispa
-	particulas.mesh = malla
-	_mundo().add_child(particulas)
-	particulas.global_position = posicion
-	particulas.emitting = true
-	particulas.get_tree().create_timer(vida + 0.5).timeout.connect(particulas.queue_free)
+	var p := _particulas(posicion, cantidad, vida * 0.6, 1.0, 180.0, Vector2(0.9, 0.9), _material_chispa, vida + 0.5)
+	p.initial_velocity_min = velocidad * 0.4
+	p.initial_velocity_max = velocidad
+	p.gravity = Vector3(0, -70, 0)
+	p.scale_amount_min = 0.6
+	p.scale_amount_max = 1.4
+	p.color = color
 
 
 func _esquirlas(posicion: Vector3, cantidad: int, color: Color, velocidad: float) -> void:
 	if cantidad <= 0:
 		return
-	var particulas := CPUParticles3D.new()
-	particulas.amount = cantidad
-	particulas.lifetime = 0.9
-	particulas.one_shot = true
-	particulas.explosiveness = 1.0
-	particulas.direction = Vector3.UP
-	particulas.spread = 80.0
-	particulas.initial_velocity_min = velocidad * 0.5
-	particulas.initial_velocity_max = velocidad
-	particulas.gravity = Vector3(0, -80, 0)
-	particulas.angle_min = 0.0
-	particulas.angle_max = 360.0
-	particulas.angular_velocity_min = -540.0
-	particulas.angular_velocity_max = 540.0
-	particulas.scale_amount_min = 0.6
-	particulas.scale_amount_max = 1.3
-	particulas.color = color.lightened(0.15)
-	var malla := QuadMesh.new()
-	malla.size = Vector2(1.1, 1.1)
-	malla.material = _material_esquirla
-	particulas.mesh = malla
-	_mundo().add_child(particulas)
-	particulas.global_position = posicion
-	particulas.emitting = true
-	particulas.get_tree().create_timer(1.5).timeout.connect(particulas.queue_free)
+	var p := _particulas(posicion, cantidad, 0.9, 1.0, 80.0, Vector2(1.1, 1.1), _material_esquirla, 1.5)
+	p.initial_velocity_min = velocidad * 0.5
+	p.initial_velocity_max = velocidad
+	p.gravity = Vector3(0, -80, 0)
+	p.angular_velocity_min = -540.0
+	p.angular_velocity_max = 540.0
+	p.scale_amount_min = 0.6
+	p.scale_amount_max = 1.3
+	p.color = color.lightened(0.15)
 
 
 func _humo(posicion: Vector3, tamano: float, color: Color) -> void:
-	var particulas := CPUParticles3D.new()
-	particulas.amount = int(8 * tamano)
-	particulas.lifetime = 1.0
-	particulas.one_shot = true
-	particulas.explosiveness = 0.9
-	particulas.direction = Vector3.UP
-	particulas.spread = 70.0
-	particulas.initial_velocity_min = 3.0
-	particulas.initial_velocity_max = 9.0 * tamano
-	particulas.gravity = Vector3(0, 3, 0)
-	particulas.scale_amount_min = 1.2 * tamano
-	particulas.scale_amount_max = 2.6 * tamano
-	particulas.angle_min = 0.0
-	particulas.angle_max = 360.0
+	var p := _particulas(posicion, int(8 * tamano), 1.0, 0.9, 70.0, Vector2(2.2, 2.2), _material_humo, 1.6)
+	p.initial_velocity_min = 3.0
+	p.initial_velocity_max = 9.0 * tamano
+	p.gravity = Vector3(0, 3, 0)
+	p.scale_amount_min = 1.2 * tamano
+	p.scale_amount_max = 2.6 * tamano
 	var curva := Curve.new()
 	curva.add_point(Vector2(0, 0.6))
 	curva.add_point(Vector2(1, 1.6))
-	particulas.scale_amount_curve = curva
+	p.scale_amount_curve = curva
 	var tono := color.lerp(Color(0.4, 0.38, 0.36), 0.6)
 	var gradiente := Gradient.new()
 	gradiente.set_color(0, Color(tono, 0.75))
 	gradiente.set_color(1, Color(tono.darkened(0.4), 0.0))
-	particulas.color_ramp = gradiente
+	p.color_ramp = gradiente
+
+
+# Crea un chorro de particulas con lo comun a chispas, esquirlas y humo.
+func _particulas(posicion: Vector3, cantidad: int, vida: float, explosividad: float, apertura: float, tamano_malla: Vector2, material: Material, borrar_en: float) -> CPUParticles3D:
+	var p := CPUParticles3D.new()
+	p.amount = cantidad
+	p.lifetime = vida
+	p.one_shot = true
+	p.explosiveness = explosividad
+	p.direction = Vector3.UP
+	p.spread = apertura
+	p.angle_min = 0.0
+	p.angle_max = 360.0
 	var malla := QuadMesh.new()
-	malla.size = Vector2(2.2, 2.2)
-	malla.material = _material_humo
-	particulas.mesh = malla
-	_mundo().add_child(particulas)
-	particulas.global_position = posicion
-	particulas.emitting = true
-	particulas.get_tree().create_timer(1.6).timeout.connect(particulas.queue_free)
+	malla.size = tamano_malla
+	malla.material = material
+	p.mesh = malla
+	_mundo().add_child(p)
+	p.global_position = posicion
+	p.emitting = true
+	p.get_tree().create_timer(borrar_en).timeout.connect(p.queue_free)
+	return p
 
 
 func _altura(objeto: Node3D) -> float:
